@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Bootstrap Header with Centered Image and Navigation Bar</title>
+  <style>
+    .header {
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      z-index: 4;
+    }
+
+    .header img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .navbar {
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navbar .nav-item {
+      /* margin-right: 10px; */
+    }
+
+    .navbar .dropdown-menu {
+      display: none;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+      display: block;
+    }
+
+    .nav-link {
+      width: 200px; /* Replace with your desired width */
+      padding: 15px;
+    }
+
+    .navbar .nav-link::after {
+      display: none;
+    }
+
+    .navbar .dropdown-menu.dropdown1 {
+      background-color: #29a3da; /* Red */
+    }
+
+    .navbar .dropdown-menu.dropdown2 {
+      background-color: #84be3f; /* Green */
+    }
+
+    .navbar .dropdown-menu.dropdown3 {
+      background-color: #f3a83b; /* Blue */
+    }
+
+    .navbar .dropdown-menu.dropdown4 {
+      background-color: #ff7ba4; /* Yellow */
+    }
+
+    .navbar .dropdown-menu.dropdown5 {
+      background-color: gray; /* Magenta */
+    }
+
+    .dropdown1-bg {
+      background-color: #29a3da; /* Replace with your desired background color */
+    }
+
+    .dropdown2-bg {
+      background-color: #84be3f; /* Replace with your desired background color */
+    }
+
+    .dropdown3-bg {
+      background-color: #f3a83b; /* Replace with your desired background color */
+    }
+
+    .dropdown4-bg {
+      background-color: #ff7ba4; /* Replace with your desired background color */
+    }
+
+    .dropdown5-bg {
+      background-color: gray; /* Replace with your desired background color */
+    }
+    
+    @media (max-width: 768px) {
+      .navbar .nav-link {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    @media (min-width: 992px) {
+        .navbar {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: fit-content;
+        }
+    }
+    .section {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px; /* Add a top margin to prevent overlap */
+    background-image: url('assets/images/log.png'); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: rgb(43, 42, 42); /* Set the text color to white for better visibility */
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .section .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(223, 220, 220, 0.6); /* Set the background color for the box */
+    padding: 20px;
+    z-index: 1;
+  }
+
+  .section-line {
+    border: none;
+    height: 1px;
+    background-color: black;
+    left: 50%;
+    transform: translateX(0%);
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+    #marqueeContainer {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+    }
+  
+    .marqueeImages {
+      display: inline-block;
+      white-space: nowrap;
+      position: relative;
+      left: 100%;
+      transform: translateX(-100%);
+      animation: marquee 900s linear infinite;
+    }
+  
+    .marqueeImages img {
+      display: inline-block;
+      margin-right: 20px;
+    }
+  
+    @keyframes marquee {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+
+
+
+  </style>
+  
+</head>
+
+<body>
+    
+  <header class="header">
+    <img src="assets/images/headlog.png" alt="Header Image">
+
+<!-- start of nav  -->
+
+  <nav class="navbar navbar-expand-md navbar-light">
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown1-bg" href="#" id="dropdown1" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="assets/images/icon-step1nav.png" alt="">
+            <img src="assets/images/icon-book.png" alt="">
+            <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown1-bg text-center" aria-labelledby="dropdown1">
+            <a class="dropdown-item" href="#">オンラインカジノとは？基礎講座</a>
+            <a class="dropdown-item" href="#">オンラインカジノは違法？！</a>
+            <a class="dropdown-item" href="#">悪質なオンラインカジノの詐欺事例</a>
+            <a class="dropdown-item" href="#">ゲームのソフトウェアも信頼の目安</a>
+            <a class="dropdown-item" href="#">オンラインカジノの還元率が高い理由</a>
+            <a class="dropdown-item" href="#">ゲームのソフトウェアも信頼の目安</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown2-bg" href="#" id="dropdown2" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step2nav.png" alt="">
+                <img src="assets/images/icon-play.png" alt="">
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown2-bg text-center" aria-labelledby="dropdown2">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown3-bg" href="#" id="dropdown3" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step3nav.png" alt="">
+                <img src="assets/images/icon-card.png" alt="">
+
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown3-bg text-center" aria-labelledby="dropdown3">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown4-bg" href="#" id="dropdown4" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step4nav.png" alt="">
+                <img src="assets/images/icon-casino.png" alt="">
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown4-bg text-center" aria-labelledby="dropdown4">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown5-bg" href="#" id="dropdown5" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step5nav.png" alt="">
+                <img src="assets/images/icon-method.png" alt="">
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown5-bg text-center" aria-labelledby="dropdown5">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- end of nav  -->
+
+<!-- start of section 1  -->
+<section>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section">
+                <div class="content">
+                    <p style="display: inline-block; font-size: 20px; font-weight: bold;">
+                        <img src="assets/images/beginner-mark.png" alt="" style="width: 55px; height: 65px; padding-left: 10px; padding-top: 10px;" />
+                        オンラインカジノを基礎から実践までマスターしよう !
+                    </p>
+                    <hr class="section-line">
+                    <p style="padding: 0 10% 0 10%;">
+                        <img src="assets/images/log.png" alt="" style="width: 150px; height: 85px; padding-left: 20px; padding-top: 5px;">
+                        <span style="font-size: 18px; font-weight: bold;">
+                            「オンラインカジノ初心者ナビ®」では、基礎からカジノ選 び、
+                            稼ぐためのテクニックまで、5つのステップでわかりやすく解説します。
+                        </span>
+                    </p>
+                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="marqueeContainer">
+                    <div class="marqueeImages">
+                        
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="marqueeContainer">
+                    <div class="marqueeImages">
+                        <img src="assets/images/top-s1.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s2.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s3.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s4.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s5.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s6.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s7.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s8.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s1.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s2.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s3.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s4.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s5.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s6.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s7.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s8.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s1.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s2.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s3.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s4.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s5.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s6.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s7.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s8.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s1.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s2.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s3.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s4.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s5.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s6.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s7.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s8.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s1.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s2.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s3.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s4.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s5.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s6.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s7.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s8.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s1.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s2.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s3.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s4.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s5.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s6.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s7.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s8.jpg" class="marqueeImage">
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</section>
+<!-- end of section 1  -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script>
+    window.addEventListener("load", function() {
+    var marqueeContainer = document.getElementById("marqueeContainer");
+    marqueeContainer.classList.add("marqueeAnimation");
+    });
+</script>
+
+</body>
+
+</html>
