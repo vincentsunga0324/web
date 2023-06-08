@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+
   <title>Bootstrap Header with Centered Image and Navigation Bar</title>
   <style>
     .header {
@@ -141,14 +144,16 @@
       overflow: hidden;
       position: relative;
     }
-  
+    #submarquee {
+      height: 100px;
+    }
     .marqueeImages {
       display: inline-block;
       white-space: nowrap;
       position: relative;
       left: 100%;
       transform: translateX(-100%);
-      animation: marquee 900s linear infinite;
+      animation: marquee 500s linear infinite;
     }
   
     .marqueeImages img {
@@ -164,6 +169,138 @@
         transform: translateX(100%);
       }
     }
+
+    h3.iconTitle-r {
+        font-size: 0.4rem;
+        padding: 5px;
+    }
+    h2.iconTitle-r, h3.iconTitle-r {
+      border-bottom: solid 3px #fbb03b;
+      padding: 10px;
+      font-size: 1.2rem;
+      text-align: left;
+      margin-bottom: 15px;
+    }
+    .fontOrange {
+      color: #f7931e;
+    }
+    ul.li_check {
+      margin: 10px;
+      list-style: none;
+    }
+    .li_check li {
+      padding-left: 30px;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+    }
+    .li_check li:before {
+      content: "\f14a";
+      position: relative;
+      font-family: FontAwesome;
+      font-size: 1.5rem;
+      margin-right: 10px;
+      color: #8dc73f;
+    }
+    h2.tb-bdr {
+    border-bottom: 3px solid #cccccc;
+    border-top: 3px solid #cccccc;
+    width: 100%;
+    padding: 18px 0 15px;
+    margin: 0 auto;
+  }
+
+  ul.curripcindex {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul.curripcindex li {
+    flex: 1;
+    text-align: center;
+  }
+
+  ul.curripcindex li a img {
+    max-width: 100%;
+    height: auto;
+  }
+  a.btn-squareOre {
+    padding: 15px 30px;
+    text-align: center;
+    background-color: #f7931e;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+  }
+
+  footer>.dispFlex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.center {
+    text-align: center;
+    margin: auto;
+}
+footer nav ul li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.7rem;
+}
+footer ul.iconMenu {
+    width: 1100px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+}
+ul.iconMenu {
+    border-top: 8px solid #FFF;
+    border-image: linear-gradient(90deg,rgba(41,163,218,1) 0%,rgba(41,163,218,1) 20%,rgba(132,190,63,1) 20%,rgba(132,190,63,1) 40%,rgba(243,168,59,1) 40%,rgba(243,168,59,1) 60%,rgba(255,123,164,1) 60%,rgba(255,123,164,1) 80%,rgba(128,128,128,1) 80%,rgba(128,128,128,1) 100%);
+    border-image-slice: 1;
+    padding-top: 15px;
+}
+p.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 20px 0;
+    background-color: #f7931e;
+    color: #fff;
+    font-size: 1.2rem;
+}
+footer nav ul li:before {
+    content: "\025b6";
+    font-size: .9rem;
+    color: #f7931e;
+}
+
+
+footer nav ul {
+    column-count: 3;
+    padding: 40px 0 20px 0;
+}
+nav ul {
+    list-style: none;
+}
+footer nav {
+    border-top: 1px solid #BBB;
+}
+footer nav {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+}
 
 
 
@@ -292,9 +429,45 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div id="marqueeContainer">
+                <div id="marqueeContainer submarquee" class="">
                     <div class="marqueeImages">
                         
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
+                            <img src="assets/images/top-s-com.gif" >
                             <img src="assets/images/top-s-com.gif" >
                             <img src="assets/images/top-s-com.gif" >
                             <img src="assets/images/top-s-com.gif" >
@@ -393,6 +566,54 @@
                         <img src="assets/images/top-s6.jpg" class="marqueeImage">
                         <img src="assets/images/top-s7.jpg" class="marqueeImage">
                         <img src="assets/images/top-s8.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s1.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s2.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s3.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s4.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s5.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s6.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s7.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s8.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s1.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s2.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s3.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s4.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s5.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s6.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s7.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s8.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s1.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s2.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s3.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s4.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s5.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s6.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s7.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s8.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s1.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s2.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s3.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s4.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s5.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s6.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s7.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s8.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s1.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s2.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s3.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s4.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s5.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s6.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s7.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s8.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s1.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s2.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s3.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s4.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s5.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s6.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s7.jpg" class="marqueeImage">
+                        <img src="assets/images/top-s8.jpg" class="marqueeImage">
                     </div>
                    
                 </div>
@@ -401,12 +622,418 @@
     </div>
 </section>
 
-</section>
 <!-- end of section 1  -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center">「オンラインカジノ初心者ナビ<span class="small20">®</span>」へようこそ<br><span>Welcome to Online Casino Beginner's Navi !</span></h2>
+      </div>
+      <div class="col-md-5">
+        <!-- Content for the first column -->
+        <img src="assets/images/top_img1.jpg" alt="">
+      </div>
+      <div class="col-md-7">
+        <!-- Content for the second column -->
+        <p>
+          「オンラインカジノ初心者ナビ®」はオンラインカジノ初心者の方が、より安心して楽しむことができるように、「安全なオンラインカジノの選び方」「入出金方法」などの基礎講座から「オンラインカジノ攻略法」「あなたに合ったオンラインカジノ一覧」など幅広い情報を提供しています。
+        </p>
+        <h3 class="iconTitle-r dispFlex3 fontOrange"><img src="assets/images/icon-index1.png" class="pc">オンラインカジノ初心者の方が知っておきたい情報はこちら</h3>
+        <ul class="li_check">
+          <li><a href="beginner/about.html"><span class="check-icon"></span>オンラインカジノとは？</a></li>
+          <li><a href="beginner/law.html"><span class="check-icon"></span>オンラインカジノは違法？合法？</a></li>
+          <li><a href="beginner/management.html"><span class="check-icon"></span>信頼できるオンラインカジノの選び方</a></li>
+          <li><a href="play/payment.html"><span class="check-icon"></span>入出金方法について</a></li>
+          <li><a href="play/bonus.html"><span class="check-icon"></span>ボーナスの活用方法</a></li>
+          <li><a href="play/nodepositbonus.html"><span class="check-icon"></span>入金不要ボーナスが貰えるオンラインカジノ</a></li>
+          <li><a href="ranking/"><span class="check-icon"></span>オンラインカジノおすすめランキング</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="tb-bdr text-center">カリキュラム <br><span>curriculum</span></h2>
+        <ul class="curripcindex">
+          <li><a href="beginner/"><img src="assets/images/step1.jpg" alt="step1.基礎講座" class="pc"></a></li>
+          <li><a href="play/"><img src="assets/images/step2.jpg" alt="step2.プレイ講座" class="pc"></a></li>
+          <li><a href="nyushukkin.html"><img src="assets/images/step3.jpg" alt="step3.決済講座" class="pc"></a></li>
+          <li><a href="ranking/"><img src="assets/images/step4.jpg" alt="step4.カジノを探す" class="pc"></a></li>
+          <li><a href="method/"><img src="assets/images/step5.jpg" alt="step5.攻略講座" class="pc"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center">初心者のためのオンラインカジノ最新ニュース<br class="sp"><span>Online Casino News</span></h2>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div id="marqueeContainer"><section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="marqueeContainer">
+          <div class="marqueeImages d-flex flex-wrap">
+            <img src="assets/images/230419.jpg" class="marqueeImage">
+            <img src="assets/images/230215.jpg" class="marqueeImage">
+            <img src="assets/images/230118.jpg" class="marqueeImage">
+            <img src="assets/images/230517.jpg" class="marqueeImage">
+            <img src="assets/images/230419.jpg" class="marqueeImage">
+            <img src="assets/images/230215.jpg" class="marqueeImage">
+            <img src="assets/images/230118.jpg" class="marqueeImage">
+            <img src="assets/images/230517.jpg" class="marqueeImage">
+            <img src="assets/images/230419.jpg" class="marqueeImage">
+            <img src="assets/images/230215.jpg" class="marqueeImage">
+            <img src="assets/images/230118.jpg" class="marqueeImage">
+            <img src="assets/images/230517.jpg" class="marqueeImage">
+            <img src="assets/images/230419.jpg" class="marqueeImage">
+            <img src="assets/images/230215.jpg" class="marqueeImage">
+            <img src="assets/images/230118.jpg" class="marqueeImage">
+            <img src="assets/images/230517.jpg" class="marqueeImage">
+            <img src="assets/images/230419.jpg" class="marqueeImage">
+            <img src="assets/images/230215.jpg" class="marqueeImage">
+            <img src="assets/images/230118.jpg" class="marqueeImage">
+            <img src="assets/images/230517.jpg" class="marqueeImage">
+            <img src="assets/images/230419.jpg" class="marqueeImage">
+            <img src="assets/images/230215.jpg" class="marqueeImage">
+            <img src="assets/images/230118.jpg" class="marqueeImage">
+            <img src="assets/images/230517.jpg" class="marqueeImage">
+            <img src="assets/images/230419.jpg" class="marqueeImage">
+            <img src="assets/images/230215.jpg" class="marqueeImage">
+            <img src="assets/images/230118.jpg" class="marqueeImage">
+            <img src="assets/images/230517.jpg" class="marqueeImage">
+            <img src="assets/images/230419.jpg" class="marqueeImage">
+            <img src="assets/images/230215.jpg" class="marqueeImage">
+            <img src="assets/images/230118.jpg" class="marqueeImage">
+            <img src="assets/images/230517.jpg" class="marqueeImage">
+            <img src="assets/images/230419.jpg" class="marqueeImage">
+            <img src="assets/images/230215.jpg" class="marqueeImage">
+            <img src="assets/images/230118.jpg" class="marqueeImage">
+            <img src="assets/images/230517.jpg" class="marqueeImage">
+            <img src="assets/images/230419.jpg" class="marqueeImage">
+            <img src="assets/images/230215.jpg" class="marqueeImage">
+            <img src="assets/images/230118.jpg" class="marqueeImage">
+            <img src="assets/images/230517.jpg" class="marqueeImage">
+            <img src="assets/images/230419.jpg" class="marqueeImage">
+            <img src="assets/images/230215.jpg" class="marqueeImage">
+            <img src="assets/images/230118.jpg" class="marqueeImage">
+            <img src="assets/images/230517.jpg" class="marqueeImage">
+            <img src="assets/images/230419.jpg" class="marqueeImage">
+            <img src="assets/images/230215.jpg" class="marqueeImage">
+            <img src="assets/images/230118.jpg" class="marqueeImage">
+            <img src="assets/images/230517.jpg" class="marqueeImage">
+            <img src="assets/images/230419.jpg" class="marqueeImage">
+            <img src="assets/images/230215.jpg" class="marqueeImage">
+            <img src="assets/images/230118.jpg" class="marqueeImage">
+            <img src="assets/images/230517.jpg" class="marqueeImage">
+            <img src="assets/images/230419.jpg" class="marqueeImage">
+            <img src="assets/images/230215.jpg" class="marqueeImage">
+            <img src="assets/images/230118.jpg" class="marqueeImage">
+            <img src="assets/images/230517.jpg" class="marqueeImage">
+            <img src="assets/images/230419.jpg" class="marqueeImage">
+            <img src="assets/images/230215.jpg" class="marqueeImage">
+            <img src="assets/images/230118.jpg" class="marqueeImage">
+            <img src="assets/images/230517.jpg" class="marqueeImage">
+            <img src="assets/images/230419.jpg" class="marqueeImage">
+            <img src="assets/images/230215.jpg" class="marqueeImage">
+            <img src="assets/images/230118.jpg" class="marqueeImage">
+            <img src="assets/images/230517.jpg" class="marqueeImage">
+          </div>
+        </div>
+        <a href="repo/index.html" class="btn-squareOre marg-tb30 spmarg20 text-center">最新ニュースをもっと見る</a>
+      </div>
+    </div>
+  </div>
+</section>
+    <div class="marqueeImages">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        <img src="assets/images/230419.jpg" class="marqueeImage">
+        <img src="assets/images/230215.jpg" class="marqueeImage">
+        <img src="assets/images/230118.jpg" class="marqueeImage">
+        <img src="assets/images/230517.jpg" class="marqueeImage">
+        
+    </div>
+                 
+        </div>
+        <div class="d-flex justify-content-center pt-4">
+          <a href="repo/index.html" class="btn btn-squareOre btn-lg">最新ニュースをもっと見る</a>
+        </div>
+    </div>
+</div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center" style="line-height: 1.4;">「オンラインカジノ初心者ナビ<span class="small20">®</span>」へようこそ<br><span>Welcome to Online Casino Beginner's Navi !</span></h2>
+      </div>
+      <div class="col-md-5">
+        <!-- Content for the first column -->
+        <img src="assets/images/top_img2.jpg" alt="" style="max-height: 400px; width: 100%;">
+      </div>
+      <div class="col-md-7 pt-4">
+        <!-- Content for the second column -->
+        <p style="line-height: 1.6;">
+          最近では日本国内においてもカジノ業界への関心が高まってきています。<br>
+          カジノ法案が成立し、将来日本にもカジノリゾートができる可能性が高くなっている為です。<br>
+          この動きにより経済効果や雇用創出など、様々なメリットが期待されています。
+        </p>
+        <p style="line-height: 1.6;">
+          その中で、同時に注目を集めているのが「オンラインカジノ」です。<br>
+          カジノへの関心が高まる中、オンライン上で気軽にカジノを楽しむことができ、パチンコや競馬などの公営ギャンブルよりも稼ぎやすいと評判が高まってきています。
+        </p>
+        <p style="line-height: 1.6;">
+          「オンラインカジノ初心者ナビ®」では、オンラインカジノ初心者のために必要な情報を提供し、快適で楽しいカジノ生活を送るための基盤づくりを応援しています。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div id="marqueeContainer">
+                  <div class="marqueeImages">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_emp.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_cs.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_ln.jpg" class="marqueeImage">
+                      <img src="assets/images/tmb_top_vera.jpg" class="marqueeImage">
+                     
+                      
+                  </div>
+                 
+              </div>
+              <div class="d-flex justify-content-center pt-4">
+                <a href="repo/index.html" class="btn btn-squareOre btn-lg">最新ニュースをもっと見る</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<footer>
+  <div class="dispFlex center">
+    <nav>
+      <ul>
+        <li><a href="beginner/about.html">オンラインカジノとは？基礎講座</a></li>
+        <li><a href="beginner/law.html">オンラインカジノは違法？！</a></li>
+        <li><a href="beginner/tax.html">オンラインカジノの税金について</a></li>
+        <li><a href="play/nodepositbonus.html">入金不要ボーナスが貰えるオンラインカジノ</a></li>
+        <li><a href="slot/">オンラインカジノ人気スロットランキング</a></li>
+        <li><a href="ecopayz/about.html">【決済方法】ecoPayz（エコペイズ）解説</a></li>
+        <li><a href="ranking/">オンラインカジノおすすめランキング</a></li>
+        <li><a href="blog/">オンラインカジノ初心者ナビ公式ブログ</a></li>
+      </ul>
+    </nav>
+
+    <section class="headerlog"><img src="assets/images/log2.png" loading="lazy" width="375" height="54" alt=""></section>
+  </div>
+
+  <a class="p15 sp" href="https://twitter.com/oncasibegin?ref_src=twsrc%5Etfw" target="new"><img src="images/ban_twitter_sp.jpg" loading="lazy" alt="" width="100%" height="auto"></a>
+     
+  <ul class="iconMenu">
+    <li><a href="faq.html"><i class="fas fa-question-circle"></i>Q&amp;A</a></li>
+    <li><a href="contact.html"><i class="fas fa-envelope"></i>お問い合わせ</a></li>
+    <li><a href="author.html"><i class="fas fa-info-circle"></i>運営者情報</a></li>
+  </ul>
+
+  <p class="copyright">
+    <small>©2023 「オンラインカジノ初心者ナビ®」 All Rights Reserved.</small>
+  </p>
+</footer>
+
+
+
+
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 
 <script>
     window.addEventListener("load", function() {
@@ -414,6 +1041,18 @@
     marqueeContainer.classList.add("marqueeAnimation");
     });
 </script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 15,
+    centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+
 
 </body>
 
