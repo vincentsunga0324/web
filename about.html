@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+
+  <title>web</title>
+  <style>
+    .header {
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      z-index: 4;
+    }
+
+    .header img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .navbar {
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navbar .nav-item {
+      /* margin-right: 10px; */
+    }
+
+    .navbar .dropdown-menu {
+      display: none;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+      display: block;
+    }
+
+    .nav-link {
+      width: 200px; /* Replace with your desired width */
+      padding: 15px;
+    }
+
+    .navbar .nav-link::after {
+      display: none;
+    }
+
+    .navbar .dropdown-menu.dropdown1 {
+      background-color: #29a3da; /* Red */
+    }
+
+    .navbar .dropdown-menu.dropdown2 {
+      background-color: #84be3f; /* Green */
+    }
+
+    .navbar .dropdown-menu.dropdown3 {
+      background-color: #f3a83b; /* Blue */
+    }
+
+    .navbar .dropdown-menu.dropdown4 {
+      background-color: #ff7ba4; /* Yellow */
+    }
+
+    .navbar .dropdown-menu.dropdown5 {
+      background-color: gray; /* Magenta */
+    }
+
+    .dropdown1-bg {
+      background-color: #29a3da; /* Replace with your desired background color */
+    }
+
+    .dropdown2-bg {
+      background-color: #84be3f; /* Replace with your desired background color */
+    }
+
+    .dropdown3-bg {
+      background-color: #f3a83b; /* Replace with your desired background color */
+    }
+
+    .dropdown4-bg {
+      background-color: #ff7ba4; /* Replace with your desired background color */
+    }
+
+    .dropdown5-bg {
+      background-color: gray; /* Replace with your desired background color */
+    }
+    
+    @media (max-width: 768px) {
+      .navbar .nav-link {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    @media (min-width: 992px) {
+        .navbar {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: fit-content;
+        }
+    }
+    .section {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px; /* Add a top margin to prevent overlap */
+    background-image: url('assets/images/step1header-img.jpg'); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: rgb(43, 42, 42); /* Set the text color to white for better visibility */
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .section .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(223, 220, 220, 0.6); /* Set the background color for the box */
+    padding: 20px;
+    z-index: 1;
+  }
+
+  .section-line {
+    border: none;
+    height: 1px;
+    background-color: black;
+    left: 50%;
+    transform: translateX(0%);
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+   
+    h3.iconTitle-r {
+        font-size: 0.4rem;
+        padding: 5px;
+    }
+    h2.iconTitle-r, h3.iconTitle-r {
+      border-bottom: solid 3px #fbb03b;
+      padding: 10px;
+      font-size: 1.2rem;
+      text-align: left;
+      margin-bottom: 15px;
+    }
+    .fontOrange {
+      color: #f7931e;
+    }
+    ul.li_check {
+      margin: 10px;
+      list-style: none;
+    }
+    .li_check li {
+      padding-left: 30px;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+    }
+    .li_check li:before {
+      content: "\f14a";
+      position: relative;
+      font-family: FontAwesome;
+      font-size: 1.5rem;
+      margin-right: 10px;
+      color: #8dc73f;
+    }
+    h2.tb-bdr {
+    border-bottom: 3px solid #cccccc;
+    border-top: 3px solid #cccccc;
+    width: 100%;
+    padding: 18px 0 15px;
+    margin: 0 auto;
+  }
+
+  ul.curripcindex {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul.curripcindex li {
+    flex: 1;
+    text-align: center;
+  }
+
+  ul.curripcindex li a img {
+    max-width: 100%;
+    height: auto;
+  }
+  a.btn-squareOre {
+    padding: 15px 30px;
+    text-align: center;
+    background-color: #f7931e;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+  }
+
+  footer>.dispFlex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.center {
+    text-align: center;
+    margin: auto;
+}
+footer nav ul li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.7rem;
+}
+footer ul.iconMenu {
+    width: 1100px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+}
+ul.iconMenu {
+    border-top: 8px solid #FFF;
+    border-image: linear-gradient(90deg,rgba(41,163,218,1) 0%,rgba(41,163,218,1) 20%,rgba(132,190,63,1) 20%,rgba(132,190,63,1) 40%,rgba(243,168,59,1) 40%,rgba(243,168,59,1) 60%,rgba(255,123,164,1) 60%,rgba(255,123,164,1) 80%,rgba(128,128,128,1) 80%,rgba(128,128,128,1) 100%);
+    border-image-slice: 1;
+    padding-top: 15px;
+}
+p.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 20px 0;
+    background-color: #f7931e;
+    color: #fff;
+    font-size: 1.2rem;
+}
+footer nav ul li:before {
+    content: "\025b6";
+    font-size: .9rem;
+    color: #f7931e;
+}
+
+
+footer nav ul {
+    column-count: 3;
+    padding: 40px 0 20px 0;
+}
+nav ul {
+    list-style: none;
+}
+footer nav {
+    border-top: 1px solid #BBB;
+}
+footer nav {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+h3.h3_sideban {
+  background: #FF484B;
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+  width: 100%;
+  color: #FFF;
+  position: relative;
+  margin-bottom: 10px;
+}
+.sideban dl dt {
+    margin-bottom: 10px;
+}
+.aic {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.writer_chara_col {
+  margin: 20px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.writer_chara_col img {
+    width: 130px;
+    height: 130px;
+    background: #fff2d0;
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: 50%;
+}
+.writer_chara_col .speech {
+    width: 78%;
+    padding: 15px 20px;
+    position: relative;
+    background: #fff2d0;
+    border-radius: 10px;
+}
+.writer_chara_col .speech::after {
+    height: 0;
+    content: "";
+    position: absolute;
+    top: 70px;
+    right: 100%;
+    border: solid transparent;
+    border-color: rgba(255,255,255,0);
+    border-right-color: #fff2d0;
+    border-width: 10px 20px;
+}
+.writer_chara_col span {
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    font-size: .9rem;
+    line-height: 1.6em;
+    font-weight: 700;
+}
+.related-article {
+    border: 1px solid #666;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.related-article dl {
+    width: 60%;
+    padding: 15px 20px;
+}
+.related-article dl dt a {
+    color: #111;
+}
+.related-article dl p {
+    padding: 0;
+}
+.markY {
+    background: #FEE87E;
+    display: inline;
+}
+.related-article>a img {
+    vertical-align: bottom;
+    width: 100%;
+    height: auto;
+}
+.txtLeft {
+    text-align: left;
+}
+.cont2 {
+    margin: 0 auto 15px 0;
+    text-align: center;
+    padding: 0 15px;
+}
+#mokuji.m-step1 {
+    border: 1px solid #29abe2;
+    background-color: #bbe8f9;
+}
+dl#mokuji {
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+dl#mokuji.m-step1 dd {
+    border-left: 1px solid #29abe2;
+}
+dl#mokuji dd ol {
+    list-style: decimal inside;
+    font-size: .9rem;
+    text-align: left;
+    padding-left: 20px;
+}
+dl#mokuji dd ol li a {
+    padding: 1px 0;
+    color: #4d4d4d;
+}
+  </style>
+  
+</head>
+
+<body>
+    
+  <header class="header">
+    <img src="assets/images/headlog.png" alt="Header Image">
+
+<!-- start of nav  -->
+
+  <nav class="navbar navbar-expand-md navbar-light">
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown1-bg" href="#" id="dropdown1" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="assets/images/icon-step1nav.png" alt="">
+            <img src="assets/images/icon-book.png" alt="">
+            <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown1-bg text-center" aria-labelledby="dropdown1">
+            <a class="dropdown-item" href="#">オンラインカジノとは？基礎講座</a>
+            <a class="dropdown-item" href="#">オンラインカジノは違法？！</a>
+            <a class="dropdown-item" href="#">悪質なオンラインカジノの詐欺事例</a>
+            <a class="dropdown-item" href="#">ゲームのソフトウェアも信頼の目安</a>
+            <a class="dropdown-item" href="#">オンラインカジノの還元率が高い理由</a>
+            <a class="dropdown-item" href="#">ゲームのソフトウェアも信頼の目安</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown2-bg" href="#" id="dropdown2" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step2nav.png" alt="">
+                <img src="assets/images/icon-play.png" alt="">
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown2-bg text-center" aria-labelledby="dropdown2">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown3-bg" href="#" id="dropdown3" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step3nav.png" alt="">
+                <img src="assets/images/icon-card.png" alt="">
+
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown3-bg text-center" aria-labelledby="dropdown3">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown4-bg" href="#" id="dropdown4" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step4nav.png" alt="">
+                <img src="assets/images/icon-casino.png" alt="">
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown4-bg text-center" aria-labelledby="dropdown4">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown5-bg" href="#" id="dropdown5" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step5nav.png" alt="">
+                <img src="assets/images/icon-method.png" alt="">
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown5-bg text-center" aria-labelledby="dropdown5">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- end of nav  -->
+
+<!-- start of section 1  -->
+<section>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section">
+                <div class="content">
+                    <p style="display: inline-block; font-size: 20px; font-weight: bold;">
+                      オンラインカジノとは？<br>
+                      初心者が安心して始めるための基礎講座
+                    </p>
+                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+<!-- end of section 1  -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <!-- Content for the first column -->
+        <div class="row">
+          <div class="col-md-12">
+            <img src="assets/images/ban_side_rank.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <img src="assets/images/ban_twitter.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <img src="assets/images/ban_twitter.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <h3 class="h3_sideban mt-3"><span>＼高額賞金続出！/</span>今人気のスロットランキング</h3>
+        <dl class="mt-3">
+          <dt class="aic">
+            <img src="assets/images/icon_crown.png" loading="lazy" width="40" height="40" class="mr-2">
+            <span>LOVEの美少女パワーで大勝利！<br><span>Moon Princess</span></span>
+          </dt>
+          <dd>
+            <img src="assets/images/tmb_moonprincess.jpg" alt="人気スロットランキング" loading="lazy" class="img-fluid">
+            <a href="../slot/" class="btn_side">オンラインカジノ<br>人気スロットランキング</a>
+          </dd>
+        </dl>
+      </div>
+      <div class="col-md-9">
+        <!-- Content for the second column -->
+        <img src="assets/images/top_1018_2.jpg" alt="" class="img-fluid">
+        <p>実際にお金を賭けてカジノゲームをネット上で遊ぶことができる「オンラインカジノ」。
+          日本でのカジノ解禁が話題となり、国内でもさらに人気が高まっています。</p>
+        <p>一方で興味はあるけれど、違法性や安全性が気になってなかなか手を出せないという方もいるのではないでしょうか？</p>
+        <p>当サイト（オンラインカジノ初心者ナビ）では、オンラインカジノの基本的な遊び方はもちろん、安全で信頼できるカジノの選び方などを徹底解説しています。</p>
+        <ul>
+          <li>「最近よく聞くネットカジノのやり方を知りたい」</li>
+          <li>「オンラインカジノで稼ぐにはどんなゲームを選べばいいの？」</li>
+          <li>「興味はあるけどどのカジノサイトで遊べばいいか分からない」</li>
+        </ul>
+        <p>このようなオンラインカジノ初心者の方は是非ご覧になってください。</p>
+        <div class="writer_chara_col">
+          <div>
+              <img src="assets/images/masaru.png" width="150" height="150" loading="lazy" alt="MASARU"><span>著者：<a rel="author" href="../writer-masaru.html">MASARU</a><br>カジノ歴：2年</span>
+          </div>    
+          <div class="speech">
+              <dl>
+                  <dt>カジノ紹介担当者からのコメント</dt>
+                  <dd><p>このページでは、オンラインカジノに関する基本的な情報を全て掲載しています！</p>
+                      <p>登録前に不安に思う方が多い違法や税金について、実際プレイする時に何のゲームをしたらいいのか？オンラインカジノは稼げるのか？など皆さんが迷ってしまいそうな項目をピックアップしてみました。<br>
+                      お試しで遊べる「無料プレイ」も用意してあるので、オンラインカジノのスロットの雰囲気を掴むこともできると思いますよ！</p>
+                  </dd> 
+              </dl>    
+          </div>
+        </div>
+        <div class="related-article step1">
+            <dl>
+              <dt><a href="../ranking/">【2023年】おすすめオンラインカジノTOP3を紹介</a></dt>
+              <dd>
+              <a href="../ranking/" class="sp"></a>
+              <p>オンラインカジノ初心者ナビでは、「ボーナスが豊富」「人気がある」など5つの基準から<span class="bold markY">ベラジョンカジノ</span>や<span class="bold markY">ミスティーノ</span>などおすすめの優良カジノサイトを紹介しています。カジノサイトをまだ選んでいない方は要チェックです！</p>
+              <p class="sp"><a href="../ranking/" class="link_btn step1">【2023年最新】おすすめオンラインカジノランキング</a></p>
+              </dd>
+            </dl>
+            <a href="../ranking/" class="pc"><img src="assets/images/ban_rank_link.jpg" width="500" height="326" loading="lazy" alt="オンラインカジノおすすめランキングTOP3！最新版を紹介"></a>
+        </div>
+        <div class="cont2 txtLeft">
+          <dl id="mokuji" class="m-step1">
+            <dt>もくじ</dt>
+          <dd>
+            <ol>
+            <li><a href="#oncasi">オンラインカジノとは？遊べるゲームや魅力について</a></li>
+            <li><a href="#notes">オンラインカジノをプレイする前に</a></li>
+            <li><a href="#management">悪質オンラインカジノに注意！信頼できるカジノの条件とは</a></li>
+            <li><a href="#ihou">オンラインカジノは違法なの？合法なの？</a></li>
+            <li><a href="#incasi">インカジ（インターネットカジノ）とオンラインカジノの違い</a></li>
+            <li><a href="#payout">オンラインカジノは勝てる？勝てない？他のギャンブルと比較してみよう</a></li>
+            <li><a href="#tax">オンラインカジノで稼いだら税金はどうなるの？</a></li>
+            <li><a href="#smartphone">スマホ対応オンラインカジノで遊ぶときの注意点</a></li>
+            <li><a href="#payment">オンラインカジノの入金・出金方法について</a></li>
+            <li><a href="#flow">オンラインカジノを始めよう！登録のやり方～出金までの流れ</a></li>
+            <li><a href="#bonus">無料プレイ＆入金不要ボーナスでオンラインカジノをお試し！</a></li>
+            <li><a href="#game">不動の人気！オンラインカジノで絶対プレイしたいゲーム</a></li>
+            <li><a href="#method">オンラインカジノで儲かるための攻略法とは</a></li>
+            <li><a href="#repute">オンラインカジノは評判・口コミで選びましょう</a></li>
+          </ol>
+          </dd>
+          </dl>
+        </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="tb-bdr text-center">カリキュラム <br><span>curriculum</span></h2>
+        <ul class="curripcindex">
+          <li><a href="beginner/"><img src="assets/images/step1.jpg" alt="step1.基礎講座" class="pc"></a></li>
+          <li><a href="play/"><img src="assets/images/step2.jpg" alt="step2.プレイ講座" class="pc"></a></li>
+          <li><a href="nyushukkin.html"><img src="assets/images/step3.jpg" alt="step3.決済講座" class="pc"></a></li>
+          <li><a href="ranking/"><img src="assets/images/step4.jpg" alt="step4.カジノを探す" class="pc"></a></li>
+          <li><a href="method/"><img src="assets/images/step5.jpg" alt="step5.攻略講座" class="pc"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center">初心者のためのオンラインカジノ最新ニュース<br class="sp"><span>Online Casino News</span></h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center" style="line-height: 1.4;">「オンラインカジノ初心者ナビ<span class="small20">®</span>」へようこそ<br><span>Welcome to Online Casino Beginner's Navi !</span></h2>
+      </div>
+      <div class="col-md-5">
+        <!-- Content for the first column -->
+        <img src="assets/images/top_img2.jpg" alt="" style="max-height: 400px; width: 100%;">
+      </div>
+      <div class="col-md-7 pt-4">
+        <!-- Content for the second column -->
+        <p style="line-height: 1.6;">
+          最近では日本国内においてもカジノ業界への関心が高まってきています。<br>
+          カジノ法案が成立し、将来日本にもカジノリゾートができる可能性が高くなっている為です。<br>
+          この動きにより経済効果や雇用創出など、様々なメリットが期待されています。
+        </p>
+        <p style="line-height: 1.6;">
+          その中で、同時に注目を集めているのが「オンラインカジノ」です。<br>
+          カジノへの関心が高まる中、オンライン上で気軽にカジノを楽しむことができ、パチンコや競馬などの公営ギャンブルよりも稼ぎやすいと評判が高まってきています。
+        </p>
+        <p style="line-height: 1.6;">
+          「オンラインカジノ初心者ナビ®」では、オンラインカジノ初心者のために必要な情報を提供し、快適で楽しいカジノ生活を送るための基盤づくりを応援しています。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="dispFlex center">
+    <nav>
+      <ul>
+        <li><a href="beginner/about.html">オンラインカジノとは？基礎講座</a></li>
+        <li><a href="beginner/law.html">オンラインカジノは違法？！</a></li>
+        <li><a href="beginner/tax.html">オンラインカジノの税金について</a></li>
+        <li><a href="play/nodepositbonus.html">入金不要ボーナスが貰えるオンラインカジノ</a></li>
+        <li><a href="slot/">オンラインカジノ人気スロットランキング</a></li>
+        <li><a href="ecopayz/about.html">【決済方法】ecoPayz（エコペイズ）解説</a></li>
+        <li><a href="ranking/">オンラインカジノおすすめランキング</a></li>
+        <li><a href="blog/">オンラインカジノ初心者ナビ公式ブログ</a></li>
+      </ul>
+    </nav>
+
+    <section class="headerlog"><img src="assets/images/log2.png" loading="lazy" width="375" height="54" alt=""></section>
+  </div>
+
+  <a class="p15 sp" href="https://twitter.com/oncasibegin?ref_src=twsrc%5Etfw" target="new"><img src="images/ban_twitter_sp.jpg" loading="lazy" alt="" width="100%" height="auto"></a>
+     
+  <ul class="iconMenu">
+    <li><a href="faq.html"><i class="fas fa-question-circle"></i>Q&amp;A</a></li>
+    <li><a href="contact.html"><i class="fas fa-envelope"></i>お問い合わせ</a></li>
+    <li><a href="author.html"><i class="fas fa-info-circle"></i>運営者情報</a></li>
+  </ul>
+
+  <p class="copyright">
+    <small>©2023 「オンラインカジノ初心者ナビ®」 All Rights Reserved.</small>
+  </p>
+</footer>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script>
+    window.addEventListener("load", function() {
+    var marqueeContainer = document.getElementById("marqueeContainer");
+    marqueeContainer.classList.add("marqueeAnimation");
+    });
+</script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 15,
+    centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+
+
+</body>
+
+</html>
