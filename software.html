@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+
+  <title>web</title>
+  <style>
+    .header {
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      z-index: 4;
+    }
+
+    .header img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .navbar {
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navbar .nav-item {
+      /* margin-right: 10px; */
+    }
+
+    .navbar .dropdown-menu {
+      display: none;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+      display: block;
+    }
+
+    .nav-link {
+      width: 200px; /* Replace with your desired width */
+      padding: 15px;
+    }
+
+    .navbar .nav-link::after {
+      display: none;
+    }
+
+    .navbar .dropdown-menu.dropdown1 {
+      background-color: #29a3da; /* Red */
+    }
+
+    .navbar .dropdown-menu.dropdown2 {
+      background-color: #84be3f; /* Green */
+    }
+
+    .navbar .dropdown-menu.dropdown3 {
+      background-color: #f3a83b; /* Blue */
+    }
+
+    .navbar .dropdown-menu.dropdown4 {
+      background-color: #ff7ba4; /* Yellow */
+    }
+
+    .navbar .dropdown-menu.dropdown5 {
+      background-color: gray; /* Magenta */
+    }
+
+    .dropdown1-bg {
+      background-color: #29a3da; /* Replace with your desired background color */
+    }
+
+    .dropdown2-bg {
+      background-color: #84be3f; /* Replace with your desired background color */
+    }
+
+    .dropdown3-bg {
+      background-color: #f3a83b; /* Replace with your desired background color */
+    }
+
+    .dropdown4-bg {
+      background-color: #ff7ba4; /* Replace with your desired background color */
+    }
+
+    .dropdown5-bg {
+      background-color: gray; /* Replace with your desired background color */
+    }
+    
+    @media (max-width: 768px) {
+      .navbar .nav-link {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    @media (min-width: 992px) {
+        .navbar {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: fit-content;
+        }
+    }
+    .section {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px; /* Add a top margin to prevent overlap */
+    background-image: url('assets/images/step1header-img.jpg'); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: rgb(43, 42, 42); /* Set the text color to white for better visibility */
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .section .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(223, 220, 220, 0.6); /* Set the background color for the box */
+    padding: 20px;
+    z-index: 1;
+  }
+
+  .section-line {
+    border: none;
+    height: 1px;
+    background-color: black;
+    left: 50%;
+    transform: translateX(0%);
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+   
+    h3.iconTitle-r {
+        font-size: 0.4rem;
+        padding: 5px;
+    }
+    h2.iconTitle-r, h3.iconTitle-r {
+      border-bottom: solid 3px #fbb03b;
+      padding: 10px;
+      font-size: 1.2rem;
+      text-align: left;
+      margin-bottom: 15px;
+    }
+    .fontOrange {
+      color: #f7931e;
+    }
+    ul.li_check {
+      margin: 10px;
+      list-style: none;
+    }
+    .li_check li {
+      padding-left: 30px;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+    }
+    .li_check li:before {
+      content: "\f14a";
+      position: relative;
+      font-family: FontAwesome;
+      font-size: 1.5rem;
+      margin-right: 10px;
+      color: #8dc73f;
+    }
+    h2.tb-bdr {
+    border-bottom: 3px solid #cccccc;
+    border-top: 3px solid #cccccc;
+    width: 100%;
+    padding: 18px 0 15px;
+    margin: 0 auto;
+  }
+
+  ul.curripcindex {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul.curripcindex li {
+    flex: 1;
+    text-align: center;
+  }
+
+  ul.curripcindex li a img {
+    max-width: 100%;
+    height: auto;
+  }
+  a.btn-squareOre {
+    padding: 15px 30px;
+    text-align: center;
+    background-color: #f7931e;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+  }
+
+  footer>.dispFlex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.center {
+    text-align: center;
+    margin: auto;
+}
+footer nav ul li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.7rem;
+}
+footer ul.iconMenu {
+    width: 1100px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+}
+ul.iconMenu {
+    border-top: 8px solid #FFF;
+    border-image: linear-gradient(90deg,rgba(41,163,218,1) 0%,rgba(41,163,218,1) 20%,rgba(132,190,63,1) 20%,rgba(132,190,63,1) 40%,rgba(243,168,59,1) 40%,rgba(243,168,59,1) 60%,rgba(255,123,164,1) 60%,rgba(255,123,164,1) 80%,rgba(128,128,128,1) 80%,rgba(128,128,128,1) 100%);
+    border-image-slice: 1;
+    padding-top: 15px;
+}
+p.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 20px 0;
+    background-color: #f7931e;
+    color: #fff;
+    font-size: 1.2rem;
+}
+footer nav ul li:before {
+    content: "\025b6";
+    font-size: .9rem;
+    color: #f7931e;
+}
+
+
+footer nav ul {
+    column-count: 3;
+    padding: 40px 0 20px 0;
+}
+nav ul {
+    list-style: none;
+}
+footer nav {
+    border-top: 1px solid #BBB;
+}
+footer nav {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+  footer>.dispFlex {
+    align-items: center; /* Center the content vertically */
+  }
+
+  footer nav ul {
+    column-count: 1;
+    padding: 20px 0;
+    text-align: left; /* Align the content to the left */
+    padding-left: 20px; /* Add padding on the left */
+    margin: 0 auto; /* Center the content horizontally */
+    max-width: 600px; /* Set a maximum width for centering effect */
+  }
+
+  footer ul.iconMenu {
+    justify-content: center; /* Center the items horizontally */
+  }
+
+  footer ul.iconMenu li {
+    margin-right: 10px;
+  }
+}
+
+h3.h3_sideban {
+  background: #FF484B;
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+  width: 100%;
+  color: #FFF;
+  position: relative;
+  margin-bottom: 10px;
+}
+.sideban dl dt {
+    margin-bottom: 10px;
+}
+.aic {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.writer_chara_col {
+  margin: 20px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.writer_chara_col img {
+    width: 130px;
+    height: 130px;
+    background: #fff2d0;
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: 50%;
+}
+.writer_chara_col .speech {
+    width: 78%;
+    padding: 15px 20px;
+    position: relative;
+    background: #fff2d0;
+    border-radius: 10px;
+}
+.writer_chara_col .speech::after {
+    height: 0;
+    content: "";
+    position: absolute;
+    top: 70px;
+    right: 100%;
+    border: solid transparent;
+    border-color: rgba(255,255,255,0);
+    border-right-color: #fff2d0;
+    border-width: 10px 20px;
+}
+.writer_chara_col span {
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    font-size: .9rem;
+    line-height: 1.6em;
+    font-weight: 700;
+}
+.related-article {
+    border: 1px solid #666;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.related-article dl {
+    width: 60%;
+    padding: 15px 20px;
+}
+.related-article dl dt a {
+    color: #111;
+}
+.related-article dl p {
+    padding: 0;
+}
+.markY {
+    background: #FEE87E;
+    display: inline;
+}
+.related-article>a img {
+    vertical-align: bottom;
+    width: 100%;
+    height: auto;
+}
+.txtLeft {
+    text-align: left;
+}
+.cont2 {
+    margin: 0 auto 15px 0;
+    text-align: center;
+    padding: 0 15px;
+}
+#mokuji.m-step1 {
+    border: 1px solid #29abe2;
+    background-color: #bbe8f9;
+}
+dl#mokuji {
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+dl#mokuji.m-step1 dd {
+    border-left: 1px solid #29abe2;
+}
+dl#mokuji dd ol {
+    list-style: decimal inside;
+    font-size: .9rem;
+    text-align: left;
+    padding-left: 20px;
+}
+dl#mokuji dd ol li a {
+    padding: 1px 0;
+    color: #4d4d4d;
+}
+.h3-lineLB {
+    padding: 10px 0 8px 15px;
+    margin: 10px 0 20px 0;
+    color: #fff;
+}
+.h3-lineLB.LB-step1 {
+    background: #29a3da;
+    border-bottom: solid 3px #2c90c0;
+    border-left: none;
+}
+.txtCenter {
+    text-align: center;
+}
+.bold {
+    font-weight: 700;
+}
+.staff_comment_col {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.staff_comment_col .speech {
+    width: 82%;
+    background: #fff2d0;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    margin-left: 3%;
+}
+
+.staff_comment_col .speech::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    height: 0;
+    border: solid transparent;
+    border-color: rgba(255,255,255,0);
+    border-right-color: #fff2d0;
+    right: 100%;
+    border-width: 10px 20px;
+   
+}
+.boderstep1 {
+    border: 2px solid #29abe2;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+ul.li_point, ol.li_point {
+    list-style: circle inside;
+    text-align: left;
+}
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+.fontRed {
+    color: #EA0000;
+}
+.font-cl-step1 {
+    /* color: #0071bc; */
+    border-bottom: 1px solid #29abe2;
+    border-left: 8px solid #29abe2;
+    padding: 5px 0 8px 15px;
+}
+.markY {
+    background: #FEE87E;
+    display: inline;
+}
+ol.li_numb {
+    list-style: decimal inside;
+    text-align: left;
+}
+
+.underLineB {
+    text-align: left;
+    background: #D5EFFF;
+    margin: 15px 0;
+    padding: 10px 10px 10px 15px;
+}
+.underLineB.step1 {
+    text-align: left;
+    color: #2c3d66;
+}
+h4 {
+    font-size: 1.15rem;
+    font-family: 'M PLUS 1p',sans-serif;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.boderstep1 {
+    border: 2px solid #29abe2;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.mb30 {
+    margin-bottom: 30px!important;
+}
+.dispFlex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.underL-s.icon-t {
+    margin-bottom: 15px;
+}
+.underL-s.icon-t>h4 {
+    border-bottom: 1px solid #0e6eb8;
+    padding: 5px 0 7px 15px;
+    color: #0e6eb8;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    width: 95%;
+}
+.sp {
+    display: none!important;
+}
+.flex65 {
+    width: 65%;
+}
+.flex35 {
+    width: 35%;
+}
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.fxin-jusbetw {
+    justify-content: space-between;
+}
+.mt15 {
+    margin-top: 15px;
+}
+.about_check .flex65 ul.li_check {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+ul.li_check {
+    margin: 10px;
+    list-style: none;
+}
+.font-cl-step1 {
+    /* color: #0071bc; */
+    border-bottom: 1px solid #29abe2;
+    border-left: 8px solid #29abe2;
+    padding: 5px 0 8px 15px;
+}
+.font-cl-step1 {
+    color: #0071bc;
+    margin: 20px 0 10px 0;
+}
+h3 {
+    font-size: 1.3rem;
+    font-family: 'M PLUS 1p',sans-serif;
+    text-align: left;
+    line-height: 150%;
+    margin-bottom: 15px;
+}
+p {
+    font-size: 1rem;
+    text-align: left;
+    padding-bottom: 15px;
+}
+.cont2 a.link_btn.step1, .cont2 a.link_btn2.step1 {
+    border-color: #29abe2;
+    color: #0e6eb8;
+}
+.cont2 a.link_btn, .cont2 a.link_btn2, .casinocont a.link_btn {
+    display: block;
+    border: 1px solid #d8d8d8;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 10px 8px;
+    background: #fff;
+}
+ol.a-stepboxOdr {
+    width: 100%;
+    list-style: none;
+    margin: 20px 0;
+}
+ol.a-stepboxOdr dl dt {
+    background-color: #e6f6f7;
+    color: #3aa8ad;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    position: relative;
+    border-radius: 15px;
+}
+ol.a-stepboxOdr dl dt>p:first-child {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+ol.a-stepboxOdr dl dt span.a-stepOdr {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #47bacd;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 180%;
+    line-height: 110%;
+    margin-right: 25px;
+    font-weight: 400;
+    position: relative;
+    top: -10px;
+    left: 5px;
+}
+.dispFlex2 {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flex30 {
+    width: 29%;
+}
+.flex70 {
+    width: 69%;
+}
+dl.dl-bmenu.step1 {
+    border: 2px solid #29a3da;
+}
+dl.dl-bmenu.step1 dt {
+    background-color: #29a3da;
+}
+dl.dl-bmenu dd ol.numb1 {
+    list-style-type: none;
+    counter-reset: dl-m-numb;
+    padding: 5px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+dl.dl-bmenu.step1 dd ol.numb1>li:before {
+    color: #29a3da;
+}
+dl.dl-bmenu dt {
+    background-color: #666;
+    border-radius: 7px 7px 0 0 / 7px 7px 0 0;
+    padding: 10px 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+dl.dl-bmenu dd ol.numb1>li {
+    list-style-type: none;
+    counter-increment: dl-m-numb;
+    border-bottom: 1px solid #666;
+    padding: 12px 0;
+    width: 49%;
+    text-align: left;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+dl.dl-bmenu dd ol.numb1>li:before {
+    content: counter(dl-m-numb)'.';
+    font-weight: 700;
+    margin-right: 3px;
+}
+dl.dl-bmenu.step1 dd>ol.numb1 li {
+    border-bottom: 1px solid #97d8f5;
+}
+ul.pay-logSlide.noslide, ul.pay-logSlide.spnoslide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul.pay-logSlide.noslide, ul.a-logSlide.noslide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul.pay-logSlide.step1 {
+    background: #e0ffff;
+}
+ul.pay-logSlide, ul.a-logSlide {
+    list-style: none;
+    min-height: 100px;
+    margin: 10px 20px;
+    padding: 10px 5px;
+}
+
+</style>
+  
+</head>
+
+<body>
+    
+  <header class="header">
+    <img src="assets/images/headlog.png" alt="Header Image">
+
+<!-- start of nav  -->
+
+  <nav class="navbar navbar-expand-md navbar-light">
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown1-bg" href="#" id="dropdown1" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="assets/images/icon-step1nav.png" alt="">
+            <img src="assets/images/icon-book.png" alt="">
+            <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown1-bg text-center" aria-labelledby="dropdown1">
+            <a class="dropdown-item" href="about.html">オンラインカジノとは？基礎講座</a>
+            <a class="dropdown-item" href="law.html">オンラインカジノは違法？！</a>
+            <a class="dropdown-item" href="management.html">悪質なオンラインカジノの詐欺事例</a>
+            <a class="dropdown-item" href="software.html">ゲームのソフトウェアも信頼の目安</a>
+            <a class="dropdown-item" href="#">オンラインカジノの還元率が高い理由</a>
+            <a class="dropdown-item" href="#">ゲームのソフトウェアも信頼の目安</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown2-bg" href="#" id="dropdown2" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step2nav.png" alt="">
+                <img src="assets/images/icon-play.png" alt="">
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown2-bg text-center" aria-labelledby="dropdown2">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown3-bg" href="#" id="dropdown3" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step3nav.png" alt="">
+                <img src="assets/images/icon-card.png" alt="">
+
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown3-bg text-center" aria-labelledby="dropdown3">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown4-bg" href="#" id="dropdown4" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step4nav.png" alt="">
+                <img src="assets/images/icon-casino.png" alt="">
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown4-bg text-center" aria-labelledby="dropdown4">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown5-bg" href="#" id="dropdown5" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step5nav.png" alt="">
+                <img src="assets/images/icon-method.png" alt="">
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown5-bg text-center" aria-labelledby="dropdown5">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- end of nav  -->
+
+<!-- start of section 1  -->
+<section>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section">
+                <div class="content">
+                    <p style="display: inline-block; font-size: 20px; font-weight: bold;">
+                      オンラインカジノとは？<br>
+                      初心者が安心して始めるための基礎講座
+                    </p>
+                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+<!-- end of section 1  -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <!-- Content for the first column -->
+        <div class="row">
+          <div class="col-md-12">
+            <img src="assets/images/ban_side_rank.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <img src="assets/images/ban_twitter.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <img src="assets/images/ban_twitter.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <h3 class="h3_sideban mt-3"><span>＼高額賞金続出！/</span>今人気のスロットランキング</h3>
+        <dl class="mt-3">
+          <dt class="aic">
+            <img src="assets/images/icon_crown.png" loading="lazy" width="40" height="40" class="mr-2">
+            <span>LOVEの美少女パワーで大勝利！<br><span>Moon Princess</span></span>
+          </dt>
+          <dd>
+            <img src="assets/images/tmb_moonprincess.jpg" alt="人気スロットランキング" loading="lazy" class="img-fluid">
+            <a href="../slot/" class="btn_side">オンラインカジノ<br>人気スロットランキング</a>
+          </dd>
+        </dl>
+      </div>
+      <div class="col-md-9">
+        <!-- Content for the second column -->
+        <img src="assets/images/software_1.jpg" alt="" class="img-fluid">
+        <p>実際にお金を賭けてカジノゲームをネット上で遊ぶことができる「オンラインカジノ」。
+          日本でのカジノ解禁が話題となり、国内でもさらに人気が高まっています。</p>
+        <p>一方で興味はあるけれど、違法性や安全性が気になってなかなか手を出せないという方もいるのではないでしょうか？</p>
+        <p>当サイト（オンラインカジノ初心者ナビ）では、オンラインカジノの基本的な遊び方はもちろん、安全で信頼できるカジノの選び方などを徹底解説しています。</p>
+        <ul>
+          <li>「最近よく聞くネットカジノのやり方を知りたい」</li>
+          <li>「オンラインカジノで稼ぐにはどんなゲームを選べばいいの？」</li>
+          <li>「興味はあるけどどのカジノサイトで遊べばいいか分からない」</li>
+        </ul>
+        <p>このようなオンラインカジノ初心者の方は是非ご覧になってください。</p>
+        <div class="writer_chara_col">
+          <div>
+              <img src="assets/images/kenji.png" width="150" height="150" loading="lazy" alt="MASARU"><span>著者：<a rel="author" href="../writer-masaru.html">MASARU</a><br>カジノ歴：2年</span>
+          </div>    
+          <div class="speech">
+              <dl>
+                  <dt>カジノ紹介担当者からのコメント</dt>
+                  <dd><p>このページでは、オンラインカジノに関する基本的な情報を全て掲載しています！</p>
+                      <p>登録前に不安に思う方が多い違法や税金について、実際プレイする時に何のゲームをしたらいいのか？オンラインカジノは稼げるのか？など皆さんが迷ってしまいそうな項目をピックアップしてみました。<br>
+                      お試しで遊べる「無料プレイ」も用意してあるので、オンラインカジノのスロットの雰囲気を掴むこともできると思いますよ！</p>
+                  </dd> 
+              </dl>    
+          </div>
+        </div>
+        <div class="cont2 txtLeft mt30">
+		   
+		</div>
+        <div class="related-article step1">
+            <dl>
+              <dt><a href="../ranking/">【2023年】おすすめオンラインカジノTOP3を紹介</a></dt>
+              <dd>
+              <a href="../ranking/" class="sp"></a>
+              <p>オンラインカジノ初心者ナビでは、「ボーナスが豊富」「人気がある」など5つの基準から<span class="bold markY">ベラジョンカジノ</span>や<span class="bold markY">ミスティーノ</span>などおすすめの優良カジノサイトを紹介しています。カジノサイトをまだ選んでいない方は要チェックです！</p>
+              <p class="sp"><a href="../ranking/" class="link_btn step1">【2023年最新】おすすめオンラインカジノランキング</a></p>
+              </dd>
+            </dl>
+            <a href="../ranking/" class="pc"><img src="assets/images/ban_rank_link.jpg" width="500" height="326" loading="lazy" alt="オンラインカジノおすすめランキングTOP3！最新版を紹介"></a>
+        </div>
+        <div class="cont2 txtLeft">
+          <dl id="mokuji" class="m-step1">
+            <dt>もくじ</dt>
+          <dd>
+            <ol>
+            <li><a href="#oncasi">オンラインカジノとは？遊べるゲームや魅力について</a></li>
+            <li><a href="#notes">オンラインカジノをプレイする前に</a></li>
+            <li><a href="#management">悪質オンラインカジノに注意！信頼できるカジノの条件とは</a></li>
+            <li><a href="#ihou">オンラインカジノは違法なの？合法なの？</a></li>
+            <li><a href="#incasi">インカジ（インターネットカジノ）とオンラインカジノの違い</a></li>
+            <li><a href="#payout">オンラインカジノは勝てる？勝てない？他のギャンブルと比較してみよう</a></li>
+            <li><a href="#tax">オンラインカジノで稼いだら税金はどうなるの？</a></li>
+            <li><a href="#smartphone">スマホ対応オンラインカジノで遊ぶときの注意点</a></li>
+            <li><a href="#payment">オンラインカジノの入金・出金方法について</a></li>
+            <li><a href="#flow">オンラインカジノを始めよう！登録のやり方～出金までの流れ</a></li>
+            <li><a href="#bonus">無料プレイ＆入金不要ボーナスでオンラインカジノをお試し！</a></li>
+            <li><a href="#game">不動の人気！オンラインカジノで絶対プレイしたいゲーム</a></li>
+            <li><a href="#method">オンラインカジノで儲かるための攻略法とは</a></li>
+            <li><a href="#repute">オンラインカジノは評判・口コミで選びましょう</a></li>
+          </ol>
+          </dd>
+          </dl>
+        </div>
+            
+          <div class="boderstep1">
+                <ul class="li_point">
+                  <li><span class="bold">遊ぶ金額を決めてプレイ</span>する</li>
+                  <li><span class="bold">あくまでギャンブル</span>であることを忘れない</li>
+            <li class="bold">生活費を稼ごうとしない</li>
+                </ul>
+            </div>
+              
+          <p>オンラインカジノは場所や時間を気にすることなく遊べるため、<span class="bold fontRed">つい熱中してお金を使い過ぎてしまうというリスク</span>もあります。</p>
+      
+          <p>特にクレジットカードの場合、手元に現金がなくても賭け金を入金することができるため、お金が減っている感覚も薄くなりがちです。</p>
+      
+          <p>使い過ぎを防ぐためには、<span class="bold">1回あたりに使って良い金額</span>や<span class="bold">「〇〇円まで使ったら止める」</span>などの<span class="markY bold">ルールを決めてプレイ</span>しましょう。</p>
+      
+          <p>また、いくらオンラインカジノの還元率が高いといっても、<span class="bold fontRed">ギャンブルであることに変わりはありません。</span><br>
+          タイミングによって大きく勝つこともあれば連敗することもあるので、<span class="bold">安定した収入を得るには不向き</span>です。</p>
+              
+          <p>また、負け額を取り返すために生活費を削ったり、お金を借りるまでのめり込んでしまうと<span class="bold fontRed">「<a href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/solution/onlinecasino-izonsyou/">オンラインカジノ依存症</a>」に陥ってしまう可能性</span>もあります。</p>
+          <p>そうならないためにも、オンラインカジノの勝利金で生活費を賄ったり副業にしようとせず、あくまで無理のない範囲で賭けてゲームを楽しむものと心掛けてプレイしてください。</p>
+              
+          </div>
+          <div class="cont2 txtLeft mt30">
+            <h2 class="h3-lineLB LB-step1" id="management">悪質オンラインカジノに注意！信頼できるカジノの条件とは</h2>
+        
+              <p>オンラインカジノは現時点においては、ルールを守れば安全に楽しむことができるギャンブルです。<br>
+              ですが、中にはライセンスを取得していないオンラインカジノや、詐欺サイトなどが存在しているのも事実です。</p>
+        
+        
+              <p>つまり、プレイヤーひとりひとりが<span class="bold">「オンラインカジノの安全性や信頼度」</span>を見極める必要があるということ。
+              ここからは、信頼できる<span class="markY bold">優良オンラインカジノを見極めるためのポイント</span>をご紹介しましょう。</p>
+        
+            <h2 class="h3-lineLB LB-step1" id="management">悪質オンラインカジノに注意！信頼できるカジノの条件とは</h2>
+        
+              <p>オンラインカジノは現時点においては、ルールを守れば安全に楽しむことができるギャンブルです。<br>
+              ですが、中にはライセンスを取得していないオンラインカジノや、詐欺サイトなどが存在しているのも事実です。</p>
+        
+        
+              <p>つまり、プレイヤーひとりひとりが<span class="bold">「オンラインカジノの安全性や信頼度」</span>を見極める必要があるということ。
+              ここからは、信頼できる<span class="markY bold">優良オンラインカジノを見極めるためのポイント</span>をご紹介しましょう。</p>
+                
+        
+              <h3 class="font-cl-step1" id="2-1">マイクロゲーミング（Microgaming）</h3>
+
+              <div class="dispFlex">
+                <div class="flex30"><img src="assets/images/logo_micro.gif" alt="マイクロゲーミング（Microgaming）" loading="lazy" width="220" height="80"></div>
+                <div class="flex70">
+                <p><a href="https://www.microgaming.co.uk/" target="new">Microgaming（マイクロゲーミング）</a>はカジノソフトウェア界において老舗かつ最大手の一流ソフトウェア会社です。1994年創業という長年の歴史と信頼性の高さ、ハイクオリティなゲームから常に高い人気を誇ります。</p>
+                <p>また、マイクロゲーミングは契約時のライセンス料が高額であることが知られており、マイクロゲーミングを導入しているオンラインカジノは資金力があると考えられます。</p>
+              </div>
+              </div>
+              <h4 class="underLineB step1">実際のゲーム画面</h4>
+              <p class="txtCenter"><img src="assets/images/microgaming_game.jpg" alt="マイクロゲーミング　実際のゲーム画面" loading="lazy" width="700" height="181"></p>
+              
+
+              <p>マイクロゲーミングのゲームの特徴は、美しいグラフィックと高品質なサウンド。ゲーム開発数が業界内でも最多なので、飽きることがありません。<br>
+                映画をモチーフにしたスロットなどタイアップが多いのも人気の理由です。</p>
+              <h4 class="underLineB step1">マイクロゲーミングのゲームを遊べるオススメカジノ</h4>
+              <h3 class="font-cl-step1" id="2-2">プレイテック（Playtech）</h3>
+              <div class="dispFlex">
+                <div class="flex30"><img src="assets/images/logo_playtech.gif" alt="プレイテック（Playtech）" loading="lazy" width="220" height="80"></div>
+                <div class="flex70">
+                <p><a href="https://www.playtech.com/" target="new">Playtech（プレイテック）</a>は1999年創業と比較的新しいソフトウェア会社ながら、ゲームのクオリティの高さが支持され急成長を遂げたゲームソフトウェア会社です。<br>
+                  今やマイクロゲーミングと並ぶほどの大企業となっています。</p>
+                <p>運営会社がロンドン市場に上場しているという信頼性の高さも魅力のひとつです。</p>
+              </div>
+              </div>
+              <h4 class="underLineB step1">実際のゲーム画面</h4>
+              <img src="assets/images/playtech_game.jpg" alt="プレイテック　実際のゲーム画面" loading="lazy" width="700" height="180">
+              <p>プレイテックのカジノゲームはなんといっても美しいグラフィックで知られています。また、勝ち金が高額になりやすいジャックポットスロットが充実しているのもプレイテックの特徴です。</p>
+              <h4 class="underLineB step1">プレイテックのゲームを遊べるオススメカジノ</h4>
+              <ul class="pay-logSlide noslide step1 spslide-box">
+                <li><a href="../ranking/eldoah.html"><img src="assets/images/ed.jpg" alt="エルドアカジノ" loading="lazy" width="199" height="123"><span>エルドアカジノ</span></a></li>
+                <li><a href="../ranking/williamhill.html"><img src="assets/images/wh.jpg" alt="ウィリアムヒルカジノ" loading="lazy" width="199" height="123"><span>ウィリアムヒルカジノ</span></a></li>					
+              </ul>
+              <h3 class="font-cl-step1" id="2-3">ネットエント（NETENT）</h3>
+              <div class="dispFlex">
+                <div class="flex30"><img src="assets/images/logo_netent.gif" alt="ネットエント（NETENT）" loading="lazy" width="220" height="80"></div>
+                <div class="flex70">
+                <p><a href="https://www.netent.com/en/" target="new">NETENT（ネットエント）</a>はブラウザ上で遊べるFLASH形式のカジノゲームを開発しているゲームソフトウェア会社です。<br>
+                  システム性に優れた操作性の良いゲームを多く開発しています。</p>
+                <p>運営企業がスウェーデンのストックホルム市場に上場しており、さらにeCOGRAなど第三者機関からの認定もうけているなど信頼性が非常に高いソフトウェア会社です。</p>
+              </div>
+              </div>
+              <h4 class="underLineB step1">実際のゲーム画面</h4>
+              <p class="txtCenter"><img src="assets/images/netent_game.jpg" alt="ネットエント　実際のゲーム画面" loading="lazy" width="700" height="182"></p>
+              <p>ネットエントのカジノゲームはシステム性に優れており、視覚的にわかりやすく、操作性に優れたカジノゲームばかりです。<br>
+                初めてでもストレスフリーでカジノゲームを楽しむことができます。</p>
+                <h4 class="underLineB step1">ネットエントのゲームを遊べるおすすめカジノ</h4>
+                <div class="cont2 txtLeft">
+                  <h2 class="h3-lineLB LB-step1" id="3">迷ったらソフトウェア会社からゲームを選ぶのもあり！</h2>
+                    
+                  <p>紹介した3社はどれも公正に運営が行われているソフトウェア会社ですが、それぞれ開発するゲームにも特色があります。</p>
+                    
+                <p>オンラインカジノでどのゲームをプレイするか迷ったら、ソフトウェア会社からゲームを探してみるのもおすすめです。</p>
+                    
+                <p>また、ほとんどのゲームにはベットしなくても無料で遊ぶことのできる「デモプレイ」が用意されています。</p>
+                    
+                <p>リアルマネーを賭けたときと勝率や演出などに違いはないので、まずはデモプレイでいろいろなソフトウェア会社のゲームを気軽に試してみてくださいね。</p>			  
+                  </div>
+                
+                  <div class="cont2">  
+                    <dl class="dl-bmenu step1">
+                    <dt><p><img src="assets/images/icon-step1nav.png" loading="lazy" width="38" height="38"><img src="assets/images/icon-book copy.png" loading="lazy" width="26" height="26"><span class="pc">オンラインカジノ</span>基礎講座 MENU</p><p class="pc">Online Casino kiso Curriculum</p></dt>
+                    <dd>
+                    <ol class="numb1">
+                      <li><a href="about.html">オンラインカジノとは？基礎講座</a></li>
+                      <li><a href="law.html">オンラインカジノは違法？！</a></li>
+                      <li><a href="management.html">悪質なオンラインカジノの詐欺事例</a></li>
+                      <li><a href="software.html">ゲームソフトウェアも信頼の目安</a></li>
+                      <li><a href="ninki.html">オンラインカジノの還元率が高い理由</a></li>
+                      <li><a href="tax.html">オンラインカジノの税金について</a></li>
+                    </ol>
+                    </dd>
+                  </dl>
+                  </div>
+              <!--  -->
+              
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="dispFlex center">
+    <nav>
+      <ul>
+        <li><a href="beginner/about.html">オンラインカジノとは？基礎講座</a></li>
+        <li><a href="beginner/law.html">オンラインカジノは違法？！</a></li>
+        <li><a href="beginner/tax.html">オンラインカジノの税金について</a></li>
+        <li><a href="play/nodepositbonus.html">入金不要ボーナスが貰えるオンラインカジノ</a></li>
+        <li><a href="slot/">オンラインカジノ人気スロットランキング</a></li>
+        <li><a href="ecopayz/about.html">【決済方法】ecoPayz（エコペイズ）解説</a></li>
+        <li><a href="ranking/">オンラインカジノおすすめランキング</a></li>
+        <li><a href="blog/">オンラインカジノ初心者ナビ公式ブログ</a></li>
+      </ul>
+    </nav>
+
+    <section class="headerlog"><img src="assets/images/log2.png" loading="lazy" width="375" height="54" alt=""></section>
+  </div>
+
+  <a class="p15 sp" href="https://twitter.com/oncasibegin?ref_src=twsrc%5Etfw" target="new"><img src="images/ban_twitter_sp.jpg" loading="lazy" alt="" width="100%" height="auto"></a>
+     
+  <ul class="iconMenu">
+    <li><a href="faq.html"><i class="fas fa-question-circle"></i>Q&amp;A</a></li>
+    <li><a href="contact.html"><i class="fas fa-envelope"></i>お問い合わせ</a></li>
+    <li><a href="author.html"><i class="fas fa-info-circle"></i>運営者情報</a></li>
+  </ul>
+
+  <p class="copyright">
+    <small>©2023 「オンラインカジノ初心者ナビ®」 All Rights Reserved.</small>
+  </p>
+</footer>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script>
+    window.addEventListener("load", function() {
+    var marqueeContainer = document.getElementById("marqueeContainer");
+    marqueeContainer.classList.add("marqueeAnimation");
+    });
+</script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 15,
+    centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+
+
+</body>
+
+</html>
