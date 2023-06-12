@@ -686,6 +686,59 @@ dl.dl-bmenu dd ol.numb1>li:before {
 dl.dl-bmenu.step1 dd>ol.numb1 li {
     border-bottom: 1px solid #97d8f5;
 }
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .txtCenter {
+    text-align: center;
+
+  }
+  .img-container {
+    text-align: center;
+  }
+  .img-container img {
+    display: inline-block;
+    width: 100%;
+  }
+  .headerlog img {
+    max-width: 100%;
+    height: auto;
+  }
+  .iconMenu {
+    text-align: center;
+  }
+  .iconMenu li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  footer ul.iconMenu {
+    width: 100%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+}
+footer nav {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+.h3-lineLB {
+    width: 100%;
+  }
+.font-cl-step1 {
+    width: 100%;
+  }
+
+.p-mobile {
+  width: 100%;
+}
+.text-image {
+  width: 100%;
+}
+
+}
 </style>
   
 </head>
@@ -803,7 +856,7 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-3 hide-on-mobile">
         <!-- Content for the first column -->
         <div class="row">
           <div class="col-md-12">
@@ -920,19 +973,22 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
           </div>
           <div class="cont2 txtLeft mt30">
             <h2 class="h3-lineLB LB-step1" id="management">悪質オンラインカジノに注意！信頼できるカジノの条件とは</h2>
-        
-              <p>オンラインカジノは現時点においては、ルールを守れば安全に楽しむことができるギャンブルです。<br>
+            
+              <p class="p-mobile">オンラインカジノは現時点においては、ルールを守れば安全に楽しむことができるギャンブルです。<br>
               ですが、中にはライセンスを取得していないオンラインカジノや、詐欺サイトなどが存在しているのも事実です。</p>
         
         
-              <p>つまり、プレイヤーひとりひとりが<span class="bold">「オンラインカジノの安全性や信頼度」</span>を見極める必要があるということ。
+              <p class="p-mobile">つまり、プレイヤーひとりひとりが<span class="bold">「オンラインカジノの安全性や信頼度」</span>を見極める必要があるということ。
               ここからは、信頼できる<span class="markY bold">優良オンラインカジノを見極めるためのポイント</span>をご紹介しましょう。</p>
         
-        
-              <h3 class="font-cl-step1">最低限押さえておくべき重要ポイント</h3>
-        
-            <p class="txtCenter"><img src="assets/images/ihou_2.jpg" alt="悪質オンラインカジノに注意！信頼できるカジノの条件とは" loading="lazy" width="700" height="364"></p>
-              <p>この項目は、優良オンラインカジノを見極め、安全に楽しむための大前提とも言えるチェック内容です。<br>
+              <div class="text-image">
+                <h3 class="font-cl-step1">最低限押さえておくべき重要ポイント</h3>
+              </div>
+              <div class="img-container">
+                <p class="p-image"><img src="assets/images/ihou_2.jpg" alt="悪質オンラインカジノに注意！信頼できるカジノの条件とは" loading="lazy" width="700" height="364"></p>
+              </div>
+              </div>  
+            <p>この項目は、優良オンラインカジノを見極め、安全に楽しむための大前提とも言えるチェック内容です。<br>
               <span class="markY">登録をする前に必ず</span>確認をしましょう。</p>
         
         
@@ -967,7 +1023,9 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
                 </ul>
             </div>
             <div class="flex35">
-            <img src="assets/images/ban_safety_vera.jpg" alt="ベラジョンカジノなら実績ある企業による信頼の運営体制で安心" loading="lazy" width="263" height="163">
+              <div class="img-container">
+                <img src="assets/images/ban_safety_vera.jpg" alt="ベラジョンカジノなら実績ある企業による信頼の運営体制で安心" loading="lazy" width="263" height="163">
+              </div>
             <a href="../ranking/verajohn.html" class="btn-squareOre">ベラジョンカジノの詳細を見る</a>
             </div>
         
@@ -987,7 +1045,9 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
           </div>
           <div class="cont2 txtLeft mt30">
             <h2 class="h3-lineLB LB-step1" id="ihou">オンラインカジノは違法なの？合法なの？</h2>
-            <p class="txtCenter"><img src="assets/images/ihou_3.jpg" alt="オンラインカジノは違法なの？合法なの？" loading="lazy" width="700" height="364"></p>
+            <div class="img-container">
+              <p class="txtCenter"><img src="assets/images/ihou_3.jpg" alt="オンラインカジノは違法なの？合法なの？" loading="lazy" width="700" height="364"></p>
+            </div>
             <p>「オンラインカジノは違法なのか？」ということに関しては、オンラインカジノをプレイする・しないに関わらず、誰しもが気になるところですよね。</p>
       
               <p>皆様もご存知のことだと思いますが、競馬・競輪・宝くじなど国が認めたギャンブル以外は全て違法です。<br>
@@ -1004,8 +1064,10 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
           
           <div class="cont2 txtLeft">
             <h2 class="h3-lineLB LB-step1" id="method">オンラインカジノで儲かるための攻略法とは</h2>
-        
-              <p class="txtCenter"><img src="assets/images/about-img15.jpg" alt="オンラインカジノで儲かるには？" loading="lazy" width="700" height="364"></p>
+              <div class="img-container">
+                <p class="txtCenter"><img src="assets/images/about-img15.jpg" alt="オンラインカジノで儲かるには？" loading="lazy" width="700" height="364"></p>
+
+              </div>
         
               <p>オンラインカジノでより稼ぐためには、<span class="bold markY">資金管理や攻略法(必勝法・ベッティングシステム)を活用する</span>のがコツです。</p>
         

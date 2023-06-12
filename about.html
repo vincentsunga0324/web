@@ -686,6 +686,46 @@ dl.dl-bmenu dd ol.numb1>li:before {
 dl.dl-bmenu.step1 dd>ol.numb1 li {
     border-bottom: 1px solid #97d8f5;
 }
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .txtCenter {
+    text-align: center;
+
+  }
+  .img-container {
+    text-align: center;
+  }
+  .img-container img {
+    display: inline-block;
+    width: 100%;
+  }
+  .headerlog img {
+    max-width: 100%;
+    height: auto;
+  }
+  .iconMenu {
+    text-align: center;
+  }
+  .iconMenu li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  footer ul.iconMenu {
+    width: 100%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+}
+footer nav {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+  
+}
 </style>
   
 </head>
@@ -803,7 +843,7 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-3 hide-on-mobile" >
         <!-- Content for the first column -->
         <div class="row">
           <div class="col-md-12">
@@ -861,8 +901,10 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
         </div>
         <div class="cont2 txtLeft mt30">
 		  <h2 class="h3-lineLB LB-step1" id="notes">オンラインカジノをプレイする前に</h2>
-		  <p class="txtCenter"><img src="img/about-img16.jpg" alt="オンラインカジノをプレイする前の注意事項" loading="lazy" width="700" height="364"></p>
-		 
+		  <!-- <p class="txtCenter"><img src="img/about-img16.jpg" alt="オンラインカジノをプレイする前の注意事項" loading="lazy" width="700" height="364"></p> -->
+      <div class="img-container">
+        <img src="assets/images/about-img16.jpg" alt="オンラインカジノの魅力-ABOUT ONLINE CASINO-" loading="lazy" width="700" height="364">
+      </div>
 		<p>パソコンやスマホがあればいつでもどこでもプレイできるオンラインカジノですが、パチンコや競馬といった<span class="markY bold">ほかのギャンブルより還元率が高く</span>、勝ちやすいというメリットもあります。</p>
 
 		<p>また、カジノが認められている国のライセンスを取得しているサイトであれば国の厳しい審査の下で運営されているため、<span class="markY bold">不正やイカサマなどの可能性は限りなく低い</span>という面もあります。</p>
@@ -926,7 +968,12 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
         </div>
         <div class="cont2 txtLeft mt30">
               <h2 class="h3-lineLB LB-step1" id="oncasi">オンラインカジノとは？遊べるゲームや魅力について</h2>
-              <p class="txtCenter"><img src="assets/images/about-img1.jpg" alt="オンラインカジノの魅力-ABOUT ONLINE CASINO-" loading="lazy" width="700" height="364"></p>
+
+              <div class="img-container">
+                <img src="assets/images/about-img1.jpg" alt="オンラインカジノの魅力-ABOUT ONLINE CASINO-" loading="lazy" width="700" height="364">
+              </div>
+              <!-- <p class="txtCenter"><img src="assets/images/about-img1.jpg" alt="オンラインカジノの魅力-ABOUT ONLINE CASINO-" loading="lazy" width="700" height="364"></p> -->
+               
                 
               <p>オンラインカジノとは、<span class="markY bold">インターネット上でカジノゲームをプレイできる</span>サイトです。</p>
         
@@ -952,7 +999,9 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
           </div>
           <div class="cont2 txtLeft mt30">
             <h2 class="h3-lineLB LB-step1" id="notes">オンラインカジノをプレイする前に</h2>
-            <p class="txtCenter"><img src="assets/images/about-img16.jpg" alt="オンラインカジノをプレイする前の注意事項" loading="lazy" width="700" height="364"></p>
+            <div class="img-container">
+              <p class="txtCenter"><img src="assets/images/about-img16.jpg" alt="オンラインカジノをプレイする前の注意事項" loading="lazy" width="700" height="364"></p>
+            </div>
            
           <p>パソコンやスマホがあればいつでもどこでもプレイできるオンラインカジノですが、パチンコや競馬といった<span class="markY bold">ほかのギャンブルより還元率が高く</span>、勝ちやすいというメリットもあります。</p>
       
@@ -993,8 +1042,9 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
         
         
               <h3 class="font-cl-step1">最低限押さえておくべき重要ポイント</h3>
-        
-            <p class="txtCenter"><img src="assets/images/about-img3.jpg" alt="悪質オンラインカジノに注意！信頼できるカジノの条件とは" loading="lazy" width="700" height="364"></p>
+            <div class="img-container">
+              <p class="txtCenter"><img src="assets/images/about-img3.jpg" alt="悪質オンラインカジノに注意！信頼できるカジノの条件とは" loading="lazy" width="700" height="364"></p>
+            </div>
               <p>この項目は、優良オンラインカジノを見極め、安全に楽しむための大前提とも言えるチェック内容です。<br>
               <span class="markY">登録をする前に必ず</span>確認をしましょう。</p>
         
@@ -1050,7 +1100,9 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
           </div>
           <div class="cont2 txtLeft mt30">
             <h2 class="h3-lineLB LB-step1" id="ihou">オンラインカジノは違法なの？合法なの？</h2>
-            <p class="txtCenter"><img src="assets/images/about-img2.jpg" alt="オンラインカジノは違法なの？合法なの？" loading="lazy" width="700" height="364"></p>
+            <div class="img-container">
+              <p class="txtCenter"><img src="assets/images/about-img2.jpg" alt="オンラインカジノは違法なの？合法なの？" loading="lazy" width="700" height="364"></p>
+            </div>
             <p>「オンラインカジノは違法なのか？」ということに関しては、オンラインカジノをプレイする・しないに関わらず、誰しもが気になるところですよね。</p>
       
               <p>皆様もご存知のことだと思いますが、競馬・競輪・宝くじなど国が認めたギャンブル以外は全て違法です。<br>
@@ -1075,7 +1127,9 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
           </div>
           <div class="cont2 txtLeft mt30">
             <h2 class="h3-lineLB LB-step1" id="incasi">インカジ（インターネットカジノ）とオンラインカジノの違い</h2>
-            <p class="txtCenter"><img src="assets/images/about-img17.jpg" alt="インカジは完全に違法！" loading="lazy" width="700" height="364"></p>
+            <div class="img-container">
+              <p class="txtCenter"><img src="assets/images/about-img17.jpg" alt="インカジは完全に違法！" loading="lazy" width="700" height="364"></p>
+            </div>
               
             <p>オンラインカジノと混同されやすいものとして、インカジ（インターネットカジノ）があります。<br>
               結論から言うと、<span class="bold fontRed"><a href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/solution/incasi-oncasi-chigai/">インカジは明確に違法</a></span>とされています。</p>
@@ -1091,8 +1145,9 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
 
             <div class="cont2 txtLeft mt30">
               <h2 class="h3-lineLB LB-step1" id="payout">オンラインカジノは勝てる？勝てない？他のギャンブルと比較してみよう</h2>
-          
+              <div class="img-container">
                 <p class="txtCenter"><img src="assets/images/about-img14.jpg" alt="オンラインカジノは勝てる？勝てない？他のギャンブルと比較してみよう" loading="lazy" width="700" height="364"></p>
+              </div>
           
                 <p>オンラインカジノを始めるにあたって気になるのは、実際に「勝てるのか、勝てないのか」という部分ですよね。<br>
                 実際の勝率は運によるものも大きいですが、他のギャンブルに比べて勝ちやすいかどうかは重要なポイントです。</p>
@@ -1107,8 +1162,9 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
             </div>
             <div class="cont2 txtLeft mt30">
               <h2 class="h3-lineLB LB-step1" id="tax">オンラインカジノで稼いだら税金はどうなるの？</h2>
-          
+              <div class="img-container">
                 <p class="txtCenter"><img src="assets/images/about-img6.jpg" alt="稼いだ税金はどうなるの？" loading="lazy" width="700" height="364"></p>
+              </div>
           
               <p>プレイヤーが積み上げた賭け金が一気に賞金として払い出される「ジャックポットスロット」など、高額賞金獲得者も多く出ているオンラインカジノ。<br>
               夢も膨らみますが、オンラインカジノで稼いだらそのお金に税金はかかるのでしょうか。</p>
@@ -1158,7 +1214,9 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
               本人確認のためには身分証明書の提出が求められ、手続きに3日ほどかかる場合もあるため早めに登録しておきましょう！</p>
               
               <div class="linkbox-article">
-                <img src="https://オンラインカジノ初心者ナビ.com/blog/wp-content/uploads/2022/04/onlinecasino-honninkakuninfv.jpg" alt="オンラインカジノの本人確認を解説！">
+                <div class="img-container">
+                  <img src="https://オンラインカジノ初心者ナビ.com/blog/wp-content/uploads/2022/04/onlinecasino-honninkakuninfv.jpg" alt="オンラインカジノの本人確認を解説！">
+                </div>
                 <span><i class="fas fa-book-open"></i>関連記事</span>
                 <a href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/solution/onlinecasino-honninkakunin/"><span>オンラインカジノの本人確認（KYC）に必要な書類・タイミング<i class="fas fa-chevron-right"></i></span></a>
                 <p>オンラインカジノの本人確認とは？提出書類や認証にかかる時間について解説</p>
@@ -1189,7 +1247,10 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
             </div>
             <div class="cont2 txtLeft mt40">
               <h2 class="h3-lineLB LB-step1" id="flow">オンラインカジノを始めよう！登録のやり方～出金までの流れ</h2> 
-              <p class="txtCenter"><img src="assets/images/about-img12.jpg" alt="オンラインカジノを始めよう！登録のやり方～出金までの流れ" loading="lazy" width="700" height="364"></p>
+              
+              <div class="img-container">
+                <p class="txtCenter"><img src="assets/images/about-img12.jpg" alt="オンラインカジノを始めよう！登録のやり方～出金までの流れ" loading="lazy" width="700" height="364"></p>
+              </div>
               
               <p>オンラインカジノが初めての場合、選び方や登録・出金のやり方がわからず、何から始めていいのか分からないという方もいるでしょう。</p>
               <p>でも、そんなに気構えなくても大丈夫！1つずつ順序良くやれば何も難しくはありません。下記の順序を参考に準備を進めてくださいね！</p>
@@ -1343,7 +1404,9 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
             </div>
             <div class="cont2 txtLeft mt30">
               <h2 class="h3-lineLB LB-step1" id="bonus">無料プレイ＆入金不要ボーナスでオンラインカジノをお試し！</h2>
-              <p class="txtCenter"><img src="assets/images/about-img7.jpg" alt="無料プレイ＆入金不要ボーナスでオンラインカジノをお試し！" loading="lazy" width="700" height="364"></p>
+              <div class="img-container">
+                <p class="txtCenter"><img src="assets/images/about-img7.jpg" alt="無料プレイ＆入金不要ボーナスでオンラインカジノをお試し！" loading="lazy" width="700" height="364"></p>
+              </div>
           
               <p>オンラインカジノの選び方が分かっても、カジノゲームに慣れないうちにリアルマネーを賭けるのは少し怖い気持ちもありますよね。<br>
               そんな時にとても役立つのが<span class="bold">「無料プレイ」</span>と<span class="bold">「入金不要ボーナス」</span>です。</p>
@@ -1381,7 +1444,9 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
             </div>
             <div class="cont2 txtLeft">
               <h2 class="h3-lineLB LB-step1" id="game">不動の人気！オンラインカジノで絶対プレイしたいゲーム</h2>
-              <p class="txtCenter"><img src="assets/images/about-img10.jpg" alt="不動の人気！オンラインカジノで絶対プレイしたいゲーム" loading="lazy" width="700" height="364"></p>
+              <div class="img-container">
+                <p class="txtCenter"><img src="assets/images/about-img10.jpg" alt="不動の人気！オンラインカジノで絶対プレイしたいゲーム" loading="lazy" width="700" height="364"></p>
+              </div>
             
               <p>オンラインカジノは、バカラ、ブラックジャック、ルーレット等カジノゲームの定番から、日本人に馴染み深いスロット、そして萌えキャラが用いられた変わり種まで、幅広いゲームが用意されています。</p>
         
@@ -1444,7 +1509,9 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
                 <p>
                 <!-- pc testplay-->
                 <a class="testiframe startPlay pc cboxElement" href="https://csicw.playngonetwork.com/Casino/IframedView?pid=636&amp;gid=&amp;gameId=334&amp;lang=ja_JP&amp;practice=1&amp;channel=desktop&amp;div=playngo-wrapper&amp;width=&amp;height=&amp;user=&amp;password=&amp;ctx=&amp;demo=" target="new" style="display: block;">
-                <img src="assets/images/moonprincess_full.jpg" alt="Moon Princess（ムーンプリンセス）" loading="lazy" width="700" height="364"></a>
+                <div class="img-container">
+                  <img src="assets/images/moonprincess_full.jpg" alt="Moon Princess（ムーンプリンセス）" loading="lazy" width="700" height="364"></a>
+                </div>
         
                 <!-- sp testplay -->
                 <a class="startPlay sp" href="https://csicw.playngonetwork.com/Casino/IframedView?pid=636&amp;gid=&amp;gameId=334&amp;lang=ja_JP&amp;practice=1&amp;channel=mobile&amp;div=playngo-wrapper&amp;width=&amp;height=&amp;user=&amp;password=&amp;ctx=&amp;demo=" target="new">
@@ -1524,14 +1591,17 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
             
             
               <h3 class="font-cl-step1 mt30" id="live">ゲームジャンル人気No.1！美女とも遊べる「ライブカジノ」</h3>
-        
+              <div class="img-container">
                 <p class="txtCenter"><img src="assets/images/about-img9.jpg" alt="お気に入りの美女が見つかる？一番人気はライブカジノ！" loading="lazy" width="700" height="364"></p>
+              </div>
         
             <p>オンラインカジノで最も人気を集めているのは、ディーラーと対面してゲームをプレイできる「<a href="../play/livegame.html">ライブカジノ</a>」。約70％ものユーザーがプレイしています。<br>
             リアルタイムでゲームが進行するためイカサマの心配もなく、本場さながらのスリルや臨場感を味わうことができます。</p>
         
-            
-            <p class="txtCenter"><img src="assets/images/mov_bacparis.gif" alt="ライブカジノのディーラーは外国人の美女ぞろい！" loading="lazy" width="600" height="330"></p>
+              
+            <div class="img-container">
+              <p class="txtCenter"><img src="assets/images/mov_bacparis.gif" alt="ライブカジノのディーラーは外国人の美女ぞろい！" loading="lazy" width="600" height="330"></p>
+            </div>
             
               <p>そして対戦できるディーラーは、なんと美女ばかり！<br>
                ヨーロッパ系、アジア系と美女が顔を揃え、ゲームを一層華やかにしてくれます。<br>
@@ -1564,8 +1634,9 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
           </div>
           <div class="cont2 txtLeft">
             <h2 class="h3-lineLB LB-step1" id="method">オンラインカジノで儲かるための攻略法とは</h2>
-        
-              <p class="txtCenter"><img src="assets/images/about-img15.jpg" alt="オンラインカジノで儲かるには？" loading="lazy" width="700" height="364"></p>
+            <div class="img-container">
+              <p class="txtCenter"><img src="assets/images/about-img15.jpg" alt="オンラインカジノで儲かるには？" loading="lazy" width="700" height="364"></p> 
+            </div>
         
               <p>オンラインカジノでより稼ぐためには、<span class="bold markY">資金管理や攻略法(必勝法・ベッティングシステム)を活用する</span>のがコツです。</p>
         
@@ -1590,7 +1661,10 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
           </div>
           <div class="cont2 txtLeft">
             <h2 class="h3-lineLB LB-step1" id="repute">オンラインカジノは評判・口コミで選びましょう</h2>
-            <p class="txtCenter"><img src="assets/images/about-img11.jpg" alt="オンラインカジノは評判・口コミで選びましょう" loading="lazy" width="700" height="364"></p>
+            <div class="img-container">
+              <p class="txtCenter"><img src="assets/images/about-img11.jpg" alt="オンラインカジノは評判・口コミで選びましょう" loading="lazy" width="700" height="364"></p>
+
+            </div>
           
               <p>世界中に数千以上のオンラインカジノが存在するといわれている中、すべてが優良なサイトではないことは事実です。</p>
           
@@ -1646,10 +1720,11 @@ dl.dl-bmenu.step1 dd>ol.numb1 li {
       </ul>
     </nav>
 
-    <section class="headerlog"><img src="assets/images/log2.png" loading="lazy" width="375" height="54" alt=""></section>
+    <section class="headerlog">
+      <img src="assets/images/log2.png" loading="lazy" width="375" height="54" alt="">
+    </section>
   </div>
 
-  <a class="p15 sp" href="https://twitter.com/oncasibegin?ref_src=twsrc%5Etfw" target="new"><img src="images/ban_twitter_sp.jpg" loading="lazy" alt="" width="100%" height="auto"></a>
      
   <ul class="iconMenu">
     <li><a href="faq.html"><i class="fas fa-question-circle"></i>Q&amp;A</a></li>
