@@ -110,7 +110,7 @@
     padding: 20px;
     text-align: center;
     margin-top: 100px; /* Add a top margin to prevent overlap */
-    background-image: url('assets/images/step1header-img.jpg'); /* Replace with the path to your background image */
+    background-image: url('assets/images/step2header-img.jpg'); /* Replace with the path to your background image */
     background-size: cover;
     background-position: center;
     color: rgb(43, 42, 42); /* Set the text color to white for better visibility */
@@ -387,8 +387,8 @@ h3.h3_sideban {
     padding: 0 15px;
 }
 #mokuji.m-step1 {
-    border: 1px solid #29abe2;
-    background-color: #bbe8f9;
+    border: 1px solid #8cc63f;
+    background-color: #e4f9cf;
 }
 dl#mokuji {
     width: 100%;
@@ -398,7 +398,7 @@ dl#mokuji {
     align-items: center;
 }
 dl#mokuji.m-step1 dd {
-    border-left: 1px solid #29abe2;
+    border-left: 1px solid #8cc63f;
 }
 dl#mokuji dd ol {
     list-style: decimal inside;
@@ -416,8 +416,8 @@ dl#mokuji dd ol li a {
     color: #fff;
 }
 .h3-lineLB.LB-step1 {
-    background: #29a3da;
-    border-bottom: solid 3px #2c90c0;
+    background: #8cc63f;
+    border-bottom: solid 3px #8cc63f;
     border-left: none;
 }
 .txtCenter {
@@ -454,7 +454,7 @@ dl#mokuji dd ol li a {
    
 }
 .boderstep1 {
-    border: 2px solid #29abe2;
+    border: 2px solid #8cc63f;
     padding: 20px;
     margin-bottom: 15px;
 }
@@ -475,8 +475,8 @@ ul.li_point, ol.li_point {
 }
 .font-cl-step1 {
     /* color: #0071bc; */
-    border-bottom: 1px solid #29abe2;
-    border-left: 8px solid #29abe2;
+    border-bottom: 1px solid #8cc63f;
+    border-left: 8px solid #8cc63f;
     padding: 5px 0 8px 15px;
 }
 .markY {
@@ -558,8 +558,8 @@ ul.li_check {
 }
 .font-cl-step1 {
     /* color: #0071bc; */
-    border-bottom: 1px solid #29abe2;
-    border-left: 8px solid #29abe2;
+    border-bottom: 1px solid #8cc63f;
+    border-left: 8px solid #8cc63f;
     padding: 5px 0 8px 15px;
 }
 .font-cl-step1 {
@@ -579,12 +579,12 @@ p {
     padding-bottom: 15px;
 }
 .cont2 a.link_btn.step1, .cont2 a.link_btn2.step1 {
-    border-color: #29abe2;
-    color: #0e6eb8;
+    border-color: #84be3f;
+    color: #84be3f;
 }
 .cont2 a.link_btn, .cont2 a.link_btn2, .casinocont a.link_btn {
     display: block;
-    border: 1px solid #d8d8d8;
+    border: 1px solid #84be3f;
     font-weight: 700;
     text-decoration: none;
     text-align: center;
@@ -641,8 +641,8 @@ ol.a-stepboxOdr dl dt span.a-stepOdr {
 .flex70 {
     width: 69%;
 }
-dl.dl-bmenu.step1 {
-    border: 2px solid #29a3da;
+dl.dl-bmenu.step2 {
+    border: 2px solid #83be3e;
 }
 dl.dl-bmenu.step1 dt {
     background-color: #29a3da;
@@ -659,7 +659,7 @@ dl.dl-bmenu.step1 dd ol.numb1>li:before {
     color: #29a3da;
 }
 dl.dl-bmenu dt {
-    background-color: #666;
+    background-color: #83be3e;
     border-radius: 7px 7px 0 0 / 7px 7px 0 0;
     padding: 10px 2%;
     display: flex;
@@ -683,8 +683,8 @@ dl.dl-bmenu dd ol.numb1>li:before {
     font-weight: 700;
     margin-right: 3px;
 }
-dl.dl-bmenu.step1 dd>ol.numb1 li {
-    border-bottom: 1px solid #97d8f5;
+dl.dl-bmenu.step2 dd>ol.numb1 li {
+    border-bottom: 1px solid #c7ea8e;
 }
 ul.pay-logSlide.noslide, ul.pay-logSlide.spnoslide {
     display: flex;
@@ -704,6 +704,115 @@ ul.pay-logSlide, ul.a-logSlide {
     min-height: 100px;
     margin: 10px 20px;
     padding: 10px 5px;
+}
+
+.dl_point.step1 {
+    border: 2px solid #8cc63f;
+}
+.dl_point.step1 dt {
+    color: #8cc63f;
+}
+.dl_point {
+    background: #FFF;
+    padding: 20px;
+    margin: 0 0 15px 0;
+    border: 2px solid #111;
+}
+.dl_point dt {
+    background-repeat: no-repeat;
+    padding: 0 0 0 5px;
+    height: 23px;
+    line-height: 23px;
+    font-weight: 700;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #111;
+}
+.linkbox-article {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background: #edf9ff;
+    padding: 15px;
+    font-size: 16px;
+}
+.linkbox-article a > span {
+    position: relative;
+    top: 5px;
+    left: 0;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    color: #29a3da;
+    font-weight: 700;
+}
+.linkbox-article a:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.linkbox-article a {
+    display: block;
+    text-align: left;
+}
+.fa-book-open:before {
+    content: "\f518";
+}
+.cont2 a.link_btn.step2 {
+    border-color: #84be3f;
+    color: #84be3f;
+}
+.font-cl-step2 {
+    /* color: #0eb700; */
+    border-bottom: 1px solid #8cc63f;
+    border-left: 8px solid #8cc63f;
+    padding: 5px 0 8px 15px;
+}
+.boderstep2 {
+    border: 2px solid #8cc63f;
+    padding: 15px;
+}
+.underLineB.step2 {
+    text-align: left;
+    background: #D8EFB3;
+    color: #31662b;
+}
+.flex25 img {
+    width: 70%;
+    height: 100px;
+    height: auto;
+}
+.tipArrow {
+    position: relative;
+    padding: 0 25px;
+    display: inline-block;
+}
+h3 {
+    font-size: 1.3rem;
+    font-family: 'M PLUS 1p',sans-serif;
+    text-align: left;
+    line-height: 150%;
+    margin-bottom: 15px;
+}
+img {
+    line-height: 0;
+    font-size: 0;
+    vertical-align: bottom;
+}
+table.table2 tr:nth-of-type(2n) {
+    background: #e4f9cf;
+}
+dl.dl-bmenu.step2 dd ol.numb1 > li:before {
+    color: #83be3e;
+}
+dl.dl-bmenu dd ol.numb1 > li:before {
+    content: counter(dl-m-numb)'.';
+    font-weight: 700;
+    margin-right: 3px;
 }
 @media (max-width: 767px) {
   .hide-on-mobile {
@@ -894,7 +1003,7 @@ footer nav {
       </div>
       <div class="col-md-9">
         <!-- Content for the second column -->
-        <img src="assets/images/software_1.jpg" alt="" class="img-fluid">
+        <img src="assets/images/jyunbi_1.jpg" alt="" class="img-fluid">
         <p>実際にお金を賭けてカジノゲームをネット上で遊ぶことができる「オンラインカジノ」。
           日本でのカジノ解禁が話題となり、国内でもさらに人気が高まっています。</p>
         <p>一方で興味はあるけれど、違法性や安全性が気になってなかなか手を出せないという方もいるのではないでしょうか？</p>
@@ -905,181 +1014,179 @@ footer nav {
           <li>「興味はあるけどどのカジノサイトで遊べばいいか分からない」</li>
         </ul>
         <p>このようなオンラインカジノ初心者の方は是非ご覧になってください。</p>
-        <div class="writer_chara_col">
-          <div>
-              <img src="assets/images/kenji.png" width="150" height="150" loading="lazy" alt="MASARU"><span>著者：<a rel="author" href="../writer-masaru.html">MASARU</a><br>カジノ歴：2年</span>
-          </div>    
-          <div class="speech">
-              <dl>
-                  <dt>カジノ紹介担当者からのコメント</dt>
-                  <dd><p>このページでは、オンラインカジノに関する基本的な情報を全て掲載しています！</p>
-                      <p>登録前に不安に思う方が多い違法や税金について、実際プレイする時に何のゲームをしたらいいのか？オンラインカジノは稼げるのか？など皆さんが迷ってしまいそうな項目をピックアップしてみました。<br>
-                      お試しで遊べる「無料プレイ」も用意してあるので、オンラインカジノのスロットの雰囲気を掴むこともできると思いますよ！</p>
-                  </dd> 
-              </dl>    
-          </div>
-        </div>
-        <div class="cont2 txtLeft mt30">
-		   
-		</div>
-        <div class="related-article step1">
-            <dl>
-              <dt><a href="../ranking/">【2023年】おすすめオンラインカジノTOP3を紹介</a></dt>
-              <dd>
-              <a href="../ranking/" class="sp"></a>
-              <p>オンラインカジノ初心者ナビでは、「ボーナスが豊富」「人気がある」など5つの基準から<span class="bold markY">ベラジョンカジノ</span>や<span class="bold markY">ミスティーノ</span>などおすすめの優良カジノサイトを紹介しています。カジノサイトをまだ選んでいない方は要チェックです！</p>
-              <p class="sp"><a href="../ranking/" class="link_btn step1">【2023年最新】おすすめオンラインカジノランキング</a></p>
-              </dd>
-            </dl>
-            <a href="../ranking/" class="pc"><img src="assets/images/ban_rank_link.jpg" width="500" height="326" loading="lazy" alt="オンラインカジノおすすめランキングTOP3！最新版を紹介"></a>
-        </div>
         <div class="cont2 txtLeft">
           <dl id="mokuji" class="m-step1">
             <dt>もくじ</dt>
-          <dd>
-            <ol>
-            <li><a href="#oncasi">オンラインカジノとは？遊べるゲームや魅力について</a></li>
-            <li><a href="#notes">オンラインカジノをプレイする前に</a></li>
-            <li><a href="#management">悪質オンラインカジノに注意！信頼できるカジノの条件とは</a></li>
-            <li><a href="#ihou">オンラインカジノは違法なの？合法なの？</a></li>
-            <li><a href="#incasi">インカジ（インターネットカジノ）とオンラインカジノの違い</a></li>
-            <li><a href="#payout">オンラインカジノは勝てる？勝てない？他のギャンブルと比較してみよう</a></li>
-            <li><a href="#tax">オンラインカジノで稼いだら税金はどうなるの？</a></li>
-            <li><a href="#smartphone">スマホ対応オンラインカジノで遊ぶときの注意点</a></li>
-            <li><a href="#payment">オンラインカジノの入金・出金方法について</a></li>
-            <li><a href="#flow">オンラインカジノを始めよう！登録のやり方～出金までの流れ</a></li>
-            <li><a href="#bonus">無料プレイ＆入金不要ボーナスでオンラインカジノをお試し！</a></li>
-            <li><a href="#game">不動の人気！オンラインカジノで絶対プレイしたいゲーム</a></li>
-            <li><a href="#method">オンラインカジノで儲かるための攻略法とは</a></li>
-            <li><a href="#repute">オンラインカジノは評判・口コミで選びましょう</a></li>
-          </ol>
-          </dd>
-          </dl>
-        </div>
-            
-          <div class="boderstep1">
-                <ul class="li_point">
-                  <li><span class="bold">遊ぶ金額を決めてプレイ</span>する</li>
-                  <li><span class="bold">あくまでギャンブル</span>であることを忘れない</li>
-            <li class="bold">生活費を稼ごうとしない</li>
+            <dd>
+              <ol>
+              <li><a href="#1">オンラインカジノのペイアウト率は圧倒的に高い約</a>
+                <ul>
+                  <li><a href="#1-1">ペイアウト率が高いとどうしてお得なの？</a></li>
+                  <li><a href="#1-2">オンラインカジノのペイアウト率はなぜ高い？</a></li>
                 </ul>
+              </li>
+              <li><a href="#2">オンラインカジノのペイアウト率をチェックするには</a></li>
+            <li><a href="#3">オンラインカジノのペイアウト率は目安として考えよう</a></li>
+            </ol>
+            </dd>
+          </dl>
+        </div> 
+        <!--  -->
+        <div class="cont2 txtLeft">
+          <h2 class="h3-lineLB LB-step2" id="1">オンラインカジノを始める前に用意するもの</h2>
+          <p>まずはオンラインカジノを始めるのに必要なものを確認しましょう！<br>
+            いきなりオンラインカジノサイトに行ってしまっても良いのですが、以下の3点を用意しておくと、よりスムーズに始められますよ。</p>
+      
+          <p class="txtCenter"><img src="assets/images/jyunbi_1-1.jpg" alt="登録前に準備しておきたいもの" loading="lazy" width="560" height="270"></p>
+            
+          <h3 class="font-cl-step2" id="1-1">軍資金</h3>  
+            
+            <p>オンラインカジノを始める時にまずこれがないと始まらないもの、それはもちろん「お金」です。</p>
+        
+            <p>少ない賭け金から大金ゲットというのがロマンではありますが、ギャンブルですので最初から大当たりが出るとも限りません。<br>
+            いきなり底をついてしまったなんてことがないように、余裕をもって資金を用意しておきましょう。</p>
+            
+            <p>逆に余裕をもって用意していてもつい賭けすぎて大負け…といったことも考えられますので、ベットは計画的に！<br>
+            熱くなってしまいやすい人は、あらかじめ予算を決めておくのがおすすめですよ。</p>
+            
+            <p class="txtCenter"><a class="link_btn step2" href="../beginner/about.html">オンラインカジノを始める前に！知っておきたい基礎知識</a></p>
+          <h3 class="font-cl-step2" id="1-2">決済用のカード・アカウント</h3>  
+            
+            <p>オンラインカジノでは入出金のやりとりをインターネット上で行うことになりますので、オンラインカジノに対応した決済手段を持っておく必要があります。</p>
+        
+            <p>オンラインカジノの決済方法で一般的なものは<span class="markY">「クレジットカード」「電子決済サービス」</span>です。<br>
+            （クレジットカードは電子決済サービスへの入金にも使えます。）</p>
+            
+            <p>特にecoPayz（エコペイズ）などの電子決済サービスは、アカウントを一つ持っておけばオンラインカジノの資金管理がしやすくなるオススメの決済方法です。<br>
+            しかし実際にオンラインカジノの入出金ができるようになるまでいくつかの手続きが必要になりますので、電子決済サービスを利用する場合は前もってアカウントを作成しておきましょう。</p>
+            
+            
+          <p class="txtCenter"><a class="link_btn step2" href="payment.html">オンラインカジノの入金・出金方法を比較！イチオシの決済方法も紹介</a></p>  
+            
+          <h3 class="font-cl-step2" id="1-3">身分証明書</h3>  
+            
+            <p>初めての出金や出金額が高額となる際に、オンラインカジノから身分証明書の提出を求められることがあります。<br>
+            また、電子決済サービスの利用手続きにも必要になりますので、用意しておきましょう。</p>
+        
+            <p>身分証明書として使える書類は各オンラインカジノやサービスによって異なりますが、運転免許証やパスポートなど顔写真付きの証明証は使える場合が多いです。<br>
+            また、公共料金の明細書が必要となる場合もあります。</p>
+            
+          <p class="txtCenter"><a class="link_btn step2" href="https://オンラインカジノ初心者ナビ.com/blog/solution/onlinecasino-honninkakunin/">オンラインカジノの本人確認を解説！必要な書類や本人確認のタイミングは？</a></p>  
+            
+          </div>
+          <div class="boderstep2">	  
+            <table class="table2 sptableBlock">
+                <tbody><tr>
+                    <td class="txtCenter flex25 pc"><img src="assets/images/jyunbi_3.jpg" alt="公式サイトにアクセスし、【今すぐ登録しよう！】をタップします。" loading="lazy" width="600" height="1020"></td>
+                    <td class="flex71"><h3 class="tipArrow step2">（1）公式サイトにアクセス</h3>
+              <p class="txtCenter sp"><img src="assets/images/jyunbi_3.jpg" alt="公式サイトにアクセスし、【今すぐ登録しよう！】をタップします。" loading="lazy" width="600" height="1020"></p>
+                    <p>公式サイトにアクセスし、【今すぐ登録しよう！】をタップします。</p></td>
+                </tr>
+                <tr>
+                    <td class="txtCenter flex25 pc"><img src="assets/images/jyunbi_4.jpg" alt="ID・パスワードを設定" loading="lazy" width="600" height="635"></td>
+                    <td class="flex71">
+                    <h3 class="tipArrow step2">（2）ID・パスワードを設定</h3>
+              <p class="txtCenter sp"><img src="assets/images/jyunbi_4.jpg" alt="ID・パスワードを設定" loading="lazy" width="600" height="635"></p>
+                    <p>まずはメールアドレスを入力し、パスワードを設定します。</p>
+                    <p>パスワードはログイン時に必要なので、忘れないようにメモしておきましょう。</p>
+                    <p>全て入力したら【アカウントの作成】をタップします。</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="txtCenter flex25 pc"><img src="assets/images/jyunbi_5.jpg" alt="個人情報を入力" loading="lazy" width="600" height="1550"></td>
+                    <td class="flex71">
+                      <h3 class="tipArrow step2">（3）個人情報を入力</h3>
+              <p class="txtCenter sp"><img src="assets/images/jyunbi_5.jpg" alt="個人情報を入力" loading="lazy" width="600" height="1550"></p>
+                      <p>次は個人情報を入力していきます。正確に、間違いのないように入力してください。</p>
+                    <p>全てを正しく入力し、【アカウントを設定する】をタップすればアカウントの登録は完了です！</p>
+                    </td>
+                  </tr>
+                </tbody></table>
             </div>
-              
-          <p>オンラインカジノは場所や時間を気にすることなく遊べるため、<span class="bold fontRed">つい熱中してお金を使い過ぎてしまうというリスク</span>もあります。</p>
-      
-          <p>特にクレジットカードの場合、手元に現金がなくても賭け金を入金することができるため、お金が減っている感覚も薄くなりがちです。</p>
-      
-          <p>使い過ぎを防ぐためには、<span class="bold">1回あたりに使って良い金額</span>や<span class="bold">「〇〇円まで使ったら止める」</span>などの<span class="markY bold">ルールを決めてプレイ</span>しましょう。</p>
-      
-          <p>また、いくらオンラインカジノの還元率が高いといっても、<span class="bold fontRed">ギャンブルであることに変わりはありません。</span><br>
-          タイミングによって大きく勝つこともあれば連敗することもあるので、<span class="bold">安定した収入を得るには不向き</span>です。</p>
-              
-          <p>また、負け額を取り返すために生活費を削ったり、お金を借りるまでのめり込んでしまうと<span class="bold fontRed">「<a href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/solution/onlinecasino-izonsyou/">オンラインカジノ依存症</a>」に陥ってしまう可能性</span>もあります。</p>
-          <p>そうならないためにも、オンラインカジノの勝利金で生活費を賄ったり副業にしようとせず、あくまで無理のない範囲で賭けてゲームを楽しむものと心掛けてプレイしてください。</p>
-          <div class="cont2 txtLeft mt30">
-            <h2 class="h3-lineLB LB-step1" id="management">悪質オンラインカジノに注意！信頼できるカジノの条件とは</h2>
-        
-              <p>オンラインカジノは現時点においては、ルールを守れば安全に楽しむことができるギャンブルです。<br>
-              ですが、中にはライセンスを取得していないオンラインカジノや、詐欺サイトなどが存在しているのも事実です。</p>
-        
-        
-              <p>つまり、プレイヤーひとりひとりが<span class="bold">「オンラインカジノの安全性や信頼度」</span>を見極める必要があるということ。
-              ここからは、信頼できる<span class="markY bold">優良オンラインカジノを見極めるためのポイント</span>をご紹介しましょう。</p>
-        
-            <h2 class="h3-lineLB LB-step1" id="management">悪質オンラインカジノに注意！信頼できるカジノの条件とは</h2>
-        
-              <p>オンラインカジノは現時点においては、ルールを守れば安全に楽しむことができるギャンブルです。<br>
-              ですが、中にはライセンスを取得していないオンラインカジノや、詐欺サイトなどが存在しているのも事実です。</p>
-        
-        
-              <p>つまり、プレイヤーひとりひとりが<span class="bold">「オンラインカジノの安全性や信頼度」</span>を見極める必要があるということ。
-              ここからは、信頼できる<span class="markY bold">優良オンラインカジノを見極めるためのポイント</span>をご紹介しましょう。</p>
-                
-        
-              <h3 class="font-cl-step1" id="2-1">マイクロゲーミング（Microgaming）</h3>
+            <h3 class="font-cl-step2" id="2-2">PCからの登録手順（ブラウザ版）</h3>
+            <div class="boderstep2">
+              <dl>
+              <dt><h3 class="underLineB step2">（1）公式サイトにアクセス</h3></dt>  
+                <dd>
+                  <div class="img-container">
+                    <p class="txtCenter"><img src="assets/images/jyunbi_6.jpg" alt="公式サイトにアクセスし、【今すぐ登録しよう！】をクリックします。" loading="lazy" width="520" height="317"></p>
 
-              <div class="dispFlex">
-                <div class="flex30"><img src="assets/images/logo_micro.gif" alt="マイクロゲーミング（Microgaming）" loading="lazy" width="220" height="80"></div>
-                <div class="flex70">
-                <p><a href="https://www.microgaming.co.uk/" target="new">Microgaming（マイクロゲーミング）</a>はカジノソフトウェア界において老舗かつ最大手の一流ソフトウェア会社です。1994年創業という長年の歴史と信頼性の高さ、ハイクオリティなゲームから常に高い人気を誇ります。</p>
-                <p>また、マイクロゲーミングは契約時のライセンス料が高額であることが知られており、マイクロゲーミングを導入しているオンラインカジノは資金力があると考えられます。</p>
-              </div>
-              </div>
-              <h4 class="underLineB step1">実際のゲーム画面</h4>
-              <div class="img-container">
-                <p class="txtCenter"><img src="assets/images/microgaming_game.jpg" alt="マイクロゲーミング　実際のゲーム画面" loading="lazy" width="700" height="181"></p>
-
-              </div>
-              
-
-              <p>マイクロゲーミングのゲームの特徴は、美しいグラフィックと高品質なサウンド。ゲーム開発数が業界内でも最多なので、飽きることがありません。<br>
-                映画をモチーフにしたスロットなどタイアップが多いのも人気の理由です。</p>
-              <h4 class="underLineB step1">マイクロゲーミングのゲームを遊べるオススメカジノ</h4>
-              <h3 class="font-cl-step1" id="2-2">プレイテック（Playtech）</h3>
-              <div class="dispFlex">
-                <div class="flex30  img-container"><img src="assets/images/logo_playtech.gif" alt="プレイテック（Playtech）" loading="lazy" width="220" height="80"></div>
-                <div class="flex70">
-                <p><a href="https://www.playtech.com/" target="new">Playtech（プレイテック）</a>は1999年創業と比較的新しいソフトウェア会社ながら、ゲームのクオリティの高さが支持され急成長を遂げたゲームソフトウェア会社です。<br>
-                  今やマイクロゲーミングと並ぶほどの大企業となっています。</p>
-                <p>運営会社がロンドン市場に上場しているという信頼性の高さも魅力のひとつです。</p>
-              </div>
-              </div>
-              <h4 class="underLineB step1">実際のゲーム画面</h4>
-              <div class="img-container">
-                <img src="assets/images/playtech_game.jpg" alt="プレイテック　実際のゲーム画面" loading="lazy" width="700" height="180">
-
-              </div>
-              <p>プレイテックのカジノゲームはなんといっても美しいグラフィックで知られています。また、勝ち金が高額になりやすいジャックポットスロットが充実しているのもプレイテックの特徴です。</p>
-              <h4 class="underLineB step1">プレイテックのゲームを遊べるオススメカジノ</h4>
-              <ul class="pay-logSlide noslide step1 spslide-box">
-                <li><a href="../ranking/eldoah.html"><img src="assets/images/ed.jpg" alt="エルドアカジノ" loading="lazy" width="199" height="123"><span>エルドアカジノ</span></a></li>
-                <li><a href="../ranking/williamhill.html"><img src="assets/images/wh.jpg" alt="ウィリアムヒルカジノ" loading="lazy" width="199" height="123"><span>ウィリアムヒルカジノ</span></a></li>					
-              </ul>
-              <h3 class="font-cl-step1" id="2-3">ネットエント（NETENT）</h3>
-              <div class="dispFlex">
-                <div class="flex30 img-container">
-                  <img src="assets/images/logo_netent.gif" alt="ネットエント（NETENT）" loading="lazy" width="220" height="80"></div>
-                <div class="flex70">
-                <p><a href="https://www.netent.com/en/" target="new">NETENT（ネットエント）</a>はブラウザ上で遊べるFLASH形式のカジノゲームを開発しているゲームソフトウェア会社です。<br>
-                  システム性に優れた操作性の良いゲームを多く開発しています。</p>
-                <p>運営企業がスウェーデンのストックホルム市場に上場しており、さらにeCOGRAなど第三者機関からの認定もうけているなど信頼性が非常に高いソフトウェア会社です。</p>
-              </div>
-              </div>
-              <h4 class="underLineB step1">実際のゲーム画面</h4>
-              <div class="img-container">
-                <p class="txtCenter"><img src="assets/images/netent_game.jpg" alt="ネットエント　実際のゲーム画面" loading="lazy" width="700" height="182"></p>
-
-              </div>
-              <p>ネットエントのカジノゲームはシステム性に優れており、視覚的にわかりやすく、操作性に優れたカジノゲームばかりです。<br>
-                初めてでもストレスフリーでカジノゲームを楽しむことができます。</p>
-                <h4 class="underLineB step1">ネットエントのゲームを遊べるおすすめカジノ</h4>
-                <div class="cont2 txtLeft">
-                  <h2 class="h3-lineLB LB-step1" id="3">迷ったらソフトウェア会社からゲームを選ぶのもあり！</h2>
-                    
-                  <p>紹介した3社はどれも公正に運営が行われているソフトウェア会社ですが、それぞれ開発するゲームにも特色があります。</p>
-                    
-                <p>オンラインカジノでどのゲームをプレイするか迷ったら、ソフトウェア会社からゲームを探してみるのもおすすめです。</p>
-                    
-                <p>また、ほとんどのゲームにはベットしなくても無料で遊ぶことのできる「デモプレイ」が用意されています。</p>
-                    
-                <p>リアルマネーを賭けたときと勝率や演出などに違いはないので、まずはデモプレイでいろいろなソフトウェア会社のゲームを気軽に試してみてくださいね。</p>			  
                   </div>
+                <p>公式サイトにアクセスし、【今すぐ登録しよう】をクリックします。</p></dd>
                 
-                  <div class="cont2">  
-                    <dl class="dl-bmenu step1">
-                    <dt><p><img src="assets/images/icon-step1nav.png" loading="lazy" width="38" height="38"><img src="assets/images/icon-book copy.png" loading="lazy" width="26" height="26"><span class="pc">オンラインカジノ</span>基礎講座 MENU</p><p class="pc">Online Casino kiso Curriculum</p></dt>
-                    <dd>
-                    <ol class="numb1">
-                      <li><a href="about.html">オンラインカジノとは？基礎講座</a></li>
-                      <li><a href="law.html">オンラインカジノは違法？！</a></li>
-                      <li><a href="management.html">悪質なオンラインカジノの詐欺事例</a></li>
-                      <li><a href="software.html">ゲームソフトウェアも信頼の目安</a></li>
-                      <li><a href="ninki.html">オンラインカジノの還元率が高い理由</a></li>
-                      <li><a href="tax.html">オンラインカジノの税金について</a></li>
-                    </ol>
-                    </dd>
-                  </dl>
+              <dt><h3 class="underLineB step2">（2）ID・パスワード・携帯番号を設定</h3></dt>  
+                <dd>
+                  <div class="img-container">
+                    <p class="txtCenter"><img src="assets/images/jyunbi_7.jpg" alt="ID・パスワード・携帯番号を設定" loading="lazy" width="520" height="319"></p>
+
                   </div>
+                <p>まずはメールアドレスの入力、パスワードの設定、携帯番号の入力を行います。</p>
+                <p>このとき設定するパスワードはログイン時に必要なので、忘れないようにメモしておきましょう。</p>
+                <p>全て入力したら【アカウントの開設】をクリックします。</p></dd>
+                
+              <dt><h3 class="underLineB step2">（3）個人情報を入力</h3></dt>  
+                <dd>
+                  <div class="img-container">
+                    <p class="txtCenter"><img src="assets/images/jyunbi_8.jpg" alt="個人情報を入力" loading="lazy" width="520" height="345"></p>
+                  </div>
+                <p>次は個人情報を入力していきます。正確に、間違いのないように入力してください。</p>
+                <p>通貨は特にこだわりがない場合は、多くのオンラインカジノで使うことのできるUSDドルを選択するのが無難です。</p>
+                <p>全て入力したら【続ける】をクリックします。</p></dd>
+                
+              <dt><h3 class="underLineB step2">（4）開設完了！</h3></dt>  
+                <dd><p>これでアカウントの開設は完了です！</p>
+                <p>ベラジョンカジノの場合、この後は入金画面に飛びます。<br>
+                  入金手段が決まっているならこのまま入金を行うとスムーズにオンラインカジノを始めることができます。</p>
+                <p>この段階では入金を行いたくない場合は、一番下に【入力せずに続ける】という項目がありますので、そちらをクリックしてください。</p>
+                  <div class="img-container">
+                    <p class="txtCenter"><img src="assets/images/jyunbi_9.jpg" alt="入金をしない場合" loading="lazy" width="519" height="232"></p>
+                  </div>
+                </dd>
+              </dl>
+              </div>
+              <div class="cont2 txtLeft">
+                <h2 class="h3-lineLB LB-step2" id="3">アカウント登録時によくあるトラブル</h2>
+                
+                <p>オンラインカジノのアカウント登録は非常に簡単なのですが、登録情報のチェックが厳しいため、ちょっとしたミスでのちのちトラブルに繋がってしまうことも。<br>
+                ここではアカウント登録時によくあるトラブルについて解説します。</p>
+                
+              <h3 class="font-cl-step2">ローマ字の入力ミス</h3>    
+                
+                <p>オンラインカジノで登録を行う際にはローマ字での入力が多くなります。特に住所などにおける入力ミスが多いようです。<br> 
+                自分の住所をそうそう間違えるわけがない！と思いがちですが、「tu」と「tsu」の違いなど表記ゆれによる間違いが多くなっていますので、特に注意が必要です。</p>
+                
+                <p>ローマ字だと日本語よりも入力ミスに気づきにくいので、確認はしっかり行いましょう。</p>
+                
+              <h3 class="font-cl-step2">住所の不一致</h3>    
+                <p>住所の不一致は特に起こりやすいトラブルです。</p>
+            
+              <p>クレジットカードやecoPayz（エコペイズ）やiWallet（アイウィレット）などの決済サービスに登録している住所とオンラインカジノに登録した住所に不一致がある場合、不正とみなされアカウントが凍結されてしまうことも…。</p>
+                
+              <p>不一致の原因として、住所変更のし忘れやローマ字入力ミス、表記違いなどが挙げられます。<br> 
+               特に英語表記の住所は入力間違いを起こしやすくなっていますのでしっかり確認しましょう。</p>
+                
+              </div>
+              <div class="cont2">  
+                <dl class="dl-bmenu step2">
+                <dt><p><img src="assets/images/icon-step2nav.png" loading="lazy" width="38" height="38"><img src="../images/icon/icon-play.png" loading="lazy" width="26" height="26"><span class="pc">オンラインカジノ</span>プレイ講座 MENU</p><p class="pc">Online Casino Play Curriculum</p></dt>
+                <dd>
+                <ol class="numb1">
+                  <li><a href="step.html">オンラインカジノに登録する方法</a></li>
+                  <li><a href="payment.html">オンラインカジノの入出金に関して</a></li>
+                  <li><a href="bonus.html">知っておきたいボーナスの知識</a></li>
+                  <li><a href="kakejyouken.html">オンラインカジノの賭け条件とは？</a></li>
+                  <li><a href="nodepositbonus.html">入金不要ボーナスが貰えるオンラインカジノ</a></li>
+                  <li><a href="pc_sp.html">スマホで遊べるオンラインカジノ一覧</a></li>
+                  <li><a href="jackpot.html">一攫千金が狙えるジャックポットスロットとは</a></li>
+                  <li><a href="livegame.html">ライブカジノを楽しもう</a></li>
+                </ol>
+                </dd>
+              </dl>
+              </div>
+    
+    </div>
+      
+           
               <!--  -->
               
     </div>
