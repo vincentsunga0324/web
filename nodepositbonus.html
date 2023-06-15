@@ -1,0 +1,2183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+
+  <title>web</title>
+  <style>
+    .header {
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      z-index: 4;
+    }
+
+    .header img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .navbar {
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navbar .nav-item {
+      /* margin-right: 10px; */
+    }
+
+    .navbar .dropdown-menu {
+      display: none;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+      display: block;
+    }
+
+    .nav-link {
+      width: 200px; /* Replace with your desired width */
+      padding: 15px;
+    }
+
+    .navbar .nav-link::after {
+      display: none;
+    }
+
+    .navbar .dropdown-menu.dropdown1 {
+      background-color: #29a3da; /* Red */
+    }
+
+    .navbar .dropdown-menu.dropdown2 {
+      background-color: #84be3f; /* Green */
+    }
+
+    .navbar .dropdown-menu.dropdown3 {
+      background-color: #f3a83b; /* Blue */
+    }
+
+    .navbar .dropdown-menu.dropdown4 {
+      background-color: #ff7ba4; /* Yellow */
+    }
+
+    .navbar .dropdown-menu.dropdown5 {
+      background-color: gray; /* Magenta */
+    }
+
+    .dropdown1-bg {
+      background-color: #29a3da; /* Replace with your desired background color */
+    }
+
+    .dropdown2-bg {
+      background-color: #84be3f; /* Replace with your desired background color */
+    }
+
+    .dropdown3-bg {
+      background-color: #f3a83b; /* Replace with your desired background color */
+    }
+
+    .dropdown4-bg {
+      background-color: #ff7ba4; /* Replace with your desired background color */
+    }
+
+    .dropdown5-bg {
+      background-color: gray; /* Replace with your desired background color */
+    }
+    
+    @media (max-width: 768px) {
+      .navbar .nav-link {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    @media (min-width: 992px) {
+        .navbar {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: fit-content;
+        }
+    }
+    .section {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px; /* Add a top margin to prevent overlap */
+    background-image: url('assets/images/step2header-img.jpg'); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: rgb(43, 42, 42); /* Set the text color to white for better visibility */
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .section .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(223, 220, 220, 0.6); /* Set the background color for the box */
+    padding: 20px;
+    z-index: 1;
+  }
+
+  .section-line {
+    border: none;
+    height: 1px;
+    background-color: black;
+    left: 50%;
+    transform: translateX(0%);
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+   
+    h3.iconTitle-r {
+        font-size: 0.4rem;
+        padding: 5px;
+    }
+    h2.iconTitle-r, h3.iconTitle-r {
+      border-bottom: solid 3px #fbb03b;
+      padding: 10px;
+      font-size: 1.2rem;
+      text-align: left;
+      margin-bottom: 15px;
+    }
+    .fontOrange {
+      color: #f7931e;
+    }
+    ul.li_check {
+      margin: 10px;
+      list-style: none;
+    }
+    .li_check li {
+      padding-left: 30px;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+    }
+    .li_check li:before {
+      content: "\f14a";
+      position: relative;
+      font-family: FontAwesome;
+      font-size: 1.5rem;
+      margin-right: 10px;
+      color: #8dc73f;
+    }
+    h2.tb-bdr {
+    border-bottom: 3px solid #cccccc;
+    border-top: 3px solid #cccccc;
+    width: 100%;
+    padding: 18px 0 15px;
+    margin: 0 auto;
+  }
+
+  ul.curripcindex {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul.curripcindex li {
+    flex: 1;
+    text-align: center;
+  }
+
+  ul.curripcindex li a img {
+    max-width: 100%;
+    height: auto;
+  }
+  a.btn-squareOre {
+    padding: 15px 30px;
+    text-align: center;
+    background-color: #f7931e;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+  }
+
+  footer>.dispFlex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.center {
+    text-align: center;
+    margin: auto;
+}
+footer nav ul li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.7rem;
+}
+footer ul.iconMenu {
+    width: 1100px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+}
+ul.iconMenu {
+    border-top: 8px solid #FFF;
+    border-image: linear-gradient(90deg,rgba(41,163,218,1) 0%,rgba(41,163,218,1) 20%,rgba(132,190,63,1) 20%,rgba(132,190,63,1) 40%,rgba(243,168,59,1) 40%,rgba(243,168,59,1) 60%,rgba(255,123,164,1) 60%,rgba(255,123,164,1) 80%,rgba(128,128,128,1) 80%,rgba(128,128,128,1) 100%);
+    border-image-slice: 1;
+    padding-top: 15px;
+}
+p.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 20px 0;
+    background-color: #f7931e;
+    color: #fff;
+    font-size: 1.2rem;
+}
+footer nav ul li:before {
+    content: "\025b6";
+    font-size: .9rem;
+    color: #f7931e;
+}
+
+
+footer nav ul {
+    column-count: 3;
+    padding: 40px 0 20px 0;
+}
+nav ul {
+    list-style: none;
+}
+footer nav {
+    border-top: 1px solid #BBB;
+}
+footer nav {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+  footer>.dispFlex {
+    align-items: center; /* Center the content vertically */
+  }
+
+  footer nav ul {
+    column-count: 1;
+    padding: 20px 0;
+    text-align: left; /* Align the content to the left */
+    padding-left: 20px; /* Add padding on the left */
+    margin: 0 auto; /* Center the content horizontally */
+    max-width: 600px; /* Set a maximum width for centering effect */
+  }
+
+  footer ul.iconMenu {
+    justify-content: center; /* Center the items horizontally */
+  }
+
+  footer ul.iconMenu li {
+    margin-right: 10px;
+  }
+}
+
+h3.h3_sideban {
+  background: #FF484B;
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+  width: 100%;
+  color: #FFF;
+  position: relative;
+  margin-bottom: 10px;
+}
+.sideban dl dt {
+    margin-bottom: 10px;
+}
+.aic {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.writer_chara_col {
+  margin: 20px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.writer_chara_col img {
+    width: 130px;
+    height: 130px;
+    background: #fff2d0;
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: 50%;
+}
+.writer_chara_col .speech {
+    width: 78%;
+    padding: 15px 20px;
+    position: relative;
+    background: #fff2d0;
+    border-radius: 10px;
+}
+.writer_chara_col .speech::after {
+    height: 0;
+    content: "";
+    position: absolute;
+    top: 70px;
+    right: 100%;
+    border: solid transparent;
+    border-color: rgba(255,255,255,0);
+    border-right-color: #fff2d0;
+    border-width: 10px 20px;
+}
+.writer_chara_col span {
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    font-size: .9rem;
+    line-height: 1.6em;
+    font-weight: 700;
+}
+.related-article {
+    border: 1px solid #666;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.related-article dl {
+    width: 60%;
+    padding: 15px 20px;
+}
+.related-article dl dt a {
+    color: #111;
+}
+.related-article dl p {
+    padding: 0;
+}
+.markY {
+    background: #FEE87E;
+    display: inline;
+}
+.related-article>a img {
+    vertical-align: bottom;
+    width: 100%;
+    height: auto;
+}
+.txtLeft {
+    text-align: left;
+}
+.cont2 {
+    margin: 0 auto 15px 0;
+    text-align: center;
+    padding: 0 15px;
+}
+#mokuji.m-step1 {
+    border: 1px solid #8cc63f;
+    background-color: #e4f9cf;
+}
+dl#mokuji {
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+dl#mokuji.m-step1 dd {
+    border-left: 1px solid #8cc63f;
+}
+dl#mokuji dd ol {
+    list-style: decimal inside;
+    font-size: .9rem;
+    text-align: left;
+    padding-left: 20px;
+}
+dl#mokuji dd ol li a {
+    padding: 1px 0;
+    color: #4d4d4d;
+}
+.h3-lineLB {
+    padding: 10px 0 8px 15px;
+    margin: 10px 0 20px 0;
+    color: #fff;
+}
+.h3-lineLB.LB-step2 {
+    background: #8cc63f;
+    border-bottom: solid 3px #8cc63f;
+    border-left: none;
+}
+.txtCenter {
+    text-align: center;
+}
+.bold {
+    font-weight: 700;
+}
+.staff_comment_col {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.staff_comment_col .speech {
+    width: 82%;
+    background: #fff2d0;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    margin-left: 3%;
+}
+
+.staff_comment_col .speech::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    height: 0;
+    border: solid transparent;
+    border-color: rgba(255,255,255,0);
+    border-right-color: #fff2d0;
+    right: 100%;
+    border-width: 10px 20px;
+   
+}
+.boderstep1 {
+    border: 2px solid #8cc63f;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+ul.li_point, ol.li_point {
+    list-style: circle inside;
+    text-align: left;
+}
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+.fontRed {
+    color: #EA0000;
+}
+.font-cl-step1 {
+    /* color: #0071bc; */
+    border-bottom: 1px solid #8cc63f;
+    border-left: 8px solid #8cc63f;
+    padding: 5px 0 8px 15px;
+}
+.markY {
+    background: #FEE87E;
+    display: inline;
+}
+ol.li_numb {
+    list-style: decimal inside;
+    text-align: left;
+}
+
+.underLineB {
+    text-align: left;
+    background: #D5EFFF;
+    margin: 15px 0;
+    padding: 10px 10px 10px 15px;
+}
+.underLineB.step1 {
+    text-align: left;
+    color: #2c3d66;
+}
+h4 {
+    font-size: 1.15rem;
+    font-family: 'M PLUS 1p',sans-serif;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.boderstep1 {
+    border: 2px solid #29abe2;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.mb30 {
+    margin-bottom: 30px!important;
+}
+.dispFlex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.underL-s.icon-t {
+    margin-bottom: 15px;
+}
+.underL-s.icon-t>h4 {
+    border-bottom: 1px solid #0e6eb8;
+    padding: 5px 0 7px 15px;
+    color: #0e6eb8;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    width: 95%;
+}
+.sp {
+    display: none!important;
+}
+.flex65 {
+    width: 65%;
+}
+.flex35 {
+    width: 35%;
+}
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.fxin-jusbetw {
+    justify-content: space-between;
+}
+.mt15 {
+    margin-top: 15px;
+}
+.about_check .flex65 ul.li_check {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+ul.li_check {
+    margin: 10px;
+    list-style: none;
+}
+.font-cl-step1 {
+    /* color: #0071bc; */
+    border-bottom: 1px solid #8cc63f;
+    border-left: 8px solid #8cc63f;
+    padding: 5px 0 8px 15px;
+}
+.font-cl-step1 {
+    color: #0071bc;
+    margin: 20px 0 10px 0;
+}
+h3 {
+    font-size: 1.3rem;
+    font-family: 'M PLUS 1p',sans-serif;
+    text-align: left;
+    line-height: 150%;
+    margin-bottom: 15px;
+}
+p {
+    font-size: 1rem;
+    text-align: left;
+    padding-bottom: 15px;
+}
+.cont2 a.link_btn.step1, .cont2 a.link_btn2.step1 {
+    border-color: #84be3f;
+    color: #84be3f;
+}
+.cont2 a.link_btn, .cont2 a.link_btn2, .casinocont a.link_btn {
+    display: block;
+    border: 1px solid #84be3f;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 10px 8px;
+    background: #fff;
+}
+ol.a-stepboxOdr {
+    width: 100%;
+    list-style: none;
+    margin: 20px 0;
+}
+ol.a-stepboxOdr dl dt {
+    background-color: #e6f6f7;
+    color: #3aa8ad;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    position: relative;
+    border-radius: 15px;
+}
+ol.a-stepboxOdr dl dt>p:first-child {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+ol.a-stepboxOdr dl dt span.a-stepOdr {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #47bacd;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 180%;
+    line-height: 110%;
+    margin-right: 25px;
+    font-weight: 400;
+    position: relative;
+    top: -10px;
+    left: 5px;
+}
+.dispFlex2 {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flex30 {
+    width: 29%;
+}
+.flex70 {
+    width: 69%;
+}
+dl.dl-bmenu.step2 {
+    border: 2px solid #83be3e;
+}
+dl.dl-bmenu.step1 dt {
+    background-color: #29a3da;
+}
+dl.dl-bmenu dd ol.numb1 {
+    list-style-type: none;
+    counter-reset: dl-m-numb;
+    padding: 5px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+dl.dl-bmenu.step1 dd ol.numb1>li:before {
+    color: #29a3da;
+}
+dl.dl-bmenu dt {
+    background-color: #83be3e;
+    border-radius: 7px 7px 0 0 / 7px 7px 0 0;
+    padding: 10px 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+dl.dl-bmenu dd ol.numb1>li {
+    list-style-type: none;
+    counter-increment: dl-m-numb;
+    border-bottom: 1px solid #666;
+    padding: 12px 0;
+    width: 49%;
+    text-align: left;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+dl.dl-bmenu dd ol.numb1>li:before {
+    content: counter(dl-m-numb)'.';
+    font-weight: 700;
+    margin-right: 3px;
+}
+dl.dl-bmenu.step2 dd>ol.numb1 li {
+    border-bottom: 1px solid #c7ea8e;
+}
+ul.pay-logSlide.noslide, ul.pay-logSlide.spnoslide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul.pay-logSlide.noslide, ul.a-logSlide.noslide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul.pay-logSlide.step1 {
+    background: #e0ffff;
+}
+ul.pay-logSlide, ul.a-logSlide {
+    list-style: none;
+    min-height: 100px;
+    margin: 10px 20px;
+    padding: 10px 5px;
+}
+
+.dl_point.step1 {
+    border: 2px solid #8cc63f;
+}
+.dl_point.step1 dt {
+    color: #8cc63f;
+}
+.dl_point {
+    background: #FFF;
+    padding: 20px;
+    margin: 0 0 15px 0;
+    border: 2px solid #111;
+}
+.dl_point dt {
+    background-repeat: no-repeat;
+    padding: 0 0 0 5px;
+    height: 23px;
+    line-height: 23px;
+    font-weight: 700;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #111;
+}
+.linkbox-article {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background: #edf9ff;
+    padding: 15px;
+    font-size: 16px;
+}
+.linkbox-article a > span {
+    position: relative;
+    top: 5px;
+    left: 0;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    color: #29a3da;
+    font-weight: 700;
+}
+.linkbox-article a:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.linkbox-article a {
+    display: block;
+    text-align: left;
+}
+.fa-book-open:before {
+    content: "\f518";
+}
+.cont2 a.link_btn.step2 {
+    border-color: #84be3f;
+    color: #84be3f;
+}
+.font-cl-step2 {
+    /* color: #0eb700; */
+    border-bottom: 1px solid #8cc63f;
+    border-left: 8px solid #8cc63f;
+    padding: 5px 0 8px 15px;
+}
+.boderstep2 {
+    border: 2px solid #8cc63f;
+    padding: 15px;
+}
+.underLineB.step2 {
+    text-align: left;
+    background: #D8EFB3;
+    color: #31662b;
+}
+.flex25 img {
+    width: 70%;
+    height: 100px;
+    height: auto;
+}
+.tipArrow {
+    position: relative;
+    padding: 0 25px;
+    display: inline-block;
+}
+h3 {
+    font-size: 1.3rem;
+    font-family: 'M PLUS 1p',sans-serif;
+    text-align: left;
+    line-height: 150%;
+    margin-bottom: 15px;
+}
+img {
+    line-height: 0;
+    font-size: 0;
+    vertical-align: bottom;
+}
+table.table2 tr:nth-of-type(2n) {
+    background: #e4f9cf;
+}
+dl.dl-bmenu.step2 dd ol.numb1 > li:before {
+    color: #83be3e;
+}
+dl.dl-bmenu dd ol.numb1 > li:before {
+    content: counter(dl-m-numb)'.';
+    font-weight: 700;
+    margin-right: 3px;
+}
+table.table.txtCenter tr th, table.table.txtCenter tr td {
+    text-align: center;
+    vertical-align: middle;
+}
+table.table.step2 tr th {
+    background: #e4f9cf;
+}
+table.table.step2 tr td, table.table.step2 tr th {
+    border: 1px solid #8cc63f;
+}
+.bold {
+    font-weight: 700;
+}
+.marg-tb20 {
+    margin: 20px 0;
+}
+div.cont-step2 {
+    background-color: #e7ffe0;
+    margin: 10px auto;
+    padding: 10px 0;
+    text-align: center;
+}
+ul.pay-logSlide.noslide, ul.pay-logSlide.spnoslide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul.pay-logSlide.step2 {
+    background: #e7ffe0;
+}
+ul.pay-logSlide, ul.a-logSlide {
+    list-style: none;
+    min-height: 100px;
+    margin: 10px 20px;
+    padding: 10px 5px;
+}
+ul.pay-logSlide li {
+    padding: 5px;
+    width: 28%;
+    margin-right: 10px;
+    background: #fff;
+}
+ul.pay-logSlide li a>img, ul.a-logSlide li a>img {
+    width: 100%;
+}
+.ranking_bnr_colgreen {
+    border: 1px solid #84be3f;
+}
+.ranking_bnr_colgreen dt {
+    background: #D8EFB3;
+    color: #31662b;
+}
+.ranking_bnr_colblue dt, .ranking_bnr_colgreen dt {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    font-family: Verdana,Geneva,"sans-serif";
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: left;
+}
+.ranking_bnr_colblue dd, .ranking_bnr_colgreen dd {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+.ranking_bnr_colblue dd>div, .ranking_bnr_colgreen dd>div {
+    width: 53%;
+}
+.ranking_bnr_colgreen dd div a.link_btn02 {
+    border: 1px solid #84be3f;
+    color: #84be3f;
+}
+#mokuji.m-step2 {
+    border: 1px solid #8cc63f;
+    background-color: #e4f9cf;
+}
+dl#mokuji dd ol {
+    list-style: decimal inside;
+    font-size: .9rem;
+    text-align: left;
+    padding-left: 20px;
+}
+dl#mokuji.m-step2 dd {
+    border-left: 1px solid #8cc63f;
+}
+.linkbox-article.step2 {
+    background: #f1ffe3;
+}
+.linkbox-article {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background: #edf9ff;
+    padding: 15px;
+    font-size: 16px;
+}
+.linkbox-article.step2>span {
+    background: #84be3f;
+}
+.linkbox-article>span {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background: #29a3da;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    width: 17%;
+    padding: 0 7px;
+}
+.linkbox-article a {
+    display: block;
+    text-align: left;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+.linkbox-article>img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    width: 100%;
+    padding-right: 15px;
+}
+.linkbox-article a:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+dl#mokuji dd ol {
+    list-style: decimal inside;
+    font-size: .9rem;
+    text-align: left;
+    padding-left: 20px;
+}
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+.detail_about.step3 {
+    border: 2px solid #f3a83b;
+}
+dl.detail_about dt {
+    margin-bottom: 10px;
+    font-size: 80%;
+}
+.detail_about h3, .detail_about h4, dl.detail_about dt {
+    font-size: 1.15rem;
+    border-bottom: 1px solid #de6bae;
+    color: #de6bae;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    font-family: 'M PLUS 1p',sans-serif;
+}
+.detail_about, dl.detail_about {
+    border: 2px solid #de6bae;
+    border-radius: 15px;
+    padding: 20px 20px 5px 20px;
+    background: #FFF;
+    margin-top: 20px;
+}
+
+.fa-2x {
+    font-size: 2em;
+}
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+.far {
+    font-weight: 400;
+}
+.ttl-grn {
+    background-color: #3caf7e;
+    color: #FFF;
+    padding: 15px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.box_nodepo {
+    border: 3px solid #666;
+    padding: 20px;
+    font-size: 16px;
+}
+.box_nodepo .box_nodepo_inner .box_nodepo_l {
+    width: 53%;
+    border-radius: 7px;
+    padding: 20px;
+}
+.nodepo_high .box_nodepo_inner .box_nodepo_l h4 {
+    border-bottom: 2px solid #3caf7e;
+}
+
+.box_nodepo_inner .box_nodepo_l h4 {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.box_nodepo_inner .box_nodepo_l h4 span.icon_txtred {
+    margin-left: 15px;
+}
+
+span.icon_txtred {
+    background: #ff215b;
+    color: #FFF;
+    font-weight: 700;
+    padding: 0 10px;
+    font-size: 14px;
+}
+.box_nodepo .box_nodepo_inner {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.ttl-bl {
+    background-color: #39aed8;
+    color: #FFF;
+    padding: 15px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.box_nodepo .box_nodepo_inner .box_nodepo_l dl {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    line-height: 1.6em;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+.box_nodepo .box_nodepo_inner .box_nodepo_l dl dt {
+    width: 27%;
+    background: #84be3f;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.box_nodepo .box_nodepo_inner .box_nodepo_l dl dt:nth-child(5), .box_nodepo .box_nodepo_inner .box_nodepo_l dl dd:last-child {
+    margin-bottom: 0;
+}
+
+.box_nodepo .box_nodepo_inner .box_nodepo_l dl dd {
+    width: 68%;
+    margin-bottom: 10px;
+}
+.box_nodepo .box_nodepo_inner .box_nodepo_l dl dd {
+    padding-top: 5px;
+}
+.box_nodepo .box_nodepo_inner .box_nodepo_l dl {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    line-height: 1.6em;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+.box_nodepo .box_nodepo_inner .box_nodepo_r img {
+    width: 100%;
+}
+img {
+    line-height: 0;
+    font-size: 0;
+    vertical-align: bottom;
+}
+.box_nodepo .box_nodepo_inner .box_nodepo_r {
+    width: 45%;
+}
+.nodepo_high .box_nodepo_inner .box_nodepo_l {
+    background: #e6fff1;
+}
+.box_nodepo .box_nodepo_inner .box_nodepo_l {
+    width: 53%;
+    border-radius: 7px;
+    padding: 20px;
+}
+.box_nodepo a.box_link {
+    width: 100%;
+    border: 2px solid #999;
+    margin-top: 10px;
+    padding: 7px;
+    text-align: center;
+    display: block;
+    color: #999;
+    font-size: 14px;
+}
+.box_nodepo.nodepo_list {
+    border-color: #39aed8;
+}
+.nodepo_list .box_nodepo_inner:first-child {
+    margin-top: 0;
+}
+.nodepo_list .box_nodepo_inner {
+    margin: 35px 0 15px 0;
+}
+.box_nodepo .box_nodepo_inner {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.box-gray {
+    background: #EFEFEF;
+    padding: 20px;
+}
+dl.dl_att {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    line-height: 1.6em;
+}
+dl.dl_att dt {
+    font-weight: 700;
+    width: 15%;
+}
+.box_nodepo a.box_link {
+    width: 100%;
+    border: 2px solid #999;
+    margin-top: 10px;
+    padding: 7px;
+    text-align: center;
+    display: block;
+    color: #999;
+    font-size: 14px;
+}
+.box_nodepo_r p.btn_baloon a.btn_signup {
+    width: 100%;
+    margin-top: 35px;
+}
+
+p.btn_baloon a.btn_signup {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff215b;
+    color: #FFF;
+    border-radius: 5px;
+    text-align: center;
+    margin: 50px auto 0 auto;
+    padding: 30px 20px 20px;
+    line-height: 130%;
+    box-shadow: 1px 2px 3px #666;
+    font-size: 16px;
+    z-index: 0;
+}
+p.btn_baloon {
+    position: relative;
+    text-align: center;
+    padding-bottom: 0;
+}
+.box_nodepo_r p.btn_baloon span {
+    width: 80%;
+}
+
+p.btn_baloon span {
+    display: block;
+    background: #fffdd7;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 35%;
+    font-size: 14px;
+    color: #ff215b;
+    z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .txtCenter {
+    text-align: center;
+
+  }
+  .img-container {
+    text-align: center;
+  }
+  .img-container img {
+    display: inline-block;
+    width: 100%;
+  }
+  .headerlog img {
+    max-width: 100%;
+    height: auto;
+  }
+  .iconMenu {
+    text-align: center;
+  }
+  .iconMenu li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  footer ul.iconMenu {
+    width: 100%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+}
+footer nav {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+  
+}
+
+</style>
+  
+</head>
+
+<body>
+    
+  <header class="header">
+    <img src="assets/images/headlog.png" alt="Header Image">
+
+<!-- start of nav  -->
+
+  <nav class="navbar navbar-expand-md navbar-light">
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown1-bg" href="#" id="dropdown1" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="assets/images/icon-step1nav.png" alt="">
+            <img src="assets/images/icon-book.png" alt="">
+            <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown1-bg text-center" aria-labelledby="dropdown1">
+            <a class="dropdown-item" href="about.html">オンラインカジノとは？基礎講座</a>
+            <a class="dropdown-item" href="law.html">オンラインカジノは違法？！</a>
+            <a class="dropdown-item" href="management.html">悪質なオンラインカジノの詐欺事例</a>
+            <a class="dropdown-item" href="software.html">ゲームのソフトウェアも信頼の目安</a>
+            <a class="dropdown-item" href="ninki.html">オンラインカジノの還元率が高い理由</a>
+            <a class="dropdown-item" href="tax.html">ゲームのソフトウェアも信頼の目安</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown2-bg" href="#" id="dropdown2" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step2nav.png" alt="">
+                <img src="assets/images/icon-play.png" alt="">
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown2-bg text-center" aria-labelledby="dropdown2">
+            <a class="dropdown-item" href="step.html">オンラインカジノの登録方法</a>
+            <a class="dropdown-item" href="payment.html">オンラインカジノの入出金について</a>
+            <a class="dropdown-item" href="bonus.html"></a>知っておきたいボーナスの知識</a>
+            <a class="dropdown-item" href="kakejyouken.html">オンラインカジノの賭け条件とは？</a>
+            <a class="dropdown-item" href="nodepositbonus.html">入金不要ボーナスが貰えるオンラインカジノ</a>
+
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown3-bg" href="#" id="dropdown3" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step3nav.png" alt="">
+                <img src="assets/images/icon-card.png" alt="">
+
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown3-bg text-center" aria-labelledby="dropdown3">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown4-bg" href="#" id="dropdown4" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step4nav.png" alt="">
+                <img src="assets/images/icon-casino.png" alt="">
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown4-bg text-center" aria-labelledby="dropdown4">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown5-bg" href="#" id="dropdown5" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step5nav.png" alt="">
+                <img src="assets/images/icon-method.png" alt="">
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown5-bg text-center" aria-labelledby="dropdown5">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- end of nav  -->
+
+<!-- start of section 1  -->
+<section>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section">
+                <div class="content">
+                    <p style="display: inline-block; font-size: 20px; font-weight: bold;">
+                      オンラインカジノとは？<br>
+                      初心者が安心して始めるための基礎講座
+                    </p>
+                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+<!-- end of section 1  -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 hide-on-mobile">
+        <!-- Content for the first column -->
+        <div class="row">
+          <div class="col-md-12">
+            <img src="assets/images/ban_side_rank.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <img src="assets/images/ban_twitter.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <img src="assets/images/ban_twitter.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <h3 class="h3_sideban mt-3"><span>＼高額賞金続出！/</span>今人気のスロットランキング</h3>
+        <dl class="mt-3">
+          <dt class="aic">
+            <img src="assets/images/icon_crown.png" loading="lazy" width="40" height="40" class="mr-2">
+            <span>LOVEの美少女パワーで大勝利！<br><span>Moon Princess</span></span>
+          </dt>
+          <dd>
+            <img src="assets/images/tmb_moonprincess.jpg" alt="人気スロットランキング" loading="lazy" class="img-fluid">
+            <a href="../slot/" class="btn_side">オンラインカジノ<br>人気スロットランキング</a>
+          </dd>
+        </dl>
+      </div>
+      <div class="col-md-9">
+        <!-- Content for the second column -->
+       
+        <!--  -->
+       
+        <div class="cont2 txtLeft">  
+            <p><img src="assets/images/kakejyouken_fv.jpg" alt="オンラインカジノのボーナスの種類・ルールを解説" class="w100" loading="lazy" width="795" height="413"></p>
+              
+            <p class="txtRight data">最終更新日：<time itemprop="dateModified">2023-06-13</time></p>
+              
+            <p>オンラインカジノ特有のサービス「ボーナス」は、一定の条件をクリアすると<span class="bold markY">ゲームで利用できる無料チップがもらえる</span>という、お得なシステムです。</p>
+              
+            <p>ボーナスには様々な種類があり、例えば入金時に貰えるボーナスや、キャンペーンで貰える限定モノもあります。</p>
+              
+            <p>ただし、ボーナスで稼いだ勝利金を出金するためには、一定の条件をクリアしなければならない等、定められたルールが存在します。<br>
+            ルールを守らないとせっかく貰ったボーナスが没収されてしまうこともあるので、必ずボーナスルールを確認するようにしましょう。</p>
+              
+            <p>ここではボーナスの種類や、把握しておきたいルールについて紹介します。</p>
+              
+                <div class="writer_chara_col">
+                <div>
+                    <img src="assets/images/kenji.png" width="150" height="150" loading="lazy" alt="KENJI"><span>著者：<a rel="author" href="../writer-kenji.html">KENJI</a><br>カジノ歴：3年</span>
+                </div>
+                <div class="speech">
+                    <dl>
+                        <dt>カジノ基礎知識担当者からのコメント</dt>
+                        <dd><p>オンラインカジノではアカウントを登録した時など色んな場面でボーナスを貰うことができますが、ボーナスの種類や使い方を知っていないと規約違反などを問われてしまうことがあります。</p>
+                <p>このページでは、カジノサイトで提供されているボーナスの種類や賭け条件、禁止ゲームといったボーナスに関する基礎知識を掲載しています。<br>
+                ボーナスの違いや大体どのくらいのボーナスが貰えるのかも紹介していますので、気になるボーナスがあればチェックしてみてくださいね。</p></dd>
+                    </dl>
+                </div>
+                </div>
+              
+                <dl class="ranking_bnr_colgreen">
+                  <dt>【2023年】おすすめオンラインカジノTOP3を紹介</dt>
+                  <dd>
+                  <a href="../ranking/"><img src="assets/images/ban_rank_link_resp.jpg" loading="lazy" width="356" height="227" alt="オンラインカジノおすすめランキング【最新版】を詳しくチェック"></a>
+                   <div> 
+                  <p>オンラインカジノ初心者ナビでは、「ボーナスが豊富」「人気がある」など5つの基準からおすすめの優良カジノサイトを3つ紹介しています。ボーナス獲得額や出金条件別におすすめのカジノも紹介しています。</p>
+                  <a href="../ranking/" class="btn-squareOre link_btn02 right_arrow">【2023年最新】おすすめオンラインカジノランキング</a>
+                  </div>	 
+                  </dd>
+              </dl>
+              
+          </div>
+          <div class="cont2 txtLeft">
+		    <dl id="mokuji" class="m-step2">
+		      <dt>もくじ</dt>
+			  <dd>
+			    <ol>
+				  <li><a href="#1">入金不要ボーナス（登録ボーナス）が貰えるオンラインカジノ一覧</a>
+					  <ul>
+				   	    <li><a href="#1-2">当サイトが最高額！おすすめオンラインカジノ</a></li>
+				   	    <li><a href="#1-3">その他入金不要ボーナス付きのオンラインカジノ</a></li>
+					  </ul>
+				  </li>
+				  <li><a href="#2">入金不要ボーナスの受け取り方</a>
+					  <ul>
+						<li><a href="#2-1">ボーナスを受け取れない場合の原因と対処法</a></li>
+					  </ul>
+				  </li>					
+				  <li><a href="#3">入金不要ボーナス利用時の注意点</a>
+					  <ul>
+						<li><a href="#3-1">入金不要ボーナスを何度も貰うのはNG！各カジノ貰えるのは1度だけ</a></li>
+				   	    <li><a href="#3-2">利用期限を過ぎないように注意！</a></li>
+						<li><a href="#3-3">出金条件・禁止ゲーム・出金上限額は必ずチェック！</a></li>
+					  </ul>
+				  </li>
+				  <li><a href="#4">入金不要ボーナスを使って無料で稼げるの？</a>
+					  <ul>
+						<li><a href="#4-1">入金せずに入金不要ボーナスで稼ぐ⇒出金はルール違反！</a></li>
+				   	    <li><a href="#4-2">攻略法など一定の賭け方を続けると凍結の恐れ</a></li>
+					  </ul>
+				  </li>
+				  <li><a href="#5">入金不要ボーナスを受け取らない・破棄する選択肢も</a>
+					  <ul>
+						<li><a href="#5-1">受け取ったボーナスを破棄する方法</a></li>
+				   	    <li><a href="#5-2">入金不要ボーナスと初回入金ボーナスの違い</a></li>
+					  </ul>
+				  </li>					
+				  <li><a href="#6">入金不要ボーナスはお試しプレイに活用しよう</a></li>
+				  <li><a href="#faq">入金不要ボーナスに関するよくある質問</a></li>
+				</ol>
+			  </dd>
+		    </dl>
+		  </div>
+       
+          <div class="cont2 txtLeft">
+            <h2 class="h3-lineLB LB-step2" id="1">入金不要ボーナス（登録ボーナス）が貰えるオンラインカジノ一覧</h2>
+            <p>オンラインカジノ初心者ナビでは、特に信頼性が高く、日本人に人気のオンラインカジノを厳選して紹介しています。<br>
+               その中から入金不要ボーナス（登録ボーナス）が貰えるオンラインカジノをピックアップしてご紹介します！</p>
+  
+          <p>入金不要ボーナスを選ぶ際は、以下のポイントに気を付けましょう。</p>
+                
+                
+          <dl class="detail_about step3">
+              <dt><i class="far fa-lightbulb fa-2x"></i>POINT！入金不要ボーナスの選び方</dt>
+              <dd>
+                
+          <dl class="dl_list">
+              <dt>高額なボーナスが貰えるサイトを確認しよう</dt>
+              <dd>
+              <p>入金不要ボーナスは、登録時に経由するサイトによって貰えたり貰えなかったり、また貰える金額にも差があります。登録したいカジノがあれば、<span class="bold">事前に一番高い入金不要ボーナスが受け取れるサイトをチェック</span>しておくことをおすすめします。<br>
+              当サイトが最高額の入金不要ボーナスは、<span class="bold markY">「当サイト最高額」</span>のカテゴリに掲載しています。</p>
+              </dd>
+              <dt>「出金条件（賭け条件）」は必ずチェック！</dt>
+              <dd><p>通常、オンラインカジノのボーナスには、「ボーナス額の○倍ベットしなければ、ボーナスによる勝利金を出金できない」といった<span class="bold txtRed">「出金条件（賭け条件）」</span>が課せられています。<br>
+              金額が高くても出金条件が高いと、せっかく勝利しても出金できないということが起こってしまいます。<br>
+              お試しで遊ぶ分には出金条件は関係ありませんが、どうせなら出金したい！と考えているなら、出金条件の低いボーナスを選びましょう。</p>
+                  
+              </dd>
+          </dl>
+                  
+          </dd>
+          </dl>
+  
+                
+                
+          <h3 class="ttl-grn txtCenter mt30" id="1-2"><img src="assets/images/icon-megaphone-wh.png" loading="lazy" width="40" height="40">当サイトが最高額！<br class="sp">おすすめオンラインカジノ</h3>
+          <div class="box_nodepo nodepo_high">
+              
+          <div class="box_nodepo_inner">
+              
+          <div class="box_nodepo_l">
+          <h4><a href="../ranking/verajohn.html">ベラジョンカジノ</a><span class="icon_txtred">当サイト限定</span></h4>
+          <p class="bold">「Golden Ticket」フリースピン<br>通常50回⇒550回</p>
+              
+          <a href="../casino/verajohncasino_signup.html" target="new" rel="nofollow"><img src="assets/images/nodepo_vj_sm.jpg" loading="lazy" alt="ベラジョンカジノ：通常30ドル⇒40ドル" class="sp"></a>
+              
+          <dl>
+          <dt>出金条件</dt><dd>20倍</dd>
+          <dt>出金上限額</dt><dd>1000ドル</dd>
+          <dt>受取方法</dt><dd>登録後、自動的に付与されます。</dd>
+          </dl>
+          </div>
+              
+          <div class="box_nodepo_r pc">
+          <a href="../casino/verajohncasino_signup.html" target="new" rel="nofollow"><img src="assets/images/nodepo_vj_lg.jpg" loading="lazy" width="337" height="337" alt="ベラジョンカジノ：通常30ドル⇒40ドル"></a>
+          <a href="../ranking/verajohn.html" class="box_link"><span>ベラジョンカジノの詳細はこちら</span></a>
+          </div>
+            
+          </div>
+                
+          <div class="box-gray">
+                
+          <dl class="dl_att mb20">
+          <dt>注意事項</dt>
+          <dd>
+          <ul>
+          <li>フリースピン1回あたりのベット額（スピンバリュー）は0.2ドルです。</li>
+          <li>フリースピンは獲得後48時間以内に使用する必要があります。</li>
+          <li>フリースピンによる勝利金はボーナスマネーに変換され、出金条件20倍が適用されます。</li>
+          <li>出金条件は30日以内にクリアする必要があり、期限内にクリアできなかった場合ボーナスは消失します。</li>
+          <li>入金不要ボーナスで得た勝利金を出金する前に、初回入金を行う必要があります。</li>
+          </ul>	
+          </dd>
+                
+          </dl>
+              
+          <p class="linkbox-txt">
+              <span><i class="fas fa-book-open"></i>関連記事</span>
+              <a href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/oncasi-bonus/verajohn-tourokubonus-syukkin/"><span>ベラジョンカジノの登録ボーナスを出金する条件・注意点など</span><i class="fas fa-chevron-right"></i></a>
+          </p>
+          </div>
+  
+          <p class="btn_baloon mb30"><span>ボーナスの受け取りはこちらから！</span><a href="../casino/verajohncasino_signup.html" class="btn_signup" target="new" rel="nofollow">ベラジョンカジノに登録する</a></p>
+              
+          <p class="sp"><a href="../ranking/verajohn.html" class="box_link"><span>ベラジョンカジノの詳細はこちら</span></a></p>
+              
+              
+              
+          <div class="box_nodepo_inner">
+              
+          <div class="box_nodepo_l">
+          <h4><a href="../ranking/inter.html">インターカジノ</a><span class="icon_txtred">当サイト限定</span></h4>
+          <p class="bold">通常10ドル⇒40ドル</p>
+              
+          <a href="../casino/intercasino_signup.html" target="new" rel="nofollow"><img src="assets/images/nodepo_ic_sm.jpg" loading="lazy" width="337" height="152" alt="インターカジノ：通常10ドル⇒40ドル" class="sp"></a>
+              
+          <dl>
+          <dt>出金条件</dt><dd>30倍</dd>
+          <dt>出金上限額</dt><dd>400ドル</dd>
+          <dt>受取方法</dt><dd>登録後、自動的に付与されます。</dd>
+          </dl>
+          </div>
+              
+          <div class="box_nodepo_r pc">
+          <a href="../casino/intercasino_signup.html" target="new" rel="nofollow"><img src="assets/images/nodepo_ic_lg.jpg" loading="lazy" width="337" height="337" alt="インターカジノ：通常10ドル⇒40ドル"></a>
+          <a href="../ranking/inter.html" class="box_link"><span>インターカジノの詳細はこちら</span></a>
+          </div>
+            
+          </div>
+                
+          <div class="box-gray">
+                
+          <dl class="dl_att mb20">
+          <dt>注意事項</dt>
+          <dd>
+          <ul>
+          <li>入金不要ボーナスで得た勝利金を出金する前に、初回入金を行う必要があります。</li>
+          </ul>	
+          </dd>
+                
+          </dl>
+              
+          <p class="linkbox-txt">
+              <span><i class="fas fa-book-open"></i>関連記事</span>
+              <a href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/oncasi-bonus/intercasino-bonus/"><span>【インターカジノのボーナス徹底解説】受け取り方や出金条件、消化率など</span><i class="fas fa-chevron-right"></i></a>
+          </p>
+              
+          </div>
+  
+          <p class="btn_baloon"><span>ボーナスの受け取りはこちらから！</span><a href="../casino/intercasino_signup.html" class="btn_signup" target="new" rel="nofollow">インターカジノに登録する</a></p>
+              
+          <p class="sp"><a href="../ranking/inter.html" class="box_link"><span>インターカジノの詳細はこちら</span></a></p>
+  
+  
+        </div>
+                
+                
+                
+      <h3 class="ttl-bl txtCenter mt30 mb30" id="1-3"><img src="assets/images/icon-dollar-wh.png" loading="lazy" width="40" height="40">その他　入金不要ボーナス付きの<br class="sp">オンラインカジノ</h3>
+          <div class="box_nodepo nodepo_list">
+              
+          <div class="box_nodepo_inner">
+              
+          <div class="box_nodepo_l">
+          <h4><a href="../ranking/luckyniki.html">ラッキーニッキー</a><span class="icon_txtred">当サイト限定</span></h4>
+              
+          <p class="bold">通常30ドル⇒40ドル</p>
+              
+          <a href="../casino/luckyniki_signup.html" target="new" rel="nofollow"><img src="assets/images/nodepo_ln_sm.jpg" loading="lazy" width="337" height="152" alt="ラッキーニッキー：通常30ドル⇒40ドル" class="sp"></a>
+              
+          <dl>
+          <dt>出金条件</dt><dd>30倍</dd>
+          <dt>出金上限額</dt><dd>400ドル</dd>
+          <dt>受取方法</dt>
+          <dd>
+          <ol class="li_numb">
+              <li>登録後、「認証コード」という件名でメールが届く</li>
+              <li>メールに記載されている認証コードを、登録情報＞設定内の「メール設定」欄に入力し、「送信」をクリック</li>
+          </ol>
+          </dd>
+          </dl>
+          </div>
+              
+          <div class="box_nodepo_r">
+          <a href="../casino/luckyniki_signup.html" class="pc" target="new" rel="nofollow"><img src="assets/images/nodepo_ln_sm.jpg" loading="lazy" width="337" height="152" alt="ラッキーニッキー：通常30ドル⇒40ドル"></a>
+              
+          <ul class="sp_reverse">
+          <li><a href="../ranking/luckyniki.html" class="box_link"><span>ラッキーニッキーの詳細はこちら</span></a></li>
+          <li>
+          <p class="btn_baloon"><span>ボーナスの受け取りはこちらから！</span><a href="../casino/luckyniki_signup.html" class="btn_signup" target="new" rel="nofollow">ラッキーニッキーに登録する</a></p>
+          </li>	
+          </ul>
+              
+          </div>
+            
+          </div>
+              
+          <div class="box-gray">
+                
+          <dl class="dl_att mb20">
+          <dt>注意事項</dt>
+          <dd>
+          <ul>
+          <li>最高ベット額は5ドルです。</li>
+          <li>入金不要ボーナスで得た勝利金を出金する前に、初回入金を行う必要があります。</li>
+          </ul>	
+          </dd>
+                
+          </dl>
+              
+          <p class="linkbox-txt">
+              <span><i class="fas fa-book-open"></i>関連記事</span>
+              <a href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/oncasi-bonus/luckyniki-nodepositbonus-uketorikata/"><span>ラッキーニッキーの入金不要ボーナスの受け取り方・出金条件や注意点</span><i class="fas fa-chevron-right"></i></a>
+          </p>
+              
+          </div>
+              
+              
+          <div class="box_nodepo_inner">
+              
+          <div class="box_nodepo_l">
+          <h4><a href="../ranking/casinosecret.html">カジノシークレット</a><span class="icon_txtred">当サイト限定</span></h4>
+              
+          <p class="bold">通常0ドル⇒33ドル</p>
+              
+          <a href="../casino/casinosecret_signup.html" target="new" rel="nofollow"><img src="assets/images/nodepo_cs_sm.jpg" loading="lazy" width="337" height="152" alt="カジノシークレット：通常0ドル⇒33ドル" class="sp"></a>
+              
+          <dl>
+          <dt>出金条件</dt><dd>25倍</dd>
+          <dt>出金上限額</dt><dd>300ドル</dd>
+          <dt>受取方法</dt><dd>登録後、自動的に付与されます。</dd>
+          </dl>
+          </div>
+              
+          <div class="box_nodepo_r">
+          <a href="../casino/casinosecret_signup.html" class="pc" target="new" rel="nofollow"><img src="assets/images/nodepo_cs_sm.jpg" loading="lazy" width="337" height="152" alt="カジノシークレット：通常0ドル⇒33ドル"></a>
+              
+          <ul class="sp_reverse">
+          <li><a href="../ranking/casinosecret.html" class="box_link"><span>カジノシークレットの詳細はこちら</span></a></li>
+          <li>
+          <p class="btn_baloon"><span>ボーナスの受け取りはこちらから！</span><a href="../casino/casinosecret_signup.html" class="btn_signup" target="new" rel="nofollow">カジノシークレットに登録する</a></p>
+          </li>	
+          </ul>
+              
+          </div>
+            
+          </div>
+              
+          <div class="box-gray">
+                
+          <dl class="dl_att">
+          <dt>注意事項</dt>
+          <dd>
+          <ul>
+          <li>入金不要ボーナスの有効期限は24時間となり、受け取りから24時間を超えるとボーナス及び、獲得した勝利金は没収されます。</li>
+          <li>入金不要ボーナスで得た勝利金を出金する前に、30ドル以上の初回入金を行う必要があります。</li>
+          <li>入金不要ボーナスを所持している間は、キャッシュバックが無効になります。</li>
+          <li>ウェルカムキャッシュバックを利用する場合、入金不要ボーナスを使い切ってから入金する必要があります。</li>
+          </ul>	
+          </dd>
+                
+          </dl>
+              
+          <p class="linkbox-txt">
+              <span><i class="fas fa-book-open"></i>関連記事</span>
+              <a href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/oncasi-bonus/casinosecret-nodepositbonus/"><span>カジノシークレットの入金不要ボーナスを貰う方法・賭け条件を徹底解説</span><i class="fas fa-chevron-right"></i></a>
+          </p>
+              
+            
+          </div>
+              
+              
+          <div class="box_nodepo_inner">
+              
+          <div class="box_nodepo_l">
+          <h4><a href="../ranking/empire.html">エンパイア777カジノ</a><span class="icon_txtred">当サイト限定</span></h4>
+              
+          <p class="bold">通常0ドル⇒20ドル</p>
+              
+          <a href="../casino/empire777_signup.html" target="new" rel="nofollow"><img src="assets/images/nodepo_emp_sm.jpg" loading="lazy" width="337" height="152" alt="エンパイア777カジノ：通常0ドル⇒20ドル" class="sp"></a>
+              
+          <dl>
+          <dt>出金条件</dt><dd>5倍</dd>
+          <dt>出金上限額</dt><dd>60ドル</dd>
+          <dt>受取方法</dt><dd>登録後、メールまたはチャットでサポートまで「オンラインカジノ初心者ナビ経由の20ドル入金不要ボーナス希望」とお伝えください。</dd>
+          </dl>
+          </div>
+              
+          <div class="box_nodepo_r">
+          <a href="../casino/empire777_signup.html" class="pc" target="new" rel="nofollow"><img src="assets/images/nodepo_emp_sm.jpg" loading="lazy" width="337" height="152" alt="エンパイア777カジノ：通常0ドル⇒20ドル"></a>
+              
+          <ul class="sp_reverse">
+          <li><a href="../ranking/empire.html" class="box_link"><span>エンパイア777カジノの詳細はこちら</span></a></li>
+          <li>
+          <p class="btn_baloon"><span>ボーナスの受け取りはこちらから！</span><a href="../casino/empire777_signup.html" class="btn_signup" target="new" rel="nofollow">エンパイア777カジノに登録する</a></p>
+          </li>	
+          </ul>
+              
+          </div>
+            
+          </div>
+              
+          <div class="box-gray">
+                
+          <dl class="dl_att">
+          <dt>注意事項</dt>
+          <dd>
+          <ul>
+          <li>入金不要ボーナスを出金するには、以下の手順をクリアする必要があります。
+              <ol class="li_numb">
+                  <li>5倍の出金条件をクリア後、最低20ドル以上入金する</li>
+                  <li>入金後に設定される、【現金残高+入金額の総額】と同額の出金条件をクリアする</li>
+              </ol>
+          </li>
+          <li>5倍の出金条件をクリア後、上限額（60ドル）を超えた分は没収されます。</li>
+          </ul>	
+          </dd>
+                
+          </dl>
+          </div>
+              
+              
+              
+          <div class="box_nodepo_inner">
+              
+          <div class="box_nodepo_l">
+          <h4><a href="../ranking/eldoah.html">エルドアカジノ</a><span class="icon_txtred">当サイト限定</span></h4>
+              
+          <p class="bold">通常0円⇒4000円チップ</p>
+              
+          <a href="../casino/eldoahcasino.html" target="new" rel="nofollow"><img src="assets/images/nodepo_ed_sm.jpg" loading="lazy" width="337" height="152" alt="エルドアカジノ：通常0円⇒4000円" class="sp"></a>
+              
+          <dl>
+          <dt>出金条件</dt><dd>1倍</dd>
+          <dt>出金上限額</dt><dd>100ドル</dd>
+          <dt>受取方法</dt>
+          <dd>
+          <ol class="li_numb">
+              <li>登録時、エルドアカジノの登録フォーム内「プロモーションコード」欄に、【ocbnavi】を入力する</li>
+          </ol>
+          </dd>
+          </dl>
+          </div>
+              
+          <div class="box_nodepo_r">
+          <a href="../casino/eldoahcasino.html" class="pc" target="new" rel="nofollow"><img src="assets/images/nodepo_ed_sm.jpg" loading="lazy" width="337" height="152" alt="エルドアカジノ：通常0円⇒4000円"></a>
+              
+          <ul class="sp_reverse">
+          <li><a href="../ranking/eldoah.html" class="box_link"><span>エルドアカジノの詳細はこちら</span></a></li>
+          <li>
+          <p class="btn_baloon"><span>ボーナスの受け取りはこちらから！</span><a href="../casino/eldoahcasino.html" class="btn_signup" target="new" rel="nofollow">エルドアカジノに登録する</a></p>
+          </li>	
+          </ul>
+              
+          </div>
+            
+          </div>
+              
+          <div class="box-gray">
+              
+          <p class="linkbox-txt">
+              <span><i class="fas fa-book-open"></i>関連記事</span>
+              <a href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/oncasi-bonus/eldoah-nodepositbonus/"><span>エルドアカジノの入金不要ボーナス徹底解説！受け取り方・出金条件や注意点など</span><i class="fas fa-chevron-right"></i></a>
+          </p>
+              
+          </div>
+              
+          
+          <div class="box_nodepo_inner">
+              
+          <div class="box_nodepo_l">
+          <h4><a href="../ranking/williamhill.html">ウィリアムヒルカジノ</a><span class="icon_txtred">当サイト限定</span></h4>
+              
+          <p class="bold">通常0ドル⇒30ドル</p>
+              
+          <a href="../casino/williamhillcasino.html" target="new" rel="nofollow"><img src="assets/images/nodepo_wil_sm.jpg" loading="lazy" width="337" height="152" alt="ウィリアムヒルカジノ：通常0ドル⇒30ドル" class="sp"></a>
+              
+          <dl>
+          <dt>出金条件</dt><dd>20倍</dd>
+          <dt>出金上限額</dt><dd>100ドル</dd>
+          <dt>受取方法</dt>
+          <dd>
+          <ol class="li_numb">
+              <li>当サイトからウィリアムヒルカジノに登録後、メールアドレスを認証</li>
+              <li>メール認証後に表示される入金ページを一度閉じる</li>
+              <li>入金不要ボーナス申請ページが表示されるので「申請」をクリック</li>
+          </ol>
+          </dd>
+          </dl>
+          </div>
+              
+          <div class="box_nodepo_r">
+          <a href="../casino/williamhillcasino.html" class="pc" target="new" rel="nofollow"><img src="assets/images/nodepo_wil_sm.jpg" loading="lazy" width="337" height="152" alt="ウィリアムヒルカジノ：通常0ドル⇒30ドル"></a>
+              
+          <ul class="sp_reverse">
+          <li><a href="../ranking/williamhill.html" class="box_link"><span>ウィリアムヒルカジノの詳細はこちら</span></a></li>
+          <li>
+          <p class="btn_baloon"><span>ボーナスの受け取りはこちらから！</span><a href="../casino/williamhillcasino.html" class="btn_signup" target="new" rel="nofollow">ウィリアムヒルカジノに登録する</a></p>
+          </li>	
+          </ul>
+              
+          </div>
+            
+          </div>
+              
+          <div class="box-gray">
+                
+          <dl class="dl_att">
+          <dt>注意事項</dt>
+          <dd>
+          <ul>
+          <li>入金不要ボーナスの有効期限は発行後72時間（3日間）です。</li>
+          <li>入金不要ボーナスは、ベガス・ライブカジノのみで利用できます。スポーツ・ポーカーでは利用できません。</li>
+          <li>入金不要ボーナスの出金申請を行うには入金履歴が必要となります。</li>
+          </ul>	
+          </dd>
+                
+          </dl>
+          </div>
+  
+              
+  
+        </div>
+                
+                
+      </div>
+      <div class="cont2 txtLeft">  
+			
+        <h2 class="h3-lineLB LB-step2" id="2">入金不要ボーナスの受け取り方</h2>
+        <p>入金不要ボーナスの受け取り方は、オンラインカジノによって異なります。<br>
+        登録後に自動で進呈されることが多いですが、<span class="bold">認証コードの入力など、申請が必要な場合</span>もあります。<br>
+        本ページで紹介している入金不要ボーナスは、受け取り方法を一緒に記載していますので、登録前にご確認ください。</p>
+            
+            
+          <h3 class="font-cl-step2" id="2-1">ボーナスを受け取れない場合の原因と対処法</h3>  
+                
+            <div class="boderstep2 mt20 mb20">
+              <ul class="li_point font_per100">
+                  <li>必要なボーナス受け取り手順を満たしていない</li>
+                <li>不具合によるボーナス進呈漏れ</li>  
+              </ul>
+            </div>
+                
+        <p>入金不要ボーナスを受け取れない場合は、上記の原因が考えられます。<br>
+        オンラインカジノ初心者ナビ限定ボーナスの場合、<span class="bold fontRed">当サイト経由以外でオンラインカジノに登録した場合</span>は、入金不要ボーナスが進呈されません。<br>
+        また、申請が必要なボーナスの場合は、登録完了時点ではボーナスが付与されませんので注意しましょう。</p>
+    
+        <p>受け取りの条件を満たしているのにボーナスが進呈されない場合は、何らかの不具合があった可能性があります。<br>
+        オンラインカジノの<span class="bold">サポート宛に「入金不要ボーナスが進呈されていない」旨を伝え</span>、状況を確認してみてください。</p>
+    
+      </div>
+      <div class="cont2 txtLeft">  
+			
+        <h2 class="h3-lineLB LB-step2" id="3">入金不要ボーナス利用時の注意点</h2>
+                
+        <p class="txtCenter"><img src="assets/images/nodepo_01.jpg" loading="lazy" width="700" height="364" alt="登録前に必ずチェック！入金不要ボーナスのルール"></p>
+                
+        <p>入金前にオンラインカジノが体験できるお得な入金不要ボーナス（登録ボーナス）ですが、利用するにあたっていくつか注意しておくべき点があります。<br>
+        入金不要ボーナスを使いたい人は必ず事前に確認しておきましょう。</p>
+    
+                
+        <h3 class="font-cl-step2" id="3-1">入金不要ボーナスを何度も貰うのはNG！各カジノ貰えるのは1度だけ</h3>  
+                
+        <p>オンラインカジノでは基本的に、<span class="bold txtRed">同じユーザーが複数アカウントを持つことは禁止</span>されています。<br>
+        何度も入金不要ボーナスを貰おうとして複数アカウントを登録してしまうと、違反行為とみなされアカウントが凍結される場合があります。</p>
+    
+        <p><a href="https://オンラインカジノ初心者ナビ.com/blog/oncasi-bonus/nodepositbonus-nandomo/">入金不要ボーナスを何度ももらうのは禁止行為</a>なので覚えておきましょう。</p>
+            
+            <h3 class="font-cl-step2" id="3-2">利用期限を過ぎないように注意！</h3>
+                
+              <p>入金不要ボーナスには、<span class="bold">利用期限</span>が定められている場合があります。<br>
+              「受け取ってから○時間以内に使い切らなければ失効する」という記載がボーナス利用規約内にありますので、確認しておきましょう。</p>
+    
+            <p>なお、利用期限は大体24～72時間程度に設定されていることが多いようです。</p>
+                
+                
+            <h3 class="font-cl-step2" id="3-3">出金条件・禁止ゲーム・出金上限額は必ずチェック！</h3>
+                
+            <div class="boderstep2 mt20 mb20">
+              <ul class="li_point font_per100">
+                  <li>出金条件（賭け条件）：ボーナス出金に必要な賭け額を表すもの</li>
+                 <li>禁止ゲーム：ボーナスを賭けることが禁止されているゲーム</li> 			  
+                <li>出金上限額：ボーナスで獲得した勝利金の最大出金額</li>  
+              </ul>
+            </div>
+                
+            <p>オンラインカジノの入金不要ボーナスは、<span class="bold fontRed">受け取ってそのまま出金できません</span>。<br>
+            ボーナスをゲームで賭けて獲得した勝利金を、<span class="bold">出金条件（賭け条件）をクリア</span>することで出金できます。<br>
+            また、「禁止ゲーム」でボーナスを使った場合は利用規約違反となり、ボーナスで獲得した勝利金が没収されますので注意しましょう。</p>
+    
+            <p>さらに、ボーナスで獲得した勝利金は、すべて出金できるわけではありません。<br>
+            <span class="markY bold">出金できる上限額</span>が決まっていますので、各オンラインカジノのボーナス利用規約をよく確認しておきましょう。</p>
+    
+                
+        <div class="staff_comment_col">
+          <img src="assets/images/icon-staff_kenji.jpg" width="150" height="150" loading="lazy" alt="KENJI">   
+            <div class="speech">
+            <p>もしボーナス利用規約が見つからない場合は、オンラインカジノのサポートに問い合わせてみてください！すぐに返信をもらえる<span class="bold">ライブチャットが便利</span>ですが、<span class="bold">複数の内容をまとめて確認したい</span>ときは、メールでの問い合わせもおすすめです！</p>
+              </div>
+        </div>
+                
+      </div>
+      <div class="cont2 txtLeft">  
+			
+        <h2 class="h3-lineLB LB-step2" id="4">入金不要ボーナスを使って無料で稼げるの？</h2>
+          
+        <p>「入金不要ボーナス（登録ボーナス）」と聞いてまず「ボーナスで大当たりが出れば、無料で稼げるのでは？」と考える方も多いと思います。<br>
+          では実際に入金せずに稼げることがあるのかというと、残念ながら<span class="bold">入金不要ボーナス（登録ボーナス）で稼ぐのはほぼ無理</span>だと言えます。</p>
+
+        <p>なぜ入金不要ボーナスで稼ぐのは無理なのか、ここではその理由について解説します。</p>
+                
+                
+                
+        <h3 class="font-cl-step2" id="4-1">入金せずに入金不要ボーナスで稼ぐ⇒出金はルール違反！</h3>
+			  
+            <h2 class="h3-lineLB LB-step2" id="5">入金不要ボーナスを受け取らない・破棄する選択肢も</h2>
+            
+            <p class="txtCenter"><img src="assets/images/nodepo_04.jpg" loading="lazy" width="700" height="364" alt="ボーナスを破棄した方が良いケース キャッシュを出金したい 他のボーナスを受け取りたい"></p>
+            
+            <div class="boderstep2 mt0 mb20">
+              <ul class="li_point font_per100">
+                  <li>出金したいキャッシュがあるけど、ボーナスが邪魔で出金できない</li>
+                <li>登録後すぐに別のボーナスを使用したい</li>  
+              </ul>
+            </div>		
+            
+        <p>上記のような場合、入金不要ボーナスを<span class="markY bold">受け取らない・または破棄</span>するプレイヤーもいます。</p>
+    
+        <p>例えばボーナスとキャッシュが同じ枠で管理される「<span class="bold">混合型（一体型）ボーナス</span>」の場合、<span class="bold">ボーナスの出金条件を満たすまで、キャッシュも出金できません。</span><br>
+        また、入金不要ボーナスは<span class="bold fontRed">他のボーナスと併用できない</span>点にも注意が必要です。</p>
+    
+        <p>入金不要ボーナスのデメリットが大きく感じる場合は、ボーナスを受け取らない、または破棄する方がよいでしょう。</p>
+                
+                
+            <h3 class="font-cl-step2" id="5-1">受け取ったボーナスを破棄する方法</h3>
+                <div class="boderstep2 mt20 mb20">
+              <ul class="li_point">
+                  <li>サポートに連絡して削除してもらう</li>
+                <li>ボーナスの有効期限が切れるまで待つ</li>  
+              </ul>
+            </div>
+            
+        <p>既に受け取った入金不要ボーナスを破棄するには、上記2つの方法があります。<br><span class="markY bold">すぐにボーナスを破棄したい場合は、サポートに連絡</span>をするとよいでしょう。</p>
+    
+        <p>また、ボーナスとキャッシュが別枠で管理される「分離型ボーナス」の場合は、<span class="bold">ボーナス所持中にキャッシュを出金</span>することで、自動的にボーナスが削除されます。</p>
+                
+        <h3 class="font-cl-step2" id="5-2">入金不要ボーナスと初回入金ボーナスの違い</h3>
+            
+        <p>入金不要ボーナスを優先するか、他のボーナスを受け取るために入金不要ボーナスを破棄するかで迷う方も多いかもしれません。<br>
+        ここでは、同じビギナー向けボーナスである「初回入金ボーナス」との違いを確認してみましょう。</p>
+        
+            
+         <table class="table step2 txtCenter t-layFixed">
+                <tbody><tr>
+                  <th>ボーナスの種類</th>
+                  <th>特徴</th>
+                  <th>向いている人</th>
+                </tr>
+                <tr>
+                  <td>入金不要ボーナス</td>
+                  <td>
+                    <ul class="li_point">
+                      <li>無料でゲームを楽しめる</li>
+                      <li>ボーナス金額は少額</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul class="li_point">
+                      <li>お試しでゲームを遊びたい人</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>初回入金ボーナス</td>
+                  <td>
+                    <ul class="li_point">
+                      <li>受け取るためには入金が必要</li>
+                      <li>高額ボーナスをもらえる場合が多い</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul class="li_point">
+                      <li>高額ボーナスをもらって長く遊びたい人</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody></table>
+                
+            <p>入金不要ボーナスは、出金までのあいだ無料でゲームを楽しめる点がメリットです。<br>
+            ただし、もらえる金額は＄10～＄40など少額ですので、ボーナスだけで長期間遊ぶことは難しいでしょう。<br><span class="bold">いろいろなゲームをお試しで遊んでみたい方向け</span>のボーナスといえます。</p>
+    
+            <p>一方で初回入金ボーナスの場合は、受け取るために入金が必要となります。<br>
+            金額は「入金額の〇〇％」という形で付与されることが多く、100％ボーナスであれば<span class="markY bold">軍資金を2倍</span>にできます。<br>
+            入金額によっては高額ボーナスがもらえるため、お試しではなく<span class="bold">長く遊びたい方向け</span>のボーナスです。</p>
+    
+          </div>
+            
+              <div class="cont2">  
+                <dl class="dl-bmenu step2">
+                <dt><p><img src="assets/images/icon-step2nav.png" loading="lazy" width="38" height="38"><img src="assets/images/icon-play.png" loading="lazy" width="26" height="26"><span class="pc">オンラインカジノ</span>プレイ講座 MENU</p><p class="pc">Online Casino Play Curriculum</p></dt>
+                <dd>
+                <ol class="numb1">
+                  <li><a href="step.html">オンラインカジノに登録する方法</a></li>
+                  <li><a href="payment.html">オンラインカジノの入出金に関して</a></li>
+                  <li><a href="bonus.html">知っておきたいボーナスの知識</a></li>
+                  <li><a href="kakejyouken.html">オンラインカジノの賭け条件とは？</a></li>
+                  <li><a href="nodepositbonus.html">入金不要ボーナスが貰えるオンラインカジノ</a></li>
+                  <li><a href="pc_sp.html">スマホで遊べるオンラインカジノ一覧</a></li>
+                  <li><a href="jackpot.html">一攫千金が狙えるジャックポットスロットとは</a></li>
+                  <li><a href="livegame.html">ライブカジノを楽しもう</a></li>
+                </ol>
+                </dd>
+              </dl>
+              </div>
+    
+    </div>
+
+    
+      
+           
+              <!--  -->
+              
+    </div>
+          </div>
+          
+  </div>
+</section>
+
+<footer>
+  <div class="dispFlex center">
+    <nav>
+      <ul>
+        <li><a href="beginner/about.html">オンラインカジノとは？基礎講座</a></li>
+        <li><a href="beginner/law.html">オンラインカジノは違法？！</a></li>
+        <li><a href="beginner/tax.html">オンラインカジノの税金について</a></li>
+        <li><a href="play/nodepositbonus.html">入金不要ボーナスが貰えるオンラインカジノ</a></li>
+        <li><a href="slot/">オンラインカジノ人気スロットランキング</a></li>
+        <li><a href="ecopayz/about.html">【決済方法】ecoPayz（エコペイズ）解説</a></li>
+        <li><a href="ranking/">オンラインカジノおすすめランキング</a></li>
+        <li><a href="blog/">オンラインカジノ初心者ナビ公式ブログ</a></li>
+      </ul>
+    </nav>
+
+    <section class="headerlog"><img src="assets/images/log2.png" loading="lazy" width="375" height="54" alt=""></section>
+  </div>
+
+  <a class="p15 sp" href="https://twitter.com/oncasibegin?ref_src=twsrc%5Etfw" target="new"><img src="images/ban_twitter_sp.jpg" loading="lazy" alt="" width="100%" height="auto"></a>
+     
+  <ul class="iconMenu">
+    <li><a href="faq.html"><i class="fas fa-question-circle"></i>Q&amp;A</a></li>
+    <li><a href="contact.html"><i class="fas fa-envelope"></i>お問い合わせ</a></li>
+    <li><a href="author.html"><i class="fas fa-info-circle"></i>運営者情報</a></li>
+  </ul>
+
+  <p class="copyright">
+    <small>©2023 「オンラインカジノ初心者ナビ®」 All Rights Reserved.</small>
+  </p>
+</footer>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script>
+    window.addEventListener("load", function() {
+    var marqueeContainer = document.getElementById("marqueeContainer");
+    marqueeContainer.classList.add("marqueeAnimation");
+    });
+</script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 15,
+    centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+
+
+</body>
+
+</html>

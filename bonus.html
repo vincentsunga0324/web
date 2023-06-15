@@ -859,6 +859,94 @@ ul.pay-logSlide li {
 ul.pay-logSlide li a>img, ul.a-logSlide li a>img {
     width: 100%;
 }
+.ranking_bnr_colgreen {
+    border: 1px solid #84be3f;
+}
+.ranking_bnr_colgreen dt {
+    background: #D8EFB3;
+    color: #31662b;
+}
+.ranking_bnr_colblue dt, .ranking_bnr_colgreen dt {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    font-family: Verdana,Geneva,"sans-serif";
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: left;
+}
+.ranking_bnr_colblue dd, .ranking_bnr_colgreen dd {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+.ranking_bnr_colblue dd>div, .ranking_bnr_colgreen dd>div {
+    width: 53%;
+}
+.ranking_bnr_colgreen dd div a.link_btn02 {
+    border: 1px solid #84be3f;
+    color: #84be3f;
+}
+#mokuji.m-step2 {
+    border: 1px solid #8cc63f;
+    background-color: #e4f9cf;
+}
+dl#mokuji dd ol {
+    list-style: decimal inside;
+    font-size: .9rem;
+    text-align: left;
+    padding-left: 20px;
+}
+dl#mokuji.m-step2 dd {
+    border-left: 1px solid #8cc63f;
+}
+.linkbox-article.step2 {
+    background: #f1ffe3;
+}
+.linkbox-article {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background: #edf9ff;
+    padding: 15px;
+    font-size: 16px;
+}
+.linkbox-article.step2>span {
+    background: #84be3f;
+}
+.linkbox-article>span {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background: #29a3da;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    width: 17%;
+    padding: 0 7px;
+}
+.linkbox-article a {
+    display: block;
+    text-align: left;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+.linkbox-article>img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    width: 100%;
+    padding-right: 15px;
+}
+.linkbox-article a:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 @media (max-width: 767px) {
   .hide-on-mobile {
     display: none;
@@ -945,7 +1033,10 @@ footer nav {
           <div class="dropdown-menu dropdown2-bg text-center" aria-labelledby="dropdown2">
             <a class="dropdown-item" href="step.html">オンラインカジノの登録方法</a>
             <a class="dropdown-item" href="payment.html">オンラインカジノの入出金について</a>
-            <a class="dropdown-item" href="bonus.html"></a>知っておきたいボーナスの知識</a>
+            <a class="dropdown-item" href="bonus.html">知っておきたいボーナスの知識</a>
+            <a class="dropdown-item" href="kakejyouken.html">オンラインカジノの賭け条件とは？</a>
+            <a class="dropdown-item" href="nodepositbonus.html">入金不要ボーナスが貰えるオンラインカジノ</a>
+
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -1048,36 +1139,9 @@ footer nav {
       </div>
       <div class="col-md-9">
         <!-- Content for the second column -->
-        <img src="assets/images/payment_1.jpg" alt="" class="img-fluid">
-        <p>実際にお金を賭けてカジノゲームをネット上で遊ぶことができる「オンラインカジノ」。
-          日本でのカジノ解禁が話題となり、国内でもさらに人気が高まっています。</p>
-        <p>一方で興味はあるけれど、違法性や安全性が気になってなかなか手を出せないという方もいるのではないでしょうか？</p>
-        <p>当サイト（オンラインカジノ初心者ナビ）では、オンラインカジノの基本的な遊び方はもちろん、安全で信頼できるカジノの選び方などを徹底解説しています。</p>
-        <ul>
-          <li>「最近よく聞くネットカジノのやり方を知りたい」</li>
-          <li>「オンラインカジノで稼ぐにはどんなゲームを選べばいいの？」</li>
-          <li>「興味はあるけどどのカジノサイトで遊べばいいか分からない」</li>
-        </ul>
-        <p>このようなオンラインカジノ初心者の方は是非ご覧になってください。</p>
-        <div class="cont2 txtLeft">
-          <dl id="mokuji" class="m-step1">
-            <dt>もくじ</dt>
-            <dd>
-              <ol>
-              <li><a href="#1">オンラインカジノのペイアウト率は圧倒的に高い約</a>
-                <ul>
-                  <li><a href="#1-1">ペイアウト率が高いとどうしてお得なの？</a></li>
-                  <li><a href="#1-2">オンラインカジノのペイアウト率はなぜ高い？</a></li>
-                </ul>
-              </li>
-              <li><a href="#2">オンラインカジノのペイアウト率をチェックするには</a></li>
-            <li><a href="#3">オンラインカジノのペイアウト率は目安として考えよう</a></li>
-            </ol>
-            </dd>
-          </dl>
-        </div> 
+       
         <!--  -->
-        <div class="cont2 txtLeft">  
+        <!-- <div class="cont2 txtLeft">  
           <p><img src="assets/images/bonus_fv.jpg" alt="オンラインカジノのボーナスの種類・ルールを解説" class="w100" loading="lazy" width="795" height="413"></p>
             
           <p class="txtRight data">最終更新日：<time itemprop="dateModified">2023-06-13</time></p>
@@ -1116,7 +1180,685 @@ footer nav {
               </dd>
           </dl>
             
+        </div> -->
+        <div class="cont2 txtLeft">  
+            <p><img src="assets/images/bonus_fv.jpg" alt="オンラインカジノのボーナスの種類・ルールを解説" class="w100" loading="lazy" width="795" height="413"></p>
+              
+            <p class="txtRight data">最終更新日：<time itemprop="dateModified">2023-06-13</time></p>
+              
+            <p>オンラインカジノ特有のサービス「ボーナス」は、一定の条件をクリアすると<span class="bold markY">ゲームで利用できる無料チップがもらえる</span>という、お得なシステムです。</p>
+              
+            <p>ボーナスには様々な種類があり、例えば入金時に貰えるボーナスや、キャンペーンで貰える限定モノもあります。</p>
+              
+            <p>ただし、ボーナスで稼いだ勝利金を出金するためには、一定の条件をクリアしなければならない等、定められたルールが存在します。<br>
+            ルールを守らないとせっかく貰ったボーナスが没収されてしまうこともあるので、必ずボーナスルールを確認するようにしましょう。</p>
+              
+            <p>ここではボーナスの種類や、把握しておきたいルールについて紹介します。</p>
+              
+                <div class="writer_chara_col">
+                <div>
+                    <img src="assets/images/kenji.png" width="150" height="150" loading="lazy" alt="KENJI"><span>著者：<a rel="author" href="../writer-kenji.html">KENJI</a><br>カジノ歴：3年</span>
+                </div>
+                <div class="speech">
+                    <dl>
+                        <dt>カジノ基礎知識担当者からのコメント</dt>
+                        <dd><p>オンラインカジノではアカウントを登録した時など色んな場面でボーナスを貰うことができますが、ボーナスの種類や使い方を知っていないと規約違反などを問われてしまうことがあります。</p>
+                <p>このページでは、カジノサイトで提供されているボーナスの種類や賭け条件、禁止ゲームといったボーナスに関する基礎知識を掲載しています。<br>
+                ボーナスの違いや大体どのくらいのボーナスが貰えるのかも紹介していますので、気になるボーナスがあればチェックしてみてくださいね。</p></dd>
+                    </dl>
+                </div>
+                </div>
+              
+                <dl class="ranking_bnr_colgreen">
+                  <dt>【2023年】おすすめオンラインカジノTOP3を紹介</dt>
+                  <dd>
+                  <a href="../ranking/"><img src="assets/images/ban_rank_link_resp.jpg" loading="lazy" width="356" height="227" alt="オンラインカジノおすすめランキング【最新版】を詳しくチェック"></a>
+                   <div> 
+                  <p>オンラインカジノ初心者ナビでは、「ボーナスが豊富」「人気がある」など5つの基準からおすすめの優良カジノサイトを3つ紹介しています。ボーナス獲得額や出金条件別におすすめのカジノも紹介しています。</p>
+                  <a href="../ranking/" class="btn-squareOre link_btn02 right_arrow">【2023年最新】おすすめオンラインカジノランキング</a>
+                  </div>	 
+                  </dd>
+              </dl>
+              
           </div>
+          <div class="cont2 txtLeft">
+            <dl id="mokuji" class="m-step2">
+              <dt>もくじ</dt>
+            <dd>
+              <ol>
+              <li><a href="#1">オンラインカジノで貰えるボーナス一覧</a>
+                <ul>
+                  <li><a href="#1-1">入金不要ボーナス（登録ボーナス）</a></li>
+                     <li><a href="#1-2">初回入金ボーナス</a></li>
+                     <li><a href="#1-3">フリースピンボーナス</a></li>
+                  <li><a href="#1-4">スピンクレジットボーナス</a></li>
+                     <li><a href="#1-5">キャッシュバックボーナス</a></li>
+                     <li><a href="#1-6">リベートボーナス</a></li>
+                  <li><a href="#1-7">リロードボーナス（入金ボーナス）</a></li>
+                     <li><a href="#1-8">その他</a></li>
+                </ul>
+              </li>
+              <li><a href="#2">オンラインカジノのボーナスを使うためのルールとは？</a>
+                <ul>
+                <li><a href="#2-1">最低賭け条件</a></li>
+                     <li><a href="#2-2">除外ゲーム、禁止ゲーム</a></li>
+                </ul>
+              </li>
+              <li><a href="#3">オンラインカジノによってはボーナスのルールが易しいことも！</a></li>
+            </ol>
+            </dd>
+            </dl>
+          </div>
+          <div class="cont2 txtLeft">
+            <h2 class="h3-lineLB LB-step2" id="1">オンラインカジノで貰えるボーナス一覧</h2>
+          <p class="txtCenter"><img src="assets/images/bonus_1.jpg" alt="オンラインカジノでは様々なボーナスが貰える" loading="lazy" width="700" height="364"></p>
+            <p>まずボーナスのルールの前に、ボーナスとは「どのような時に貰えるのか？」「どれぐらい貰えるのか？」等、ボーナスの基本について説明します。</p>
+              
+            <p>オンラインカジノで貰えるボーナスは、アカウントを作成するだけで貰えるものから、入金時に貰えるものまで、その種類はさまざまです。<br>
+            ここでは、多くのオンラインカジノで採用されているボーナスや、当サイトで紹介しているオンラインカジノで貰える珍しいボーナスを一覧紹介します！</p>
+              
+              
+            <h3 class="font-cl-step2" id="1-1">入金不要ボーナス（登録ボーナス）</h3>
+             
+            <p>入金不要ボーナスは<span class="bold markY">オンラインカジノでアカウントを作成した時に付与</span>されるボーナスです。<br>
+            「登録ボーナス」「口座開設ボーナス」とも呼ばれており、<span class="markY bold">入金なしで貰えるためゲームのお試しプレイに最適</span>です。</p>
+          
+            <p><span class="bold">ボーナス額は10ドル～40ドル程度</span>に設定されている場合が多く、興味のあるゲームを一度試すのにちょうどいい金額です。</p>	
+            <p>リアルマネーを入金する前にゲームを試してみたい方は、入金不要ボーナス（登録ボーナス）を活用するとよいでしょう。</p>
+              
+            <p><a class="link_btn step2" href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/play/nodepositbonus.html">入金不要ボーナスが貰えるオンラインカジノ一覧</a></p>
+              
+            <h4 class="underLineB step2">入金不要ボーナスを貰うならベラジョンカジノ！</h4>
+              
+            <div class="dispFlex4">
+            <div class="flex40"><p class="txtCenter">
+              <img src="assets/images/bonus_verajohn.jpg" loading="lazy" width="400" height="350" alt="入金不要ボーナスを貰うならベラジョンカジノ！" class="pc">
+              <img src="assets/images/bonus_verajohnsp.jpg" loading="lazy" width="400" height="" alt="入金不要ボーナスを貰うならベラジョンカジノ！" class="sp">
+            </p></div>
+            <div class="flex60">
+              <p>ベラジョンカジノでは、入金不要ボーナスとして「Golden Ticket」フリースピンが貰えます。当サイトを経由して登録すると<span class="markY bold">通常50回→限定550回</span>にアップします。</p>
+              
+            <p>少しでも多くの入金不要ボーナスを使って試しに遊びたいという人にはおすすめです！</p>
+            </div>
+              
+            </div>
+              
+            <p class="mb30"><a class="link_btn step2" href="../ranking/verajohn.html">ベラジョンカジノの詳細を見る</a></p>
+            
+              
+            <h3 class="font-cl-step2" id="1-2">初回入金ボーナス</h3>
+              
+            <p>初回入金ボーナスは、オンラインカジノ登録後、<span class="markY bold">初めて入金した時に付与</span>される<span class="txt_bold">通常より内容が豪華なボーナス</span>です。<br>
+           「ウェルカムボーナス」とも呼ばれ、ほとんど全てのオンラインカジノで受け取ることができます。</p>			  
+      
+            <p>初回入金ボーナスの大半は、<span class="bold">「入金額の〇％」</span>という形で付与されます。<br>
+           たとえば「初回入金ボーナス100％」と書かれている場合は、登録して初めての入金時に100ドル入金すると100ドルのボーナスチップが進呈され、合計200ドルのチップがアカウントの口座内に入ることになります。<br>
+            オンラインカジノによっては<span class="bold">初回～3,4回目の入金まで特典が貰える</span>場合や、ボーナスの他にも<span class="bold">フリースピンが貰える</span>場合もあります。</p>
+              
+            <p>入金額によっては貰える金額も大きくなるため、人気のあるボーナスです。</p>			  
+             
+            <h4 class="underLineB step2">初回入金ボーナスを貰うならラッキーニッキー！</h4>
+            <div class="dispFlex4">
+            <div class="flex40"><p class="txtCenter w100">
+              <img src="assets/imagesbonus_ln.jpg" loading="lazy" width="400" height="350" alt="初回入金ボーナスを貰うならラッキーニッキー！" class="pc">
+              <img src="assets/imagesbonus_lnsp.jpg" loading="lazy" width="700" height="364" alt="初回入金ボーナスを貰うならラッキーニッキー！" class="sp">
+            </p></div>
+            <div class="flex60">
+            <p>ラッキーニッキーの初回入金ボーナスは、<span class="bold markY">入金額の100%ボーナスとフリースピンの2種類から好きな方を選ぶ</span>ことができます。</p>
+              
+            <p>初回入金でボーナスを選べるようになっており、<span class="bold">最大で$1000、または最大$500のキャッシュバックが受け取れます</span>。<br>
+            初回入金ボーナスが複数用意されており、自分で選べるカジノサイトは少ないため必見です。</p>
+            </div>
+              
+            </div>
+             
+            <div class="linkbox-article step2 mb20">
+            <img src="https://オンラインカジノ初心者ナビ.com/blog/wp-content/uploads/2022/05/luckyniki-nyukinbonusfv.jpg" alt="ラッキーニッキーの初回入金ボーナス解説！受け取り方・注意点">
+            <span><i class="fas fa-book-open"></i>関連記事</span>
+            <a href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/oncasi-bonus/luckyniki-nyukinbonus/"><span>ラッキーニッキーの初回入金ボーナス解説！受け取り方・注意点<i class="fas fa-chevron-right"></i></span></a>
+            <p>ラッキーニッキーの初回入金ボーナスの受け取り方や注意点を解説します。</p>
+          </div>
+              
+            <p class="mb30"><a class="link_btn step2" href="../ranking/luckyniki.html">ラッキーニッキーの詳細を見る</a></p>  
+              
+              
+            <h3 class="font-cl-step2" id="1-3">フリースピンボーナス</h3>
+            <p>フリースピンボーナスは、入金すると<span class="markY bold">特定のスロットで遊べるフリースピンが付与</span>されるボーナスです。</p>			  
+      
+            <p>日替わりのキャンペーンやメルマガなどで案内されている場合が多く、貰えるかどうかはプレイ状況とタイミング次第といったオンラインカジノが殆どです。<br>
+            入金額やキャンペーンによって、<span class="bold">20～200回程度のフリースピンが付与</span>され、特定のスロットを無料で遊ぶことができます。</p>
+              
+            <p>プレイヤーが新作ゲームをプレイする時などによく利用されます。</p>			  
+              
+            <p><a class="link_btn step2" href="https://オンラインカジノ初心者ナビ.com/blog/solution/freespintoha/">フリースピンとは？オンラインカジノのスロットで貰う方法・使い方</a></p>  
+              
+            <h4 class="underLineB step2">フリースピンボーナスを貰うならミスティーノ！</h4>
+              
+            <div class="dispFlex4">
+            <div class="flex40"><p class="txtCenter w100">
+              <img src="assets/imagesbonus_mystino.jpg" loading="lazy" width="400" height="350" alt="フリースピンボーナスを貰うならミスティーノがおすすめ" class="pc">
+              <img src="assets/imagesbonus_mystinosp.jpg" loading="lazy" width="700" height="364" alt="フリースピンボーナスを貰うならミスティーノがおすすめ" class="sp">
+            </p></div>
+            <div class="flex60">
+            <p>ミスティーノは、<span class="bold markY">入金すると毎日フリースピンボーナスを受け取る</span>ことができます。</p>
+              
+            <p>どのスロットのフリースピンが貰えるかは日替わりになっており、当日までのお楽しみ！<br>
+            ミスティーノのボーナスは賭け条件が設定されていないため、勝ったら即出金することができます。</p>
+            </div>
+              
+            </div>
+              
+            <p><a class="link_btn step2" href="../ranking/mystino.html">ミスティーノの詳細を見る</a></p>  
+              
+              
+              
+            <h3 class="font-cl-step2" id="1-4">スピンクレジットボーナス</h3>
+              
+            <p>スピンクレジットは、テーブルゲームやライブカジノなど<span class="bold markY">特定のゲームを無料が遊べるボーナス</span>です。<br>
+            主にベラジョンカジノ、インターカジノで獲得することができます。</p>
+      
+            <p>ショップで購入して入手することが大半ですが、新規登録やキャンペーンで貰えることもあります。</p>
+            <p>利用できる対象ゲームはその時々で異なりますが、テーブルゲームやライブカジノで使える場合が多いです。<br>
+           過去には花魁ドリームをはじめとしたJTG社のスロットで使えるスピンクレジットが交換できたこともありますので、スロットユーザーの方も要チェックです。</p>
+              
+              
+              
+            <h4 class="underLineB step2">スピンクレジットボーナスを貰うならベラジョンカジノ！</h4>
+              
+            <div class="dispFlex4">
+            <div class="flex40"><p class="txtCenter w100">
+              <img src="assets/images/bonus_verajohn.jpg" loading="lazy" width="400" height="350" alt="スピンクレジットボーナスを貰うならベラジョンカジノがおすすめ" class="pc">
+              <img src="assets/images/bonus_verajohnsp.jpg" loading="lazy" width="700" height="364" alt="リスピンクレジットボーナスを貰うならベラジョンカジノがおすすめ" class="sp">
+            </p></div>
+            <div class="flex60">
+            <p>ベラジョンカジノは、夏祭りなど<span class="bold">の時期イベントでスピンクレジットを入手</span>できたり、いつもより<span class="bold">お得にスピンクレジットを購入</span>することができます。</p>
+              
+            <p>また、ベラジョンカジノはオンラインカジノ業界の中でもイベントが豊富です。<br>
+            スピンクレジット関連のキャンペーンも他のカジノサイトより開催頻度が高くなりやすいためスピンクレジットを利用したいならベラジョンカジノがおすすめ！</p>
+            </div>
+              
+            </div>
+              
+            <p><a class="link_btn step2" href="../ranking/verajohn.html">ベラジョンカジノの詳細を見る</a></p> 
+              
+              
+              
+            <h3 class="font-cl-step2" id="1-5">キャッシュバックボーナス</h3>
+              
+            <p>キャッシュバックボーナスは、オンラインカジノで<span class="markY bold">賭けた金額の一部が戻ってくる</span>ボーナスです。<br>
+            ゲームに負けた時の補償にもなるため、負けて資金を全て失いたくない人に好まれています。</p>
+              
+            <p>付与条件はオンラインカジノによって異なり、以下のようなパターンがあります。</p>		  
+      
+          <div class="boderstep2 mb20">
+                <ul class="li_point">
+                  <li>【カジノシークレット】ゲームで負けて損失が出た場合、損失額の一部をキャッシュバック</li>
+                  <li>【ビットカジノ】プレイヤーランクを上げると景品としてキャッシュバックが貰える</li>
+            <li>【ミスティーノ】賭け金の一部が貯金として蓄積され、偶発的なタイミングでキャッシュバック</li>
+                </ul>
+              </div>
+            <p><a class="link_btn step2" href="https://オンラインカジノ初心者ナビ.com/blog/oncasi-bonus/mystino-suprisecashback/">【ミスティーノ】サプライズキャッシュバックはいつもらえる？金額や出金条件</a></p> 
+      
+            <p>負けた場合のみキャッシュバックされる場合もあれば、賭け金の一部が蓄積されどこかのタイミングで返ってくる場合も。<br>
+            また、ビットカジノではプレイヤーのランクを上げると貰える景品（マイルストーン）の中にキャッシュバックが含まれています。</p>
+                  
+              
+            <h4 class="underLineB step2">キャッシュバックボーナスを貰うならカジノシークレット</h4>
+              
+            <div class="dispFlex4">
+            <div class="flex40"><p class="txtCenter w100">
+              <img src="assets/images/bonus_cs.jpg" loading="lazy" width="400" height="350" alt="キャッシュバックボーナスを貰うならカジノシークレットがおすすめ" class="pc">
+              <img src="assets/images/bonus_cssp.jpg" loading="lazy" width="700" height="364" alt="キャッシュバックボーナスを貰うならカジノシークレットがおすすめ" class="sp">
+            </p></div>
+            <div class="flex60">
+            <p>カジノシークレットは、<span class="bold markY">初回入金で50％</span>、<span class="bold markY">2回目以降の入金でもプレイ状況に応じて</span>負けた金額の一部がキャッシュバックされます。</p>
+              
+            <p>ゲームで負けてしまったとしても一部のお金が返ってきますので、負けても無一文にならない安心感があります。<br>
+            また、キャッシュバックは現金で付与されるためすぐに引き出せるのも魅力的です。</p>
+            </div>
+              
+            </div>
+              
+            <p><a class="link_btn step2" href="../ranking/casinosecret.html">カジノシークレットの詳細を見る</a></p>
+              
+              
+            <h3 class="font-cl-step2" id="1-6">リベートボーナス</h3>
+              
+            <p>リベートボーナスは<span class="markY bold">ゲームの勝敗に関係なく、期間中にベットした賭け金の一部が返ってくる</span>ボーナスです。<br>
+            常設ボーナスが多く、還元率は低めですがゲームで遊ぶと常に一定額が返ってくるのが特徴です。</p>
+              
+            <p>カジノサイトによって1日、1週間、1か月などの対象期間が設定されており、期間中にベットした合計金額の数％が後日還元されます。<br>
+            例えば、「期間が毎週月曜日～日曜日」「付与は翌火曜日」と定められていた場合は、ゲームの勝敗に関係なく月～日曜日にベットした金額の一部が火曜日に返ってきます。</p>
+              
+            <p>VIPランクによって変動する場合もありますが<span class="bold">0.3％～1.3%程度の還元率</span>となっている場合が大半で、沢山資金を賭けるハイローラーの方に人気のボーナスです。</p>
+              
+            <p>キャッシュバックとの違いはほぼありませんが、キャッシュバックのように「負けた時に還元」「条件を達成したら還元」といった条件がなく、ゲームで遊ぶだけでお金が返ってくる仕組みになっている場合がほとんどです。</p>
+              
+            <h4 class="underLineB step2">リベートボーナスを貰うならエンパイアカジノ</h4>
+              
+            <div class="dispFlex4">
+            <div class="flex40"><p class="txtCenter w100">
+              <img src="assets/images/bonus_empire.jpg" loading="lazy" width="400" height="350" alt="リベートボーナスを貰うならエンパイアカジノがおすすめ" class="pc">
+              <img src="assets/images/bonus_empiresp.jpg" loading="lazy" width="700" height="364" alt="リベートボーナスを貰うならエンパイアカジノがおすすめ" class="sp">
+            </p></div>
+            <div class="flex60">
+            <p>エンパイアカジノのリベートボーナスは<span class="markY bold">スロットが0.8～1.28%、ライブカジノとテーブルゲームは0.5～0.7％</span>の賭け金が返ってきます。</p>
+              
+            <p>VIPではない通常プレイヤーがスロットで0.8％のリベートボーナスを貰えるのは業界内でもかなり高額でお得！<br>
+            リベートボーナスは申請が必要ですが、1週間単位で毎週受け取ることができます。</p>
+            </div>
+              
+            </div>
+             
+            <p><a class="link_btn step2" href="../ranking/empire.html">エンパイアカジノの詳細を見る</a></p>
+              
+              
+            <h3 class="font-cl-step2" id="1-7">リロードボーナス（入金ボーナス）</h3>
+              
+            <p>リロードボーナスは、<span class="bold markY">入金した金額に応じて受け取れるボーナス</span>です。<br>
+            「入金ボーナス」とも呼ばれており、ほとんどのオンラインカジノで用意されています。</p>
+              
+            <p><span class="bold">貰えるボーナス額は「入金額の〇％」</span>となっており、プレイヤーの方で入金額やボーナス額を調整できるのが特徴です。</p>
+              
+            <p><a class="link_btn step2" href="https://オンラインカジノ初心者ナビ.com/blog/oncasi-bonus/verajohn-beginnersbonus/">ベラジョンカジノのビギナーズボーナス徹底解説！貰い方・利用時のルールや注意点</a></p>
+             
+            <p>カジノサイトによって、常設ボーナスで用意されている場合もあればキャンペーンで不定期に利用できる場合もあります。<br>		  
+            リロードボーナスの還元率は、カジノによって異なりますが大体下記の程度となります。</p>
+              
+           <div class="boderstep2 mb20">
+                <ul class="li_point">
+                  <li>常設のボーナスの場合：<span class="bold">入金額の5～10％</span></li>
+                  <li>キャンペーンの場合：<span class="bold">入金額の50~150％</span></li>
+                </ul>
+              </div>
+      
+            <p>リロードボーナスの場合、「最低入金額」「最高入金額」「最高ボーナス額」などが設定されている場合もあります。<br>
+            入金してボーナスを獲得したい方は一度規約に目を通しておきましょう。</p>
+                
+            <h4 class="underLineB step2">リロードボーナスを貰うならインターカジノ</h4>
+              
+            <div class="dispFlex4">
+            <div class="flex40"><p class="txtCenter">
+              <img src="assets/images/bonus_inter.jpg" loading="lazy" width="400" height="350" alt="リロードボーナスを貰うならインターカジノがおすすめ" class="pc">
+              <img src="assets/images/bonus_intersp.jpg" loading="lazy" width="700" height="364" alt="リロードボーナスを貰うならインターカジノがおすすめ" class="sp">
+            </p></div>
+            <div class="flex60">
+            <p>インターカジノのリロードボーナスはキャンペーンとしてメルマガなどで配信されています。<br>
+            常に利用できないのは難点ですが、<span class="bold">入金額に対する還元率が高め</span>でリロードボーナスが貰える他のオンラインカジノより出金するための条件も易しめです。</p>
+              
+            <p>獲得したボーナスは全てのゲームで使えるため、軍資金の足しにすることができますよ。</p>
+            </div>
+              
+            </div>
+              
+            <p><a class="link_btn step2" href="../ranking/inter.html">インターカジノの詳細を見る</a></p>
+              
+              
+              
+            <h3 class="font-cl-step2" id="1-8">その他</h3>
+      
+            <p>紹介したボーナスの他にもオンラインカジノには様々なボーナスが用意されています。<br>
+            プレイヤーに合わせて内容が大きく異なるボーナス、導入されているオンラインカジノが少ないボーナスや、カジノサイトのオリジナルボーナスなど下記のようなものがあります。</p>  
+              
+      
+          <h4 class="underLineB step2">【お誕生日ボーナス】誕生日限定で貰える特別なボーナス</h4>
+              
+            <p>「お誕生日ボーナス」は、<span class="bold markY">自分のお誕生日にお得なボーナスを貰うことができます</span>。<br>
+            内容はサイトによって大きく異なり、ゲームのプレイ状況やプレイヤーの趣向に合わせてボーナスを付与してくれる場合もあります。</p>
+              
+            <p>プレイヤーによって特典が異なるためサイト内では公開されていない場合が多いですが、多くのオンラインカジノに用意されています。<br>
+             ボーナスの案内がなくてもお誕生日当日にサポートに連絡をすることで用意してもらえる場合もあるようです。</p>
+              
+            <p>入金でいつもより高額、または出金の条件が易しいボーナスを貰えるのか？または無料でボーナスが貰えるのか？など詳しい内容は各サイトのサポートに問い合わせてみましょう。</p>
+              
+          <h4 class="underLineB step2">【お友達紹介ボーナス】友達を紹介して条件を満たすとボーナス獲得</h4>	  
+              
+          <p>「お友達紹介ボーナス」は<span class="bold markY">紹介URLを送ってお友達がオンラインカジノに登録→入金（またはゲームにベット）</span>してくれたらボーナスが貰えます。<br>
+          エルドアカジノなどで獲得することができるボーナスです。</p>
+              
+          <p>ボーナス獲得条件の他にも<span class="bold">ボーナスを受け取るのは「自分だけ」なのか「自分とお友達」なのか</span>などカジノサイトによって異なります。<br>
+            せっかくお友達を紹介するなら自分もお友達もボーナスを受け取れるサイトを選びたいですね。</p>
+              
+            
+          <h4 class="underLineB step2">【幸運のマネーシンボル】スロットで特定のシンボルが出たらボーナス獲得</h4>
+              
+             <p>エンパイアカジノで獲得できる独自のボーナスが<span class="bold markY">「幸運のマネーシンボル」</span>となります。</p>
+              
+             <p><span class="bold">指定のスロットを回してリール中央にマネーシンボルが停止</span>したら、マネーシンボルに書かれた数字分のボーナスを50USDまで受け取ることができます。<br>
+             毎日30USD以上入金することでスロットを回すことができ、運試しのゲーム感覚でチャレンジできるユニークなボーナスです。</p>
+              
+      
+              
+          <h4 class="underLineB step2">【ボーナスカップ・リチャージボーナス】指定の金額を入金でボーナス獲得</h4>
+              
+            <p>ボーナスカップ・リチャージボーナスは、<span class="markY bold">カジノからの指定の金額を入金することでボーナスを獲得</span>することができます。<br>
+            ベラジョンカジノ・インターカジノで獲得でき、それぞれ「ボーナスカップ」「リチャージボーナス」と<span class="bold fontRed">名前が異なりますが、内容は同じもの</span>となります。</p>
+              
+              
+          <p>リロードボーナス（入金ボーナス）との違いは、ボーナスカップは入金額・ボーナス額が決まっているという点です。<br>
+          リロードボーナスは「入金額の〇％」とされており、プレイヤー側で入金額を選ぶことができます。2つのボーナス額の例は下記となります。</p>
+              
+          <div class="boderstep2 mb20">
+                <ul class="li_point">
+                  <li class="mb10">【リロードボーナス】入金額に対して<span class="bold">50％ボーナス付与</span>の場合<br>
+              例）$100入金で<span class="bold markY">$50のボーナスを獲得</span></li>
+            <li>【ボーナスカップ・リチャージボーナス】<span class="bold">$50～$100の入金に対して$20ボーナス付与</span>の場合<br>
+              例）$100入金で<span class="bold markY">$20のボーナスを獲得</span></li>  
+                </ul>
+              </div>
+          
+          <p>「$200以上一気に入金したい」「ボーナスが$100欲しい」などの希望がある方はリロードボーナスを利用しましょう。</p>
+              
+            <p>このほかにも、オンラインカジノによってさまざまなボーナスが用意されています。<br>
+             中には期間限定のボーナスなどもありますので、オンラインカジノのボーナスは見逃さないよう、こまめにサイトを確認しておきましょう。</p>			  
+      
+      
+          </div>
+          <div class="cont2 txtLeft">
+            <h2 class="h3-lineLB LB-step2" id="1">オンラインカジノで貰えるボーナス一覧</h2>
+          <p class="txtCenter"><img src="assets/images/bonus_1.jpg" alt="オンラインカジノでは様々なボーナスが貰える" loading="lazy" width="700" height="364"></p>
+            <p>まずボーナスのルールの前に、ボーナスとは「どのような時に貰えるのか？」「どれぐらい貰えるのか？」等、ボーナスの基本について説明します。</p>
+              
+            <p>オンラインカジノで貰えるボーナスは、アカウントを作成するだけで貰えるものから、入金時に貰えるものまで、その種類はさまざまです。<br>
+            ここでは、多くのオンラインカジノで採用されているボーナスや、当サイトで紹介しているオンラインカジノで貰える珍しいボーナスを一覧紹介します！</p>
+              
+              
+            <h3 class="font-cl-step2" id="1-1">入金不要ボーナス（登録ボーナス）</h3>
+             
+            <p>入金不要ボーナスは<span class="bold markY">オンラインカジノでアカウントを作成した時に付与</span>されるボーナスです。<br>
+            「登録ボーナス」「口座開設ボーナス」とも呼ばれており、<span class="markY bold">入金なしで貰えるためゲームのお試しプレイに最適</span>です。</p>
+          
+            <p><span class="bold">ボーナス額は10ドル～40ドル程度</span>に設定されている場合が多く、興味のあるゲームを一度試すのにちょうどいい金額です。</p>	
+            <p>リアルマネーを入金する前にゲームを試してみたい方は、入金不要ボーナス（登録ボーナス）を活用するとよいでしょう。</p>
+              
+            <p><a class="link_btn step2" href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/play/nodepositbonus.html">入金不要ボーナスが貰えるオンラインカジノ一覧</a></p>
+              
+            <h4 class="underLineB step2">入金不要ボーナスを貰うならベラジョンカジノ！</h4>
+              
+            <div class="dispFlex4">
+            <div class="flex40"><p class="txtCenter">
+              <img src="assets/images/bonus_verajohn.jpg" loading="lazy" width="400" height="350" alt="入金不要ボーナスを貰うならベラジョンカジノ！" class="pc">
+              <img src="assets/images/bonus_verajohnsp.jpg" loading="lazy" width="400" height="" alt="入金不要ボーナスを貰うならベラジョンカジノ！" class="sp">
+            </p></div>
+            <div class="flex60">
+              <p>ベラジョンカジノでは、入金不要ボーナスとして「Golden Ticket」フリースピンが貰えます。当サイトを経由して登録すると<span class="markY bold">通常50回→限定550回</span>にアップします。</p>
+              
+            <p>少しでも多くの入金不要ボーナスを使って試しに遊びたいという人にはおすすめです！</p>
+            </div>
+              
+            </div>
+              
+            <p class="mb30"><a class="link_btn step2" href="../ranking/verajohn.html">ベラジョンカジノの詳細を見る</a></p>
+            
+              
+            <h3 class="font-cl-step2" id="1-2">初回入金ボーナス</h3>
+              
+            <p>初回入金ボーナスは、オンラインカジノ登録後、<span class="markY bold">初めて入金した時に付与</span>される<span class="txt_bold">通常より内容が豪華なボーナス</span>です。<br>
+           「ウェルカムボーナス」とも呼ばれ、ほとんど全てのオンラインカジノで受け取ることができます。</p>			  
+      
+            <p>初回入金ボーナスの大半は、<span class="bold">「入金額の〇％」</span>という形で付与されます。<br>
+           たとえば「初回入金ボーナス100％」と書かれている場合は、登録して初めての入金時に100ドル入金すると100ドルのボーナスチップが進呈され、合計200ドルのチップがアカウントの口座内に入ることになります。<br>
+            オンラインカジノによっては<span class="bold">初回～3,4回目の入金まで特典が貰える</span>場合や、ボーナスの他にも<span class="bold">フリースピンが貰える</span>場合もあります。</p>
+              
+            <p>入金額によっては貰える金額も大きくなるため、人気のあるボーナスです。</p>			  
+             
+            <h4 class="underLineB step2">初回入金ボーナスを貰うならラッキーニッキー！</h4>
+            <div class="dispFlex4">
+            <div class="flex40"><p class="txtCenter w100">
+              <img src="assets/images/bonus_ln.jpg" loading="lazy" width="400" height="350" alt="初回入金ボーナスを貰うならラッキーニッキー！" class="pc">
+              <img src="assets/images/bonus_lnsp.jpg" loading="lazy" width="700" height="364" alt="初回入金ボーナスを貰うならラッキーニッキー！" class="sp">
+            </p></div>
+            <div class="flex60">
+            <p>ラッキーニッキーの初回入金ボーナスは、<span class="bold markY">入金額の100%ボーナスとフリースピンの2種類から好きな方を選ぶ</span>ことができます。</p>
+              
+            <p>初回入金でボーナスを選べるようになっており、<span class="bold">最大で$1000、または最大$500のキャッシュバックが受け取れます</span>。<br>
+            初回入金ボーナスが複数用意されており、自分で選べるカジノサイトは少ないため必見です。</p>
+            </div>
+              
+            </div>
+             
+            <div class="linkbox-article step2 mb20">
+            <img src="https://オンラインカジノ初心者ナビ.com/blog/wp-content/uploads/2022/05/luckyniki-nyukinbonusfv.jpg" alt="ラッキーニッキーの初回入金ボーナス解説！受け取り方・注意点">
+            <span><i class="fas fa-book-open"></i>関連記事</span>
+            <a href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/oncasi-bonus/luckyniki-nyukinbonus/"><span>ラッキーニッキーの初回入金ボーナス解説！受け取り方・注意点<i class="fas fa-chevron-right"></i></span></a>
+            <p>ラッキーニッキーの初回入金ボーナスの受け取り方や注意点を解説します。</p>
+          </div>
+              
+            <p class="mb30"><a class="link_btn step2" href="../ranking/luckyniki.html">ラッキーニッキーの詳細を見る</a></p>  
+              
+              
+            <h3 class="font-cl-step2" id="1-3">フリースピンボーナス</h3>
+            <p>フリースピンボーナスは、入金すると<span class="markY bold">特定のスロットで遊べるフリースピンが付与</span>されるボーナスです。</p>			  
+      
+            <p>日替わりのキャンペーンやメルマガなどで案内されている場合が多く、貰えるかどうかはプレイ状況とタイミング次第といったオンラインカジノが殆どです。<br>
+            入金額やキャンペーンによって、<span class="bold">20～200回程度のフリースピンが付与</span>され、特定のスロットを無料で遊ぶことができます。</p>
+              
+            <p>プレイヤーが新作ゲームをプレイする時などによく利用されます。</p>			  
+              
+            <p><a class="link_btn step2" href="https://オンラインカジノ初心者ナビ.com/blog/solution/freespintoha/">フリースピンとは？オンラインカジノのスロットで貰う方法・使い方</a></p>  
+              
+            <h4 class="underLineB step2">フリースピンボーナスを貰うならミスティーノ！</h4>
+              
+            <div class="dispFlex4">
+            <div class="flex40"><p class="txtCenter w100">
+              <img src="assets/images/bonus_mystino.jpg" loading="lazy" width="400" height="350" alt="フリースピンボーナスを貰うならミスティーノがおすすめ" class="pc">
+              <img src="assets/images/bonus_mystinosp.jpg" loading="lazy" width="700" height="364" alt="フリースピンボーナスを貰うならミスティーノがおすすめ" class="sp">
+            </p></div>
+            <div class="flex60">
+            <p>ミスティーノは、<span class="bold markY">入金すると毎日フリースピンボーナスを受け取る</span>ことができます。</p>
+              
+            <p>どのスロットのフリースピンが貰えるかは日替わりになっており、当日までのお楽しみ！<br>
+            ミスティーノのボーナスは賭け条件が設定されていないため、勝ったら即出金することができます。</p>
+            </div>
+              
+            </div>
+              
+            <p><a class="link_btn step2" href="../ranking/mystino.html">ミスティーノの詳細を見る</a></p>  
+              
+              
+              
+            <h3 class="font-cl-step2" id="1-4">スピンクレジットボーナス</h3>
+              
+            <p>スピンクレジットは、テーブルゲームやライブカジノなど<span class="bold markY">特定のゲームを無料が遊べるボーナス</span>です。<br>
+            主にベラジョンカジノ、インターカジノで獲得することができます。</p>
+      
+            <p>ショップで購入して入手することが大半ですが、新規登録やキャンペーンで貰えることもあります。</p>
+            <p>利用できる対象ゲームはその時々で異なりますが、テーブルゲームやライブカジノで使える場合が多いです。<br>
+           過去には花魁ドリームをはじめとしたJTG社のスロットで使えるスピンクレジットが交換できたこともありますので、スロットユーザーの方も要チェックです。</p>
+              
+              
+              
+            <h4 class="underLineB step2">スピンクレジットボーナスを貰うならベラジョンカジノ！</h4>
+              
+            <div class="dispFlex4">
+            <div class="flex40"><p class="txtCenter w100">
+              <img src="imgassets/images/bonus_verajohn.jpg" loading="lazy" width="400" height="350" alt="スピンクレジットボーナスを貰うならベラジョンカジノがおすすめ" class="pc">
+              <img src="assets/images/bonus_verajohnsp.jpg" loading="lazy" width="700" height="364" alt="リスピンクレジットボーナスを貰うならベラジョンカジノがおすすめ" class="sp">
+            </p></div>
+            <div class="flex60">
+            <p>ベラジョンカジノは、夏祭りなど<span class="bold">の時期イベントでスピンクレジットを入手</span>できたり、いつもより<span class="bold">お得にスピンクレジットを購入</span>することができます。</p>
+              
+            <p>また、ベラジョンカジノはオンラインカジノ業界の中でもイベントが豊富です。<br>
+            スピンクレジット関連のキャンペーンも他のカジノサイトより開催頻度が高くなりやすいためスピンクレジットを利用したいならベラジョンカジノがおすすめ！</p>
+            </div>
+              
+            </div>
+              
+            <p><a class="link_btn step2" href="../ranking/verajohn.html">ベラジョンカジノの詳細を見る</a></p> 
+              
+              
+              
+            <h3 class="font-cl-step2" id="1-5">キャッシュバックボーナス</h3>
+              
+            <p>キャッシュバックボーナスは、オンラインカジノで<span class="markY bold">賭けた金額の一部が戻ってくる</span>ボーナスです。<br>
+            ゲームに負けた時の補償にもなるため、負けて資金を全て失いたくない人に好まれています。</p>
+              
+            <p>付与条件はオンラインカジノによって異なり、以下のようなパターンがあります。</p>		  
+      
+          <div class="boderstep2 mb20">
+                <ul class="li_point">
+                  <li>【カジノシークレット】ゲームで負けて損失が出た場合、損失額の一部をキャッシュバック</li>
+                  <li>【ビットカジノ】プレイヤーランクを上げると景品としてキャッシュバックが貰える</li>
+            <li>【ミスティーノ】賭け金の一部が貯金として蓄積され、偶発的なタイミングでキャッシュバック</li>
+                </ul>
+              </div>
+            <p><a class="link_btn step2" href="https://オンラインカジノ初心者ナビ.com/blog/oncasi-bonus/mystino-suprisecashback/">【ミスティーノ】サプライズキャッシュバックはいつもらえる？金額や出金条件</a></p> 
+      
+            <p>負けた場合のみキャッシュバックされる場合もあれば、賭け金の一部が蓄積されどこかのタイミングで返ってくる場合も。<br>
+            また、ビットカジノではプレイヤーのランクを上げると貰える景品（マイルストーン）の中にキャッシュバックが含まれています。</p>
+                  
+              
+            <h4 class="underLineB step2">キャッシュバックボーナスを貰うならカジノシークレット</h4>
+              
+            <div class="dispFlex4">
+            <div class="flex40"><p class="txtCenter w100">
+              <img src="assets/images/bonus_cs.jpg" loading="lazy" width="400" height="350" alt="キャッシュバックボーナスを貰うならカジノシークレットがおすすめ" class="pc">
+              <img src="assets/images/bonus_cssp.jpg" loading="lazy" width="700" height="364" alt="キャッシュバックボーナスを貰うならカジノシークレットがおすすめ" class="sp">
+            </p></div>
+            <div class="flex60">
+            <p>カジノシークレットは、<span class="bold markY">初回入金で50％</span>、<span class="bold markY">2回目以降の入金でもプレイ状況に応じて</span>負けた金額の一部がキャッシュバックされます。</p>
+              
+            <p>ゲームで負けてしまったとしても一部のお金が返ってきますので、負けても無一文にならない安心感があります。<br>
+            また、キャッシュバックは現金で付与されるためすぐに引き出せるのも魅力的です。</p>
+            </div>
+              
+            </div>
+              
+            <p><a class="link_btn step2" href="../ranking/casinosecret.html">カジノシークレットの詳細を見る</a></p>
+              
+              
+            <h3 class="font-cl-step2" id="1-6">リベートボーナス</h3>
+              
+            <p>リベートボーナスは<span class="markY bold">ゲームの勝敗に関係なく、期間中にベットした賭け金の一部が返ってくる</span>ボーナスです。<br>
+            常設ボーナスが多く、還元率は低めですがゲームで遊ぶと常に一定額が返ってくるのが特徴です。</p>
+              
+            <p>カジノサイトによって1日、1週間、1か月などの対象期間が設定されており、期間中にベットした合計金額の数％が後日還元されます。<br>
+            例えば、「期間が毎週月曜日～日曜日」「付与は翌火曜日」と定められていた場合は、ゲームの勝敗に関係なく月～日曜日にベットした金額の一部が火曜日に返ってきます。</p>
+              
+            <p>VIPランクによって変動する場合もありますが<span class="bold">0.3％～1.3%程度の還元率</span>となっている場合が大半で、沢山資金を賭けるハイローラーの方に人気のボーナスです。</p>
+              
+            <p>キャッシュバックとの違いはほぼありませんが、キャッシュバックのように「負けた時に還元」「条件を達成したら還元」といった条件がなく、ゲームで遊ぶだけでお金が返ってくる仕組みになっている場合がほとんどです。</p>
+              
+            <h4 class="underLineB step2">リベートボーナスを貰うならエンパイアカジノ</h4>
+              
+            <div class="dispFlex4">
+            <div class="flex40"><p class="txtCenter w100">
+              <img src="assets/images/bonus_empire.jpg" loading="lazy" width="400" height="350" alt="リベートボーナスを貰うならエンパイアカジノがおすすめ" class="pc">
+              <img src="assets/images/bonus_empiresp.jpg" loading="lazy" width="700" height="364" alt="リベートボーナスを貰うならエンパイアカジノがおすすめ" class="sp">
+            </p></div>
+            <div class="flex60">
+            <p>エンパイアカジノのリベートボーナスは<span class="markY bold">スロットが0.8～1.28%、ライブカジノとテーブルゲームは0.5～0.7％</span>の賭け金が返ってきます。</p>
+              
+            <p>VIPではない通常プレイヤーがスロットで0.8％のリベートボーナスを貰えるのは業界内でもかなり高額でお得！<br>
+            リベートボーナスは申請が必要ですが、1週間単位で毎週受け取ることができます。</p>
+            </div>
+              
+            </div>
+             
+            <p><a class="link_btn step2" href="../ranking/empire.html">エンパイアカジノの詳細を見る</a></p>
+              
+              
+            <h3 class="font-cl-step2" id="1-7">リロードボーナス（入金ボーナス）</h3>
+              
+            <p>リロードボーナスは、<span class="bold markY">入金した金額に応じて受け取れるボーナス</span>です。<br>
+            「入金ボーナス」とも呼ばれており、ほとんどのオンラインカジノで用意されています。</p>
+              
+            <p><span class="bold">貰えるボーナス額は「入金額の〇％」</span>となっており、プレイヤーの方で入金額やボーナス額を調整できるのが特徴です。</p>
+              
+            <p><a class="link_btn step2" href="https://オンラインカジノ初心者ナビ.com/blog/oncasi-bonus/verajohn-beginnersbonus/">ベラジョンカジノのビギナーズボーナス徹底解説！貰い方・利用時のルールや注意点</a></p>
+             
+            <p>カジノサイトによって、常設ボーナスで用意されている場合もあればキャンペーンで不定期に利用できる場合もあります。<br>		  
+            リロードボーナスの還元率は、カジノによって異なりますが大体下記の程度となります。</p>
+              
+           <div class="boderstep2 mb20">
+                <ul class="li_point">
+                  <li>常設のボーナスの場合：<span class="bold">入金額の5～10％</span></li>
+                  <li>キャンペーンの場合：<span class="bold">入金額の50~150％</span></li>
+                </ul>
+              </div>
+      
+            <p>リロードボーナスの場合、「最低入金額」「最高入金額」「最高ボーナス額」などが設定されている場合もあります。<br>
+            入金してボーナスを獲得したい方は一度規約に目を通しておきましょう。</p>
+                
+            <h4 class="underLineB step2">リロードボーナスを貰うならインターカジノ</h4>
+              
+            <div class="dispFlex4">
+            <div class="flex40"><p class="txtCenter">
+              <img src="assets/images/bonus_inter.jpg" loading="lazy" width="400" height="350" alt="リロードボーナスを貰うならインターカジノがおすすめ" class="pc">
+              <img src="assets/images/bonus_intersp.jpg" loading="lazy" width="700" height="364" alt="リロードボーナスを貰うならインターカジノがおすすめ" class="sp">
+            </p></div>
+            <div class="flex60">
+            <p>インターカジノのリロードボーナスはキャンペーンとしてメルマガなどで配信されています。<br>
+            常に利用できないのは難点ですが、<span class="bold">入金額に対する還元率が高め</span>でリロードボーナスが貰える他のオンラインカジノより出金するための条件も易しめです。</p>
+              
+            <p>獲得したボーナスは全てのゲームで使えるため、軍資金の足しにすることができますよ。</p>
+            </div>
+              
+            </div>
+              
+            <p><a class="link_btn step2" href="../ranking/inter.html">インターカジノの詳細を見る</a></p>
+              
+              
+              
+            <h3 class="font-cl-step2" id="1-8">その他</h3>
+      
+            <p>紹介したボーナスの他にもオンラインカジノには様々なボーナスが用意されています。<br>
+            プレイヤーに合わせて内容が大きく異なるボーナス、導入されているオンラインカジノが少ないボーナスや、カジノサイトのオリジナルボーナスなど下記のようなものがあります。</p>  
+              
+      
+          <h4 class="underLineB step2">【お誕生日ボーナス】誕生日限定で貰える特別なボーナス</h4>
+              
+            <p>「お誕生日ボーナス」は、<span class="bold markY">自分のお誕生日にお得なボーナスを貰うことができます</span>。<br>
+            内容はサイトによって大きく異なり、ゲームのプレイ状況やプレイヤーの趣向に合わせてボーナスを付与してくれる場合もあります。</p>
+              
+            <p>プレイヤーによって特典が異なるためサイト内では公開されていない場合が多いですが、多くのオンラインカジノに用意されています。<br>
+             ボーナスの案内がなくてもお誕生日当日にサポートに連絡をすることで用意してもらえる場合もあるようです。</p>
+              
+            <p>入金でいつもより高額、または出金の条件が易しいボーナスを貰えるのか？または無料でボーナスが貰えるのか？など詳しい内容は各サイトのサポートに問い合わせてみましょう。</p>
+              
+          <h4 class="underLineB step2">【お友達紹介ボーナス】友達を紹介して条件を満たすとボーナス獲得</h4>	  
+              
+          <p>「お友達紹介ボーナス」は<span class="bold markY">紹介URLを送ってお友達がオンラインカジノに登録→入金（またはゲームにベット）</span>してくれたらボーナスが貰えます。<br>
+          エルドアカジノなどで獲得することができるボーナスです。</p>
+              
+          <p>ボーナス獲得条件の他にも<span class="bold">ボーナスを受け取るのは「自分だけ」なのか「自分とお友達」なのか</span>などカジノサイトによって異なります。<br>
+            せっかくお友達を紹介するなら自分もお友達もボーナスを受け取れるサイトを選びたいですね。</p>
+              
+            
+          <h4 class="underLineB step2">【幸運のマネーシンボル】スロットで特定のシンボルが出たらボーナス獲得</h4>
+              
+             <p>エンパイアカジノで獲得できる独自のボーナスが<span class="bold markY">「幸運のマネーシンボル」</span>となります。</p>
+              
+             <p><span class="bold">指定のスロットを回してリール中央にマネーシンボルが停止</span>したら、マネーシンボルに書かれた数字分のボーナスを50USDまで受け取ることができます。<br>
+             毎日30USD以上入金することでスロットを回すことができ、運試しのゲーム感覚でチャレンジできるユニークなボーナスです。</p>
+              
+      
+              
+          <h4 class="underLineB step2">【ボーナスカップ・リチャージボーナス】指定の金額を入金でボーナス獲得</h4>
+              
+            <p>ボーナスカップ・リチャージボーナスは、<span class="markY bold">カジノからの指定の金額を入金することでボーナスを獲得</span>することができます。<br>
+            ベラジョンカジノ・インターカジノで獲得でき、それぞれ「ボーナスカップ」「リチャージボーナス」と<span class="bold fontRed">名前が異なりますが、内容は同じもの</span>となります。</p>
+              
+              
+          <p>リロードボーナス（入金ボーナス）との違いは、ボーナスカップは入金額・ボーナス額が決まっているという点です。<br>
+          リロードボーナスは「入金額の〇％」とされており、プレイヤー側で入金額を選ぶことができます。2つのボーナス額の例は下記となります。</p>
+              
+          <div class="boderstep2 mb20">
+                <ul class="li_point">
+                  <li class="mb10">【リロードボーナス】入金額に対して<span class="bold">50％ボーナス付与</span>の場合<br>
+              例）$100入金で<span class="bold markY">$50のボーナスを獲得</span></li>
+            <li>【ボーナスカップ・リチャージボーナス】<span class="bold">$50～$100の入金に対して$20ボーナス付与</span>の場合<br>
+              例）$100入金で<span class="bold markY">$20のボーナスを獲得</span></li>  
+                </ul>
+              </div>
+          
+          <p>「$200以上一気に入金したい」「ボーナスが$100欲しい」などの希望がある方はリロードボーナスを利用しましょう。</p>
+              
+            <p>このほかにも、オンラインカジノによってさまざまなボーナスが用意されています。<br>
+             中には期間限定のボーナスなどもありますので、オンラインカジノのボーナスは見逃さないよう、こまめにサイトを確認しておきましょう。</p>			  
+      
+      
+            </div>
         <div class="cont2 txtLeft">  
 			
           <h2 class="h3-lineLB LB-step2" id="2"><i class="sp"></i>オンラインカジノの入出金方法を比較！メリット・デメリットは？</h2>
@@ -1191,14 +1933,7 @@ footer nav {
       
               <p>既にビットコインを保有している方は、オンラインカジノでの利用も考えてみてはいかがでしょうか？</p>
         </div>
-        <div class="cont-step2">
-          <h2 class="bold marg-tb20" id="4">ビットコイン決済ができるオンラインカジノ<!--<span class="fontExo2 smallWnomal fontGray">Safety Online Casino</span>--></h2>
-          <ul class="pay-logSlide noslide spslide-box step2">
-          <li><a href="../ranking/bitcasino.html"><img src="assets/images/bc.jpg" alt="ビットカジノ" loading="lazy" width="207" height="128"><span>ビットカジノ</span></a></li>
-          <li><a href="../ranking/eldoah.html"><img src="assets/images/ed.jpg" alt="エルドアカジノ" loading="lazy" width="207" height="128"><span>エルドアカジノ</span></a></li>
-          <li><a href="../ranking/inter.html"><img src="assets/images/ic.jpg" alt="インターカジノ" loading="lazy" width="207" height="128"><span>インターカジノ</span></a></li>					
-        </ul>
-        </div>
+     
         <div class="cont2 txtLeft">  
           <h2 class="h3-lineLB LB-step2" id="5"><i class="sp"></i>当サイト厳選！オンラインカジノのオススメ入出金方法3つ</h2>
           
