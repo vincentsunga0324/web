@@ -204,7 +204,7 @@
     color: #fff;
     display: inline-block;
     font-size: 1.3rem;
-  }
+}
 
   footer>.dispFlex {
     display: -webkit-flex;
@@ -512,10 +512,11 @@ h4 {
 .mb30 {
     margin-bottom: 30px!important;
 }
-.dispFlex {
+.dispFlex2 {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .underL-s.icon-t {
     margin-bottom: 15px;
@@ -880,13 +881,14 @@ ul.pay-logSlide li a>img, ul.a-logSlide li a>img {
     display: flex;
     gap: 20px;
 }
+.ranking_bnr_colblue dd>a, .ranking_bnr_colgreen dd>a {
+    width: 45%;
+    border: 4px solid #ffdb13;
+}
 .ranking_bnr_colblue dd>div, .ranking_bnr_colgreen dd>div {
     width: 53%;
 }
-.ranking_bnr_colgreen dd div a.link_btn02 {
-    border: 1px solid #84be3f;
-    color: #84be3f;
-}
+
 a.link_btn02 {
     background: none;
     box-shadow: inherit;
@@ -896,6 +898,9 @@ a.link_btn02 {
     width: 100%;
     padding: 13px 20px;
     line-height: 1.8;
+}
+.ranking_bnr_colgreen dd div a.link_btn02:after {
+    color: #84be3f;
 }
 #mokuji.m-step2 {
     border: 1px solid #8cc63f;
@@ -957,9 +962,173 @@ dl#mokuji.m-step2 dd {
     left: 0;
     z-index: 1;
 }
-.ranking_bnr_colblue dd>a, .ranking_bnr_colgreen dd>a {
-    width: 45%;
-    border: 4px solid #ffdb13;
+.spcasino-recommend .recommend_box {
+    border: 5px solid #e4f9cf;
+}
+.spcasino-recommend dl.pointlist, .spcasino-recommend .recommend_box {
+    margin-top: 15px;
+}
+
+.recommend_box {
+    border: 5px solid #ffe5ee;
+    border-radius: 10px;
+    margin: 0 0 20px 0;
+}
+.spcasino-recommend .recommend_box dt {
+    font-size: 1.15rem;
+    background-color: #e4f9cf;
+}
+
+.recommend_box dt {
+    position: relative;
+    background: #ffe5ee;
+    text-align: center;
+    padding: 10px;
+    font-size: 85%;
+    font-weight: 700;
+}
+.color-step2 {
+    color: #0eb700;
+}
+.color-step2 i, .boderstep2 i, dl.pointlist dt i, .underLineB i {
+    margin-right: 10px;
+}
+
+.fa, .fas {
+    font-weight: 900;
+}
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+.btn_rank li a.btn_signup {
+    background: #ff215b;
+}
+.btn_rank.w100 {
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
+}
+.btn_rank.w100 li:first-child {
+    margin-right: 0;
+}
+
+.btn_rank.w100 li {
+    width: 49%;
+}
+.btn_rank li:first-child {
+    margin-right: 20px;
+}
+.btn_rank li {
+    width: 47%;
+    display: block;
+}
+ul.btn_rank {
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+}
+.btn_rank a.btn_signup, .btn_rank a.btn_detail, a.btn_detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    line-height: 130%;
+    box-shadow: 1px 2px 3px #666;
+    font-size: 90%;
+}
+.btn_rank li a.btn_detail.c-blue {
+    background: #0079f5;
+}
+
+.btn_rank li a.btn_detail, a.btn_detail {
+    background: #111;
+}
+.btn_rank a.btn_signup, .btn_rank a.btn_detail, a.btn_detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    line-height: 130%;
+    box-shadow: 1px 2px 3px #666;
+    font-size: 90%;
+}
+.detail_about.step2, dl.detail_about.step2 {
+    border: 2px solid #8cc63f;
+}
+
+.detail_about, dl.detail_about {
+    border: 2px solid #de6bae;
+    border-radius: 15px;
+    padding: 20px 20px 5px 20px;
+    background: #FFF;
+    margin-top: 20px;
+}
+.mb50 {
+    margin-bottom: 50px!important;
+}
+.detail_about.step2 h3, .detail_about.step2 h4, dl.detail_about.step2 dt {
+    border-bottom: 1px solid #8cc63f;
+    color: #0eb700;
+}
+
+.detail_about.step2 h3, .detail_about.step2 h4, dl.detail_about.step2 dt {
+    border-bottom: 1px solid #8cc63f;
+    color: #0eb700;
+}
+dl.detail_about dt {
+    margin-bottom: 10px;
+    font-size: 80%;
+}
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fxin-jusbetw {
+    justify-content: space-between;
+}
+.flex25 {
+    width: 25%;
+}
+.flex75 {
+    width: 74%;
+}
+.flex48 {
+    width: 48%;
+}
+a.btn-squareGray {
+    background-color: #979797;
+    padding: 15px 30px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+}
+a.btn-squareGre {
+    padding: 15px 30px;
+    text-align: center;
+    background-color: #22b573;
+    color: #fff;
+    display: inline-block;
+}
+a.btn-squareGray:after {
+    content: "▶";
+    color: #fff;
+}
+a.btn-squareGre:after {
+    content: "▶";
+    color: #fff;
+}
+ul {
+    list-style-type: none;
+    font-size: 1.3rem;
 }
 @media (max-width: 767px) {
   .hide-on-mobile {
@@ -1053,6 +1222,7 @@ footer nav {
             <a class="dropdown-item" href="pc_sp.html">スマホで遊べるオンラインカジノ一覧</a>
             <a class="dropdown-item" href="jackpot.html">一攫千金が狙えるジャックポットスロット</a>
             <a class="dropdown-item" href="livegame.html">ライブカジノを楽しもう</a>
+
 
           </div>
         </li>
@@ -1158,11 +1328,51 @@ footer nav {
         <!-- Content for the second column -->
        
         <!--  -->
-       
+        <!-- <div class="cont2 txtLeft">  
+          <p><img src="assets/images/bonus_fv.jpg" alt="オンラインカジノのボーナスの種類・ルールを解説" class="w100" loading="lazy" width="795" height="413"></p>
+            
+          <p class="txtRight data">最終更新日：<time itemprop="dateModified">2023-06-13</time></p>
+            
+          <p>オンラインカジノ特有のサービス「ボーナス」は、一定の条件をクリアすると<span class="bold markY">ゲームで利用できる無料チップがもらえる</span>という、お得なシステムです。</p>
+            
+          <p>ボーナスには様々な種類があり、例えば入金時に貰えるボーナスや、キャンペーンで貰える限定モノもあります。</p>
+            
+          <p>ただし、ボーナスで稼いだ勝利金を出金するためには、一定の条件をクリアしなければならない等、定められたルールが存在します。<br>
+          ルールを守らないとせっかく貰ったボーナスが没収されてしまうこともあるので、必ずボーナスルールを確認するようにしましょう。</p>
+            
+          <p>ここではボーナスの種類や、把握しておきたいルールについて紹介します。</p>
+            
+              <div class="writer_chara_col">
+              <div>
+                  <img src="../images/writer/kenji.png" width="150" height="150" loading="lazy" alt="KENJI"><span>著者：<a rel="author" href="../writer-kenji.html">KENJI</a><br>カジノ歴：3年</span>
+              </div>
+              <div class="speech">
+                  <dl>
+                      <dt>カジノ基礎知識担当者からのコメント</dt>
+                      <dd><p>オンラインカジノではアカウントを登録した時など色んな場面でボーナスを貰うことができますが、ボーナスの種類や使い方を知っていないと規約違反などを問われてしまうことがあります。</p>
+              <p>このページでは、カジノサイトで提供されているボーナスの種類や賭け条件、禁止ゲームといったボーナスに関する基礎知識を掲載しています。<br>
+              ボーナスの違いや大体どのくらいのボーナスが貰えるのかも紹介していますので、気になるボーナスがあればチェックしてみてくださいね。</p></dd>
+                  </dl>
+              </div>
+              </div>
+            
+          <dl class="ranking_bnr_colgreen">
+              <dt>【2023年】おすすめオンラインカジノTOP3を紹介</dt>
+              <dd>
+              <a href="../ranking/"><img src="../images/rank/ban_rank_link_resp.jpg" loading="lazy" width="356" height="227" alt="オンラインカジノおすすめランキング【最新版】を詳しくチェック"></a>
+               <div> 
+              <p>オンラインカジノ初心者ナビでは、「ボーナスが豊富」「人気がある」など5つの基準からおすすめの優良カジノサイトを3つ紹介しています。ボーナス獲得額や出金条件別におすすめのカジノも紹介しています。</p>
+              <a href="../ranking/" class="btn-squareOre link_btn02 right_arrow">【2023年最新】おすすめオンラインカジノランキング</a>
+              </div>	 
+              </dd>
+          </dl>
+            
+        </div> -->
         <div class="cont2 txtLeft">  
-            <div class="img-container">
-              <p><img src="assets/images/kakejyouken_fv.jpg" alt="オンラインカジノのボーナスの種類・ルールを解説" class="w100" loading="lazy" width="795" height="413"></p>
-            </div>              
+          <div class="img-container">
+            <p><img src="assets/images/pcsp_fv.jpg" alt="オンラインカジノのボーナスの種類・ルールを解説" class="w100" loading="lazy" width="795" height="413"></p>
+          </div>
+              
             <p class="txtRight data">最終更新日：<time itemprop="dateModified">2023-06-13</time></p>
               
             <p>オンラインカジノ特有のサービス「ボーナス」は、一定の条件をクリアすると<span class="bold markY">ゲームで利用できる無料チップがもらえる</span>という、お得なシステムです。</p>
@@ -1188,18 +1398,7 @@ footer nav {
                 </div>
                 </div>
               
-                <dl class="ranking_bnr_colgreen">
-                  <dt>【2023年】おすすめオンラインカジノTOP3を紹介</dt>
-                  <dd>
-                  <div class="img-container">
-                    <a href="../ranking/"><img src="assets/images/ban_rank_link_resp.jpg" loading="lazy" width="356" height="227" alt="オンラインカジノおすすめランキング【最新版】を詳しくチェック"></a>
-                  </div>
-                   <div> 
-                  <p>オンラインカジノ初心者ナビでは、「ボーナスが豊富」「人気がある」など5つの基準からおすすめの優良カジノサイトを3つ紹介しています。ボーナス獲得額や出金条件別におすすめのカジノも紹介しています。</p>
-                  <a href="../ranking/" class="btn-squareOre link_btn02 right_arrow">【2023年最新】おすすめオンラインカジノランキング</a>
-                  </div>	 
-                  </dd>
-              </dl>
+                
               
           </div>
           <div class="cont2 txtLeft">
@@ -1230,166 +1429,322 @@ footer nav {
             </dd>
             </dl>
           </div>
-       
-        <div class="cont2 txtLeft">  
-			
-          <h2 class="h3-lineLB LB-step2" id="2"><i class="sp"></i>オンラインカジノの入出金方法を比較！メリット・デメリットは？</h2>
-          
-            <p>オンラインカジノで使うことができる代表的な入出金方法のメリットとデメリットを比較してみましょう！</p>
-          
-          <table class="table step2 txtCenter t-layFixed mb30">
-            <tbody><tr>
-              <th>　</th><th>メリット</th><th>デメリット</th>
-          </tr>
-            <tr>
-              <td>クレジットカード</td><td>・すぐに入金が反映される<br>・手続きが簡単</td><td>・対応していないカードが多い<br>・入金のみ可能、出金は不可</td>
-          </tr>
-            <tr>
-              <td>電子決済サービス</td><td>・一つのアカウントで入手金を行えるので資金の管理がしやすい<br>・サービスによってはATMからの出金が可能</td><td>・サービスが終了する可能性がある</td>
-          </tr>
-            <tr>
-              <td>電信送金<br>（銀行振込）</td><td>・クレジットカードを持っていなくても入金できる<br>・サービス終了の可能性が低い</td><td>・入出金の反映に数日かかる<br>・手数料が高くなりがち</td>
-          </tr>
-          </tbody></table>
-            
-          <h3 class="font-cl-step2" id="2-1">クレジットカード</h3>
-            <p>クレジットカードは<span class="markY">入金反映の速さと手続きの手軽さ</span>が特徴で、たいへん人気の入金手段です。</p>
-          
-            <p>デメリットとしては出金が行えないことがまず挙げられます。<br>	  
-            ですので、クレジットカードをオンラインカジノの入金方法として使うときは、必ず出金方法も用意しておきましょう。</p>
-    
-            <p>また、クレジットカード会社の審査の関係上使えるカードが限られており、以前は使えたカードが突然使えなくなったりというケースも多いようです。</p>
-          
-          <h3 class="font-cl-step2" id="2-2">電子決済サービス</h3>
-    
-            <p>電子決済サービスは、オンライン上に口座を作成しそこから入出金を行う仕組みのことで、ecoPayz（エコペイズ）やi Wallet（アイウォレット）が代表的ものとして知られています。</p>
-            <p>一つの口座から入金と出金を行うのでお金の流れがわかりやすく、<span class="markY">資金管理が簡単</span>になります。</p>
-          
-            <p>この電子決済サービスのもっとも大きなメリットは、ecoPayz（エコペイズ）やi Wallet（アイウォレット）であれば専用のデビットカードを作成することができ、それを使えば<span class="markY">ATMからの出金が可能</span>になるということです。<br>
-          その高い利便性から、電子決済サービスはオンラインカジノの入出金方法の中で最も人気の方法です。</p>
-        
-            <p>デメリットとしては、サービスが終了してしまうことがあるということでしょうか。<br>
-            2016年にNETELLER（ネッテラー）という電子決済サービスのオンラインカジノでの利用が出来なくなるという出来事がありました。</p>
-          
-            <p>また同じことが起こるとは限りませんが、他の入出金方法を知っておくなどの対策はしておいたほうがいいかもしれません。</p>
-          
-          <p><a class="link_btn step2 spmb10" href="https://オンラインカジノ初心者ナビ.com/nyushukkin.html">オンラインカジノの電子決済サービス一覧</a></p>
-          
-          <h3 class="font-cl-step2" id="2-3">電信送金（銀行振込）</h3>  
-          
-            <p>電信送金（銀行振込）はオンラインカジノの指定する口座と自分の口座間で直接お金のやりとりを行う方法です。</p>
-          
-            <p>デメリットとしては、海外とのやりとりとなりますので為替手数料などの手数料が高くつきやすく、また入出金の反映に日数がかかることが挙げられます。<br>
-            取扱金額が高額になると銀行から使用目的や身分証明を求められる場合もあり、少し面倒に感じることが多いかもしれません。</p>
-          
-            <p>しかし、クレジットカードが使えない場合にも利用できること、あとで紹介する電子決済サービスのようにサービスが突然終了するという可能性も少ないというメリットもありますので、やり方を覚えておいて損はないでしょう。</p>
-          
-        </div>
-        <div class="cont2 txtLeft">  
-			
-            <h2 class="h3-lineLB LB-step2" id="3"><i class="sp"></i>オンラインカジノの入出金にビットコインが使えるってホント？</h2>
-            
-              <p>実は、あの<span class="fontRed">仮想通貨・ビットコイン</span>がオンラインカジノの新たな決済方法として注目されています！</p>
-          
-              <p>みなさんはビットコインといえばどんなイメージがありますか？「投資に使うもの」あるいは「怪しい」というイメージの方が多いかもしれませんね。<br>
-             そんなビットコインがなぜオンラインカジノの決済方法として使われ始めているのか？</p>
+          <div class="cont2 txtLeft">
+            <h2 class="h3-lineLB LB-step2" id="1">スマホ対応しているオンラインカジノの選び方</h2>
               
-              <p>その理由は、ビットコインの持つ<span class="fontRed">「送金スピードが早い」「手数料が安い」「匿名性が高い」</span>という3つのメリットにあります。</p>
-            <div class="img-container">
-              <p class="txtCenter"><img src="assets/images/kakejyouken02.jpg" alt="ビットコイン3つのメリット" loading="lazy" width="560" height="270"></p>
+            <p>ほとんどのオンラインカジノがPC版・スマホ版で画面レイアウトを変えて配信をしているので、最近では「スマホだと見にくい、操作がわかりづらい」ということは少なくなっています。<br>
+              特にスロットの場合はスマホの縦型の画面と相性が良いので、スロットをメインで遊びたいという方であればスマホでも十分楽しめるのではないでしょうか。</p>
+              
+                <p>ゲームの演出や入出金方法などについてもPCでプレイする場合と違いはありませんが、PC版にくらべて<span class="fontRed bold">スマホ版で遊べるゲーム数が少なくなっている</span>オンラインカジノもあります。<br>
+              スマホでオンラインカジノに登録するときは、対応ゲーム数が多いサイトを選ぶのがポイントです。</p>
+              
+                <p>また、スマホで運営側に問い合わせをしたいときはリアルタイムでやりとりができるライブチャットが便利なので、ライブチャットの営業時間が長いオンラインカジノだと安心して遊ぶことができます。</p>		  
+              
+            <p class="txtCenter mb30"><a class="link_btn step2" href="../beginner/about.html">オンラインカジノの基礎知識はこちら</a></p>
+              
             </div>
-              
+            <div class="cont2 txtLeft">
+			
+              <h2 class="h3-lineLB LB-step2" id="2">スマホでも使いやすい！おすすめオンラインカジノ5選</h2>
+                      
+        <p>ここでは、スマホ対応のゲーム数やゲームの探しやすさ、操作のわかりやすさなどの点から選んだおすすめのオンラインカジノを５つご紹介します。</p>
+        
+        <p>スロットやライブカジノが豊富、チャットでの問い合わせ対応時間など各サイトの特徴も掲載していますので、お好みのオンラインカジノを見つけてみてください！</p>
+               
+               
+                <section class="spcasino-recommend">			  
+             <h3 class="font-cl-step2" id="2-1">ベラジョンカジノ</h3>	  
+             <p><img src="assets/images/pcsp1.jpg" alt="スマホでの操作性抜群！人気No.1カジノ「ベラジョンカジノ」" loading="lazy" width="795" height="413"></p>
+               
             
-              <p>特に「手数料が安い」という点は、換金手数料を始めとするさまざまな手数料がかかってくるオンラインカジノの入出金にはとても大きなメリットです。</p>
-      
-              <p>いまはまだビットコインが使えるオンラインカジノは多くありませんが、これだけのメリットがあるのですから、どんどん増えていくことが予想されます。</p>
-      
-              <p>既にビットコインを保有している方は、オンラインカジノでの利用も考えてみてはいかがでしょうか？</p>
-        </div>
+            <dl class="recommend_box">
+            <dt><i class="far fa-hand-point-right"></i>日本人プレイヤー人気No.1！スマホでも満足度の高い操作性</dt>	
+            <dd>	
+            <ul>
+                  <li>ライブカジノを含む<span class="bold">ほとんどのゲームがスマホ対応</span></li>
+                  <li>おすすめ表示やお気に入り機能で、<span class="bold">気になるゲームを探しやすい</span></li>
+                  <li><span class="bold">利用ガイドがある</span>ので初心者でもわかりやすい</li>
+                </ul>
+            </dd>
+            </dl>
+               
+            <p>日本での圧倒的人気を誇るベラジョンカジノ。ボーナスや遊べるゲーム、決済方法が充実しており、PC版で配信されているほとんどのゲームがスマホでもプレイできます。<br>
+              TOPページからカテゴリごとにゲームを探せるほか、初めて利用するプレイヤー向けにビギナーズガイドもあるので、<span class="markY bold">スマホから登録した初心者の方でも操作しやすい</span>サイトといえるでしょう。</p>	 
+               
+            <h4 class="color-step2"><i class="fas fa-mobile-alt"></i>スマホで気軽に問い合わせ可能！</h4>	 
+            <p>ベラジョンカジノは<span class="bold">サポート対応も充実</span>しています。</p>
+               
+            <div class="boderstep2">
+            <ul class="li_point">
+                  <li>ライブチャット：毎日11：00～0：00まで</li>
+                  <li>メール：24時間365日受付</li>
+                </ul>
+            </div>
+            <p>何か困りごとやトラブルがあった際も、スマホから気軽に質問できるのが嬉しいですね。</p>	 
+            <h4 class="color-step2"><i class="fas fa-donate"></i>幅広い決済方法が利用可能！</h4>	 
+            <p>利用できる決済方法も幅広く、<span class="bold">クレジットカード・銀行振込・電子決済サービス・仮想通貨で入金・出金が可能</span>。もちろんスマホで入出金手続きが可能です。<br>
+              総合的に使いやすく、満足度の高いオンラインカジノです。</p>
+               
+               
+                <div class="detailcont casi-det">
+                <div class="cont-gray casi-det mb30">
+                <p class="txtCenter rank-comP">初心者ナビからアカウント登録するだけで550スピンプレゼント</p>
+                <p class="txtCenter"><img src="assets/images/vera_banner.jpg" alt="初心者ナビからアカウント登録するだけで550スピンプレゼント" loading="lazy" width="744" height="261"></p>
+                
+                <ul class="btn_rank w100">
+                <li><a href="../casino/verajohncasino_signup.html" target="new" rel="nofollow" class="btn_signup" alt="ベラジョンカジノに登録して登録ボーナス40ドルを受け取る！"><span>ベラジョンカジノに<br>登録する</span><i class="fas fa-chevron-circle-right"></i></a></li>
+                <li><a href="../ranking/verajohn.html" class="btn_detail c-blue" alt="ベラジョンカジノの詳細を見る"><span>ベラジョンカジノの<br>詳細を見る</span><i class="fas fa-chevron-circle-right"></i></a></li>
+                </ul>  
+              </div>	
+              </div>
+               
+            </section>		
+        
+                
+             <section class="spcasino-recommend">
+                  <h3 class="font-cl-step2" id="2-2">エンパイアカジノ</h3>	  
+             <p><img src="assets/images/pcsp2.jpg" alt="スマホ対応のライブカジノが充実！「エンパイアカジノ」" loading="lazy" width="795" height="413"></p>
+               
+            
+            <dl class="recommend_box">
+            <dt><i class="far fa-hand-point-right"></i>ライブカジノに特化！本場さながらの雰囲気が味わえる</dt>	
+            <dd>	
+            <ul>
+                  <li>いろいろな<span class="bold">ライブカジノがスマホでプレイ可能</span></li>
+                  <li>入金や問い合わせがワンタップでできる便利な<span class="bold">画面構成</span></li>
+                  <li><span class="bold">LINEでの問い合わせも可能！</span></li>
+                </ul>
+            </dd>
+            </dl>
+               
+            <p>業界最大級のライブカジノテーブル数を誇るエンパイアカジノ。<br>他のオンラインカジノと比べても<span class="markY bold">スマホに対応しているライブカジノが比較的多く</span>、ランドカジノで遊んでいるような臨場感がスマホで手軽に楽しめます。<br>画面下部に主要なメニューが置かれているので、入金やチャットでの問い合わせが簡単にできる操作性の高い画面構成になっています。</p>	 
+               
+            <h4 class="color-step2"><i class="fas fa-mobile-alt"></i>LINEでの問い合わせが可能！</h4>	 
+            <p>エンパイアカジノでは、一般的なライブチャット、メールのほか、<span class="markY bold">LINEでの問い合わせも可能</span>です。</p>
+               
+            <div class="boderstep2">
+            <ul class="li_point">
+                  <li>ライブチャット：毎日9：00～翌3：00まで</li>
+                  <li>メール：24時間365日受付</li>
+              <li>LINE：毎日9：00～翌3：00まで</li>
+                </ul>
+            </div>
+             
+            <p>LINEはライブチャットと同じく、リアルタイムでのやり取りが可能。スマホユーザーにとって、普段使い慣れているLINEで問い合わせできるのは便利ですよね。<br>受付時間が9：00～3：00と長い点も大きなメリットだと言えます。</p>
+             
+            <h4 class="color-step2"><i class="fas fa-donate"></i>スピーディーな入金・出金手続きが可能！</h4>	 
+            <p>エンパイアカジノで利用できる決済方法は、クレジットカード、電子決済サービス、銀行振込です。<br>スマホから簡単に入出金手続きができ、<span class="bold">反映時間もスピーディー</span>なため使いやすいでしょう。</p>
+               
+               
+              <div class="detailcont casi-det">
+        
+                <div class="cont-gray casi-det mb30">
+                <p class="txtCenter rank-comP">初心者ナビからアカウント登録するだけで$20プレゼント</p>
+                <p class="txtCenter"><img src="assets/images/emp_banner.jpg" alt="初心者ナビからアカウント登録するだけで$20プレゼント" loading="lazy" width="744" height="260"></p>
+                
+                  <ul class="btn_rank w100">
+                  <li><a href="../casino/empire777_signup.html" target="new" rel="nofollow" class="btn_signup"><span>エンパイアカジノに<br>登録する</span><i class="fas fa-chevron-circle-right"></i></a></li>
+                  <li><a href="../ranking/empire.html" class="btn_detail c-blue"><span>エンパイアカジノの<br>詳細を見る</span><i class="fas fa-chevron-circle-right"></i></a></li>
+                  </ul>
+          
+              </div>	
+              </div>
+        
+            </section>
+                
+                
+          <section class="spcasino-recommend">
+                  <h3 class="font-cl-step2" id="2-3">カジ旅</h3>	  
+             <p><img src="assets/images/pcsp3.jpg" alt="スマホ限定ゲームあり！RPG型カジノ「カジ旅」" loading="lazy" width="795" height="413"></p>
+               
+            
+            <dl class="recommend_box">
+            <dt><i class="far fa-hand-point-right"></i>スマホゲーム感覚で遊べる世界初のRPG型オンラインカジノ！</dt>	
+            <dd>	
+            <ul>
+                  <li>カジノゲームをプレイしながらキャラクターの<span class="bold">冒険やストーリーも楽しめる</span></li>
+                  <li>スロットが多く揃っているほか、<span class="bold">ライブカジノもスマホ対応</span></li>
+                  <li><span class="bold">スマホ限定ゲーム</span>も配信中</li>
+                </ul>
+            </dd>
+            </dl>
+               
+            <p>選んだキャラクターがカジノゲームをプレイするごとに強くなり、最終的にはボスとの戦いに挑むという<span class="markY bold">RPG要素が特徴</span>のカジ旅。<br>スマホ版では、特有の縦画面とタップ操作を利用した限定ゲーム「Coin Swipe」「スワイプ彼女」も配信されており、従来のスマホゲームのような感覚で直感的に操作することができます。</p>	 
+               
+            <h4 class="color-step2"><i class="fas fa-mobile-alt"></i>ライブチャットで気軽に問い合わせ可能</h4>	 
+            <p>カジ旅ではライブチャットとメールのいずれかで問い合わせが可能です。</p>
+               
+            <div class="boderstep2">
+            <ul class="li_point">
+                  <li>ライブチャット：毎日14：00～翌1：00まで</li>
+                  <li>メール：24時間365日受付</li>
+                </ul>
+            </div>
+             
+            <p>以前はライブチャットの受付時間が短めでしたが、現在は対応時間が長くなり、ユーザーの利便性がアップしています。<br>スマホから問い合わせるなら、<span class="bold">リアルタイムでメッセージのやり取りができるライブチャットがおすすめ</span>です。</p>
+             
+            <h4 class="color-step2"><i class="fas fa-donate"></i>VISA・マスターカードで入金可能！</h4>	 
+            <p>カジ旅では、クレジットカード、電子決済サービス、銀行振込、仮想通貨で入出金が可能です。<br>持っている方が多い<span class="markY bold">VISAやマスターカードに対応</span>しており、スマホからカード番号等の情報を入力するだけで簡単に入金手続きが可能です。</p>
+               
+          <div class="detailcont casi-det">
+                <div class="cont-gray casi-det mb30">
+              <p class="txtCenter rank-comP">カジ旅に入金すると＄500+フリースピン250回分がもらえる！</p>
+              <p class="txtCenter"><img src="assets/images/ct_nbbanner.jpg" alt="ウェルカムボーナス！入金で最大＄500+250フリースピン" loading="lazy" width="744" height="260"></p>
+                
+                <ul class="btn_rank w100">
+                <li><a href="../casino/casitabi_signup.html" target="new" rel="nofollow" class="btn_signup"><span>カジ旅に<br>登録する</span><i class="fas fa-chevron-circle-right"></i></a></li>
+              <li><a href="../casino/casitabi.html" target="new" rel="nofollow" class="btn_detail c-blue"><span>カジ旅の<br>公式サイトを見る</span><i class="fas fa-chevron-circle-right"></i></a></li>
+                </ul>  
+              </div>	
+              </div>
+        
+            </section>
+                
+                
+          <section class="spcasino-recommend">
+                  <h3 class="font-cl-step2" id="2-4">カジノシークレット</h3>	  
+             <p><img src="assets/images/pcsp4.jpg" alt="限定ライブカジノをスマホから楽しめる！「カジノシークレット」" loading="lazy" width="795" height="413"></p>
+               
+            
+            <dl class="recommend_box">
+            <dt><i class="far fa-hand-point-right"></i>ゲーム配信数は業界最大級！お得なキャッシュバックも魅力</dt>	
+            <dd>	
+            <ul>
+                  <li><span class="bold">スマホ対応のビデオスロットとライブカジノの種類が豊富</span></li>
+                  <li>負けた金額が返ってくる<span class="bold">キャッシュバックシステム</span>あり</li>
+                  <li><span class="bold">スマホアプリ風に使える</span>工夫あり！</li>
+                </ul>
+            </dd>
+            </dl>
+               
+            <p>カジノシークレットはスロットやライブカジノに力を入れており、<span class="markY bold">カジノシークレット限定のライブカジノ</span>もスマホで楽しめます。<br>損失額が一部戻ってくるキャッシュバックシステムなど、お得にゲームを楽しめる工夫も充実。<br>スマホの画面下には<span class="bold">「ホーム画面に追加する」ボタン</span>があり、ホーム画面にブックマークしてアプリ風に使えるよう工夫されています。</p>	 
+               
+            <h4 class="color-step2"><i class="fas fa-mobile-alt"></i>帰宅後や休日問わず問い合わせ可能！</h4>	 
+            <p>カジノシークレットのサポート対応時間は下記のとおりです。</p>
+               
+            <div class="boderstep2">
+            <ul class="li_point">
+                  <li>ライブチャット：10：00～翌2：00</li>
+                  <li>メール：24時間受付</li>
+                </ul>
+            </div>
+             
+            <p><span class="markY bold">ライブチャットの対応時間が午前中から深夜まで</span>と長めになっているので、カジノシークレットで日中に遊ぶことが多い方、夜に遊ぶ方が多い方問わず、スマホからすぐに問い合わせ可能です。</p>
+             
+            <h4 class="color-step2"><i class="fas fa-donate"></i>決済方法が豊富で簡単に手続き可能</h4>	 
+            <p>カジノシークレットでは、VISA・マスターカード・JCBなど主要なクレジットカードすべてに対応しており、その他電子決済サービスや銀行振込、仮想通貨も利用可能です。<br>スマホから好きな決済方法で手続きし、すぐに遊べるのが嬉しいですね。</p>
+               
+          <div class="detailcont casi-det">
+                <div class="cont-gray casi-det spmt0">
+                <p class="txtCenter rank-comP">負けてもキャッシュが戻ってくるから安心！</p>
+                <p class="txtCenter"><img src="assets/images/secret_banner.jpg" alt="初心者に嬉しい初回キャッシュバック制度" loading="lazy" width="744" height="261"></p>
+                
+                <ul class="btn_rank w100">
+                <li><a href="../casino/casinosecret_signup.html" target="new" rel="nofollow" class="btn_signup"><span>カジノシークレットに<br>登録する</span><i class="fas fa-chevron-circle-right"></i></a></li>
+                <li><a href="../ranking/casinosecret.html" class="btn_detail c-blue"><span>カジノシークレットの<br>詳細を見る</span><i class="fas fa-chevron-circle-right"></i></a></li>
+                </ul>  
+              </div>	
+              </div>
+        
+            </section>		  
+                      
+          <section class="spcasino-recommend">
+                  <h3 class="font-cl-step2" id="2-5">ビットカジノ</h3>	  
+             <p><img src="assets/images/pcsp5.jpg" alt="仮想通貨で入出金！スマホ限定イベントもある「ビットカジノ」" loading="lazy" width="795" height="413"></p>
+               
+            
+            <dl class="recommend_box">
+            <dt><i class="far fa-hand-point-right"></i>仮想通貨で入出金OK！豊富なゲーム数から選び放題</dt>	
+            <dd>	
+            <ul>
+                  <li>ビットコインなどの<span class="bold">仮想通貨で入出金ができる</span></li>
+                  <li>配信ゲーム数3,000種類以上、ライブカジノもスマホ対応</li>
+                  <li>スマホ限定キャンペーンなどお得なイベントあり</li>
+                </ul>
+            </dd>
+            </dl>
+               
+            <p><span class="markY bold">8種類の仮想通貨で入出金ができる</span>ビットカジノ。最近では銀行振込や電子決済サービスを利用すれば法定通貨での入出金も可能になりました。<br>3,000種類以上という圧倒的なゲーム数を誇るほか、指定された金額をベットしてプレイするだけで賞金が当たるスマホ限定キャンペーンなど、スマホユーザー向けのイベントも不定期で開催しています。</p>	 
+               
+            <h4 class="color-step2"><i class="fas fa-mobile-alt"></i>ライブチャットが24時間365日受付！</h4>	 
+            <p>ビットカジノでは、<span class="markY bold">ライブチャット・メールともに24時間いつでも受付可能</span>となっています。</p>
+               
+            <div class="boderstep2">
+            <ul class="li_point">
+                  <li>ライブチャット：24時間365日受付</li>
+                  <li>メール：24時間365日受付</li>
+                </ul>
+            </div>
+             
+            <p>ライブチャットが24時間受付になっているオンラインカジノは珍しく、わからないことがあればいつでも相談できる安心感が魅力です。</p>
+             
+            <h4 class="color-step2"><i class="fas fa-donate"></i>出金時の本人確認が不要！</h4>	 
+            <p>ビットカジノは、<span class="bold">出金時の本人確認が不要</span>である点が大きな特徴です。<br>「スマホで本人確認書類の提出手続きをする際に使いづらい・面倒」という悩みがある方でも、気軽に利用できる点が嬉しいですね。</p>
+               
+          <div class="detailcont casi-det">
+                <div class="cont-gray casi-det mb30">
+                <p class="txtCenter rank-comP">個人情報不要！<br class="sp">メールアドレスだけで気軽に始められる♪</p>
+                <p class="txtCenter"><img src="assets/images/bit_banner.jpg" alt="個人情報不要！メールアドレスだけで気軽に始められる♪" loading="lazy" width="744" height="260"></p>
+                
+                  <ul class="btn_rank w100">
+                  <li><a href="../casino/bitcasino_signup.html" target="new" rel="nofollow" class="btn_signup"><span>ビットカジノに<br>登録する</span><i class="fas fa-chevron-circle-right"></i></a></li>
+              <li><a href="../ranking/bitcasino.html" class="btn_detail c-blue"><span>ビットカジノの<br>詳細を見る</span><i class="fas fa-chevron-circle-right"></i></a></li>
+                </ul>
+              </div>	
+              </div>
+        
+            </section>
+                      
+        
+                      
+            <dl class="detail_about step2 mb50">
+              <dt><h4><i class="far fa-lightbulb fa-2x"></i>アプリでオンラインカジノを利用するならウィリアムヒル</h4></dt>
+              <dd class="flexbox fxin-jusbetw">
+              <div class="flex25">
+                
+                <img src="assets/images/pcsp6.jpg" alt="iOS・Androidアプリ対応「ウィリアムヒルカジノ」" width="374" height="666" loading="lazy" class="sp_rank_img mtb10 pc">
+              </div>
+                
+              <div class="flex75">
+              <p class="txtCenter sp"><img src="img/pcsp6.jpg" width="374" height="666" loading="lazy" alt="ウィリアムヒルならiOS・Androidアプリ対応"></p>
+                <p>スマホブラウザではなく<span class="markY bold">アプリでオンラインカジノをプレイしたい方は、ウィリアムヒル</span>がおすすめです。</p>
+                        
+                        <p>ウィリアムヒルは、<span class="bold">スポーツの試合結果に賭ける「スポーツベッティング」がメイン</span>なのでカジノゲーム自体は少ないものの、iOS・Androidアプリをリリースしています。</p>
+        
+                        
+                        <p>サイトもアプリも日本語に対応していますので、スポーツベッティングに興味がある、アプリで遊びたいという方は、一度利用してみてはいかがでしょうか。</p>
+              </div>
+              </dd>
+                      <ul class="dispFlex2">
+                          <li class="flex48 mb20"><a href="../ranking/williamhill.html" class="btn-squareGray w100 small70 spsmall95">ウィリアムヒルの詳細を見る</a></li>
+                          <li class="flex48 mb20"><a href="../casino/williamhillcasino.html" target="new" rel="nofollow" class="btn-squareGre w100 small70 spsmall95"><span>ウィリアムヒルの公式サイトを見る</span></a></li>
+                      </ul>      
+              </dl>     
+                      
+              </div>
+              <div class="cont2 txtLeft">
+                <h2 class="h3-lineLB LB-step2" id="3">スマホでオンラインカジノをプレイするときの注意点</h2>
+                  
+                    <p class="txtCenter"><img src="assets/images/pcsp7.jpg" loading="lazy" width="700" height="364" alt="スマホでプレイする時は注意！"></p>
+                  
+                <p>オンラインカジノは基本的にスマホでも問題なく利用することができますが、スマホだからこそ気を付けなければいけない点もあります。</p><p>お金に関わる部分でもありますので、スマホでプレイする際は以下の2点に注意しましょう。</p>
+                        
+                   <h3 class="font-cl-step2" id="3-1">通信環境やデータ使用量に気を付ける</h3>
+                      <p>スマホのネット環境が不安定だと、プレイ中に画面が止まってしまう、接続が切れてしまうなどのトラブルが発生する場合があります。<br>
+                スロットなどでは通信が繋がったときにそのままプレイを再開できますが、ライブカジノでは<span class="fontRed bold">ベット額が戻ってこないことも</span>…。</p>
+                      
+                      <p>また、カジノゲーム、特にライブカジノをプレイしていると消費するデータ通信量も多くなりがちなので、<span class="fontRed bold">気付かないうちに速度制限がかかってしまう</span>可能性も十分ありえます。</p>
+                        
+                      <p>使い過ぎや通信トラブルを防ぐためには、<span class="markY bold">できるだけWi-Fiがある環境でプレイ</span>しましょう。<br>
+                  データ容量の多い料金プランに変更するなど、スマホの契約内容を見直すのも対策のひとつです。</p>
+                  
+                  <h3 class="font-cl-step2" id="3-2">操作ミスにも注意</h3>
+                        <p>スマホでプレイするときは小さい画面を片手で操作することになるので、<span class="fontRed bold">誤タップで選択を間違えてしまう</span>ことがあります。</p>
+                        <p>特に賭け方やベット額を選ぶときには、間違えてタップしてしまわないよう慎重に操作をするようにしましょう。</p>
+                </div>
      
-        <div class="cont2 txtLeft">  
-			
-		<h2 class="h3-lineLB LB-step2" id="3">カジノ別・賭け条件一覧表</h2>
-			
-    	<p>ここでは、さまざまなオンラインカジノの主なボーナスと賭け条件を紹介します。<br>
-		なお、一覧表に記載されている情報は2022年4月時点のものです。</p>
-
-		<p>賭け条件は、デイリーボーナスやボーナスのオファー内容によって変更になる場合もあります。</p>
-
-		<p>変更があった場合は、必ず記載されているはずですので、<span class="markY bold">各オンラインカジノのボーナス利用規約をよく確認してから活用しましょう。</span></p>
-			
-
-		<table class="table step2 mb30 mt0">
-		    <tbody><tr>
-		      <th class="txtCenter" width="25%">カジノ名</th><th class="txtCenter" width="45%">賭け条件</th><th class="txtCenter" width="30%">消化率</th>
-			</tr>
-		    <tr>
-				<td class="bold"><a href="../ranking/verajohn.html">ベラジョンカジノ</a></td>
-				<td>入金不要ボーナス：20倍（当サイト限定550スピン）<br>
-					初回入金ボーナス：20倍（最大＄1,000）<br>
-					入金ボーナス：20倍<br>
-					その他のボーナス：基本20倍</td>
-				<td>テーブルゲーム：15％<br>
-					スロット：100％<br>
-					ジャックポットスロット：100％<br>
-					ライブカジノ：10％</td>
-			</tr>
-		    <tr>
-				<td class="bold"><a href="../ranking/inter.html">インターカジノ</a></td>
-				<td>ウェルカムキャッシュ：0倍（最大＄500）<br>
-					入金不要ボーナス：30倍（当サイト限定＄40）<br>
-					その他のボーナス：基本30倍</td>
-				<td>テーブルゲーム：15％<br>
-					スロット：100％<br>
-					ジャックポットスロット：100％<br>
-					ライブカジノ：10％</td>
-			</tr>
-		    <tr>
-				<td class="bold"><a href="../ranking/mystino.html">ミスティーノ</a></td>
-				<td>フリースピン：0倍<br>
-					その他のボーナス：基本1倍</td>
-				<td>テーブルゲーム：0％<br>
-					スロット：100％<br>
-					ライブカジノ：0％</td>
-			</tr>
-		    <tr>
-				<td class="bold"><a href="../ranking/casinosecret.html">カジノシークレット</a></td>
-				<td>初回入金キャッシュバック：0倍（当サイト限定最大＄777）<br>
-					インスタントキャッシュバック：0倍<br>
-					その他のボーナス：基本1倍<br>
-					※ただし入金したキャッシュに5倍の出金条件が発生</td>
-				<td>すべて100％</td>
-			</tr>
-		    <tr>
-				<td class="bold"><a href="../ranking/empire.html">エンパイアカジノ</a></td>
-				<td>入金不要ボーナス：5倍（当サイト限定＄20）<br>
-					その他のボーナス：スロット30倍、ライブカジノ9倍</td>
-				<td>テーブルゲーム：15％<br>
-					スロット：100％<br>
-					ライブカジノ：15％</td>
-			</tr>
-		    <tr>
-				<td class="bold"><a href="../ranking/luckyniki.html">ラッキーニッキー</a></td>
-				<td>入金不要ボーナス：60倍（当サイト限定＄40）<br>
-					初回入金ボーナス：15倍（最大＄999）<br>
-					入金ボーナス：30倍<br>
-					その他のボーナス：基本30倍</td>
-				<td>テーブルゲーム：10％<br>
-					スロット：100％<br>
-					スクラッチカード：100％</td>
-			</tr>
-		    <tr>
-				<td class="bold"><a href="../ranking/eldoah.html">エルドアカジノ</a></td>
-				<td>入金不要ボーナス：1倍（当サイト限定4,000円）<br>
-					初回入金ボーナス：1倍（最大50,000円）<br>
-					その他のボーナス：基本1倍</td>
-				<td>すべて100％</td>
-			</tr>
-			
-		</tbody></table>
-			 
-		</div>
-            
+     
+       
               <div class="cont2">  
                 <dl class="dl-bmenu step2">
                 <dt><p><img src="assets/images/icon-step2nav.png" loading="lazy" width="38" height="38"><img src="../images/icon/icon-play.png" loading="lazy" width="26" height="26"><span class="pc">オンラインカジノ</span>プレイ講座 MENU</p><p class="pc">Online Casino Play Curriculum</p></dt>

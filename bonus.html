@@ -204,7 +204,7 @@
     color: #fff;
     display: inline-block;
     font-size: 1.3rem;
-  }
+}
 
   footer>.dispFlex {
     display: -webkit-flex;
@@ -880,11 +880,25 @@ ul.pay-logSlide li a>img, ul.a-logSlide li a>img {
     display: flex;
     gap: 20px;
 }
+.ranking_bnr_colblue dd>a, .ranking_bnr_colgreen dd>a {
+    width: 45%;
+    border: 4px solid #ffdb13;
+}
 .ranking_bnr_colblue dd>div, .ranking_bnr_colgreen dd>div {
     width: 53%;
 }
-.ranking_bnr_colgreen dd div a.link_btn02 {
-    border: 1px solid #84be3f;
+
+a.link_btn02 {
+    background: none;
+    box-shadow: inherit;
+    font-weight: 700;
+    transition: 0.4s;
+    font-size: 1rem;
+    width: 100%;
+    padding: 13px 20px;
+    line-height: 1.8;
+}
+.ranking_bnr_colgreen dd div a.link_btn02:after {
     color: #84be3f;
 }
 #mokuji.m-step2 {
@@ -1036,6 +1050,9 @@ footer nav {
             <a class="dropdown-item" href="bonus.html">知っておきたいボーナスの知識</a>
             <a class="dropdown-item" href="kakejyouken.html">オンラインカジノの賭け条件とは？</a>
             <a class="dropdown-item" href="nodepositbonus.html">入金不要ボーナスが貰えるオンラインカジノ</a>
+            <a class="dropdown-item" href="pc_sp.html">スマホで遊べるオンラインカジノ一覧</a>
+            <a class="dropdown-item" href="jackpot.html">一攫千金が狙えるジャックポットスロット</a>
+            <a class="dropdown-item" href="livegame.html">ライブカジノを楽しもう</a>
 
           </div>
         </li>
@@ -1182,7 +1199,9 @@ footer nav {
             
         </div> -->
         <div class="cont2 txtLeft">  
+          <div class="img-container">
             <p><img src="assets/images/bonus_fv.jpg" alt="オンラインカジノのボーナスの種類・ルールを解説" class="w100" loading="lazy" width="795" height="413"></p>
+          </div>
               
             <p class="txtRight data">最終更新日：<time itemprop="dateModified">2023-06-13</time></p>
               
@@ -1212,7 +1231,9 @@ footer nav {
                 <dl class="ranking_bnr_colgreen">
                   <dt>【2023年】おすすめオンラインカジノTOP3を紹介</dt>
                   <dd>
-                  <a href="../ranking/"><img src="assets/images/ban_rank_link_resp.jpg" loading="lazy" width="356" height="227" alt="オンラインカジノおすすめランキング【最新版】を詳しくチェック"></a>
+                    <div class="img-container">
+                      <a href="../ranking/"><img src="assets/images/ban_rank_link_resp.jpg" loading="lazy" width="356" height="227" alt="オンラインカジノおすすめランキング【最新版】を詳しくチェック"></a>
+                    </div>
                    <div> 
                   <p>オンラインカジノ初心者ナビでは、「ボーナスが豊富」「人気がある」など5つの基準からおすすめの優良カジノサイトを3つ紹介しています。ボーナス獲得額や出金条件別におすすめのカジノも紹介しています。</p>
                   <a href="../ranking/" class="btn-squareOre link_btn02 right_arrow">【2023年最新】おすすめオンラインカジノランキング</a>
@@ -1251,7 +1272,9 @@ footer nav {
           </div>
           <div class="cont2 txtLeft">
             <h2 class="h3-lineLB LB-step2" id="1">オンラインカジノで貰えるボーナス一覧</h2>
-          <p class="txtCenter"><img src="assets/images/bonus_1.jpg" alt="オンラインカジノでは様々なボーナスが貰える" loading="lazy" width="700" height="364"></p>
+            <div class="img-container">
+              <p class="txtCenter"><img src="assets/images/bonus_1.jpg" alt="オンラインカジノでは様々なボーナスが貰える" loading="lazy" width="700" height="364"></p>
+            </div>
             <p>まずボーナスのルールの前に、ボーナスとは「どのような時に貰えるのか？」「どれぐらい貰えるのか？」等、ボーナスの基本について説明します。</p>
               
             <p>オンラインカジノで貰えるボーナスは、アカウントを作成するだけで貰えるものから、入金時に貰えるものまで、その種類はさまざまです。<br>
@@ -1923,8 +1946,9 @@ footer nav {
              そんなビットコインがなぜオンラインカジノの決済方法として使われ始めているのか？</p>
               
               <p>その理由は、ビットコインの持つ<span class="fontRed">「送金スピードが早い」「手数料が安い」「匿名性が高い」</span>という3つのメリットにあります。</p>
-            
-            <p class="txtCenter"><img src="assets/images/payment_3.jpg" alt="ビットコイン3つのメリット" loading="lazy" width="560" height="270"></p>
+              <div class="img-container">
+                <p class="txtCenter"><img src="assets/images/payment_3.jpg" alt="ビットコイン3つのメリット" loading="lazy" width="560" height="270"></p>
+              </div>
               
             
               <p>特に「手数料が安い」という点は、換金手数料を始めとするさまざまな手数料がかかってくるオンラインカジノの入出金にはとても大きなメリットです。</p>
@@ -1948,7 +1972,9 @@ footer nav {
           <div class="dispFlex4">
            <div class="flex30 txtCenter">
              <img src="assets/images/logo_eco.gif" alt="エコペイズ" class="spw70" width="195" height="69"><br>
-             <p class="stimg txtCenter"><img src="assets/images/ico_nyukin.gif" alt="入金可能" width="49" height="49">  <img src="assets/images/ico_shukkin.gif" alt="出金可能" width="49" height="49"></p> 
+             <div class="img-container">
+               <p class="stimg txtCenter"><img src="assets/images/ico_nyukin.gif" alt="入金可能" width="49" height="49">  <img src="assets/images/ico_shukkin.gif" alt="出金可能" width="49" height="49"></p> 
+            </div>
              <a href="https://www.ecopayz.com/ja/" target="new" class="btn-squareOreRadi spw70 spCen">公式サイト</a>
            </div> 
            <div class="flex65 spmgt15">
