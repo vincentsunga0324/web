@@ -386,36 +386,53 @@ h3.h3_sideban {
     text-align: center;
     padding: 0 15px;
 }
-#mokuji.m-step1 {
-    border: 1px solid #8cc63f;
-    background-color: #e4f9cf;
+dl#casi-mokuji {
+    border: 2px solid silver;
+    border-radius: 30px;
+    margin: 0 auto 40px;
+    width: 82%;
 }
-dl#mokuji {
-    width: 100%;
-    margin: 15px 0;
-    padding: 10px 0;
+dl#casi-mokuji dt>i {
+    margin-right: 10px;
+}
+dl#casi-mokuji dd {
+    padding: 20px 40px;
+}
+dl#casi-mokuji.step2 dd ol>li::before, dl#casi-mokuji.step2 dd ol>li ul>li::before {
+    color: #84be3f;
+}
+
+dl#casi-mokuji.slotrank dd ol>li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f152";
+    margin-right: 10px;
+}
+dl#casi-mokuji dd ol>li>a {
+    padding-bottom: 40px;
+}
+
+dl#casi-mokuji dd ol>li a {
+    font-weight: 700;
+    color: #000;
+}
+dl#casi-mokuji dt {
+    background-color: #5b5b5b;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 28px 28px 0 0;
+    font-size: 1.3rem;
+}
+.h_gold {
+    background: #b49344;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
+    color: #FFF;
+    font-size: 110%;
 }
-dl#mokuji.m-step1 dd {
-    border-left: 1px solid #8cc63f;
-}
-dl#mokuji dd ol {
-    list-style: decimal inside;
-    font-size: .9rem;
-    text-align: left;
-    padding-left: 20px;
-}
-dl#mokuji dd ol li a {
-    padding: 1px 0;
-    color: #4d4d4d;
-}
-.h3-lineLB {
-    padding: 10px 0 8px 15px;
-    margin: 10px 0 20px 0;
-    color: #fff;
-}
-.h3-lineLB.LB-step2 {
+.h3-lineLB.LB-step1 {
     background: #8cc63f;
     border-bottom: solid 3px #8cc63f;
     border-left: none;
@@ -814,51 +831,360 @@ dl.dl-bmenu dd ol.numb1 > li:before {
     font-weight: 700;
     margin-right: 3px;
 }
-table.table.txtCenter tr th, table.table.txtCenter tr td {
+.h3-lineLB.LB-step2 {
+    background: #84be3f;
+    border-bottom: solid 3px #75ab3d;
+    border-left: none;
+}
+.dl-QA dt {
+    margin: 0 3em 1em 3em;
+    background: #6DB551;
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 5px 0 5px 20px;
+    color: #fff;
+}
+.dl-QA dt, .dl-QA dd {
+    position: relative;
+    padding: 0.5em;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    border-radius: 0.3em;
+}
+.dl-QA *, .dl-QA *:after, .dl-QA *:before {
+    font-family: 'FontAwesome',sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dl-QA dd {
+    margin: 0 3em 3em 3em;
+    background: #e7ffe0;
+    color: #263824;
+}
+
+.dl-QA dt, .dl-QA dd {
+    position: relative;
+    padding: 0.5em;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    border-radius: 0.3em;
+}
+.dl-QA *, .dl-QA *:after, .dl-QA *:before {
+    font-family: 'FontAwesome',sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dl-QA dt::after {
+    left: -2.5em;
+    margin: 0 0.5em 0 0;
+    padding: 0.2em 0.4em;
+    content: '\f128';
+    background: #259959;
+}
+
+.dl-QA dt::after, .dl-QA dd::after {
+    font-size: 1.2em;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.2em;
+}
+.dl-QA *, .dl-QA *:after, .dl-QA *:before {
+    font-family: 'FontAwesome',sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dl-QA dt {
+    margin: 0 3em 1em 3em;
+    background: #6DB551;
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 5px 0 5px 20px;
+    color: #fff;
+}
+.dl-QA dd::after {
+    right: -2.5em;
+    margin: 0 0 0 0.5em;
+    padding: 0.2em 0.55em;
+    content: '\f12a';
+    background: #259959;
+}
+.marg-tb10 {
+    margin: 10px 0;
+}
+.flex25 {
+    width: 25%;
+}
+.dispFlex4 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div.casinobtn a.btn-squareOreRadi {
+    width: 100%;
+    font-size: 100%;
+    margin-top: 10px;
+}
+
+a.btn-squareOreRadi {
+    padding: 10px;
+    font-size: 1.4rem;
+    display: inline-block;
+}
+a.btn-squareOreRadi {
+    border-radius: 5px;
+    padding: 20px 10px;
     text-align: center;
-    vertical-align: middle;
+    background-color: #ef8b1e;
+    box-shadow: 3px 3px 0 0 #825a20;
+    color: #fff;
+    display: block;
 }
-table.table.step2 tr th {
-    background: #e4f9cf;
+.flex75 {
+    width: 74%;
 }
-table.table.step2 tr td, table.table.step2 tr th {
-    border: 1px solid #8cc63f;
+.tipArrow {
+    position: relative;
+    padding: 0 25px;
+    display: inline-block;
 }
-.bold {
+.tipArrow.step2:before {
+    border-bottom: solid 15px #8cc63f;
+}
+
+.tipArrow:before {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: none;
+    border-left: solid 15px transparent;
+    border-bottom: solid 15px rgb(119,195,223);
+}
+.tipArrow.step2:after {
+    border-bottom: solid 3px #8cc63f;
+}
+
+.tipArrow:after {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 10px;
+    width: 100%;
+    border-bottom: solid 3px rgb(119,195,223);
+}
+.bgygr {
+    background-color: #84be3f;
+    margin-top: 70px;
+}
+.ranktitle.slotrank {
+    color: #fff;
+}
+
+.ranktitle {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 65%;
+    font-weight: 400;
+    line-height: 100%;
+    width: 1100px;
+    margin: 0 auto;
+}
+.ranktitle.slotrank span {
+    color: #84be3f;
+}
+
+.ranktitle span {
+    display: block;
+    background: #FFF;
+    color: #ff7ba4;
+    border-radius: 7px;
+    height: 30px;
+    padding: 7px;
+    margin-right: 10px;
     font-weight: 700;
 }
-.marg-tb20 {
-    margin: 20px 0;
+.ranktitle h1 {
+   
+    font-size: 200%;
 }
-div.cont-step2 {
-    background-color: #e7ffe0;
-    margin: 10px auto;
-    padding: 10px 0;
+.slot_top3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.slotcont .slot_logbox {
+    width: 49%;
     text-align: center;
 }
-ul.pay-logSlide.noslide, ul.pay-logSlide.spnoslide {
+.slot-testBox a img, .slot-testBox img {
+    width: 100%;
+}
+.flex50 {
+    width: 49%;
+}
+.slotcont section.rank1 {
+    margin-top: 10px;
+}
+
+.slotcont section.rank1, .slotcont section.rank2, .slotcont section.rank3 {
+    padding: 20px 40px;
+}
+section.rank1 {
+    background: #fbefd4;
+}
+section.rank1 .p_catchcp, section.rank2 .p_catchcp, section.rank3 .p_catchcp {
+    margin: 5px 0 23px;
+    padding-bottom: 0;
+}
+.slot-testBox a.startPlay {
+    display: block;
+}
+
+a.startPlay {
+    position: relative;
+    background-color: #000;
+}
+section.rank1 h3 {
+    background: url(../images/rank/rank_line_1.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+section.rank1 h3, section.rank2 h3, section.rank3 h3, section.rank_summary h3 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 110%;
+}
+section.rank1 .p_catchcp, section.rank2 .p_catchcp, section.rank3 .p_catchcp {
+    margin: 5px 0 23px;
+    padding-bottom: 0;
+}
+
+.p_catchcp {
+    font-weight: 700;
+    font-size: 1.23rem;
+    line-height: 170%;
+}
+.slotcont dl.casinopt1 dt, .slotcont dl.casinopt2 dt, .slotcont dl.casinopt3 dt, .slotcont dl.slotpt_gld dt {
+    font-size: 90%;
+    padding: 8px;
+}
+
+dl.casinopt1 dt {
+    background: #e9b027;
+}
+dl.casinopt1 dt, dl.casinopt2 dt, dl.casinopt3 dt, dl.slotpt_gld dt {
+    color: #FFF;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+}
+dl.casinopt1 {
+    border: 5px solid #e9b027;
+}
+dl.casinopt1, dl.casinopt2, dl.casinopt3, dl.slotpt_gld {
+    background: #FFF;
+}
+section.rank1 ul.btn_rank.slotrank-btn, section.rank2 ul.btn_rank.slotrank-btn, section.rank3 ul.btn_rank.slotrank-btn, .btn_rank.slotrank-btn {
+    margin: 30px auto;
+}
+section.rank1 ul.btn_rank, section.rank2 ul.btn_rank, section.rank3 ul.btn_rank {
+    margin: 20px auto;
+}
+ul.btn_rank {
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+}
+ul {
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+.btn_rank.slotrank-btn li>a.btn_detail {
+    padding: 25px 15px;
+}
+
+.btn_rank li a.btn_detail, a.btn_detail {
+    background: #111;
+}
+.btn_rank a.btn_signup, .btn_rank a.btn_detail, a.btn_detail {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #FFF;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    line-height: 130%;
+    box-shadow: 1px 2px 3px #666;
+    font-size: 90%;
 }
-ul.pay-logSlide.step2 {
-    background: #e7ffe0;
+dl.related_blog, .related_blog {
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
 }
-ul.pay-logSlide, ul.a-logSlide {
-    list-style: none;
-    min-height: 100px;
-    margin: 10px 20px;
-    padding: 10px 5px;
+dl.related_blog dt.h_gold {
+    font-size: 90%;
+    font-weight: 700;
 }
-ul.pay-logSlide li {
-    padding: 5px;
-    width: 28%;
-    margin-right: 10px;
-    background: #fff;
+
+.h_gold {
+    background: #b49344;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    font-size: 110%;
 }
-ul.pay-logSlide li a>img, ul.a-logSlide li a>img {
-    width: 100%;
+dl.related_blgtxt {
+    width: 69%;
 }
+dl.related_blgtxt dt {
+    display: flex;
+    align-items: center;
+    font-size: 78%;
+    font-weight: 700;
+    margin-bottom: 5px;
+    line-height: 170%;
+}
+dl.related_blgtxt dd p {
+    line-height: 160%;
+    padding-bottom: 0;
+}
+a.a_nodecoration {
+    text-decoration: none;
+    color: #111;
+}
+dl.related_blgtxt dt {
+    display: flex;
+    align-items: center;
+    font-size: 78%;
+    font-weight: 700;
+    margin-bottom: 5px;
+    line-height: 170%;
+}
+dl.related_blog img, .related_blog img {
+    width: 60%;
+}
+dl.related_blgtxt dd p {
+    line-height: 160%;
+    padding-bottom: 0;
+}
+
 @media (max-width: 767px) {
   .hide-on-mobile {
     display: none;
@@ -1005,20 +1331,16 @@ footer nav {
 
 <!-- start of section 1  -->
 <section>
-    <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section">
-                <div class="content">
-                    <p style="display: inline-block; font-size: 20px; font-weight: bold;">
-                      オンラインカジノとは？<br>
-                      初心者が安心して始めるための基礎講座
-                    </p>
-                 </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="bgygr txtCenter">
+    <div class="ranktitle slotrank">
+      <span>STEP.2 プレイ講座</span>
+      <h1>2023年最新版！オンラインカジノ人気スロットランキング</h1>
+    </div>
+  </div>
+  <div class="txtCenter">
+    <img src="assets/images/slotrank_main.jpg" class="pc">
+    <img src="../images/slot/slotrank_main_sp.jpg" class="sp">
+  </div>
 </section>
 
 <!-- end of section 1  -->
@@ -1056,215 +1378,299 @@ footer nav {
       </div>
       <div class="col-md-9">
         <!-- Content for the second column -->
-        <div class="img-container">
-          <img src="assets/images/payment_1.jpg" alt="" class="img-fluid">
-        </div>
+       
         <p>実際にお金を賭けてカジノゲームをネット上で遊ぶことができる「オンラインカジノ」。
           日本でのカジノ解禁が話題となり、国内でもさらに人気が高まっています。</p>
         <p>一方で興味はあるけれど、違法性や安全性が気になってなかなか手を出せないという方もいるのではないでしょうか？</p>
         <p>当サイト（オンラインカジノ初心者ナビ）では、オンラインカジノの基本的な遊び方はもちろん、安全で信頼できるカジノの選び方などを徹底解説しています。</p>
-        <ul>
-          <li>「最近よく聞くネットカジノのやり方を知りたい」</li>
-          <li>「オンラインカジノで稼ぐにはどんなゲームを選べばいいの？」</li>
-          <li>「興味はあるけどどのカジノサイトで遊べばいいか分からない」</li>
-        </ul>
-        <p>このようなオンラインカジノ初心者の方は是非ご覧になってください。</p>
-        <div class="cont2 txtLeft">
-          <dl id="mokuji" class="m-step1">
-            <dt>もくじ</dt>
-            <dd>
+        <div class="writer_chara_col">
+            <div>
+                <img src="assets/images/akira.png" width="150" height="150" loading="lazy" alt="AKIRA"><span>著者：<a rel="author" href="../writer-akira.html">AKIRA</a><br>カジノ歴：6年</span>
+            </div>    
+            <div class="speech">
+                <dl>
+                    <dt>スロット紹介担当者からのコメント</dt>
+                    <dd><p>スロット初心者の人なら総合ランキング、既に何回か遊んでいてスロットの好みがわかってきている人なら、ジャンル別のランキングを見てみてください～！3×3のパチスロ風スロットが定番人気ですが、上からシンボルが落ちてくるカスケードリールのスロットも爽快感があって、個人的には好きですね～。</p>
+            </dd> 
+                </dl>    
+            </div>
+        </div>
+
+        <dl id="casi-mokuji" class="spmgt15 step2 slotrank">
+		      <dt><i class="fas fa-list"></i>スロットランキング目次</dt>
+          <dd>
               <ol>
-              <li><a href="#1">オンラインカジノのペイアウト率は圧倒的に高い約</a>
-                <ul>
-                  <li><a href="#1-1">ペイアウト率が高いとどうしてお得なの？</a></li>
-                  <li><a href="#1-2">オンラインカジノのペイアウト率はなぜ高い？</a></li>
-                </ul>
+                <li><a href="#top3">最新人気スロットランキングTOP3</a>
+              <ul>
+                <li><a href="#rank1">ムーンプリンセス(MoonPrincess)</a></li>
+                <li><a href="#rank2">ホワイトラビット（White Rabbit）</a></li>
+                <li><a href="#rank3">バトルドワーフ（Battle Dwarf）</a></li>
+              </ul>
               </li>
-              <li><a href="#2">オンラインカジノのペイアウト率をチェックするには</a></li>
-            <li><a href="#3">オンラインカジノのペイアウト率は目安として考えよう</a></li>
+                  <li><a href="#type">ジャンル別人気スロットピックアップ</a>
+              <ul>
+                <li><a href="#pachislo">パチスロ風スロット</a></li>
+                <li><a href="#cascade">カスケードリール（落ちもの・落ちゲー）スロット</a></li>
+                <li><a href="#minijackpot">ミニジャックポット搭載スロット</a></li>
+                <li><a href="#megajackpot">大型ジャックポット搭載スロット</a></li>
+              </ul>
+              </li>
+                <li><a href="#slotlist">その他の注目スロット一覧</a></li>
+                <li><a href="#casino">挑戦するなら勝てるチャンスが多いカジノを選ぼう</a></li>
             </ol>
+          </dd>
+		    </dl>
+        <h2 class="h_gold" id="top3"><i class="fas fa-crown"></i>爆発力が高い！最新人気スロットランキングTOP3</h2>
+        <p class="sptxt">「オンラインカジノは初めてでスロットのことが全く分からない……」そんな方はまずオンラインカジノ業界で最も遊ばれている定番の人気のスロットをプレイしてみましょう。<br>
+          ここでは、2023年最新の人気スロットをランキングトップ3を紹介します。</p>
+          <section class="rank1">
+		  
+            <h3 id="rank1"><img src="assets/images/icon_rank_1.png">Moon Princess<br class="sp">(ムーンプリンセス)</h3>
+              
+              
+            <div class="slot_top3">
+            <p class="p_catchcp">美少女戦士のガールパワー×最大20倍のマルチプライヤーで高額当選のチャンス！</p>
+              
+            <div class="slot_logbox">
+            <img src="assets/images/icon_b_moonprincess.png" height="201px" width="234px">
+            </div>
+            <div class="flex50 slot-testBox">
+              <!-- pc testplay-->
+              <a class="testiframe startPlay pc cboxElement" href="https://csicw.playngonetwork.com/Casino/IframedView?pid=636&amp;gid=&amp;gameId=334&amp;lang=ja_JP&amp;practice=1&amp;channel=desktop&amp;div=playngo-wrapper&amp;width=&amp;height=&amp;user=&amp;password=&amp;ctx=&amp;demo=&amp;rccurrentsessiontime=0&amp;rcintervaltime=0&amp;rchistoryurlmode=&amp;autoplaylimits=0&amp;callback=playngo_callback&amp;rcmga=&amp;resourcelevel=0&amp;hasjackpots=False&amp;country=&amp;pauseplay=&amp;playlimit=&amp;selftest=&amp;showpoweredby=True" target="new" style="display: block;">
+              <img src="assets/images/tmb_moonprincess.jpg"></a>
+                
+              <!-- sp testplay-->
+              <a class="startPlay sp" href="https://csicw.playngonetwork.com/Casino/IframedView?pid=636&amp;gid=&amp;gameId=334&amp;lang=ja_JP&amp;practice=1&amp;channel=mobile&amp;div=playngo-wrapper&amp;width=&amp;height=&amp;user=&amp;password=&amp;ctx=&amp;demo=&amp;rccurrentsessiontime=0&amp;rcintervaltime=0&amp;rchistoryurlmode=&amp;autoplaylimits=0&amp;callback=playngo_callback&amp;rcmga=&amp;resourcelevel=0&amp;hasjackpots=False&amp;country=&amp;pauseplay=&amp;playlimit=&amp;selftest=&amp;showpoweredby=True" target="new">
+              <img src="assets/images/tmb_moonprincess.jpg"></a>
+            </div>
+              
+            </div>
+          
+              
+            <dl class="casinopt1 mt30 spmt20">
+            <dt>おすすめポイント</dt>
+            <dd>
+              <ul class="li_square sp_boxin">
+              <li>「LOVE」のガールパワー「シンボル変換」がハマれば高額配当獲得可能！</li>
+              <li>賞金が倍額に!最大20倍まで積みあがるマルチプライヤー</li> 
+              </ul>
             </dd>
+            </dl>
+              
+            <ul class="btn_rank slotrank-btn">
+            <li><a href="moonprincess.html" class="btn_detail"><span>Moon Princessの詳細はこちら</span><i class="fas fa-chevron-circle-right"></i></a></li>
+            </ul>
+              
+            <a href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/slot-jissen/20200903moonprincess/" class="a_nodecoration">
+            <dl class="related_blog">
+            <dt class="h_gold"><i class="fas fa-book-open"></i>Moon Princess 関連記事</dt>
+            <dd>
+              <div class="spb mt15">
+              <div class="flex30 pc">
+              <!-- <img src="https://オンラインカジノ初心者ナビ.com/blog/wp-content/uploads/2020/09/20200904moonprincess01-2.jpg"> -->
+              </div>
+                <dl class="related_blgtxt">
+                <dt><img src="https://オンラインカジノ初心者ナビ.com/blog/wp-content/uploads/2020/09/20200904moonprincess01-2.jpg"><span>ムーンプリンセスのフリースピンで最強の美少女戦士は誰！？</span></dt>
+                <!-- <dd><p>高額配当を獲得するためには誰を選ぶのがいい？3人の美少女戦士のガールパワーを比較してみた！</p></dd> -->
+                </dl>
+              </div>
+            </dd>
+            </dl>
+            </a>
+              
+            </section>
+            <section class="rank2">
+		  
+              <h3 id="rank2"><img src="../images/rank/icon_rank_2.png">White Rabbit<br class="sp">(ホワイトラビット)</h3>
+                
+                
+              <div class="slot_top3">
+              <p class="p_catchcp">スピン数が増加するフリースピン+メガウェイズのリール拡張で一気に配当成立！</p>
+                
+              <div class="slot_logbox">
+              <img src="../images/slot/icon_b_whiterabbit.png" height="234px" width="240px">
+              </div>
+              <div class="flex50 slot-testBox">
+                <!-- pc testplay-->
+                <a class="testiframe startPlay pc cboxElement" href="https://ingametw.solidgaming.net/api/launch/VERAJOHN/BTG_WHITE_RABBIT?token=&amp;platform=DESKTOP&amp;language=ja&amp;currency=USD" target="new" style="display: block;">
+                <img src="img/tmb_whiterabbit.jpg"></a>
+                  
+                <!-- sp testplay-->
+                <a class="startPlay sp" href="https://ingametw.solidgaming.net/api/launch/VERAJOHN/BTG_WHITE_RABBIT?token=&amp;platform=MOBILE&amp;language=ja" target="new">
+                <img src="img/tmb_whiterabbit.jpg"></a>
+              </div>
+                
+              </div>
+            
+              <dl class="casinopt2 mt30 spmt20">
+              <dt>おすすめポイント</dt>
+              <dd>
+                <ul class="li_square sp_boxin">
+                <li>フリースピン時は12段までリールが縦に拡張！配当成立のチャンスも拡大</li>
+                <li>リールが12段になるとフリースピンが追加され、さらに賞金獲得が可能！</li> 
+                </ul>
+              </dd>
+              </dl>
+                
+              <ul class="btn_rank slotrank-btn">
+              <li><a href="whiterabbit.html" class="btn_detail"><span>White Rabbitの詳細はこちら</span><i class="fas fa-chevron-circle-right"></i></a></li>
+              </ul>
+                
+              <a href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/slot-jissen/20200525whiterabbit/" class="a_nodecoration">
+              <dl class="related_blog">
+              <dt class="h_gold"><i class="fas fa-book-open"></i>White Rabbit 関連記事</dt>
+              <dd>
+                <div class="spb mt15">
+                <div class="flex30 pc">
+                <img src="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/wp-content/uploads/2020/05/20200501shoshinsha-whiterabbit1.jpg">
+                </div>
+                  <dl class="related_blgtxt">
+                  <dt><img src="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/wp-content/uploads/2020/05/20200501shoshinsha-whiterabbit1.jpg"><span>「ホワイトラビット」はフリースピン購入で勝てるか1,000スピンで検証！</span></dt>
+                  <dd><p>フリースピンは待つか購入するかどちらがお得？かかった総額の差額を検証！</p></dd>
+                  </dl>
+                </div>
+              </dd>
+              </dl>
+              </a>
+                
+              </section>
+      
+      </div> 
+        <!--  -->
+        <div class="cont2">
+          <dl id="mokuji" class="m-step2">
+            <dt>もくじ</dt>
+          <dd>
+            <ol>
+            <li><a href="#1">ライブカジノなら美女ディーラーとリアルタイム勝負が楽しめる！</a>
+            <ul>
+               <li><a href="#1-1">カメラを通じて対戦！本場の臨場感がより深く味わえる人気ゲーム</a></li>
+                 <li><a href="#1-2">ライブカジノで遊べるのはどんなゲーム？</a></li>
+            </ul>
+            </li>
+            <li><a href="#2">ライブカジノにまつわるよくある勘違いを解説！</a></li>
+            <li><a href="#3">ライブカジノがおすすめのオンラインカジノ</a>
+            <ul>
+               <li><a href="#3-1">エンパイアカジノ（エンパイア777）</a></li>
+                 <li><a href="#3-2">ベラジョンカジノ</a></li>
+                 <li><a href="#3-3">ネットベットカジノ</a></li>
+            </ul>
+            </li>
+          </ol>
+          </dd>
           </dl>
-        </div> 
+        </div>
         <!--  -->
         <div class="cont2 txtLeft">
-          <h2 class="h3-lineLB LB-step2" id="1"><i class="sp"></i>オンラインカジノの入出金ってどんな仕組み？</h2>
-          <p>競馬やパチンコであれば馬券やパチンコ玉の購入、そして換金までその場で出来ますよね？</p>
+          <h2 class="h3-lineLB LB-step2" id="1"><i class="sp"></i>ライブカジノなら美女ディーラーとリアルタイム勝負が楽しめる！</h2>
             
-          <p>でも、オンラインカジノはインターネット上のカジノであるため、チップの購入や払い戻しにはネット上での手続きが必要になってきます。</p>			  
+          <h3 class="font-cl-step2" id="1-1">カメラを通じて対戦！本場の臨場感がより深く味わえる人気ゲーム</h3>
+            
+          <p>ライブカジノは、ウェブカメラを通じて<span class="markY">本物のディーラーとリアルタイムでカジノゲームをプレイ</span>することができるという、本場カジノも顔負けのゲームです！</p>
+            
+          <p>中には各国の美女ディーラーの中から、自分でディーラーを選ぶことができるオンラインカジノも。<br>
+            セクシーなディーラーとゲームを楽しむといった、コンピュータ相手のゲームにはない楽しみ方ができるのも人気の秘密です♪</p>
+            
+          <p>臨場感たっぷりのライブカジノが、オンラインカジノライフをもっと盛り上げてくれること間違いなし！オンラインカジノを遊ぶなら、ぜひ一度はプレイしてみて欲しいゲームです。</p>
+            
+            
+          <h3 class="font-cl-step2" id="1-2">ライブカジノで遊べるのはどんなゲーム？</h3>
+            
+          <p>ライブカジノでは、ルーレット・ブラックジャック・バカラ・ポーカーなど、リアルカジノでディーラーが進行する形式の人気ゲームを遊ぶことができます。</p>
     
-          <p>オンラインカジノでの入出金の手続きには、電子決済サービスやクレジットカードなどの金融サービスを仲介する形が基本となります。</p>			  
-          <div class="img-container">
-          
-            <p class="txtCenter"><img src="assets/images/payment_2.jpg" alt="オンラインカジノにおける入出金の流れ" loading="lazy" width="567" height="201"></p>		  
-          </div>    
-          <p>使える入出金方法はオンラインカジノによって異なりますが、「クレジットカード」「電子決済サービス」「電信送金」の3つはほとんどのカジノで利用することができます。</p>			  
-          <p>次はこの3つを比較して、自分に合った入出金方法を見つけてみましょう。</p>			  
+          <p>ルーレットやカードゲームが多いですが、カジノによってはシックボー(大小)などサイコロゲームを取り扱っているところもあります。</p>			  
             
-        </div>
-        <div class="cont2 txtLeft">  
+          <p class="txtCenter"><a class="link_btn step2" href="../beginner/about.html">オンラインカジノで遊べるゲームなどの基礎講座はこちら</a></p>  
+            
+          </div>
+        <!--  -->
+        <div class="cont2 txtLeft">
+          <h2 class="h3-lineLB LB-step2" id="2"><i class="sp"></i>ライブカジノにまつわるよくある勘違いを解説！</h2>
+            <p class="txtCenter"><img src="assets/images/livecasino4.jpg" alt="ライブカジノにまつわるよくある勘違いを解説！" loading="lazy" width="520" height="303"></p>		  
+            
+          <dl class="dl-QA">	
+            <dt>ディーラーに自分の顔が見られるのはちょっと・・・</dt>
+             <dd>
+              <p>ライブカジノではウェブカメラを通じてディーラーが見える仕組みとなっていますが、こちら側の映像は向こう(ディ―ラー)には見えていません。</p>
+            <p>自分の顔がカジノ側に見られるなんて緊張する、イヤだと考えている方も安心してプレイしてください。</p>	
+            </dd>
+            
+            <dt>ディーラーと1対1なんて緊張する！</dt>
+             <dd>
+              <p>ライブカジノでは基本的に1つのテーブルに1人のディーラーが在籍していて、そこに複数のプレイヤーが集まってプレイする形となっており、プレイヤーは好きなタイミングで出入りできます。</p>
+            <p>ですので、プレイヤーが自分1人だけになるという状況は少ないですし、もし1人になったとしても緊張する必要はありません。</p>	
+            </dd>
+            
+            <dt>初心者だから、ゲーム進行についていけないかも・・・</dt>
+             <dd>
+              <p>ライブカジノは自分のベットしたいタイミングで参加すればよいので、ゲームに付いていかなくては！と気負う必要はありません。</p>
+            <p>テーブルには複数のプレイヤーがいて、自分がベットしなくてもどんどんゲームは進行されていきます。</p>
+            <p>もしゲームのルールや流れがわからない場合は他のプレイヤーのゲーム進行を見て勉強するということも可能です。</p>
+            </dd>
+            
+            <dt>英語がわからないから外国人のディーラーは無理！</dt>
+             <dd>
+              <p>ランドカジノではディーラーとやりとりしながらゲームを進行していくことになるわけですが、ライブカジノではその必要はないので気軽にプレイすることができます。</p>
+            <p>ディーラー側は喋りながら進行をしていきますが、言葉が聞き取れなくても画面上に必要な情報が表示されるのでゲームの基本的なルールを理解していれば進行に問題はありません。</p>	
+            </dd>
+            
+          </dl>  
+            
+          </div>
+        <!--  -->
+        <div class="cont2 txtLeft casinobtn">
 			
-          <h2 class="h3-lineLB LB-step2" id="2"><i class="sp"></i>オンラインカジノの入出金方法を比較！メリット・デメリットは？</h2>
-          
-            <p>オンラインカジノで使うことができる代表的な入出金方法のメリットとデメリットを比較してみましょう！</p>
-          
-          <table class="table step2 txtCenter t-layFixed mb30">
-            <tbody><tr>
-              <th>　</th><th>メリット</th><th>デメリット</th>
-          </tr>
-            <tr>
-              <td>クレジットカード</td><td>・すぐに入金が反映される<br>・手続きが簡単</td><td>・対応していないカードが多い<br>・入金のみ可能、出金は不可</td>
-          </tr>
-            <tr>
-              <td>電子決済サービス</td><td>・一つのアカウントで入手金を行えるので資金の管理がしやすい<br>・サービスによってはATMからの出金が可能</td><td>・サービスが終了する可能性がある</td>
-          </tr>
-            <tr>
-              <td>電信送金<br>（銀行振込）</td><td>・クレジットカードを持っていなくても入金できる<br>・サービス終了の可能性が低い</td><td>・入出金の反映に数日かかる<br>・手数料が高くなりがち</td>
-          </tr>
-          </tbody></table>
+          <h2 class="h3-lineLB LB-step2" id="3"><i class="sp"></i>ライブカジノがおすすめのオンラインカジノ3選！</h2>
+          <p>今はほとんどのオンラインカジノがスマホに対応していますが、中でも特にスマホからのプレイが人気のオンラインカジノを紹介します！</p>	
             
-          <h3 class="font-cl-step2" id="2-1">クレジットカード</h3>
-            <p>クレジットカードは<span class="markY">入金反映の速さと手続きの手軽さ</span>が特徴で、たいへん人気の入金手段です。</p>
-          
-            <p>デメリットとしては出金が行えないことがまず挙げられます。<br>	  
-            ですので、クレジットカードをオンラインカジノの入金方法として使うときは、必ず出金方法も用意しておきましょう。</p>
-    
-            <p>また、クレジットカード会社の審査の関係上使えるカードが限られており、以前は使えたカードが突然使えなくなったりというケースも多いようです。</p>
-          
-          <h3 class="font-cl-step2" id="2-2">電子決済サービス</h3>
-    
-            <p>電子決済サービスは、オンライン上に口座を作成しそこから入出金を行う仕組みのことで、ecoPayz（エコペイズ）やi Wallet（アイウォレット）が代表的ものとして知られています。</p>
-            <p>一つの口座から入金と出金を行うのでお金の流れがわかりやすく、<span class="markY">資金管理が簡単</span>になります。</p>
-          
-            <p>この電子決済サービスのもっとも大きなメリットは、ecoPayz（エコペイズ）やi Wallet（アイウォレット）であれば専用のデビットカードを作成することができ、それを使えば<span class="markY">ATMからの出金が可能</span>になるということです。<br>
-          その高い利便性から、電子決済サービスはオンラインカジノの入出金方法の中で最も人気の方法です。</p>
-        
-            <p>デメリットとしては、サービスが終了してしまうことがあるということでしょうか。<br>
-            2016年にNETELLER（ネッテラー）という電子決済サービスのオンラインカジノでの利用が出来なくなるという出来事がありました。</p>
-          
-            <p>また同じことが起こるとは限りませんが、他の入出金方法を知っておくなどの対策はしておいたほうがいいかもしれません。</p>
-          
-          <p><a class="link_btn step2 spmb10" href="https://オンラインカジノ初心者ナビ.com/nyushukkin.html">オンラインカジノの電子決済サービス一覧</a></p>
-          
-          <h3 class="font-cl-step2" id="2-3">電信送金（銀行振込）</h3>  
-          
-            <p>電信送金（銀行振込）はオンラインカジノの指定する口座と自分の口座間で直接お金のやりとりを行う方法です。</p>
-          
-            <p>デメリットとしては、海外とのやりとりとなりますので為替手数料などの手数料が高くつきやすく、また入出金の反映に日数がかかることが挙げられます。<br>
-            取扱金額が高額になると銀行から使用目的や身分証明を求められる場合もあり、少し面倒に感じることが多いかもしれません。</p>
-          
-            <p>しかし、クレジットカードが使えない場合にも利用できること、あとで紹介する電子決済サービスのようにサービスが突然終了するという可能性も少ないというメリットもありますので、やり方を覚えておいて損はないでしょう。</p>
-          
-        </div>
-        <div class="cont2 txtLeft">  
-			
-            <h2 class="h3-lineLB LB-step2" id="3"><i class="sp"></i>オンラインカジノの入出金にビットコインが使えるってホント？</h2>
-            
-              <p>実は、あの<span class="fontRed">仮想通貨・ビットコイン</span>がオンラインカジノの新たな決済方法として注目されています！</p>
-          
-              <p>みなさんはビットコインといえばどんなイメージがありますか？「投資に使うもの」あるいは「怪しい」というイメージの方が多いかもしれませんね。<br>
-             そんなビットコインがなぜオンラインカジノの決済方法として使われ始めているのか？</p>
-              
-              <p>その理由は、ビットコインの持つ<span class="fontRed">「送金スピードが早い」「手数料が安い」「匿名性が高い」</span>という3つのメリットにあります。</p>
-              <div class="img-container">
-                <p class="txtCenter"><img src="assets/images/payment_3.jpg" alt="ビットコイン3つのメリット" loading="lazy" width="560" height="270"></p>
-              </div>
-              
-            
-              <p>特に「手数料が安い」という点は、換金手数料を始めとするさまざまな手数料がかかってくるオンラインカジノの入出金にはとても大きなメリットです。</p>
-      
-              <p>いまはまだビットコインが使えるオンラインカジノは多くありませんが、これだけのメリットがあるのですから、どんどん増えていくことが予想されます。</p>
-      
-              <p>既にビットコインを保有している方は、オンラインカジノでの利用も考えてみてはいかがでしょうか？</p>
-        </div>
-        <div class="cont-step2">
-          <h2 class="bold marg-tb20" id="4">ビットコイン決済ができるオンラインカジノ<!--<span class="fontExo2 smallWnomal fontGray">Safety Online Casino</span>--></h2>
-          <ul class="pay-logSlide noslide spslide-box step2">
-          <li><a href="../ranking/bitcasino.html"><img src="assets/images/bc.jpg" alt="ビットカジノ" loading="lazy" width="207" height="128"><span>ビットカジノ</span></a></li>
-          <li><a href="../ranking/eldoah.html"><img src="assets/images/ed.jpg" alt="エルドアカジノ" loading="lazy" width="207" height="128"><span>エルドアカジノ</span></a></li>
-          <li><a href="../ranking/inter.html"><img src="assets/images/ic.jpg" alt="インターカジノ" loading="lazy" width="207" height="128"><span>インターカジノ</span></a></li>					
-        </ul>
-        </div>
-        <div class="cont2 txtLeft">  
-          <h2 class="h3-lineLB LB-step2" id="5"><i class="sp"></i>当サイト厳選！オンラインカジノのオススメ入出金方法3つ</h2>
-          
-            <p><span class="fontRed">「結局、どの入出金方法がいいの？」<br>「一番オススメなのは何？」</span></p>
-        
-            <p>どうしても迷ってしまって選べない方のために、当サイトがオススメするオンラインカジノの入出金方法をご紹介します！</p>
-            
-            
-           
-          <section class="boderstep2 marg-tb20">
-           <h3 class="underLineB step2 marg-b15 spmgt10">ecoPayz(エコペイズ)</h3>
-          <div class="dispFlex4">
-           <div class="flex30 txtCenter">
-             <img src="assets/images/logo_eco.gif" alt="エコペイズ" class="spw70" width="195" height="69"><br>
-             <p class="stimg txtCenter"><img src="assets/images/ico_nyukin.gif" alt="入金可能" width="49" height="49">  <img src="assets/images/ico_shukkin.gif" alt="出金可能" width="49" height="49"></p> 
-             <a href="https://www.ecopayz.com/ja/" target="new" class="btn-squareOreRadi spw70 spCen">公式サイト</a>
-           </div> 
-           <div class="flex65 spmgt15">
-            <p>ecoPayz（エコペイズ）は日本語に完全対応しており、日本語サポートもあるので日本人も安心して利用することができます。</p>
-            <p>その便利さや信頼性の高さからオンラインカジノの入出金手段の中でも特に人気が高く、多くのオンラインカジノで利用することができます。</p>  
-            <p>【→<a href="../ecopayz/about.html">ecoPayz（エコペイズ）とは？</a>】</p> 
-           </div> 
+          <section class="dispFlex4 marg-tb10">
+          <div class="flex25">
+            <a href="../ranking/empire.html"><img src="assets/images/empire.jpg" alt="エンパイアカジノ" loading="lazy" width="199" height="114"></a>
+            <p><a href="../ranking/empire.html" class="btn-squareOreRadi">カジノの詳細を見る</a></p>
           </div>
+          <div class="flex75">
+            <h3 class="tipArrow step2" id="3-1">エンパイアカジノ（エンパイア777）</h3>
             
-          <p class="tipArrow step2 marg-t20 bold">ecoPayzが使えるオンラインカジノ</p>
-          <ul class="slidemenu pay-logSlide spslide-box step2 flickity-enabled is-draggable" tabindex="0">
+            <p>ライブカジノに特に力を入れていることで有名なエンパイアカジノ。<br>
+                6つに分かれたライブカジノルームはそれぞれパリやマカオなど各国の都市をモチーフにした作りとなっており、それぞれ違った雰囲気を楽しめます。</p>
+                <p>なかでもライブバカラには特に力を入れており、バカラだけでも50以上のテーブルがあります。</p>
+                <p>スマホからもライブカジノを楽しむことができるのも嬉しいポイントです。</p>
+          </div>
           </section>
-          
-          
-          <section class="boderstep2 marg-tb20">
-           <h3 class="underLineB step2 marg-b15 spmgt10">iWallet（アイウォレット）</h3>
-          <div class="dispFlex4">
-           <div class="flex30 txtCenter">
-             <img src="assets/images/logo_iwallet.gif" alt="アイウォレット" class="spw70" loading="lazy" width="195" height="69"><br>
-             <p class="stimg txtCenter"><img src="assets/images/ico_nyukin.gif" alt="入金可能" loading="lazy" width="49" height="49">　<img src="assets/images/ico_shukkin.gif" alt="出金可能" loading="lazy" width="49" height="49">　<img src="assets/images/ico_atm.gif" alt="ATM出金可" loading="lazy" width="49" height="49"></p>
-             <a href="https://iwl.hk/jp/" target="new" class="btn-squareOreRadi spw70 spCen">公式サイト</a>
-           </div> 
-           <div class="flex65 spmgt15">
-            <p>iWallet（アイウォレット）はオンラインカジノで利用できる電子決済サービスの一つで、HPはもちろんサポートまで日本語に対応しているので、日本人でも安心して利用することができます。</p>
-            <p>iWallet（アイウォレット）から発行される専用のプリペイドカードを使えばコンビニATMから出金を行うことができるのでとても便利です。</p>  
-            <p>【→<a href="../iwallet/about.html">iWallet（アイウォレット）とは？</a>】</p>
-           </div> 
-          </div>
             
-          <div class="cont-step2">
-          <h2 class="bold marg-tb20">iWalletが使えるオンラインカジノ</h2>
-          <ul class="pay-logSlide noslide spslide-box step2">
-          <li><a href="../ranking/verajohn.html"><img src="assets/images/vj.jpg" alt="ベラジョンカジノ" loading="lazy" width="189" height="117"><span>ベラジョンカジノ</span></a></li>
-                <li><a href="../ranking/empire.html"><img src="assets/images/ep.jpg" alt="エンパイアカジノ" loading="lazy" width="189" height="117"><span>エンパイアカジノ</span></a></li>					
-        </ul>
-        </div>
-    
-          </section>	
-          
-          
-          
-          <section class="boderstep2 marg-tb20">
-           <h3 class="underLineB step2 marg-b15 spmgt10">クレジットカード</h3>
-          <div class="dispFlex4">
-           <div class="flex30 txtCenter">
-             <img src="assets/images/card_logo.jpg" alt="ViSA マスターカード" class="spw70" loading="lazy" width="200" height="130"><br>
-             <p class="stimg txtCenter"><img src="assets/images/ico_nyukin.gif" alt="入金可能" loading="lazy" width="49" height="49"></p>
-           </div> 
-           <div class="flex65 spmgt15">
-            <p>手続きが簡単なうえにすぐに入金が反映されるクレジットカードは手軽で便利な入金手段として多くのオンラインカジノプレイヤーに利用されています。</p>
-            <p>クレジットカードは入金しか行なえませんので、出金の際はecoPayz（エコペイズ）など他の入出金方法を利用してください。</p>  
-           </div> 
+          <section class="dispFlex4 marg-tb10">
+          <div class="flex25">
+            <a href="../ranking/verajohn.html"><img src="assets/images/verajohn.jpg" alt="ベラジョンカジノ" loading="lazy" width="199" height="114"></a>
+                <p><a href="../ranking/verajohn.html" class="btn-squareOreRadi">カジノの詳細を見る</a></p>
           </div>
-            
-          <p class="tipArrow step2 marg-tb20 bold">クレジットカード入金を利用する際の注意</p>
-            <p>現在、ほとんどのオンラインカジノがクレジットカード入金に対応しています。</p>
-            <p>しかし、クレジットカードの種類によっては使えなかったり、以前使えていたカードが使えなくなったりということも多いようです。</p>
-            <p>その際は別のクレジットカードを試すか、他の入出金方法を利用しましょう。</p>					
+          <div class="flex75">
+            <h3 class="tipArrow step2" id="3-2">ベラジョンカジノ</h3>
+              
+            <p>面白いプロモーションやボーナスの出金しやすさが人気のベラジョンカジノでは、もちろんライブカジノも楽しむことができます。</p>
+                <p>ライブカジノルームは「カジノパリ」と「カジノシンガポール」に分かれており、遊べるゲームや雰囲気もガラッと変わりますよ♪</p>
+          </div>
           </section>
-          <div class="img-container">
-            <p class="txtCenter"><a href="../ranking/"><img src="assets/images/ban_ranking_about.jpg" alt="オンラインカジノおすすめランキング" class="pc" loading="lazy" width="795" height="185"><img src="../images/beginner/ban_ranking_about_sp.jpg" alt="オンラインカジノおすすめランキング" class="sp" loading="lazy" width="795" height="185"></a></p>
-          </div>
-          
-        </div>  
             
+          <section class="dispFlex4 marg-tb10">
+          <div class="flex25">
+            <a href="../ranking/netbet.html"><img src="assets/images/netbet.jpg" alt="ネットベットカジノ" loading="lazy" width="199" height="114"></a>
+                <p><a href="../ranking/netbet.html" class="btn-squareOreRadi">カジノの詳細を見る</a></p>
+          </div>
+          <div class="flex75">
+            <h3 class="tipArrow step2" id="3-3">ネットベットカジノ</h3>
+              
+            <p>ネットベットカジノは現実に行われている試合に対して賭けを行うスポーツブックを始め、キノや宝くじなど豊富なゲーム種が有名なオンラインカジノですが、ライブカジノも充実しています。</p>
+                <p>ライブカジノによるトーナメントが開催されることも多いので、ライブカジノで力試しをしたい方にオススメです。</p>
+          </div>
+          </section>
+            
+        </div>
+
+         <!--  -->
+         <!--  -->
+      
+          <!--  -->
+      
               <div class="cont2">  
                 <dl class="dl-bmenu step2">
                 <dt><p><img src="assets/images/icon-step2nav.png" loading="lazy" width="38" height="38"><img src="../images/icon/icon-play.png" loading="lazy" width="26" height="26"><span class="pc">オンラインカジノ</span>プレイ講座 MENU</p><p class="pc">Online Casino Play Curriculum</p></dt>
