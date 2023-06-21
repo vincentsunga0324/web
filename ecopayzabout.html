@@ -1,0 +1,1916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+
+  <title>web</title>
+  <style>
+    .header {
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      z-index: 4;
+    }
+
+    .header img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .navbar {
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navbar .nav-item {
+      /* margin-right: 10px; */
+    }
+
+    .navbar .dropdown-menu {
+      display: none;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+      display: block;
+    }
+
+    .nav-link {
+      width: 200px; /* Replace with your desired width */
+      padding: 15px;
+    }
+
+    .navbar .nav-link::after {
+      display: none;
+    }
+
+    .navbar .dropdown-menu.dropdown1 {
+      background-color: #29a3da; /* Red */
+    }
+
+    .navbar .dropdown-menu.dropdown2 {
+      background-color: #84be3f; /* Green */
+    }
+
+    .navbar .dropdown-menu.dropdown3 {
+      background-color: #f3a83b; /* Blue */
+    }
+
+    .navbar .dropdown-menu.dropdown4 {
+      background-color: #ff7ba4; /* Yellow */
+    }
+
+    .navbar .dropdown-menu.dropdown5 {
+      background-color: gray; /* Magenta */
+    }
+
+    .dropdown1-bg {
+      background-color: #29a3da; /* Replace with your desired background color */
+    }
+
+    .dropdown2-bg {
+      background-color: #84be3f; /* Replace with your desired background color */
+    }
+
+    .dropdown3-bg {
+      background-color: #f3a83b; /* Replace with your desired background color */
+    }
+
+    .dropdown4-bg {
+      background-color: #ff7ba4; /* Replace with your desired background color */
+    }
+
+    .dropdown5-bg {
+      background-color: gray; /* Replace with your desired background color */
+    }
+    
+    @media (max-width: 768px) {
+      .navbar .nav-link {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    @media (min-width: 992px) {
+        .navbar {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: fit-content;
+        }
+    }
+    .section {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px; /* Add a top margin to prevent overlap */
+    background-image: url('assets/images/ecopayz-img.jpg'); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: rgb(43, 42, 42); /* Set the text color to white for better visibility */
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .section .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(223, 220, 220, 0.6); /* Set the background color for the box */
+    padding: 20px;
+    z-index: 1;
+  }
+
+  .section-line {
+    border: none;
+    height: 1px;
+    background-color: black;
+    left: 50%;
+    transform: translateX(0%);
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+   
+    h3.iconTitle-r {
+        font-size: 0.4rem;
+        padding: 5px;
+    }
+    h2.iconTitle-r, h3.iconTitle-r {
+      border-bottom: solid 3px #fbb03b;
+      padding: 10px;
+      font-size: 1.2rem;
+      text-align: left;
+      margin-bottom: 15px;
+    }
+    .fontOrange {
+      color: #f7931e;
+    }
+    ul.li_check {
+      margin: 10px;
+      list-style: none;
+    }
+    .li_check li {
+      padding-left: 30px;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+    }
+    .li_check li:before {
+      content: "\f14a";
+      position: relative;
+      font-family: FontAwesome;
+      font-size: 1.5rem;
+      margin-right: 10px;
+      color: #8dc73f;
+    }
+    h2.tb-bdr {
+    border-bottom: 3px solid #cccccc;
+    border-top: 3px solid #cccccc;
+    width: 100%;
+    padding: 18px 0 15px;
+    margin: 0 auto;
+  }
+
+  ul.curripcindex {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul.curripcindex li {
+    flex: 1;
+    text-align: center;
+  }
+
+  ul.curripcindex li a img {
+    max-width: 100%;
+    height: auto;
+  }
+  a.btn-squareOre {
+    padding: 15px 30px;
+    text-align: center;
+    background-color: #f7931e;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+  }
+
+  footer>.dispFlex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.center {
+    text-align: center;
+    margin: auto;
+}
+footer nav ul li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.7rem;
+}
+footer ul.iconMenu {
+    width: 1100px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+}
+ul.iconMenu {
+    border-top: 8px solid #FFF;
+    border-image: linear-gradient(90deg,rgba(41,163,218,1) 0%,rgba(41,163,218,1) 20%,rgba(132,190,63,1) 20%,rgba(132,190,63,1) 40%,rgba(243,168,59,1) 40%,rgba(243,168,59,1) 60%,rgba(255,123,164,1) 60%,rgba(255,123,164,1) 80%,rgba(128,128,128,1) 80%,rgba(128,128,128,1) 100%);
+    border-image-slice: 1;
+    padding-top: 15px;
+}
+p.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 20px 0;
+    background-color: #f7931e;
+    color: #fff;
+    font-size: 1.2rem;
+}
+footer nav ul li:before {
+    content: "\025b6";
+    font-size: .9rem;
+    color: #f7931e;
+}
+
+
+footer nav ul {
+    column-count: 3;
+    padding: 40px 0 20px 0;
+}
+nav ul {
+    list-style: none;
+}
+footer nav {
+    border-top: 1px solid #BBB;
+}
+footer nav {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+  footer>.dispFlex {
+    align-items: center; /* Center the content vertically */
+  }
+
+  footer nav ul {
+    column-count: 1;
+    padding: 20px 0;
+    text-align: left; /* Align the content to the left */
+    padding-left: 20px; /* Add padding on the left */
+    margin: 0 auto; /* Center the content horizontally */
+    max-width: 600px; /* Set a maximum width for centering effect */
+  }
+
+  footer ul.iconMenu {
+    justify-content: center; /* Center the items horizontally */
+  }
+
+  footer ul.iconMenu li {
+    margin-right: 10px;
+  }
+}
+
+h3.h3_sideban {
+  background: #FF484B;
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+  width: 100%;
+  color: #FFF;
+  position: relative;
+  margin-bottom: 10px;
+}
+.sideban dl dt {
+    margin-bottom: 10px;
+}
+.aic {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.writer_chara_col {
+  margin: 20px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.writer_chara_col img {
+    width: 130px;
+    height: 130px;
+    background: #fff2d0;
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: 50%;
+}
+.writer_chara_col .speech {
+    width: 78%;
+    padding: 15px 20px;
+    position: relative;
+    background: #fff2d0;
+    border-radius: 10px;
+}
+.writer_chara_col .speech::after {
+    height: 0;
+    content: "";
+    position: absolute;
+    top: 70px;
+    right: 100%;
+    border: solid transparent;
+    border-color: rgba(255,255,255,0);
+    border-right-color: #fff2d0;
+    border-width: 10px 20px;
+}
+.writer_chara_col span {
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    font-size: .9rem;
+    line-height: 1.6em;
+    font-weight: 700;
+}
+.related-article {
+    border: 1px solid #666;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.related-article dl {
+    width: 60%;
+    padding: 15px 20px;
+}
+.related-article dl dt a {
+    color: #111;
+}
+.related-article dl p {
+    padding: 0;
+}
+.markY {
+    background: #FEE87E;
+    display: inline;
+}
+.related-article>a img {
+    vertical-align: bottom;
+    width: 100%;
+    height: auto;
+}
+.txtLeft {
+    text-align: left;
+}
+.cont2 {
+    margin: 0 auto 15px 0;
+    text-align: center;
+    padding: 0 15px;
+}
+#mokuji.m-step1 {
+    border: 1px solid #8cc63f;
+    background-color: #e4f9cf;
+}
+dl#mokuji {
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+dl#mokuji.m-step1 dd {
+    border-left: 1px solid #8cc63f;
+}
+dl#mokuji dd ol {
+    list-style: decimal inside;
+    font-size: .9rem;
+    text-align: left;
+    padding-left: 20px;
+}
+dl#mokuji dd ol li a {
+    padding: 1px 0;
+    color: #4d4d4d;
+}
+
+.h3-lineLB.LB-step1 {
+    background: #8cc63f;
+    border-bottom: solid 3px #8cc63f;
+    border-left: none;
+}
+.txtCenter {
+    text-align: center;
+}
+.bold {
+    font-weight: 700;
+}
+.staff_comment_col {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.staff_comment_col .speech {
+    width: 82%;
+    background: #fff2d0;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    margin-left: 3%;
+}
+
+.staff_comment_col .speech::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    height: 0;
+    border: solid transparent;
+    border-color: rgba(255,255,255,0);
+    border-right-color: #fff2d0;
+    right: 100%;
+    border-width: 10px 20px;
+   
+}
+.boderstep1 {
+    border: 2px solid #8cc63f;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+ul.li_point, ol.li_point {
+    list-style: circle inside;
+    text-align: left;
+}
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+.fontRed {
+    color: #EA0000;
+}
+.font-cl-step1 {
+    /* color: #0071bc; */
+    border-bottom: 1px solid #8cc63f;
+    border-left: 8px solid #8cc63f;
+    padding: 5px 0 8px 15px;
+}
+.markY {
+    background: #FEE87E;
+    display: inline;
+}
+ol.li_numb {
+    list-style: decimal inside;
+    text-align: left;
+}
+
+.underLineB {
+    text-align: left;
+    background: #D5EFFF;
+    margin: 15px 0;
+    padding: 10px 10px 10px 15px;
+}
+.underLineB.step1 {
+    text-align: left;
+    color: #2c3d66;
+}
+h4 {
+    font-size: 1.15rem;
+    font-family: 'M PLUS 1p',sans-serif;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.boderstep1 {
+    border: 2px solid #29abe2;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.mb30 {
+    margin-bottom: 30px!important;
+}
+.dispFlex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.underL-s.icon-t {
+    margin-bottom: 15px;
+}
+.underL-s.icon-t>h4 {
+    border-bottom: 1px solid #0e6eb8;
+    padding: 5px 0 7px 15px;
+    color: #0e6eb8;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    width: 95%;
+}
+.sp {
+    display: none!important;
+}
+.flex65 {
+    width: 65%;
+}
+.flex35 {
+    width: 35%;
+}
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.fxin-jusbetw {
+    justify-content: space-between;
+}
+.mt15 {
+    margin-top: 15px;
+}
+.about_check .flex65 ul.li_check {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+ul.li_check {
+    margin: 10px;
+    list-style: none;
+}
+.font-cl-step1 {
+    /* color: #0071bc; */
+    border-bottom: 1px solid #8cc63f;
+    border-left: 8px solid #8cc63f;
+    padding: 5px 0 8px 15px;
+}
+.font-cl-step1 {
+    color: #0071bc;
+    margin: 20px 0 10px 0;
+}
+h3 {
+    font-size: 1.3rem;
+    font-family: 'M PLUS 1p',sans-serif;
+    text-align: left;
+    line-height: 150%;
+    margin-bottom: 15px;
+}
+p {
+    font-size: 1rem;
+    text-align: left;
+    padding-bottom: 15px;
+}
+.cont2 a.link_btn.step1, .cont2 a.link_btn2.step1 {
+    border-color: #84be3f;
+    color: #84be3f;
+}
+.cont2 a.link_btn, .cont2 a.link_btn2, .casinocont a.link_btn {
+    display: block;
+    border: 1px solid #84be3f;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 10px 8px;
+    background: #fff;
+}
+ol.a-stepboxOdr {
+    width: 100%;
+    list-style: none;
+    margin: 20px 0;
+}
+ol.a-stepboxOdr dl dt {
+    background-color: #e6f6f7;
+    color: #3aa8ad;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    position: relative;
+    border-radius: 15px;
+}
+ol.a-stepboxOdr dl dt>p:first-child {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+ol.a-stepboxOdr dl dt span.a-stepOdr {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #47bacd;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 180%;
+    line-height: 110%;
+    margin-right: 25px;
+    font-weight: 400;
+    position: relative;
+    top: -10px;
+    left: 5px;
+}
+.dispFlex2 {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flex30 {
+    width: 29%;
+}
+.flex70 {
+    width: 69%;
+}
+dl.dl-bmenu.step2 {
+    border: 2px solid #83be3e;
+}
+dl.dl-bmenu.step1 dt {
+    background-color: #29a3da;
+}
+dl.dl-bmenu dd ol.numb1 {
+    list-style-type: none;
+    counter-reset: dl-m-numb;
+    padding: 5px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+dl.dl-bmenu.step1 dd ol.numb1>li:before {
+    color: #29a3da;
+}
+dl.dl-bmenu dt {
+    background-color: #83be3e;
+    border-radius: 7px 7px 0 0 / 7px 7px 0 0;
+    padding: 10px 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+dl.dl-bmenu dd ol.numb1>li {
+    list-style-type: none;
+    counter-increment: dl-m-numb;
+    border-bottom: 1px solid #666;
+    padding: 12px 0;
+    width: 49%;
+    text-align: left;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+dl.dl-bmenu dd ol.numb1>li:before {
+    content: counter(dl-m-numb)'.';
+    font-weight: 700;
+    margin-right: 3px;
+}
+dl.dl-bmenu.step2 dd>ol.numb1 li {
+    border-bottom: 1px solid #c7ea8e;
+}
+ul.pay-logSlide.noslide, ul.pay-logSlide.spnoslide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul.pay-logSlide.noslide, ul.a-logSlide.noslide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul.pay-logSlide.step1 {
+    background: #e0ffff;
+}
+ul.pay-logSlide, ul.a-logSlide {
+    list-style: none;
+    min-height: 100px;
+    margin: 10px 20px;
+    padding: 10px 5px;
+}
+
+.dl_point.step1 {
+    border: 2px solid #8cc63f;
+}
+.dl_point.step1 dt {
+    color: #8cc63f;
+}
+.dl_point {
+    background: #FFF;
+    padding: 20px;
+    margin: 0 0 15px 0;
+    border: 2px solid #111;
+}
+.dl_point dt {
+    background-repeat: no-repeat;
+    padding: 0 0 0 5px;
+    height: 23px;
+    line-height: 23px;
+    font-weight: 700;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #111;
+}
+.linkbox-article {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background: #edf9ff;
+    padding: 15px;
+    font-size: 16px;
+}
+.linkbox-article a > span {
+    position: relative;
+    top: 5px;
+    left: 0;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    color: #29a3da;
+    font-weight: 700;
+}
+.linkbox-article a:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.linkbox-article a {
+    display: block;
+    text-align: left;
+}
+.fa-book-open:before {
+    content: "\f518";
+}
+.cont2 a.link_btn.step2 {
+    border-color: #84be3f;
+    color: #84be3f;
+}
+.font-cl-step2 {
+    /* color: #0eb700; */
+    border-bottom: 1px solid #8cc63f;
+    border-left: 8px solid #8cc63f;
+    padding: 5px 0 8px 15px;
+}
+.boderstep2 {
+    border: 2px solid #8cc63f;
+    padding: 15px;
+}
+.underLineB.step2 {
+    text-align: left;
+    background: #D8EFB3;
+    color: #31662b;
+}
+.flex25 img {
+    width: 70%;
+    height: 100px;
+    height: auto;
+}
+.tipArrow {
+    position: relative;
+    padding: 0 25px;
+    display: inline-block;
+}
+h3 {
+    font-size: 1.3rem;
+    font-family: 'M PLUS 1p',sans-serif;
+    text-align: left;
+    line-height: 150%;
+    margin-bottom: 15px;
+}
+img {
+    line-height: 0;
+    font-size: 0;
+    vertical-align: bottom;
+}
+table.table2 tr:nth-of-type(2n) {
+    background: #e4f9cf;
+}
+dl.dl-bmenu.step2 dd ol.numb1 > li:before {
+    color: #83be3e;
+}
+dl.dl-bmenu dd ol.numb1 > li:before {
+    content: counter(dl-m-numb)'.';
+    font-weight: 700;
+    margin-right: 3px;
+}
+.h3-lineLB.LB-step2 {
+    background: #84be3f;
+    border-bottom: solid 3px #75ab3d;
+    border-left: none;
+}
+.dl-QA dt {
+    margin: 0 3em 1em 3em;
+    background: #6DB551;
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 5px 0 5px 20px;
+    color: #fff;
+}
+.dl-QA dt, .dl-QA dd {
+    position: relative;
+    padding: 0.5em;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    border-radius: 0.3em;
+}
+.dl-QA *, .dl-QA *:after, .dl-QA *:before {
+    font-family: 'FontAwesome',sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dl-QA dd {
+    margin: 0 3em 3em 3em;
+    background: #e7ffe0;
+    color: #263824;
+}
+
+.dl-QA dt, .dl-QA dd {
+    position: relative;
+    padding: 0.5em;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    border-radius: 0.3em;
+}
+.dl-QA *, .dl-QA *:after, .dl-QA *:before {
+    font-family: 'FontAwesome',sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dl-QA dt::after {
+    left: -2.5em;
+    margin: 0 0.5em 0 0;
+    padding: 0.2em 0.4em;
+    content: '\f128';
+    background: #259959;
+}
+
+.dl-QA dt::after, .dl-QA dd::after {
+    font-size: 1.2em;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.2em;
+}
+.dl-QA *, .dl-QA *:after, .dl-QA *:before {
+    font-family: 'FontAwesome',sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dl-QA dt {
+    margin: 0 3em 1em 3em;
+    background: #6DB551;
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 5px 0 5px 20px;
+    color: #fff;
+}
+.dl-QA dd::after {
+    right: -2.5em;
+    margin: 0 0 0 0.5em;
+    padding: 0.2em 0.55em;
+    content: '\f12a';
+    background: #259959;
+}
+.marg-tb10 {
+    margin: 10px 0;
+}
+.flex25 {
+    width: 25%;
+}
+.dispFlex4 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div.casinobtn a.btn-squareOreRadi {
+    width: 100%;
+    font-size: 100%;
+    margin-top: 10px;
+}
+
+a.btn-squareOreRadi {
+    padding: 10px;
+    font-size: 1.4rem;
+    display: inline-block;
+}
+a.btn-squareOreRadi {
+    border-radius: 5px;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #ef8b1e;
+    box-shadow: 3px 3px 0 0 #825a20;
+    color: #fff;
+    display: block;
+}
+.flex75 {
+    width: 74%;
+}
+.tipArrow {
+    position: relative;
+    padding: 0 25px;
+    display: inline-block;
+}
+.tipArrow.step2:before {
+    border-bottom: solid 15px #8cc63f;
+}
+
+.tipArrow:before {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: none;
+    border-left: solid 15px transparent;
+    border-bottom: solid 15px rgb(119,195,223);
+}
+.tipArrow.step2:after {
+    border-bottom: solid 3px #8cc63f;
+}
+
+.tipArrow:after {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 10px;
+    width: 100%;
+    border-bottom: solid 3px rgb(119,195,223);
+}
+#imginner>h1#indexh1 {
+    width: 100%;
+    height: 170px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 1.7rem;
+    font-family: 'M PLUS 1p',sans-serif;
+    position: absolute;
+    top: 80px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 0 #fff;
+    color: #000;
+}
+h1#indexh1 span.topstep.step3 {
+    background-color: #fbb03b;
+}
+
+h1#indexh1 span.topstep {
+    display: inline-block;
+    padding: 5px 20px;
+    color: #fff;
+    margin-right: 20px;
+    text-shadow: none;
+}
+.contBoder2 {
+    padding: 15px;
+    margin: 0 auto 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px -1px #8e8e8e;
+    display: flex;
+}
+.flex30 {
+    width: 29%;
+}
+
+.contBoder2 .flex30 {
+    margin-bottom: 0;
+    img {
+    line-height: 0;
+    font-size: 0;
+    vertical-align: bottom;
+}
+}
+.contBoder2 .flex30 img {
+    width: 100%;
+}
+.flex71 {
+    width: 70%;
+}
+.contBoder2 .flex71 {
+    margin-left: 20px;
+}
+.contBoder2 dl.stepindex {
+    margin-bottom: 15px;
+}
+.step3 dl.stepindex dt {
+    color: #fbb03b;
+}
+.contBoder2 dl.stepindex dd h2 {
+    font-size: 120%;
+    margin: 10px 0;
+}
+
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+
+.h2_border {
+    background: url(../images/bg_h.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding: 10px 0;
+    color: #110945;
+    border: none;
+    text-align: center;
+}
+ul.menu_pay {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 5px 0 10px 0;
+}
+ul.menu_pay li {
+    display: table;
+    margin-top: 10px;
+    width: 49%;
+    text-align: left;
+}
+ul.menu_pay li:nth-child(odd) {
+    margin-right: 8px;
+}
+
+ul.menu_eco li {
+    border: 1px solid #81b626;
+}
+
+ul.menu_eco li a {
+    color: #81b626;
+}
+
+ul.menu_pay li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+ul.menu_pay li a img, ul.menu_pay li a p {
+    display: inline;
+    vertical-align: middle;
+}
+ul.menu_pay li a img {
+    width: 45px;
+    height: auto;
+}
+ul.menu_pay li a p {
+    padding: 0 0 0 5px;
+    font-weight: 700;
+    width: 80%;
+}
+
+ul.menu_pay li a img, ul.menu_pay li a p {
+    display: inline;
+    vertical-align: middle;
+}
+#mokuji.m-step3 {
+    border: 1px solid #fbb03b;
+    background-color: #f8f7d3;
+}
+
+dl#mokuji {
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+dl#mokuji.m-step3 dd {
+    border-left: 1px solid #fbb03b;
+}
+dl#mokuji dd ol {
+    list-style: decimal inside;
+    font-size: .9rem;
+    text-align: left;
+    padding-left: 20px;
+}
+.h3-lineLB.LB-step3 {
+    background: #f3a83b;
+    border-bottom: solid 3px #db9939;
+    border-left: none;
+}
+
+.h3-lineLB.LB-step3 {
+    border-bottom: 1px solid #fbb03b;
+    border-left: 8px solid #fbb03b;
+}
+.h3-lineLB {
+    padding: 10px 0 8px 15px;
+    margin: 10px 0 20px 0;
+    color: #fff;
+}
+.h3-lineLB {
+    padding: 5px 0 10px 15px;
+    margin: 20px 0;
+}
+p {
+    font-size: 1rem;
+    text-align: left;
+    padding-bottom: 15px;
+}
+.font-cl-step3 {
+    /* color: #fbb03b; */
+    border-bottom: 1px solid #fbb03b;
+    border-left: 8px solid #fbb03b;
+    padding: 5px 0 8px 15px;
+}
+
+.font-cl-step3 {
+    color: #fbb03b;
+    margin: 10px 0;
+}
+.font-cl-step3 {
+    /* color: #fbb03b; */
+    border-bottom: 1px solid #fbb03b;
+    border-left: 8px solid #fbb03b;
+    padding: 5px 0 8px 15px;
+}
+
+.font-cl-step3 {
+    color: #fbb03b;
+    margin: 10px 0;
+}table.table.step3 tr th {
+    background: #f9e5cf;
+}
+
+table.table.step3 tr td, table.table.step3 tr th {
+    border: 1px solid #fbb03b;
+}
+.dl_point.step3 {
+    border: 2px solid #fbb03b;
+}
+
+.dl_point {
+    background: #FFF;
+    padding: 20px;
+    margin: 0 0 15px 0;
+    border: 2px solid #111;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.boderstep3 {
+    border: 2px solid #fbb03b;
+    padding: 15px;
+}
+.hl-line.step3 {
+    border-left: solid 4px #f3a83b;
+    color: #db9939;
+}
+
+.hl-line {
+    border-left: solid 4px #ccc;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+dl.dl-bmenu.step3 {
+    border: 2px solid #f3a83b;
+}
+
+dl.dl-bmenu {
+    border: 2px solid #666;
+    border-radius: 10px;
+}
+dl.dl-bmenu.step3 dt {
+    background-color: #f3a83b;
+}
+
+dl.dl-bmenu dt {
+    background-color: #666;
+    border-radius: 7px 7px 0 0 / 7px 7px 0 0;
+    padding: 10px 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+dl.dl-bmenu.step3 dd ol.numb1>li:before {
+    color: #f3a83b;
+}
+
+dl.dl-bmenu dd ol.numb1>li:before {
+    content: counter(dl-m-numb)'.';
+    font-weight: 700;
+    margin-right: 3px;
+}
+dl.dl-bmenu dd>ol.numb1 li a {
+    font-size: 1rem;
+    color: #000;
+    padding-left: 5px;
+}
+.dl_point.step3 {
+    border: 2px solid #fbb03b;
+}
+
+.dl_point {
+    background: #FFF;
+    padding: 20px;
+    margin: 0 0 15px 0;
+    border: 2px solid #111;
+}
+.dl_point.step3 dt {
+    color: #fbb03b;
+}
+.dl_point dt>i {
+    padding-right: 10px;
+}
+.dl_point a.btn-squareOreRadi {
+    font-size: 120%;
+    margin-bottom: 0;
+}
+
+a.btn-squareOreRadi {
+    padding: 10px;
+    font-size: 1.4rem;
+    display: inline-block;
+}
+a.btn-squareOreRadi {
+    border-radius: 5px;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #ef8b1e;
+    box-shadow: 3px 3px 0 0 #825a20;
+    color: #fff;
+    display: block;
+}
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .txtCenter {
+    text-align: center;
+
+  }
+  .img-container {
+    text-align: center;
+  }
+  .img-container img {
+    display: inline-block;
+    width: 100%;
+  }
+  .headerlog img {
+    max-width: 100%;
+    height: auto;
+  }
+  .iconMenu {
+    text-align: center;
+  }
+  .iconMenu li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  footer ul.iconMenu {
+    width: 100%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+}
+footer nav {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+  
+}
+
+</style>
+  
+</head>
+
+<body>
+    
+  <header class="header">
+    <img src="assets/images/headlog.png" alt="Header Image">
+
+<!-- start of nav  -->
+
+  <nav class="navbar navbar-expand-md navbar-light">
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown1-bg" href="#" id="dropdown1" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="assets/images/icon-step1nav.png" alt="">
+            <img src="assets/images/icon-book.png" alt="">
+            <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown1-bg text-center" aria-labelledby="dropdown1">
+            <a class="dropdown-item" href="about.html">オンラインカジノとは？基礎講座</a>
+            <a class="dropdown-item" href="law.html">オンラインカジノは違法？！</a>
+            <a class="dropdown-item" href="management.html">悪質なオンラインカジノの詐欺事例</a>
+            <a class="dropdown-item" href="software.html">ゲームのソフトウェアも信頼の目安</a>
+            <a class="dropdown-item" href="ninki.html">オンラインカジノの還元率が高い理由</a>
+            <a class="dropdown-item" href="tax.html">ゲームのソフトウェアも信頼の目安</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown2-bg" href="#" id="dropdown2" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step2nav.png" alt="">
+                <img src="assets/images/icon-play.png" alt="">
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown2-bg text-center" aria-labelledby="dropdown2">
+            <a class="dropdown-item" href="step.html">オンラインカジノの登録方法</a>
+            <a class="dropdown-item" href="payment.html">オンラインカジノの入出金について</a>
+            <a class="dropdown-item" href="bonus.html">知っておきたいボーナスの知識</a>
+            <a class="dropdown-item" href="kakejyouken.html">オンラインカジノの賭け条件とは？</a>
+            <a class="dropdown-item" href="nodepositbonus.html">入金不要ボーナスが貰えるオンラインカジノ</a>
+            <a class="dropdown-item" href="pc_sp.html">スマホで遊べるオンラインカジノ一覧</a>
+            <a class="dropdown-item" href="jackpot.html">一攫千金が狙えるジャックポットスロット</a>
+            <a class="dropdown-item" href="livegame.html">ライブカジノを楽しもう</a>
+            <a class="dropdown-item" href="slot.html">オンラインカジノ人気スロットランキング</a>
+
+
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown3-bg" href="#" id="dropdown3" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step3nav.png" alt="">
+                <img src="assets/images/icon-card.png" alt="">
+
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown3-bg text-center" aria-labelledby="dropdown3">
+            <a class="dropdown-item" href="nyushukkin.html">決済方法一覧</a>
+            <a class="dropdown-item" href="ecopayzabout.html">ecoPayzとは？</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown4-bg" href="#" id="dropdown4" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step4nav.png" alt="">
+                <img src="assets/images/icon-casino.png" alt="">
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown4-bg text-center" aria-labelledby="dropdown4">
+            <a class="dropdown-item" href="nyushukkin.html">決済方法一覧</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown5-bg" href="#" id="dropdown5" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step5nav.png" alt="">
+                <img src="assets/images/icon-method.png" alt="">
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown5-bg text-center" aria-labelledby="dropdown5">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- end of nav  -->
+
+<!-- start of section 1  -->
+<section>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section">
+                <div class="content">
+                  <h1 id="indexh1" class="bg-white-op">ecoPayz（エコペイズ）基本情報<br>信頼性・登録から入出金方法・手数料を解説</h1>
+                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+<!-- end of section 1  -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 hide-on-mobile">
+        <!-- Content for the first column -->
+        <div class="row">
+          <div class="col-md-12">
+            <img src="assets/images/ban_side_rank.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <img src="assets/images/ban_twitter.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <img src="assets/images/ban_twitter.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <h3 class="h3_sideban mt-3"><span>＼高額賞金続出！/</span>今人気のスロットランキング</h3>
+        <dl class="mt-3">
+          <dt class="aic">
+            <img src="assets/images/icon_crown.png" loading="lazy" width="40" height="40" class="mr-2">
+            <span>LOVEの美少女パワーで大勝利！<br><span>Moon Princess</span></span>
+          </dt>
+          <dd>
+            <img src="assets/images/tmb_moonprincess.jpg" alt="人気スロットランキング" loading="lazy" class="img-fluid">
+            <a href="../slot/" class="btn_side">オンラインカジノ<br>人気スロットランキング</a>
+          </dd>
+        </dl>
+      </div>
+      <div class="col-md-9">
+        <!-- Content for the second column -->
+        <p>その他の入出金方法や、オンラインカジノの入出金の仕組みがよくわからないという方は<a href="play/payment.html">オンラインカジノの入出金について</a>をご覧ください。</p>
+        <div class="cont2">
+
+          <p><img src="assets/images/ecopayz-about_fv.jpg" alt="ecoPayz（エコペイズ）とは？" class="w100" loading="lazy" width="795" height="413"></p>
+          
+          <p class="txtRight data">最終更新日：<time itemprop="dateModified">2022-06-30</time></p>
+        
+        </div>
+        <div class="cont2">
+	        <h2 class="h2_border">ecoPayz（エコペイズ）使い方ガイド　メニュー</h2>
+          <section>
+            <ul class="menu_pay menu_eco">
+            <li><a href="about.html"><img src="assets/images/ico_eco_about.png" alt="ecoPayz（エコペイズ）とは？" loading="lazy" width="45" height="45"><p>ecoPayz（エコペイズ）とは？</p></a></li>
+            <li><a href="kaisetsu.html"><img src="assets/images/ico_eco_kaisetsu.png" alt="口座開設とアップグレード" loading="lazy" width="45" height="45"><p>口座開設とアップグレード</p></a></li>
+            <li><a href="nyukin.html"><img src="assets/images/ico_eco_nyukin.png" alt="ecoPayzでの入金方法" loading="lazy" width="45" height="45"><p>ecoPayzでの入金方法</p></a></li>
+            <li><a href="shukkin.html"><img src="assets/images/ico_eco_shukkin.png" alt="ecoPayzでの出金方法" loading="lazy" width="45" height="45"><p>ecoPayzでの出金方法</p></a></li>
+            <li><a href="ecocard.html"><img src="assets/images/ico_eco_card.png" alt="ecoCardの使い方" loading="lazy" width="45" height="45"><p>ecoCardの使い方</p></a></li>
+            <li><a href="tesuuryou.html"><img src="assets/images/ico_iwallet_tesuuryou.png" alt="ecoPayzの手数料" loading="lazy" width="45" height="45"><p>ecoPayzの手数料</p></a></li>
+            </ul>	
+          </section>
+        </div>
+        <div class="cont2">
+			  
+          <p>オンラインカジノの決済方法の中でも、取り扱われる数が多く、利用者も多い「ecoPayz（エコペイズ）」についてご紹介します。</p>
+            
+          <p>「ecoPayz（エコペイズ）」のアカウントを1つ持っておけば、様々なオンラインカジノの入出金がまとめられるのでとても便利なので、選択肢の1つとして知っておきましょう。</p>
+            
+        </div>
+        <div class="writer_chara_col">
+          <div>
+              <img src="assets/images/syuhei.png" width="150" height="150" loading="lazy" alt="SYUHEI"><span>著者：<a rel="author" href="../writer-syuhei.html">SYUHEI</a><br>カジノ歴：3年</span>
+          </div>
+          <div class="speech">
+              <dl>
+                  <dt>決済・税金記事担当者からのコメント</dt>
+                  <dd><p>オンラインカジノの入出金方法のひとつに、オンライン上で支払いをしたり口座にあるお金を引き出したりできる電子決済がありますが、中でも自分が一番おすすめしたいのがエコペイズです！<br>
+            最初はほかの方法で入出金をしていたのですが、だんだん収支がわかりにくくなってきたので入出金方法をひとつに絞ろうと思ってエコペイズを使い始めました。</p>
+            <p>大半のオンラインカジノで使えて、エコペイズの口座だけで資金管理ができるのでダントツに便利です！<br>
+            海外サービスですが日本語に対応しているので、「使い方がよくわからないかも」という心配もいりませんよ。</p>
+          </dd>
+              </dl>
+          </div>
+        </div>
+        <div class="cont2">
+          <dl id="mokuji" class="m-step3">
+            <dt>もくじ</dt>
+          <dd>
+            <ol>
+            <li><a href="#1">ecoPayz（エコペイズ）の概要</a></li>
+            <li><a href="#2">ecoPayz（エコペイズ）の仕組みと入出金の流れ</a></li>
+            <li><a href="#3">ecoPayz（エコペイズ）のメリット</a></li>
+            <li><a href="#4">ecoPayz（エコペイズ）の手数料について</a></li>
+            <li><a href="#5">ecoPayz（エコペイズ）の注意点</a></li>
+          </ol>
+          </dd>
+          </dl>
+        </div>
+        <div class="cont2 txtLeft">
+          <h2 class="h3-lineLB LB-step3" id="1">ecoPayz（エコペイズ）の概要</h2>
+          <p>ecoPayz（エコペイズ）は、オンラインカジノの決済手段として利用できる「電子決済サービス」です。<br>
+          イギリスの企業によって運営されており、世界中で利用されています。</p>
+            
+          <p>まずはecoPayz（エコペイズ）の概要についてみていきましょう。</p>
+    
+            
+          <h3 class="font-cl-step3">ecoPayz（エコペイズ）基本情報</h3>
+            
+    <table class="table step3 t-layFixed">
+    <tbody><tr>
+    <th>サービス名</th>
+    <td>ecoPayz（エコペイズ）</td>
+    </tr>
+    
+    <tr>
+    <th>運営会社</th>
+    <td>PSI-Pay Ltd.</td>
+    </tr>
+    
+    <tr>
+    <th>運営ライセンス</th>
+    <td>FCA（金融行動監視庁）※FCA登録番号900011</td>
+    </tr>
+    
+    <tr>
+    <th>入金手段</th>
+    <td>銀行振替 / 仮想通貨（暗号資産） / エコバウチャー etc</td>
+    </tr>
+    
+    <tr>
+    <th>出金手段</th>
+    <td>高速現地送金 / 国際送金<br>※いずれも指定の銀行口座に着金</td>
+    </tr>
+    
+    
+    <tr>
+    <th>手続き・サポート受付時間</th>
+    <td>24時間 年中無休</td>
+    </tr>
+    
+      
+    <tr>
+    <th>対応カジノサイト</th>
+    <td>ベラジョンカジノ / カジノシークレット / ラッキーニッキーカジノ / インターカジノ / ビットカジノ / カジ旅 / エンパイアカジノ　etc..</td>
+    </tr>
+    </tbody></table>
+            
+          <h3 class="font-cl-step3">現金化可能な電子決済サービス</h3>
+        <p class="txtCenter"><img src="assets/images/ecopayz-about5.jpg" alt="現金化可能な電子決済サービス" loading="lazy" width="637" height="321"></p>	  
+            
+          <p>近年では電子マネーが普及してきているので、お金をどこかにチャージして使うことに慣れてきている方も多いのではないでしょうか。</p>
+            
+          <p>日本では「PayPay」や「LINE Pay」といった電子マネーが有名ですが、基本的にはecoPayz（エコペイズ）も同じ類のものです。</p>
+            
+          <p>ecoPayz（エコペイズ）にお金をチャージし、チャージしているお金をオンラインカジノに入金したり、オンラインカジノから出金することが可能です。</p>
+      
+            
+          <h4 class="hl-line step3">電子マネーとの違いは「現金化」できること</h4>
+            
+        <p>使い方は「PayPay」や「LINE Pay」などの電子マネーと同じですが、決定的な違いは「現金化」ができるかできないか。という点です。<br>
+        「PayPay」や「LINE Pay」などの電子マネーは、一度チャージしたお金を現金に戻すことはできません。</p>
+    
+        <p>対してecoPayz（エコペイズ）は、チャージしたお金を自分の銀行口座に振り込むことで、現金として受け取ることが可能です。</p>
+      
+            
+      
+            
+            
+        <dl class="dl_point step3">
+              <dt><i class="fas fa-check"></i>オンラインカジノとは？</dt>
+              <dd>
+                 <p>オンラインカジノは、インターネット上で実際にお金を賭けて本物のカジノのようにゲームを楽しむことができるサービスです。<br>
+             一般的に合法ライセンスを取得した海外企業が運営していますが、日本語対応のサイトも増えてきています。<br>
+              ecoPayzはオンラインカジノ業界で主流な決済方法として採用されており、プレイに必要な入金や、勝利金の出金もスムーズに行うことができます。</p>
+            
+                 <p>【→<a href="../beginner/about.html">オンラインカジノについて詳しくはコチラ</a>】</p>
+              </dd>
+              </dl>	  
+            
+    
+        </div>
+        <div class="cont2 txtLeft">
+          <h2 class="h3-lineLB LB-step3" id="2">ecoPayz（エコペイズ）の仕組みと入出金の流れ</h2>
+          <p class="txtCenter"><img src="assets/images/ecopayz-about6.jpg" alt="ecoPayz（エコペイズ）の仕組みと入出金の流れ" loading="lazy" width="637" height="334"></p>	 			  
+            
+          <p>ecoPayz（エコペイズ）での入出金の流れも把握しておきましょう。<br>
+            ここではオンラインカジノの入出金を例に解説していきます。</p>
+            
+        <div class="boderstep3 bold mb20">
+              <ol class="li_numb">
+                <li> ecoPayz（エコペイズ）に入金（チャージ）</li>
+                <li> ecoPayz（エコペイズ）からオンラインカジノへ入金</li>
+                <li> オンラインカジノからecoPayz（エコペイズ）に出金（チャージ）</li>
+                <li> ecoPayz（エコペイズ）から銀行口座に出金</li>
+              </ol>
+            </div>			  
+            
+          <h4 class="hl-line step3">複数のオンラインカジノの入出金を一元管理できる</h4>
+            
+          <p>「PayPay」や「LINE Pay」などの電子マネーも使える所と使えない所があるので、自分がよく使うお店とたくさん提携しているサービスを選ぶと便利です。<br>
+          つまり便利かどうかは、提携しているお店の数の多さが決め手になるということですね。</p>
+    
+          <p>ecoPayz（エコペイズ）もすべてのオンラインカジノと提携しているわけではありませんが、ほとんどのオンラインカジノと提携しているので、よほどマイナーなところでない限りは不便を感じることはないでしょう。</p>
+    
+          <p>複数のオンラインカジノに登録している方でも、ecoPayz（エコペイズ）のアカウント1つで資金の一元管理ができるので、とても便利に使うことができます。</p>
+      
+        </div>
+        <div class="cont2 txtLeft">
+          <h2 class="h3-lineLB LB-step3" id="3">ecoPayz（エコペイズ）のメリット</h2>
+          <p>オンラインカジノをプレイするうえで必ず必要になる決済手段ですが、その方法・手段はいくつかのサービスから選ぶことができます。</p>  
+            
+          <p>その中で、なぜecoPayz（エコペイズ）を選ぶのか、メリットについて見ていきましょう。</p>  
+            
+        <div class="boderstep3 bold mb20">
+              <ul class="li_point">
+                <li>信頼性が高く安全に決済ができる</li>
+                <li>対応しているオンラインカジノが豊富</li>
+                <li>サイトもサポートも日本語に対応</li>
+                <li>スマホアプリで資金管理が簡単</li>
+              </ul>
+            </div>			  
+            
+          <p>では、それぞれのメリットについて詳しく解説していきます。</p>  
+            
+          <h3 class="font-cl-step3">信頼性が高いイギリスの「PSI-Pay Ltd.」による安全な運営</h3>
+          <p class="txtCenter"><img src="assets/images/ecopayz-about1.jpg" alt="信頼性が高いイギリスの「PSI-Pay Ltd.」による安全な運営" loading="lazy" width="637" height="343"></p>
+            
+          <p>ecoPayz（エコペイズ）を運営している企業は「PSI-Pay Ltd.」というイギリスの企業です。<br>
+          【→<a href="http://www.psi-pay.co.uk/" target="new">PSI-Pay公式サイト</a>】</p>  
+            
+          <dl class="dl_point step3 mb20">
+              <dt><i class="fas fa-check"></i>金融行動監視機構(FCA)とは</dt>
+              <dd>
+                 <p>金融行動監視機構(FCA)は正式名称をFinancial Conduct Authorityといい、日本でいうところの金融庁に当たります。 <br>
+             主にイギリス国内の金融サービスの公平性や安全性を守るための機関です。
+             この金融行動監視機構(FCA)は世界的に見ても厳格な審査と規程を設けており、<span class="fontRed">FCAからの認可を受けた機関は世界的に見ても信頼のできる機関</span>であると言われています。</p>
+              </dd>
+              </dl>
+            
+          <h3 class="font-cl-step3">対応しているオンラインカジノが豊富</h3>
+          <p class="txtCenter"><img src="assets/images/ecopayz-about4.jpg" alt="対応しているオンラインカジノが豊富" loading="lazy" width="637" height="321"></p>
+            
+          <p>ecoPayz（エコペイズ）は、多くのオンラインカジノで利用することが可能です。<br>
+          例えば……</p>  
+            
+        <div class="boderstep3 mb20">
+              <ul class="li_point">
+                <li>出金条件なしのキャッシュバックが魅力的な「カジノシークレット」</li>
+                <li>日本語完全対応で人気の「ベラジョンカジノ」</li>
+                <li>本場カジノの臨場感を味わえる「エンパイアカジノ」</li>
+              </ul>
+            </div>			  
+          <p>など、日本人にも馴染みのある様々なオンラインカジノの入出金手段として使うことができます。</p>  
+            
+          <h3 class="font-cl-step3">公式サイトもサポートも日本語対応で安心</h3>
+          <p class="txtCenter"><img src="assets/images/ecopayz-about2.jpg" alt="公式サイトもサポートも日本語対応で安心" loading="lazy" width="637" height="357"></p>  
+            
+            
+          <p>サービスを利用する上で疑問が生じたときや、トラブルに巻き込まれてしまったとき、日本語サポートがあるかないかでは安心感が大きく変わってきます。</p>
+    
+          <p>ecoPayz(エコペイズ)では公式サイトはもちろん、サポートまで日本語対応を行っていますので、日本人プレイヤーでも安心して利用することができます。</p>
+      
+          <h3 class="font-cl-step3">スマホアプリで気軽に資金管理可能！</h3>  
+          <p class="txtCenter"><img src="assets/images/ecopayz-about3.jpg" alt="スマホアプリで気軽に資金管理可能！" loading="lazy" width="637" height="321"></p> 
+          <p>ecoPayz（エコペイズ）は、パソコンだけでなく公式アプリをダウンロードすれば、スマートフォンやタブレットを使って、２４時間いつでも気軽に資金管理が行えます。<br>
+            登録時間は、アプリをインストール後、たったの1～2分で完了。</p>
+    
+          <p>通勤中でも、自宅でも、ちょっとした時間にささっと確認できるため、PCよりもスマホやタブレットをよく利用される方にもオススメです！</p>
+            
+        </div>
+        <div class="cont2 txtLeft">
+          <h2 class="h3-lineLB LB-step3" id="4"><i class="sp"></i>ecoPayz（エコペイズ）の手数料について</h2>
+          <p class="txtCenter"><img src="assets/images/ecopayz-about7.jpg" alt="ecoPayz（エコペイズ）の手数料について" loading="lazy" width="637" height="321"></p> 
+            
+          <p>ecoPayz（エコペイズ）で入出金をする際は、手数料が発生します。<br>
+            ここでは、入金と出金、それぞれにかかる手数料を大まかに紹介します。</p>
+            
+            
+          <h3 class="font-cl-step3">口座開設とオンラインカジノとのやりとりは手数料無料</h3>			  
+          <p>ecoPayz（エコペイズ）の口座開設をする際の手数料は無料です。</p>
+            
+          <p>また、ecoPayz（エコペイズ）からオンラインカジノへ入金したり、オンラインカジノからecoPayz（エコペイズ）へ出金する際の手数料も無料となっています。</p>
+            
+          <h3 class="font-cl-step3">入金にかかる手数料</h3>		
+            
+            <table class="table step3 txtCenter t-layFixed">
+            <tbody><tr>
+            <th>入金手段</th>
+            <th>手数料</th>
+            </tr>
+            
+            <tr>
+            <th>銀行送金　<span class="txt_red">※1,2</span></th>
+            <td>0 ～ 10%</td>
+            </tr>
+            
+            <tr>
+            <th>クレジットカード　<span class="txt_red">※1</span></th>
+            <td>1.69 ～ 6% ＋ € 0.25</td>
+            </tr>
+            
+            </tbody></table>		  
+                    
+            <p>※1 手数料の正確な金額は、居住されている国や地域でのオプションにより異なります。<br>
+            ※2 コルレス銀行の手数料および国際送金手数料が発生します。</p>			  
+                    
+                    
+                  <h3 class="font-cl-step3">出金にかかる手数料</h3>		
+                    
+            <table class="table step3 txtCenter t-layFixed">
+            <tbody><tr>
+            <th>出金手段</th>
+            <th>手数料</th>
+            </tr>
+            
+            <tr>
+            <th>銀行送金　<span class="txt_red">※1,2</span></th>
+            <td>€5.9 ～ 10<br>
+            （VIPレベルのみ € 2.9 ～ 7）
+            </td>
+            </tr>
+            </tbody></table>		  
+                    
+            <p>※1 手数料の正確な金額は、居住されている国や地域でのオプションにより異なります。<br>
+            ※2 コルレス銀行の手数料および国際送金手数料が発生します。</p>			  
+                    
+            <p>【→<a href="tesuuryou.html">手数料について詳しくはこちら</a>】</p>			  
+                    
+                  
+                  <h3 class="font-cl-step3">会員レベルをVIPまで上げると出金手数料が安くなる</h3>		
+                  <p>ecoPayz（エコペイズ）には「会員レベル」というものがあり、以下の5つに分類されています。</p>
+                    
+                    
+                <div class="boderstep3 mb20">
+                      <ol class="li_numb">
+                        <li> Classic（クラシック）</li>
+                        <li> Silver（シルバー）</li>
+                        <li> Gold（ゴールド）</li>
+                        <li> Platinum（プラチナム）</li>
+                        <li> VIP（ビップ）</li>
+                      </ol>
+                    </div>			  
+                  <p>最初登録した時は「Classic（クラシック）」という会員レベルから始まり、アップグレードすることで、操作できる機能を増やしたり、出金限度額を上げることが可能です。</p>
+            
+                <p>上記の手数料の表にあるようにVIPまでアップグレードすると、出金手数料が安くなるので、扱う金額が大きくなる方は会員レベルを上げることを検討してみましょう。</p>
+                    
+                <p>【→<a href="kaisetsu.html">ecoPayz（エコペイズ）の会員レベルについて詳しくはこちら</a>】</p>		  
+                    
+                    
+        </div>
+        <div class="cont2 txtLeft">
+			  
+          <h2 class="h3-lineLB LB-step3" id="5">ecoPayz（エコペイズ）利用時の注意点</h2>
+          <p class="txtCenter"><img src="assets/images/ecopayz-about8.jpg" alt="ecoPayz（エコペイズ）利用時の注意点" loading="lazy" width="637" height="321"></p>   
+            
+          <p>ecoPayz（エコペイズ）をオンラインカジノで利用する時の注意点も把握しておきましょう。</p>
+            
+          <h3 class="font-cl-step3">出金するにはアップグレード（会員レベルアップ）が必要</h3>		
+            
+        <p>エコペイズに登録して口座開設しただけの状態では出金することができません。<br>
+        出金をするには「会員レベル」を1つ上げて、Silver（シルバー）にアップグレードする必要があります。</p>
+      
+          <h3 class="font-cl-step3">本人確認資料を提出する必要がある</h3>		
+            
+          <p>エコペイズを利用する上で、会員レベルをSilver（シルバー）にすることは必須になりますが、アップグレードの際、本人確認資料を提出必要があります。<br>
+           免許証などを本人確認書類として提出する場合、アカウントを作成した際に登録した住所などの情報が一致している必要があります。<br>
+           登録する際は、提出する本人確認資料と同じ情報になるように注意してください。</p>
+            
+          <h3 class="font-cl-step3">利用しない期間が12ヶ月続くと維持管理料が必要</h3>		
+            
+          <p>エコペイズを利用しない期間が12ヶ月を過ぎると、「アカウント維持管理料」という名目で毎月 €1.50 がアカウントから引き落とされます。<br>
+           長期間で利用しない場合は、残高をゼロにしておくと良いでしょう。</p>
+            
+          <p>エコペイズに入金したり、資金を動かしたりすれば「アカウント維持管理料」はかかりません。</p>
+            
+          <h3 class="font-cl-step3">アカウントを複数作ると凍結される</h3>		
+            
+          <p>エコペイズのアカウントは1人1アカウントと決められています。<br>
+            そのため、不正に複数のアカウントを作ろうとするとアカウントが凍結されてしまいます。<br>
+            以前アカウントを作ったことを忘れて、再度登録した際も同じ扱いになることがあるので、十分注意しましょう。</p>
+    
+            <p>【→<a href="kaisetsu.html">ecoPayzの口座開設とアップグレードはこちら</a>】</p>	  			  
+            
+        </div>
+        <div class="cont2">  
+          <dl class="dl-bmenu step3">
+          <dt><p><img src="assets/images/icon-step3nav.png" loading="lazy" width="38" height="38"><img src="assets/images/icon-card.png" loading="lazy" width="26" height="26"><span class="pc">オンラインカジノ</span>決済講座 MENU</p><p class="pc">Online Casino Payment</p></dt>
+          <dd>
+          <ol class="numb1">
+            <li><a href="../ecopayz/about.html">ecoPayzとは？</a></li>
+            <li><a href="../iwallet/about.html">iWalletとは？</a></li>
+            <li><a href="../venuspoint/about.html">VenusPointとは？</a></li>
+            <li><a href="../bitcoin/about.html">仮想通貨（Bitcoin）とは？</a></li>
+          </ol>
+          </dd>
+        </dl>
+        </div>
+        <div class="cont2">
+          <dl class="dl_point step3">
+              <dt><i class="fas fa-check"></i>オンラインカジノで使えるオススメの入出金方法はこちら</dt>
+              <dd>
+                 <p>オンラインカジノで利用できるおすすめの決済手段をまとめました。各決済ツールの登録方法から、入金・出金の仕方までを徹底解説。入出金に迷ったらまずはこちらへどうぞ！</p>
+            <p class="txtCenter"><a href="../nyushukkin.html" class="btn-squareOreRadi">オンラインカジノの入金・出金方法一覧</a></p>
+              </dd>
+              </dl>
+        </div>
+        
+        
+        <!--  -->
+        
+        <!--  -->
+        
+        <!--  -->
+        
+        <!--  -->
+        
+
+         <!--  -->
+         <!--  -->
+      
+          <!--  -->
+      
+        
+    </div>
+      
+           
+              <!--  -->
+              
+    </div>
+          </div>
+          
+  </div>
+</section>
+
+<footer>
+  <div class="dispFlex center">
+    <nav>
+      <ul>
+        <li><a href="beginner/about.html">オンラインカジノとは？基礎講座</a></li>
+        <li><a href="beginner/law.html">オンラインカジノは違法？！</a></li>
+        <li><a href="beginner/tax.html">オンラインカジノの税金について</a></li>
+        <li><a href="play/nodepositbonus.html">入金不要ボーナスが貰えるオンラインカジノ</a></li>
+        <li><a href="slot/">オンラインカジノ人気スロットランキング</a></li>
+        <li><a href="ecopayz/about.html">【決済方法】ecoPayz（エコペイズ）解説</a></li>
+        <li><a href="ranking/">オンラインカジノおすすめランキング</a></li>
+        <li><a href="blog/">オンラインカジノ初心者ナビ公式ブログ</a></li>
+      </ul>
+    </nav>
+
+    <section class="headerlog"><img src="assets/images/log2.png" loading="lazy" width="375" height="54" alt=""></section>
+  </div>
+
+  <a class="p15 sp" href="https://twitter.com/oncasibegin?ref_src=twsrc%5Etfw" target="new"><img src="images/ban_twitter_sp.jpg" loading="lazy" alt="" width="100%" height="auto"></a>
+     
+  <ul class="iconMenu">
+    <li><a href="faq.html"><i class="fas fa-question-circle"></i>Q&amp;A</a></li>
+    <li><a href="contact.html"><i class="fas fa-envelope"></i>お問い合わせ</a></li>
+    <li><a href="author.html"><i class="fas fa-info-circle"></i>運営者情報</a></li>
+  </ul>
+
+  <p class="copyright">
+    <small>©2023 「オンラインカジノ初心者ナビ®」 All Rights Reserved.</small>
+  </p>
+</footer>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script>
+    window.addEventListener("load", function() {
+    var marqueeContainer = document.getElementById("marqueeContainer");
+    marqueeContainer.classList.add("marqueeAnimation");
+    });
+</script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 15,
+    centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+
+
+</body>
+
+</html>
