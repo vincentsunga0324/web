@@ -110,7 +110,7 @@
     padding: 20px;
     text-align: center;
     margin-top: 100px; /* Add a top margin to prevent overlap */
-    background-image: url('assets/images/ecopayz-img.jpg'); /* Replace with the path to your background image */
+    background-image: url('assets/images/iwallet-img.jpg'); /* Replace with the path to your background image */
     background-size: cover;
     background-position: center;
     color: rgb(43, 42, 42); /* Set the text color to white for better visibility */
@@ -1060,11 +1060,11 @@ ul.menu_pay li:nth-child(odd) {
 }
 
 ul.menu_eco li {
-    border: 1px solid #81b626;
+    border: 1px solid #011d4c;
 }
 
-ul.menu_eco li a {
-    color: #81b626;
+ul.menu_iwallet li a {
+    color: #011d4c;
 }
 
 ul.menu_pay li a {
@@ -1262,6 +1262,80 @@ a.btn-squareOreRadi {
     color: #fff;
     display: block;
 }
+.cont2 a.link_btn, .cont2 a.link_btn2, .casinocont a.link_btn {
+    display: block;
+    border: 1px solid #d8d8d8;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 10px 8px;
+    background: #fff;
+}
+
+.cont2 a.link_btn.step3 {
+    border-color: #fbb03b;
+    color: #db9939;
+}
+.border {
+    padding: 15px;
+    margin: 20px;
+    border: #fbb03b;
+
+}
+.border.step3 {
+    border: 1px solid #fbb03b;
+}
+dl#mokuji dt {
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c',sans-serif;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+table.casi-kessai.payment-feature tr:nth-of-type(1) th {
+    background-color: #ffc1c1;
+}
+
+table.casi-kessai.payment-feature tr:nth-of-type(2) th {
+    background-color: #ffeaa9;
+}
+table.casi-kessai tr td, table.casi-kessai tr th {
+    vertical-align: middle;
+}
+table.casi-kessai.payment-feature tr:nth-of-type(3) th {
+    background-color: #acd4ef;
+}
+table.casi-kessai th, table.casi-kessai td {
+    text-align: center;
+    border: solid 4px #fff;
+    padding: 15px;
+}
+table.casi-kessai.payment-feature td {
+    padding: 10px;
+    background: #fff;
+}
+table.casi-kessai.payment-feature tr:nth-of-type(1) td ul li {
+    border-color: #f33b9a;
+    color: #f33b9a;
+}
+table.casi-kessai.payment-feature tr:nth-of-type(2) td ul li {
+    border-color: #da7009;
+    color: #da7009;
+}
+table.casi-kessai.payment-feature tr:nth-of-type(3) td ul li {
+    border-color: #336ec7;
+    color: #336ec7;
+}
+table.payment-feature td ul li {
+    display: flex;
+    align-items: center;
+    padding: 5px 13px;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    color: #000;
+    line-height: 110%;
+    border: 1px solid #000;
+}
 @media (max-width: 767px) {
   .hide-on-mobile {
     display: none;
@@ -1373,8 +1447,7 @@ footer nav {
             <a class="dropdown-item" href="iwallet.html">iWalletとは？</a>
             <a class="dropdown-item" href="venuspoint.html">VenusPointとは？</a>
             <a class="dropdown-item" href="bitcoin.html">仮想通貨（Bitcoin）とは？</a>
-
-
+            
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -1460,13 +1533,18 @@ footer nav {
       </div>
       <div class="col-md-9">
         <!-- Content for the second column -->
-        <p>その他の入出金方法や、オンラインカジノの入出金の仕組みがよくわからないという方は<a href="play/payment.html">オンラインカジノの入出金について</a>をご覧ください。</p>
         <div class="cont2">
-
-          <p><img src="assets/images/ecopayz-about_fv.jpg" alt="ecoPayz（エコペイズ）とは？" class="w100" loading="lazy" width="795" height="413"></p>
-          
-          <p class="txtRight data">最終更新日：<time itemprop="dateModified">2022-06-30</time></p>
+		
+          <div class="border step3">
+            <p><span class="bold">
+            ※【2020年7月9日より再開】</span>iWalletは長期メンテナンスにつきサービスが一時停止されていましたが、一部カジノで利用が可能となりました。<br>
+            ただし、現時点で入金に対応していないオンラインカジノがほとんどのため、入出金が可能な「ecoPayz（エコペイズ）」のご活用をおすすめしています。</p>
+            <p><a href="../ecopayz/about.html" class="link_btn step3">ecoPayzについて詳しくはこちら</a></p>
+          </div>
         
+            <p><img src="assets/images/iwallet-about_fv.jpg" alt="iWallet（アイウォレット）とは？" class="w100"></p>
+            <p class="txtRight data">最終更新日：<time itemprop="dateModified">2020-08-06</time></p>
+            
         </div>
         <div class="cont2">
 	        <h2 class="h2_border">ecoPayz（エコペイズ）使い方ガイド　メニュー</h2>
@@ -1482,12 +1560,97 @@ footer nav {
           </section>
         </div>
         <div class="cont2">
-			  
-          <p>オンラインカジノの決済方法の中でも、取り扱われる数が多く、利用者も多い「ecoPayz（エコペイズ）」についてご紹介します。</p>
-            
-          <p>「ecoPayz（エコペイズ）」のアカウントを1つ持っておけば、様々なオンラインカジノの入出金がまとめられるのでとても便利なので、選択肢の1つとして知っておきましょう。</p>
-            
+            <p>iWallet（アイウォレット）は、オンラインカジノの決済手段として利用できる「電子決済サービス」です。</p>
+    
+            <p>「iWallet Limited」という香港の企業によって運営されており、世界中で利用されています。</p>
+        
+            <p>「iWallet（アイウォレット）」のアカウントがあれば、対応しているオンラインカジノの入出金がまとめられるので、選択肢の1つとして検討してみてください。</p>
+    
         </div>
+        <div class="cont2">
+          <dl id="mokuji" class="m-step3">
+            <dt>もくじ</dt>
+          <dd>
+            <ol>
+            <li><a href="#1">iWallet（アイウォレット）の概要</a></li>
+                <li><a href="#2">iWallet（アイウォレット）の仕組みと入出金の流れ</a></li>
+                <li><a href="#3">iWallet（アイウォレット）のメリット</a></li>
+                <li><a href="#4">iWallet（アイウォレット）の手数料について</a></li>
+                <li><a href="#5">iWallet（アイウォレット）の注意点</a></li>
+          </ol>
+          </dd>
+          </dl>
+        </div>
+        <div class="cont2 txtLeft">
+          <h2 class="h3-lineLB LB-step3" id="1">iWallet（アイウォレット）の概要</h2>
+          <p>まずはiWallet（アイウォレット）の基本情報やサービスの仕組みについてみていきましょう。</p>
+            
+          <h3 class="font-cl-step3">iWallet（アイウォレット）基本情報</h3>
+          
+          <table class="casi-kessai payment-feature mb20 spf120">
+          <tbody><tr>
+            <th width="20%">入金方法</th>
+            <td>
+              <ul>
+              <li><img src="assets/images/ico_bankp.png" width="30">銀行振込</li>
+    
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>出金方法</th>
+            <td>
+              <ul>
+              <li><img src="assets/images/ico_bank.png" width="30">銀行振込</li>
+    
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>サポート対応</th>
+            <td>
+              <ul>
+              <li><img src="assets/images/ico_mail.png" width="30">メール（日本語）</li>
+              </ul>
+            </td>
+          </tr>
+          </tbody></table>
+            
+            
+          <h3 class="font-cl-step3">iWallet（アイウォレット）のサービス内容</h3>  
+          <p class="txtCenter"><img src="assets/images/iwallet-about1.jpg" alt="iWallet（アイウォレット）のサービス内容" class="w637px"></p>	  
+            
+          <p>iWallet（アイウォレット）は、インターネット上での支払いで使える電子決済サービスです。</p>
+            
+              <p>使い方としては、日本でも普及しつつある電子マネーのような形です。<br>
+          まず「iWallet」の自分専用のアカウントを作成し、そこにお金をチャージします。<br>
+          チャージしたお金は「iWallet」と提携しているオンラインカジノ等のウェブサイトで使うことができます。</p>
+          
+            <h4 class="hl-line step3">電子マネーとの違いは「現金化」できること</h4>
+            
+          <p>使い方は電子マネーとあまり変わりませんが、電子マネーの場合は、一度チャージしたお金を現金に戻すことができません。</p>
+            
+              <p>そのため、iWallet（アイウォレット）でオンラインカジノに入金し、そこで稼いだお金を再度iWallet（アイウォレット）にチャージし、銀行口座に振り込むことが可能です。</p>
+          
+          <p>この「現金化」できるという点が、電子マネーとの大きな違いになります。</p>
+            
+          <h3 class="font-cl-step3">iWallet（アイウォレット）が利用できるオンラインカジノ</h3>
+            
+          <p>iWallet（アイウォレット）は、ベラジョンカジノを含め、多くのオンラインカジノに対応していましたが、2020年5月の長期メンテナンス以降、ほとんどのオンラインカジノで利用停止となっています。<br>
+          現在入出金に対応しているオンラインカジノは「<a href="../ranking/empire.html">エンパイアカジノ</a>」のみとなっています。</p>
+            
+          <dl class="dl_point step3">
+              <dt><i class="fas fa-check"></i>オンラインカジノとは？</dt>
+              <dd>
+                 <p>オンラインカジノは、インターネット上で実際にお金を賭けて本物のカジノのようにゲームを楽しむことができます。</p>
+            
+            <p>合法ライセンスを取得した海外企業により運営されていますが、日本語対応のサイトも増えてきています。<br>
+            iWalletは多くのオンラインカジノサイトで決済方法として採用されており、プレイに必要な入金や、勝利金の出金もスムーズに行うことができます。</p>
+            
+                 <p>【→<a href="../beginner/about.html">オンラインカジノについて詳しくはコチラ</a>】</p>
+              </dd>
+              </dl>
+            </div>
         <div class="writer_chara_col">
           <div>
               <img src="assets/images/syuhei.png" width="150" height="150" loading="lazy" alt="SYUHEI"><span>著者：<a rel="author" href="../writer-syuhei.html">SYUHEI</a><br>カジノ歴：3年</span>
