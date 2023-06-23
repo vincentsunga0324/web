@@ -110,7 +110,7 @@
     padding: 20px;
     text-align: center;
     margin-top: 100px; /* Add a top margin to prevent overlap */
-    background-image: url('assets/images/nyushukkin-img.jpg'); /* Replace with the path to your background image */
+    background-image: url('assets/images/method-img.jpg'); /* Replace with the path to your background image */
     background-size: cover;
     background-position: center;
     color: rgb(43, 42, 42); /* Set the text color to white for better visibility */
@@ -1024,42 +1024,335 @@ h1#indexh1 span.topstep {
     font-size: 120%;
     margin: 10px 0;
 }
-dl.stepDetail {
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
+
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
 }
-.contBoder2 dl.stepDetail {
-    display: flex;
-    align-items: center;
-    width: 75%;
-    height: 120px;
-    margin: 8px 10px 0 0;
-    padding: 0;
-}
-.step3 dl.stepDetail dt {
-    background-color: #fbb03b;
-}
-.contBoder2 dl.stepDetail dt {
-    display: block;
-    color: #FFF;
-    letter-spacing: .2em;
+
+.h2_border {
+    background: url(../images/bg_h.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding: 10px 0;
+    color: #110945;
+    border: none;
     text-align: center;
-    margin: 0 10px 0 0;
-    padding: 15px;
-    font-size: 80%;
-    width: 23%;
 }
-dl.stepDetail dt {
-    width: 15%;
-    font-size: 1rem;
-    padding: 0 5px;
-    line-height: 2;
+ul.menu_pay {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 5px 0 10px 0;
+}
+ul.menu_pay li {
+    display: table;
+    margin-top: 10px;
+    width: 49%;
     text-align: left;
-    margin: 0 auto;
+}
+ul.menu_pay li:nth-child(odd) {
+    margin-right: 8px;
+}
+
+ul.menu_eco li {
+    border: 1px solid #011d4c;
+}
+
+ul.menu_iwallet li a {
+    color: #011d4c;
+}
+
+ul.menu_pay li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+ul.menu_pay li a img, ul.menu_pay li a p {
+    display: inline;
+    vertical-align: middle;
+}
+ul.menu_pay li a img {
+    width: 45px;
+    height: auto;
+}
+ul.menu_pay li a p {
+    padding: 0 0 0 5px;
+    font-weight: 700;
+    width: 80%;
+}
+
+ul.menu_pay li a img, ul.menu_pay li a p {
+    display: inline;
+    vertical-align: middle;
+}
+#mokuji.m-step3 {
+    border: 1px solid #fbb03b;
+    background-color: #f8f7d3;
+}
+
+dl#mokuji {
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+dl#mokuji.m-step3 dd {
+    border-left: 1px solid #fbb03b;
+}
+dl#mokuji dd ol {
+    list-style: decimal inside;
+    font-size: .9rem;
+    text-align: left;
+    padding-left: 20px;
+}
+.h3-lineLB.LB-step3 {
+    background: #f3a83b;
+    border-bottom: solid 3px #db9939;
+    border-left: none;
+}
+
+.h3-lineLB.LB-step3 {
+    border-bottom: 1px solid #fbb03b;
+    border-left: 8px solid #fbb03b;
+}
+.h3-lineLB {
+    padding: 10px 0 8px 15px;
+    margin: 10px 0 20px 0;
     color: #fff;
 }
+.h3-lineLB {
+    padding: 5px 0 10px 15px;
+    margin: 20px 0;
+}
+p {
+    font-size: 1rem;
+    text-align: left;
+    padding-bottom: 15px;
+}
+.font-cl-step3 {
+    /* color: #fbb03b; */
+    border-bottom: 1px solid #fbb03b;
+    border-left: 8px solid #fbb03b;
+    padding: 5px 0 8px 15px;
+}
+
+.font-cl-step3 {
+    color: #fbb03b;
+    margin: 10px 0;
+}
+.font-cl-step3 {
+    /* color: #fbb03b; */
+    border-bottom: 1px solid #fbb03b;
+    border-left: 8px solid #fbb03b;
+    padding: 5px 0 8px 15px;
+}
+
+.font-cl-step3 {
+    color: #fbb03b;
+    margin: 10px 0;
+}table.table.step3 tr th {
+    background: #f9e5cf;
+}
+
+table.table.step3 tr td, table.table.step3 tr th {
+    border: 1px solid #fbb03b;
+}
+.dl_point.step3 {
+    border: 2px solid #fbb03b;
+}
+
+.dl_point {
+    background: #FFF;
+    padding: 20px;
+    margin: 0 0 15px 0;
+    border: 2px solid #111;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.boderstep3 {
+    border: 2px solid #fbb03b;
+    padding: 15px;
+}
+.hl-line.step3 {
+    border-left: solid 4px #f3a83b;
+    color: #db9939;
+}
+
+.hl-line {
+    border-left: solid 4px #ccc;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+dl.dl-bmenu.step3 {
+    border: 2px solid #f3a83b;
+}
+
+dl.dl-bmenu {
+    border: 2px solid #666;
+    border-radius: 10px;
+}
+dl.dl-bmenu.step3 dt {
+    background-color: #f3a83b;
+}
+
+dl.dl-bmenu dt {
+    background-color: #666;
+    border-radius: 7px 7px 0 0 / 7px 7px 0 0;
+    padding: 10px 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+dl.dl-bmenu.step3 dd ol.numb1>li:before {
+    color: #f3a83b;
+}
+
+dl.dl-bmenu dd ol.numb1>li:before {
+    content: counter(dl-m-numb)'.';
+    font-weight: 700;
+    margin-right: 3px;
+}
+dl.dl-bmenu dd>ol.numb1 li a {
+    font-size: 1rem;
+    color: #000;
+    padding-left: 5px;
+}
+.dl_point.step3 {
+    border: 2px solid #fbb03b;
+}
+
+.dl_point {
+    background: #FFF;
+    padding: 20px;
+    margin: 0 0 15px 0;
+    border: 2px solid #111;
+}
+.dl_point.step3 dt {
+    color: #fbb03b;
+}
+.dl_point dt>i {
+    padding-right: 10px;
+}
+.dl_point a.btn-squareOreRadi {
+    font-size: 120%;
+    margin-bottom: 0;
+}
+
+a.btn-squareOreRadi {
+    padding: 10px;
+    font-size: 1.4rem;
+    display: inline-block;
+}
+a.btn-squareOreRadi {
+    border-radius: 5px;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #ef8b1e;
+    box-shadow: 3px 3px 0 0 #825a20;
+    color: #fff;
+    display: block;
+}
+.cont2 a.link_btn, .cont2 a.link_btn2, .casinocont a.link_btn {
+    display: block;
+    border: 1px solid #d8d8d8;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 10px 8px;
+    background: #fff;
+}
+
+.cont2 a.link_btn.step3 {
+    border-color: #fbb03b;
+    color: #db9939;
+}
+.border {
+    padding: 15px;
+    margin: 20px;
+    border: #fbb03b;
+
+}
+.border.step3 {
+    border: 1px solid #fbb03b;
+}
+dl#mokuji dt {
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c',sans-serif;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+table.casi-kessai.payment-feature tr:nth-of-type(1) th {
+    background-color: #ffc1c1;
+}
+
+table.casi-kessai.payment-feature tr:nth-of-type(2) th {
+    background-color: #ffeaa9;
+}
+table.casi-kessai tr td, table.casi-kessai tr th {
+    vertical-align: middle;
+}
+table.casi-kessai.payment-feature tr:nth-of-type(3) th {
+    background-color: #acd4ef;
+}
+table.casi-kessai th, table.casi-kessai td {
+    text-align: center;
+    border: solid 4px #fff;
+    padding: 15px;
+}
+table.casi-kessai.payment-feature td {
+    padding: 10px;
+    background: #fff;
+}
+table.casi-kessai.payment-feature tr:nth-of-type(1) td ul li {
+    border-color: #f33b9a;
+    color: #f33b9a;
+}
+table.casi-kessai.payment-feature tr:nth-of-type(2) td ul li {
+    border-color: #da7009;
+    color: #da7009;
+}
+table.casi-kessai.payment-feature tr:nth-of-type(3) td ul li {
+    border-color: #336ec7;
+    color: #336ec7;
+}
+table.payment-feature td ul li {
+    display: flex;
+    align-items: center;
+    padding: 5px 13px;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    color: #000;
+    line-height: 110%;
+    border: 1px solid #000;
+}
+/* method  */
+
+h1#indexh1 span.topstep {
+    display: inline-block;
+    padding: 5px 20px;
+    color: #fff;
+    margin-right: 20px;
+    text-shadow: none;
+}
+h1#indexh1 span.topstep.step5 {
+    background-color: gray;
+}
+.step5 a.b-CircleG {
+    border-color: gray;
+    color: gray;
+}
+
 .contBoder2 a.b-CircleG {
     display: block;
     border-radius: 50%;
@@ -1074,30 +1367,38 @@ dl.stepDetail dt {
     padding: 15px;
     box-sizing: border-box;
 }
-.step3 a.b-CircleG {
-    border-color: #fbb03b;
-    color: #fbb03b;
+.contBoder2 dl.stepDetail {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    height: 120px;
+    margin: 8px 10px 0 0;
+    padding: 0;
 }
-dl.stepDetail dd>ul li a {
-    color: #333;
+.step5 dl.stepDetail dt {
+    background-color: gray;
 }
-::marker {
-    unicode-bidi: isolate;
-    font-variant-numeric: tabular-nums;
-    text-transform: none;
-    text-indent: 0px !important;
-    text-align: start !important;
-    text-align-last: start !important;
+
+.contBoder2 dl.stepDetail dt {
+    display: block;
+    color: #FFF;
+    letter-spacing: .2em;
+    text-align: center;
+    margin: 0 10px 0 0;
+    padding: 15px;
+    font-size: 80%;
+    width: 23%;
 }
-.contBoder2 dl.stepDetail dd ul li {
-    font-size: 90%;
-    margin-bottom: 0;
-    list-style: disc;
-    list-style-position: inside;
+a.b-CircleG::after {
+    content: "\0bb";
+    display: block;
+    font-size: 120%;
+    line-height: .8;
 }
-.contBoder2 dl.stepDetail dd ul li, dl#mokuji dd ol>li {
-    text-indent: -1.2em;
-    margin-left: 1em;
+
+.step5 a.b-CircleG {
+    border-color: gray;
+    color: gray;
 }
 @media (max-width: 767px) {
   .hide-on-mobile {
@@ -1211,6 +1512,7 @@ footer nav {
             <a class="dropdown-item" href="venuspoint.html">VenusPointとは？</a>
             <a class="dropdown-item" href="bitcoin.html">仮想通貨（Bitcoin）とは？</a>
 
+
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -1222,7 +1524,6 @@ footer nav {
             </a>
           <div class="dropdown-menu dropdown4-bg text-center" aria-labelledby="dropdown4">
             <a class="dropdown-item" href="ranking.html">オンラインカジノおすすめランキング</a>
-
             <a class="dropdown-item" href="#">Option 2</a>
             <a class="dropdown-item" href="#">Option 3</a>
           </div>
@@ -1235,8 +1536,8 @@ footer nav {
                 <span>基礎講座</span>
             </a>
           <div class="dropdown-menu dropdown5-bg text-center" aria-labelledby="dropdown5">
-            <a class="dropdown-item" href="#">Option 1</a>
-            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="method.html">カジノゲームの攻略法</a>
+            <a class="dropdown-item" href="martingale.html">理論的に必ず勝つマーチンゲール法</a>
             <a class="dropdown-item" href="#">Option 3</a>
           </div>
         </li>
@@ -1254,7 +1555,7 @@ footer nav {
           <div class="col-lg-12">
             <div class="section">
                 <div class="content">
-                  <h1 id="indexh1" class="bg-white-op"><span class="topstep step3">STEP.3</span>オンラインカジノ決済講座</h1>
+                  <h1 id="indexh1" class="bg-white-op"><span class="topstep step5">STEP.5</span>オンラインカジノ攻略講座</h1>
                  </div>
             </div>
           </div>
@@ -1297,158 +1598,93 @@ footer nav {
       </div>
       <div class="col-md-9">
         <!-- Content for the second column -->
+        <div class="cont2">
+
+          <p>オンラインカジノの中身を知れば知るほど、「勝ちたい！」「稼ぎたい！」という気持ちは強くなるものです。<br>そんなときに覚えたいのが『攻略法』です。</p>
       
-        <p class="txtRight data">最終更新日：<time itemprop="dateModified">2020-08-28</time></p>
-        <p>オンラインカジノで使える入出金方法のうち、特におすすめの4種類を詳しく解説しています。</p>
-        <p>その他の入出金方法や、オンラインカジノの入出金の仕組みがよくわからないという方は<a href="play/payment.html">オンラインカジノの入出金について</a>をご覧ください。</p>
-        <section class="contBoder2 step3">
-            <div class="flex30 pc"><img src="assets/images/step3-ecoimg.jpg" alt="ecoPayz（エコペイズ）"></div>
+          <p>ここで紹介するオンラインカジノの攻略法は、そのゲームのルールや手順などの解説ではなく、『次にいくらベットするのか？』を決める資金管理方法です。<br>
+            ただ闇雲に同じ額をベットしていくのではなく、「いかに勝つかを意識」することで、トータルで勝つ確率を上げていくものになります。</p>
+            
+            <p>基本的にはルーレットやブラックジャックなどのテーブルゲームやライブカジノで使える攻略法となりますので、ぜひマスターしましょう！</p>
               
-              <div class="flex71">
-                <dl class="stepindex">
-                  <dt>STEP. 3</dt>
-                  <dd><h2>ecoPayz（エコペイズ）</h2></dd>
-                </dl>
-                  
-                  <div class="aic">
-                  <img src="assets/images/step3-ecoimg.jpg" alt="ecoPayz（エコペイズ）" class="sp">
-                    <dl class="stepDetail">
-                      <dt>ここで<br>学べる<br>こと</dt>
-                      <dd>
-                      <ul>
-                        <li><a href="ecopayz/kaisetsu.html">ecoPayz口座開設とアップグレード</a></li>
-                                <li><a href="ecopayz/nyukin.html">ecoPayz入金方法</a></li>
-                                <li><a href="ecopayz/shukkin.html">ecoPayz出金方法</a></li>
-                                <li><a href="ecopayz/ecocard.html">ecoCard（エコカード）ガイド</a></li>
-                      <li><a href="ecopayz/tesuuryou.html">ecoPayzの手数料</a></li>
-                        </ul>
-                      </dd>
-                    </dl>			 
-                <a href="ecopayz/about.html" class="b-CircleG"><span>Let's  <br class="pc">Learn</span></a>
-              </div>
-            </div>
-        </section>
-        <section class="contBoder2 step3">
-            <div class="flex30 pc"><img src="assets/images/step3-iwaimg.jpg" alt="iWallet（アイウォレット）"></div>
+          </div>
+          <section class="contBoder2 step5">
+            <div class="flex30 pc"><img src="assets/images/step5-1img.jpg" alt="理論的には必ず勝つマーチンゲール法とは？"></div>
               
             <div class="flex71">
             <dl class="stepindex">
-            <dt>STEP. 3</dt>
-            <dd><h2>iWallet（アイウォレット）</h2></dd>
+            <dt>STEP. 5 - 1</dt>
+            <dd><h2>理論的には必ず勝つマーチンゲール法とは？</h2></dd>
             </dl>
               
               <div class="aic">
-              <img src="assets/images/step3-iwaimg.jpg" alt="iWallet（アイウォレット）" class="sp">
+              <img src="assets/images/step5-1img.jpg" alt="理論的には必ず勝つマーチンゲール法とは？" class="sp">
                 <dl class="stepDetail">
                   <dt>ここで<br>学べる<br>こと</dt>
                 <dd>
                 <ul>
-                  <li><a href="iwallet/kaisetsu.html">iWallet口座開設とアップグレード</a></li>
-                          <li><a href="iwallet/nyukin.html">iWallet入金方法</a></li>
-                          <li><a href="iwallet/shukkin.html">iWallet出金方法</a></li>
-                          <li><a href="iwallet/card.html">iWalletカードガイド</a></li>
-                          <li><a href="iwallet/tesuuryou.html">iWalletの手数料について</a></li>
+                  <li>マーチンゲール法って何？</li>
+                  <li>マーチンゲール法を使った遊び方</li>
+                  <li>マーチンゲール法の意外な落とし穴</li>
                   </ul>
                 </dd>
                 </dl>			 
-              <a href="iwallet/about.html" class="b-CircleG"><span>Let's  <br class="pc">Learn</span></a>
+              <a href="martingale.html" class="b-CircleG"><span>Let's  <br class="pc">Learn</span></a>
             </div>
             </div>
-        </section>
-        <section class="contBoder2 step3">
-          <div class="flex30 pc"><img src="assets/images/step3-vpimg.jpg" alt="VenusPoint（ヴィーナスポイント）"></div>
-            
-          <div class="flex71">
-          <dl class="stepindex">
-          <dt>STEP. 3</dt>
-          <dd><h2>VenusPoint（ヴィーナスポイント）</h2></dd>
-          </dl>
-            
-            <div class="aic">
-            <img src="assets/images/step3-vpimg.jpg" alt="VenusPoint（ヴィーナスポイント）" class="sp">
-              <dl class="stepDetail">
-                <dt>ここで<br>学べる<br>こと</dt>
-              <dd>
-              <ul>
-                <li><a href="venuspoint/kaisetsu.html">VenusPoint登録・口座の開設方法</a></li>
-                <li><a href="venuspoint/nyukin.html">VenusPointでの入金方法</a></li>
-                <li><a href="venuspoint/shukkin.html">VenusPointでの出金方法</a></li>
-              <li><a href="venuspoint/tesuuryou.html">VenusPointの手数料</a></li>
-                </ul>
-              </dd>
-              </dl>			 
-            <a href="venuspoint/about.html" class="b-CircleG"><span>Let's  <br class="pc">Learn</span></a>
-          </div>
-          </div>
-        </section>
-        <section class="contBoder2 step3">
-          <div class="flex30 pc"><img src="assets/images/bitcoin-img.jpg" alt="仮想通貨（ビットコイン）"></div>
-            
-          <div class="flex71">
-          <dl class="stepindex">
-          <dt>STEP. 3</dt>
-          <dd><h2>仮想通貨（ビットコイン）</h2></dd>
-          </dl>
-            
-            <div class="aic">
-            <img src="assets/images/bitcoin-img.jpg" alt="仮想通貨（ビットコイン）" class="sp">
-              <dl class="stepDetail">
-                <dt>ここで<br>学べる<br>こと</dt>
-              <dd>
-              <ul>
-                <li><a href="bitcoin/jyunbi.html">取引所の開設とウォレットの作成</a></li>
-                <li><a href="bitcoin/nyushukkin.html">仮想通貨でのカジノへの入出金</a></li>
-                <li><a href="bitcoin/kankin.html">出金したビットコインを換金する</a></li>
-                </ul>
-              </dd>
-              </dl>			 
-            <a href="bitcoin/about.html" class="b-CircleG"><span>Let's  <br class="pc">Learn</span></a>
-          </div>
-          </div>
-        </section>
-        
-        <!--  -->
-        
-        <!--  -->
-        
-        <!--  -->
-        
-        <!--  -->
-        
-
-         <!--  -->
-         <!--  -->
-      
-          <!--  -->
-      
-              <div class="cont2">  
-                <dl class="dl-bmenu step2">
-                <dt><p><img src="assets/images/icon-step2nav.png" loading="lazy" width="38" height="38"><img src="../images/icon/icon-play.png" loading="lazy" width="26" height="26"><span class="pc">オンラインカジノ</span>プレイ講座 MENU</p><p class="pc">Online Casino Play Curriculum</p></dt>
-                <dd>
-                <ol class="numb1">
-                  <li><a href="step.html">オンラインカジノに登録する方法</a></li>
-                  <li><a href="payment.html">オンラインカジノの入出金に関して</a></li>
-                  <li><a href="bonus.html">知っておきたいボーナスの知識</a></li>
-                  <li><a href="kakejyouken.html">オンラインカジノの賭け条件とは？</a></li>
-                  <li><a href="nodepositbonus.html">入金不要ボーナスが貰えるオンラインカジノ</a></li>
-                  <li><a href="pc_sp.html">スマホで遊べるオンラインカジノ一覧</a></li>
-                  <li><a href="jackpot.html">一攫千金が狙えるジャックポットスロットとは</a></li>
-                  <li><a href="livegame.html">ライブカジノを楽しもう</a></li>
-                </ol>
-                </dd>
-              </dl>
-              </div>
-    
-    </div>
-      
-           
-              <!--  -->
+          </section>
+          <section class="contBoder2 step5">
+            <div class="flex30 pc"><img src="assets/images/step5-2img.jpg" alt="連勝狙いで大金ゲット！パーレー法とは？"></div>
               
-    </div>
-          </div>
+            <div class="flex71">
+            <dl class="stepindex">
+            <dt>STEP. 5 - 2</dt>
+            <dd><h2>連勝狙いで大金ゲット！パーレー法とは？</h2></dd>
+            </dl>
+              
+              <div class="aic">
+              <img src="assets/images/step5-2img.jpg" alt="連勝狙いで大金ゲット！パーレー法とは？" class="sp">
+                <dl class="stepDetail">
+                  <dt>ここで<br>学べる<br>こと</dt>
+                <dd>
+                <ul>
+                  <li>パーレー法って何？</li>
+                  <li>パーレー法を使った遊び方</li>
+                  <li>負けた時も勝ち金を残す半パーレー法とは？</li>
+                  </ul>
+                </dd>
+                </dl>			 
+              <a href="parlay.html" class="b-CircleG"><span>Let's  <br class="pc">Learn</span></a>
+            </div>
+            </div>
+          </section>
+          <section class="contBoder2 step5">
+            <div class="flex30 pc"><img src="assets/images/step5-3img.jpg" alt="オンラインカジノに適したモンテカルロ法とは？"></div>
+              
+            <div class="flex71">
+            <dl class="stepindex">
+            <dt>STEP. 5 - 3</dt>
+            <dd><h2>オンラインカジノに適したモンテカルロ法とは？</h2></dd>
+            </dl>
+              
+              <div class="aic">
+              <img src="assets/images/step5-3img.jpg" alt="オンラインカジノに適したモンテカルロ法とは？" class="sp">
+                <dl class="stepDetail">
+                  <dt>ここで<br>学べる<br>こと</dt>
+                <dd>
+                <ul>
+                  <li>モンテカルロ法って何？</li>
+                  <li>モンテカルロ法を使った遊び方</li>
+                  <li>2倍配当のゲームに使うときは注意！</li>
+                  </ul>
+                </dd>
+                </dl>			 
+              <a href="montecarlo.html" class="b-CircleG"><span>Let's  <br class="pc">Learn</span></a>
+            </div>
+            </div>
+            </section>
           
-  </div>
-</section>
+       
 
 <footer>
   <div class="dispFlex center">
