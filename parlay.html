@@ -569,11 +569,7 @@ h3 {
     line-height: 150%;
     margin-bottom: 15px;
 }
-p {
-    font-size: 1rem;
-    text-align: left;
-    padding-bottom: 15px;
-}
+
 .cont2 a.link_btn.step1, .cont2 a.link_btn2.step1 {
     border-color: #84be3f;
     color: #84be3f;
@@ -1339,6 +1335,7 @@ table.payment-feature td ul li {
 .detail_about.step3 {
     border: 2px solid #f3a83b;
 }
+
 .detail_about, dl.detail_about {
     border: 2px solid #de6bae;
     border-radius: 15px;
@@ -1346,8 +1343,22 @@ table.payment-feature td ul li {
     background: #FFF;
     margin-top: 20px;
 }
-.detail_about.step3 {
-    border: 2px solid #f3a83b;
+#mokuji.m-step5 {
+    border: 1px solid #110945;
+    background-color: #d4d4dd;
+}
+
+dl#mokuji {
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.h3-lineLB.LB-step5 {
+    background: #808080;
+    border-bottom: solid 3px #787879;
+    border-left: none;
 }
 .font-cl-step5 {
     /* color: #110945; */
@@ -1365,38 +1376,30 @@ table.payment-feature td ul li {
     margin: 20px 0;
     padding: 15px;
 }
-
-.bordBox {
-    border: 2px solid #b3b3b3;
-    margin: 20px 0;
-    padding: 15px;
-}
-ol.li_numb {
-    list-style: decimal inside;
+table.table tr td, table.table tr th {
+    padding: 8px;
+    font-size: 70%;
+    line-height: 140%;
     text-align: left;
-}
-table.table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0 10px 0;
-    border: 1px solid #333;
-}
-
-table.table.txtCenter tr th, table.table.txtCenter tr td {
-    text-align: center;
     vertical-align: middle;
-}
-
-table.table.step5 tr th {
-    background: #CCC;
+    border: 1px solid #333;
+    padding: 10px 15px;
 }
 table.table.step5 tr td, table.table.step5 tr th {
     border: 1px solid #110945;
 }
+table.table.step5 tr th {
+    background: #CCC;
+}
 table.table.txtCenter tr th, table.table.txtCenter tr td {
     text-align: center;
     vertical-align: middle;
 }
+table.table.txtCenter tr th, table.table.txtCenter tr td {
+    text-align: center;
+    vertical-align: middle;
+}
+
 table.table.step5 tr td, table.table.step5 tr th {
     border: 1px solid #110945;
 }
@@ -1409,45 +1412,29 @@ table.table tr td, table.table tr th {
     border: 1px solid #333;
     padding: 10px 15px;
 }
-.bgred_lt {
-    background: #FFE0E0;
+.bgYell {
+    background-color: #fbf6c2;
+    font-weight: 700;
 }
-.bgbl_lt {
-    background: #D8EAFF;
+.underLineB.step5 {
+    text-align: left;
+    background: #E8E8E8;
+    color: #110945;
 }
-.txtRed {
-    color: #E00003;
+.font-bgRed {
+    background-color: #ffd9d9;
+    font-weight: 700;
+    color: #d71d1d;
 }
-
-.txtBl {
-    color: #0044CD;
-}
-.h3-lineLB.LB-step5 {
-    background: #808080;
-    border-bottom: solid 3px #787879;
-    border-left: none;
-}
-
-.h3-lineLB.LB-step5 {
-    border-bottom: 1px solid #110945;
-    border-left: 8px solid #110945;
-}
-.h3-lineLB {
-    padding: 10px 0 8px 15px;
-    margin: 10px 0 20px 0;
-    color: #fff;
-}
-.flex40 img {
-    width: 100%;
-    height: auto;
+.font-bgGreen {
+    background-color: #d9ffd9;
+    font-weight: 700;
+    color: #1a7311;
 }
 .detail_about.step3 {
     border: 2px solid #f3a83b;
 }
 
-.mb20 {
-    margin-bottom: 20px;
-}
 .detail_about, dl.detail_about {
     border: 2px solid #de6bae;
     border-radius: 15px;
@@ -1455,14 +1442,31 @@ table.table tr td, table.table tr th {
     background: #FFF;
     margin-top: 20px;
 }
+.mb20 {
+    margin-bottom: 20px;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.flex60 {
+    width: 59%;
+}
+.flex40 {
+    width: 39%;
+}
+dl.detail_about dd img {
+    width: 100%;
+}
+dl.detail_about dt {
+    margin-bottom: 10px;
+    font-size: 80%;
+}
 .detail_about.step3 h3, .detail_about h4, dl.detail_about dt {
     border-bottom: 1px solid #f3a83b;
     margin-bottom: 15px;
     color: #f3a83b;
-}
-
-.detail_about h3 {
-    margin-bottom: 10px;
 }
 .detail_about h3, .detail_about h4, dl.detail_about dt {
     font-size: 1.15rem;
@@ -1475,18 +1479,26 @@ table.table tr td, table.table tr th {
     padding-bottom: 15px;
     font-family: 'M PLUS 1p',sans-serif;
 }
-.flexbox {
-    display: flex;
-    flex-wrap: wrap;
+.flex48 {
+    width: 48%;
 }
-.fxin-jusbetw {
-    justify-content: space-between;
+.flex50 {
+    width: 49%;
 }
-.flex60 {
-    width: 59%;
+.youtube {
+    text-align: center;
 }
-.flex40 {
-    width: 39%;
+.youtube iframe {
+    width: 100%;
+    height: 250px;
+}
+a.btn-squareOre {
+    padding: 15px 30px;
+    text-align: center;
+    background-color: #f7931e;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
 }
 @media (max-width: 767px) {
   .hide-on-mobile {
@@ -1626,7 +1638,7 @@ footer nav {
           <div class="dropdown-menu dropdown5-bg text-center" aria-labelledby="dropdown5">
             <a class="dropdown-item" href="method.html">カジノゲームの攻略法</a>
             <a class="dropdown-item" href="martingale.html">理論的に必ず勝つマーチンゲール法</a>
-            <a class="dropdown-item" href="#">Option 3</a>
+            <a class="dropdown-item" href="parlay.html">連勝狙い！パーレー法</a>
           </div>
         </li>
       </ul>
@@ -1643,7 +1655,7 @@ footer nav {
           <div class="col-lg-12">
             <div class="section">
                 <div class="content">
-                  <h1 id="indexh1" class="bg-white-op">ecoPayz（エコペイズ）基本情報<br>信頼性・登録から入出金方法・手数料を解説</h1>
+                  <h1 id="indexh1" class="bg-white-op">エコペイズ）基本情報<br>信頼性・登録から入出金方法・手数料を解説</h1>
                  </div>
             </div>
           </div>
@@ -1688,47 +1700,216 @@ footer nav {
         <!-- Content for the second column -->
         <div class="cont2">
 
-          <p class="txtCenter"><img src="assets/images/kouryaku_mcg1.jpg" alt="理論上は負けなし！？マーチンゲール法について解説！"></p>
+          <p class="txtCenter"><img src="assets/images/kouryaku_parlay1.jpg" alt="連勝狙いで大金ゲット！パーレー法（逆マーチンゲール法）を徹底解説"></p>
           
-          <p class="txtRight data">最終更新日：<time itemprop="dateModified">2021-12-20</time></p>
+          <p class="txtRight data">最終更新日：<time itemprop="dateModified">2020-12-24</time></p>
+          
+          <p>オンラインカジノで使える攻略法として、負けた分を取り返すために、負けた後にベット額を倍にしていくマーチンゲール法が有名ですが、逆に勝った時にベット額を倍にする攻略法があります。</p>
+              <p>マーチンゲール法が「守り」の作戦であれば、<span class="fontRed bold">逆マーチンゲール法とも呼ばれるこの攻略法は「攻め」の作戦</span>と言えるでしょう。<br>
+              それが<span class="markY bold">「パーレー法」</span>です。</p>		  
             
-          <p>オンラインカジノをプレイする上で抑えておきたい大事なポイントとして「攻略法」または「必勝法」と呼ばれるものがあります。<br>
-            たくさんある攻略法の中でも非常に有名で「理論上は必ず勝つ」と言われるものがあります。<br>
-            それが<span class="bold markY">「マーチンゲール法」</span>です。</p>
           
           
-          <div class="detail_about step3">
-              <h3><i class="far fa-lightbulb fa-2x"></i>マーチンゲール法の使い方がすぐ分かるおすすめ動画</h3>
-            <div class="flexbox fxin-jusbetw">
-            <div class="flex48"><div class="yt" style="width: 360px; height: 202px;"><div class="yt_play"><img class="movie" src="//img.youtube.com/vi/mVyB8W2Qhho/maxresdefault.jpg" loading="lazy" width="360" height="202"></div></div></div>
+          <dl class="detail_about step3 mb20">
+              <dt><i class="far fa-lightbulb fa-2x"></i>パーレー法の使い方がすぐ分かるおすすめ動画</dt>
+            <dd class="flexbox fxin-jusbetw">
+            
+            <div id="douga" class="youtube flex48"><iframe src="https://www.youtube.com/embed/kzkwB5jEpow" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div>
               
             <div class="flex50">
-              <p>攻略法を早くマスターするなら、「習うより慣れろ」です。実際にオンラインカジノのルーレットでマーチンゲール法を試した解説動画があるので、ぜひご覧ください。</p>
-            <p>マーチンゲール法が成功した時のパターンや連敗しても勝てる様子を見ることができます。</p>
+              <p>どんな攻略法もまずは実践してみることが、習得への近道になります。
+              実際にオンラインカジノのルーレットでパーレー法を実践している解説動画があるので、ぜひご覧ください。</p>
+            <p>パーレー法の進め方や稼ぎやすさなどを体験することができます。</p>
               
-            <a href="https://www.youtube.com/embed/mVyB8W2Qhho" class="btn-squareOre small70 w100" target="new">マーチンゲール法の解説動画を見る</a>
-        
-            </div>
-          
+            <a href="https://www.youtube.com/watch?v=kzkwB5jEpow" class="btn-squareOre small70 w100" target="new">パーレー法の解説動画を見る</a>
             </div>
             
-            
-          </div>
-        </div>
-        <div class="cont2 txtLeft">
-          <dl id="mokuji" class="m-step5">
-            <dt>もくじ</dt>
-          <dd>
-            <ol>
-            <li><a href="#1">マーチンゲール法ってどんな攻略法？</a></li>
-            <li><a href="#2">マーチンゲール法を使った賭け方</a></li>
-            <li><a href="#3">絶対勝てるって本当？マーチンゲール法の落とし穴とは・・・</a></li>
-            <li><a href="#4">マーチンゲール法の成功率を上げる2つの方法</a></li>
-            <li><a href="#5">マーチンゲール法を使うときは慎重に！</a></li>					
-          </ol>
-          </dd>
+            </dd>
           </dl>
-        </div>
+          
+          </div>
+          <div class="cont2 txtLeft">
+            <h2 class="h3-lineLB LB-step5" id="2">パーレー法を使った賭け方</h2>
+            <p class="txtCenter"><img src="img/parlay_3.jpg" alt="パーレー法を使った賭け方"></p>
+              
+            <p>パーレー法の賭け方はとても簡単です。</p>
+              
+                <p>勝負に勝った時にベット額を倍にしていき、負けた時にはリセットし最初に戻る。<br>
+            これを繰り返していく形になります。</p>
+      
+            <h3 class="font-cl-step5">パーレー法の基本的な手順</h3>
+              
+            <p>まずはパーレー法の基本的な手順から解説します。<br>
+            ゲームは<span class="bold markG">勝率約50%、配当が2倍</span>のものを選ぶと良いでしょう。</p>
+              
+            <div class="bordBox">
+            <ol class="li_numb">
+              <li>利益を確定するための連勝回数を決める
+                <ul class="li_point">
+                <li>「3連勝したらリセット」「4連勝したらリセット」など</li>
+                </ul>
+              </li>
+              <li>初回にベットする金額を決める</li>
+              <li>勝敗によって次のゲームのベット金額を変える
+              <ul class="li_point">
+              <li>勝った場合：次の勝負では倍の金額を変える</li>
+              <li>負けた場合：攻略法をリセットし初回ベット金額に戻る</li>
+              </ul>
+              </li>
+              </ol>
+            </div> 
+      
+            <p>ルールはそこまで難しくありませんが、キモとなるのは<span class="fontRed bold">「連勝回数」を何回にするか</span>という点です。<br>
+            これは実践してみて、バランスの良いものを見つけていくと良いでしょう。</p>
+      
+            <h3 class="font-cl-step5">パーレー法の実践シミュレーション</h3>
+            <p>実践をする前に、簡単なルールを決めておきます。</p> 
+              
+            <div class="bordBox">
+              <ul class="li_point">
+              <li>3連勝で利益確定</li>
+              <li>ルーレットの「赤」にベットする</li>
+              <li>初回ベットは$1</li>
+              </ul>
+            </div>
+              
+            <p>上記の点を踏まえて、順を追って見ていきましょう。</p>
+              
+              
+      <table class="table txtCenter step5">
+      <tbody><tr>
+      <th>ゲーム<br class="sp">回数</th>
+      <th>1回目</th>
+      <th>2回目</th>
+      <th class="bgGlay">3回目</th>
+      <th>4回目</th>
+      <th>5回目</th>
+      </tr>
+        
+      <tr>
+      <th>ベット額</th>
+      <td>＄1</td>
+      <td>＄2</td>
+      <td class="bgYell">＄4</td>
+      <td>＄1</td>
+      <td>＄1</td>
+      </tr>
+      
+      <tr>
+      <th>勝敗</th>
+      <td class="font-bgBlue">勝ち(1)</td>
+      <td class="font-bgBlue">勝ち(2)</td>
+      <td class="font-bgGreen">勝ち(3)</td>
+      <td class="font-bgRed">負け</td>
+      <td class="font-bgRed">負け</td>
+      </tr>
+      
+      <tr>
+      <th>収支</th>
+      <td>+$1</td>
+      <td>+$3</td>
+      <td class="bgYell">+$7</td>
+      <td>+$6</td>
+      <td>+$5</td>
+      </tr>
+      </tbody></table>
+              
+              
+      <table class="table txtCenter step5">
+      <tbody><tr>
+      <th>ゲーム<br class="sp">回数</th>
+      <th>6回目</th>
+      <th>7回目</th>
+      <th class="bgGlay">8回目</th>
+      <th>9回目</th>
+      <th>10回目</th>
+      </tr>
+        
+      <tr>
+      <th>ベット額</th>
+      <td>＄1</td>
+      <td>＄2</td>
+      <td class="bgYell">＄4</td>
+      <td>＄1</td>
+      <td>＄2</td>
+      </tr>
+      
+      <tr>
+      <th>勝敗</th>
+      <td class="font-bgBlue">勝ち(1)</td>
+      <td class="font-bgBlue">勝ち(2)</td>
+      <td class="font-bgGreen">勝ち(3)</td>
+      <td class="font-bgBlue">勝ち(1)</td>
+      <td class="font-bgRed">負け</td>
+      </tr>
+      
+      <tr>
+      <th>収支</th>
+      <td>+$6</td>
+      <td>+$8</td>
+      <td class="bgYell">+$12</td>
+      <td>+$13</td>
+      <td>+$11</td>
+      </tr>
+      </tbody></table>
+              
+              
+      <table class="table txtCenter step5">
+      <tbody><tr>
+      <th>ゲーム<br class="sp">回数</th>
+      <th>11回目</th>
+      <th>12回目</th>
+      <th>13回目</th>
+      <th>14回目</th>
+      <th>15回目</th>
+      </tr>
+        
+      <tr>
+      <th>ベット額</th>
+      <td>＄1</td>
+      <td>＄2</td>
+      <td>＄4</td>
+      <td>＄1</td>
+      <td>＄1</td>
+      </tr>
+      
+      <tr>
+      <th>勝敗</th>
+      <td class="font-bgBlue">勝ち(1)</td>
+      <td class="font-bgBlue">勝ち(2)</td>
+      <td class="font-bgRed">負け</td>
+      <td class="font-bgRed">負け</td>
+      <td class="font-bgRed">負け</td>
+      </tr>
+      
+      <tr>
+      <th>収支</th>
+      <td>+$12</td>
+      <td>+$14</td>
+      <td>+$10</td>
+      <td>+$9</td>
+      <td>+$8</td>
+      </tr>
+      </tbody></table>	
+              
+        
+             <div class="bordBox">
+             <ol class="li_numb">
+              <li>1回目～3回目は3連勝で＋$7で利益確定</li>
+              <li>その後勝つまでは$1をベット</li>
+              <li>6回目～8回目が3連勝で+$7で利益確定</li>
+              <li>9回目は勝利→10回目で連勝できず-$2</li>
+              <li>11回目と12回目で連勝→13回目で負け-$4</li>
+              <li>その後は勝つことができず最終+$8で終了</li>
+              </ol>
+              </div> 
+              
+             <h3 class="font-cl-step5">パーレー法は途中で負けてもトータル損失は小さい</h3> 
+             <p>パーレー法の基本的な考え方としては連勝を狙っていく形になりますが、仮に連勝できなくても、勝利したお金をそのままベットしていくことになるため、トータルで損失が大きくなるわけではありません。</p>
+              
+             <p>また、連敗が続く時も、最初に決めた最小ベット額が少しずつ減っていくだけなので、そこまで負けこむこともないでしょう。</p> 
+              
+            </div>
         <div class="cont2 txtLeft">
           <h2 class="h3-lineLB LB-step5" id="1"><i class="sp"></i>マーチンゲール法ってどんな攻略法？</h2>
             
@@ -1853,229 +2034,408 @@ footer nav {
       
         </div>
         <div class="cont2 txtLeft">
-          <h2 class="h3-lineLB LB-step5" id="3"><i class="sp"></i>絶対勝てるって本当？マーチンゲール法の落とし穴とは・・・</h2>
+          <h2 class="h3-lineLB LB-step5" id="3">連勝回数の設定がキモ！？パーレー法を成功させるコツは？</h2>
+          <p>例えば、1ドルの賭け金から始まり10連勝した場合、どれくらい儲けが出るでしょうか？なんと、1023$にもなります。</p>
             
-        <p>マーチンゲール法の理屈を理解すると、確かに「負けはしない」と考えがちですが、過信しすぎると痛い目に遭うかもしれません。</p>
-    
-    <p>マーチンゲール法を使うときに注意しておきたい<span class="txtRed bold">「意外な落とし穴」</span>があるのです。</p>
-    
-    
-          <h3 class="font-cl-step5">○○回連続して負けると、トータルベットが1億を超える！？</h3>
+              <p>勝ち金だけで考えると、1回目勝った場合、2回目勝った場合……10回勝った場合をみると、1$、3$、7$、15$、31$、63$、127$、255$、512$、1023$となります。<br>
+          1$で始めた勝負がたった10回の勝負で1,000$以上を獲得できるのですから、一攫千金の大技だとも言えます。</p>
             
-          <p class="txtCenter"><img src="assets/images/kouryaku_mcg6.jpg" width="600" alt="マーチンゲール法の意外な落とし穴"></p>
+          <h3 class="font-cl-step5">連勝回数の設定とゲームの流れで収支は変わる</h3>
+          <p class="txtCenter"><img src="assets/images/parlay_4.jpg" alt="連勝回数の設定とゲームの流れで収支は変わる"></p>  
             
+          <p>ですが、パーレー法には大きな問題・弱点が存在しています。<br>
+          運が良ければ勝ち続けることはできるかもしれませんが、<span class="fontRed bold">ほとんどの場合、いつかは負けてしまいます</span>。</p>
             
-          <p>例えばルーレットにおいて「赤」にベットした場合、確かに勝率は50% ですが、あくまでも確率の問題です。</p>
-    
-    <p>100 回の勝負をしたら、50回は「黒」が出る可能性があるというだけ。<br>
-    「赤」と「黒」が交互に出るわけではありません。<br>
-    100 回の勝負をする中で、20回連続で「黒」が出ることもあるわけです。</p>
-    
-    <p>仮に20 回連続で「黒」が出てしまった時にマーチンゲール法で「赤」にベットし続けるとどうなるでしょうか？</p>
-    
-    <div class="bordBox w50">
-    <p>1回目：$1<br>
-    2回目：$2<br>
-    3回目：$4<br>
-    4回目：$8<br>
-    5回目：$16<br>
-    ・<br>
-    ・<br>
-    ・<br>
-    10 回目：$512<br>
-    11 回目：$1,024<br>
-    ・<br>
-    ・<br>
-    ・<br>
-    19 回目：262,144<br>
-    20 回目：524,288</p>
-    </div>
-    
-    <p>なんと20回目のベット額は5,000万円を超えてしまいます！</p>
-    
-    <p>トータルのベット額は1億円超え・・・。<br>
-    確率的には低いものの20回連続で同じ色が出るのか？というところも気になりますよね。</p>
-    
-    <p>実際に1913年、モナコのカジノで26回連続で「黒」が出たという記録が残っています。</p>
-    
-    <p>この時にマーチンゲール法で勝つには、1$から勝負していたとしても約150億円を準備しておく必要があります。<br>
-    1$の勝ち金の為に総額150 億円を投じることは、常識的に無理でしょう。</p>
-    
-    <p>マーチンゲール法で勝てるかどうかは<span class="txtRed bold">手持ちの額に相当余裕がないとリスクが高い</span>ということになります。</p>
+          <h4 class="underLineB step5">連勝回数を決めて利益を確定させる</h4>
+            
+          <p>パーレー法を成功させるための秘訣は、<span class="markY bold">「どこでパーレー法を止めるか？」</span>ということです。<br>
+          ある程度、自分の中で『○回連勝したらパーレー法を一旦止めて利益を確定する』と決めておくのが良いでしょう。</p>
+            
+          <p>	【→<a href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/kouryaku-kaisetsu/20200527parlay/">【パーレー法攻略】連勝回数の設定は何回が良い？</a>】</p>
+          
+            
+          <h4 class="underLineB step5">ゲームの流れや場の空気を読むことも大事</h4>
+            
+              <p>また、場の空気を読んで、<span class="fontRed bold">負けそうであれば早めに逃げる</span>と言うこともできるでしょう。<br>
+          ある意味、ツキや場の流れといったものに相当依存するベッティングシステムであると言えますね。</p>
+            
+              <p>例えば、ブラックジャックで良いカードの流れの時やバカラで良いシューにたまたま遭遇できた時には、パーレー法を使って勝ち金を大きく増やせるかもしれません。<br>
+          事実、ブラックジャックではプレイヤーに有利なカードの流れといったものが存在します。</p>
+            
+              <p>だいたいの目安としては<span class="markY bold">「3連勝～4連勝」</span>くらいを目安にして利益を確定していくことが多いようです。</p>
             
             
-          <h3 class="font-cl-step5">システムが崩壊してしまう「マックスベット」の壁</h3>
+          <h3 class="font-cl-step5">連勝回数の設定を変えた場合のシミュレーション</h3>
+          <p>仮に先ほどのシミュレーションを、連勝回数の設定を変えたら収支がどうなるかを検証してみましょう。</p>
             
-          <p class="txtCenter"><img src="assets/images/martin_5.jpg" alt="システムが崩壊してしまう「マックスベット」の壁"></p>
+          <h4 class="underLineB step5">連勝回数を「4連勝」に設定した場合</h4>
             
-          <p>さらに、ただ軍資金に余裕があるだけでは超えられない壁もあります。<br>
-    それが、それぞれのゲームごとに設定された<span class="bold">「ベット額の上限（マックスベット）」</span>です。</p>
+    <table class="table txtCenter step5">
+    <tbody><tr>
+    <th>ゲーム<br class="sp">回数</th>
+    <th>1回目</th>
+    <th>2回目</th>
+    <th>3回目</th>
+    <th>4回目</th>
+    <th>5回目</th>
+    </tr>
+      
+    <tr>
+    <th>ベット額</th>
+    <td>＄1</td>
+    <td>＄2</td>
+    <td>＄4</td>
+    <td>＄8</td>
+    <td>＄1</td>
+    </tr>
     
-    <p>カジノゲームでは、1度にベットできる額に上限が設けられていることがほとんど。<br>
-    その<span class="txtRed bold">上限ベット額以上にベットする必要が出てきた場合、マーチンゲール法のシステムは崩壊</span>してしまいます。</p>
+    <tr>
+    <th>勝敗</th>
+    <td class="font-bgBlue">勝ち(1)</td>
+    <td class="font-bgBlue">勝ち(2)</td>
+    <td class="font-bgBlue">勝ち(3)</td>
+    <td class="font-bgRed">負け</td>
+    <td class="font-bgRed">負け</td>
+    </tr>
     
-    <p>オンラインカジノでゲームを選ぶ際、各ゲームごとに最小ベット額と最大ベット額が定められているので、この点は注意しておきましょう。</p>
-    
-          <h3 class="font-cl-step5">ゲームの選び方でマーチンゲール法の成功率が変わる？</h3>
-          <p class="txtCenter"><img src="assets/images/martin_4.jpg" alt="ゲームの選び方でマーチンゲール法の成功率が変わる？"></p>
+    <tr>
+    <th>収支</th>
+    <td>+$1</td>
+    <td>+$3</td>
+    <td>+$7</td>
+    <td class="fontRed">-$1</td>
+    <td class="fontRed">-$2</td>
+    </tr>
+    </tbody></table>
             
-          <p>マーチンゲール法を使う上で注意すべきポイントがもう一つあります。<br>
-    それは<span class="bold markG">「独立事象」</span>のゲームか、そうでないか、という点です。</p>
-    
-    <p>「独立事象」のゲームとは、<span class="bold">前のゲームの結果が次のゲームの結果に影響を与えないゲーム</span>のことで、<span class="bold markG">ルーレット</span>などが当てはまります。</p>
-    
-    <p>一方でバカラやブラックジャックなどのカジノゲームの場合、カードの束、シューの中にどんなカードがどれだけ残っているかによって、次の勝負の流れが変わってきます。</p>
-    
-    <p>例えば、ブラックジャックで「A」や「絵札」が多く出てしまっている場合、次の勝負で「A」や「絵札」が出る確率は下がってしまいます。</p>
-    
-    <p>つまり、毎回の確率ではなくその時のゲームの流れが影響するので、もし流れが悪い時にマーチンゲール法を始めた場合、連敗が続き失敗する可能性が高くなるということです。</p>
             
-    <p>	【→<a href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/kouryaku-kaisetsu/20200424martingale/">マーチンゲール法の成功率を上げる！リスクを下げて失敗を防ぐ方法を検証！</a>】</p>
+    <table class="table txtCenter step5">
+    <tbody><tr>
+    <th>ゲーム<br class="sp">回数</th>
+    <th>6回目</th>
+    <th>7回目</th>
+    <th>8回目</th>
+    <th class="bgGlay">9回目</th>
+    <th>10回目</th>
+    </tr>
+      
+    <tr>
+    <th>ベット額</th>
+    <td>＄1</td>
+    <td>＄2</td>
+    <td>＄4</td>
+    <td class="bgYell">＄8</td>
+    <td>＄1</td>
+    </tr>
     
+    <tr>
+    <th>勝敗</th>
+    <td class="font-bgBlue">勝ち(1)</td>
+    <td class="font-bgBlue">勝ち(2)</td>
+    <td class="font-bgBlue">勝ち(3)</td>
+    <td class="font-bgGreen">勝ち(4)</td>
+    <td class="font-bgRed">負け</td>
+    </tr>
     
+    <tr>
+    <th>収支</th>
+    <td class="fontRed">-$1</td>
+    <td>+$1</td>
+    <td>+$5</td>
+    <td class="bgYell">+$13</td>
+    <td>+$12</td>
+    </tr>
+    </tbody></table>
+            
+            
+    <table class="table txtCenter step5">
+    <tbody><tr>
+    <th>ゲーム<br class="sp">回数</th>
+    <th>11回目</th>
+    <th>12回目</th>
+    <th>13回目</th>
+    <th>14回目</th>
+    <th>15回目</th>
+    </tr>
+      
+    <tr>
+    <th>ベット額</th>
+    <td>＄1</td>
+    <td>＄2</td>
+    <td>＄4</td>
+    <td>＄1</td>
+    <td>＄1</td>
+    </tr>
+    
+    <tr>
+    <th>勝敗</th>
+    <td class="font-bgBlue">勝ち(1)</td>
+    <td class="font-bgBlue">勝ち(2)</td>
+    <td class="font-bgRed">負け</td>
+    <td class="font-bgRed">負け</td>
+    <td class="font-bgRed">負け</td>
+    </tr>
+    
+    <tr>
+    <th>収支</th>
+    <td>+$13</td>
+    <td>+$15</td>
+    <td>+$11</td>
+    <td>+$10</td>
+    <td>+$9</td>
+    </tr>
+    </tbody></table> 
+    
+        <p>勝敗状況が全く同じゲームでも連勝回数の設定によって結果が変わります。<br>
+        「4連勝」に設定した場合、パーレー法の成功回数は1回だけになりましたが、4連勝した時の配当が大きい為、結果的には「3連勝」に設定した時よりも最終収支が$1多くなりました。</p>
+        
+            
+            
+              <h4 class="underLineB step5">連勝回数を「2連勝」に設定した場合</h4>
+            
+    <table class="table txtCenter step5">
+    <tbody><tr>
+    <th>ゲーム<br class="sp">回数</th>
+    <th>1回目</th>
+    <th class="bgGlay">2回目</th>
+    <th>3回目</th>
+    <th>4回目</th>
+    <th>5回目</th>
+    </tr>
+      
+    <tr>
+    <th>ベット額</th>
+    <td>＄1</td>
+    <td class="bgYell">＄2</td>
+    <td>＄1</td>
+    <td>＄1</td>
+    <td>＄1</td>
+    </tr>
+    
+    <tr>
+    <th>勝敗</th>
+    <td class="font-bgBlue">勝ち(1)</td>
+    <td class="font-bgGreen">勝ち(2)</td>
+    <td class="font-bgBlue">勝ち(1)</td>
+    <td class="font-bgRed">負け</td>
+    <td class="font-bgRed">負け</td>
+    </tr>
+    
+    <tr>
+    <th>収支</th>
+    <td>+$1</td>
+    <td class="bgYell">+$3</td>
+    <td>+$4</td>
+    <td>+$2</td>
+    <td>+$1</td>
+    </tr>
+    </tbody></table>
+            
+            
+    <table class="table txtCenter step5">
+    <tbody><tr>
+    <th>ゲーム<br class="sp">回数</th>
+    <th>6回目</th>
+    <th class="bgGlay">7回目</th>
+    <th>8回目</th>
+    <th class="bgGlay">9回目</th>
+    <th>10回目</th>
+    </tr>
+      
+    <tr>
+    <th>ベット額</th>
+    <td>＄1</td>
+    <td class="bgYell">＄2</td>
+    <td>＄1</td>
+    <td class="bgYell">＄2</td>
+    <td>＄1</td>
+    </tr>
+    
+    <tr>
+    <th>勝敗</th>
+    <td class="font-bgBlue">勝ち(1)</td>
+    <td class="font-bgGreen">勝ち(2)</td>
+    <td class="font-bgBlue">勝ち(1)</td>
+    <td class="font-bgGreen">勝ち(2)</td>
+    <td class="font-bgRed">負け</td>
+    </tr>
+    
+    <tr>
+    <th>収支</th>
+    <td>+$2</td>
+    <td class="bgYell">+$4</td>
+    <td>+$5</td>
+    <td class="bgYell">+$7</td>
+    <td>+$6</td>
+    </tr>
+    </tbody></table>
+            
+            
+    <table class="table txtCenter step5">
+    <tbody><tr>
+    <th>ゲーム<br class="sp">回数</th>
+    <th>11回目</th>
+    <th class="bgGlay">12回目</th>
+    <th>13回目</th>
+    <th>14回目</th>
+    <th>15回目</th>
+    </tr>
+      
+    <tr>
+    <th>ベット額</th>
+    <td>＄1</td>
+    <td class="bgYell">＄2</td>
+    <td>＄1</td>
+    <td>＄1</td>
+    <td>＄1</td>
+    </tr>
+    
+    <tr>
+    <th>勝敗</th>
+    <td class="font-bgBlue">勝ち(1)</td>
+    <td class="font-bgGreen">勝ち(2)</td>
+    <td class="font-bgRed">負け</td>
+    <td class="font-bgRed">負け</td>
+    <td class="font-bgRed">負け</td>
+    </tr>
+    
+    <tr>
+    <th>収支</th>
+    <td>+$7</td>
+    <td class="bgYell">+$9</td>
+    <td>+$8</td>
+    <td>+$7</td>
+    <td>+$6</td>
+    </tr>
+    </tbody></table>	  
+            
+        <p>「2連勝」に設定した場合は、パーレー法の成功率は4回まで上がりました。<br>
+        ですが、1回の勝利金額が小さいので、連勝するまでの間残高が目減りします。<br>
+        上記のシミュレーションでは「3連勝」に設定した時よりも最終収支が$2少なくなりました。</p>
+            
+            
+            
+        <h4 class="underLineB step5">勝ち逃げするポイントの見極めをしよう</h4>	  
+        <p>上記のシミュレーションのように、それぞれの連勝回数の設定の違いで、収支がどう変化するかにそれぞれ特徴があります。<br>
+        その特徴を捉えることができれば、「勝ち逃げするポイント」がイメージしやすくなります。</p>	  
+          
+        <div class="bordBox">
+          <ul class="li_point">
+          <li>連勝回数2回の場合・・・<br class="sp">12回目+$9で勝ち逃げ</li>
+          <li>連勝回数3回の場合・・・<br class="sp">3回目+$7、もしくは8回目+$12で勝ち逃げ</li>
+          <li>連勝回数4回の場合・・・<br class="sp">9回目+$13で勝ち逃げ</li>
+          </ul>
+        </div>	  
+            
+        <p>こうした特徴はバカラやブラックジャックなどゲームの違いによっても変わるので、いろいろと試してみると良いでしょう。</p>		  
+            
+        
+        <h3 class="font-cl-step5">連勝できる確率を計算してみよう</h3>
+            
+        <p>パーレー法の攻略には「いかに連勝できるか」がキモになりますが、勝率が約50%のゲームで連勝できる統計を知っておくのも役立ちます。</p>
+        <p>バカラやブラックジャックなど、勝率が50％のゲームでどれ位の確率で連勝できるのか簡単に計算してみましょう。</p>
+           
+        <div class="bordBox">
+          <ul class="li_point">
+          <li>1勝　　・・・　50%</li>
+          <li>2連勝　・・・　25%</li>
+          <li>3連勝　・・・　12.5%</li>
+          <li>4連勝　・・・　6.25%</li>
+          <li>5連勝　・・・　3.13%</li>
+          <li>6連勝　・・・　1.56%</li>
+          <li>7連勝　・・・　0.78%</li>
+          <li>8連勝　・・・　0.39%</li>
+          <li>9連勝　・・・　0.20%</li>
+          <li>10連勝　・・・　0.10%</li>  
+          </ul>
+        </div>
+            
+        <p>つまり、10連勝する確率は1000回に1回ということになります。</p>
+            
+        <p>実際、確率に関してはもっと複雑で、ルーレットの赤or黒、奇数or偶数といった前のゲームに影響されない『独立事象』のゲームではなく、
+        ブラックジャックやバカラなどカードの出方やシューに残っているカードによって勝負の確率が変わるものもあります。</p>
+            
+        <p>どちらにしても、あくまでも「確率」であり、絶対の指標にならないことはしっかりと理解しておいてくださいね。</p>  
+            
         </div>
         <div class="cont2 txtLeft">
           <h2 class="h3-lineLB LB-step5" id="4"><i class="sp"></i>マーチンゲール法の成功率を上げる2つの方法</h2>
             
             <p>マーチンゲール法の勝つ仕組みとデメリットが理解できれば、マーチンゲール法の成功率を上げることが可能になります。</p>
     
-    <p>ポイントとなるのは、<span class="bold">「マーチンゲール法の弱点」を緩和、もしくは相殺する</span>ということです。</p>
+          <p>ポイントとなるのは、<span class="bold">「マーチンゲール法の弱点」を緩和、もしくは相殺する</span>ということです。</p>
     
           <h3 class="font-cl-step5">連敗が続きすぎると危険という弱点を緩和させる方法</h3>
-            
-          <p>マーチンゲール法のリスクとして大きいのは、<span class="txtRed bold">連敗しすぎるとベット額が異常に大きくなる</span>という点。<br>
-    であれば、なるべく連敗しないようにすれば、その弱点を緩和することができます。</p>
-    
-    <p>そこで使いたいのが<span class="bold markY">「空回し」</span>という方法です。</p>
-            
-            
-          <h4 class="underLineB step5">「空回し」で連敗を見届けてからベットする</h4>
-            
-          <p class="txtCenter"><img src="assets/images/martin_7.jpg" alt="「空回し」で連敗を見届けてからベットする"></p>
+          <p class="txtCenter"><img src="assets/images/parlay_5.jpg" alt="「空回し」で連敗を見届けてからベットする"></p>
             
           <p>オンラインカジノで遊べるゲームの中には、ベットせずにゲームを進める<span class="bold">「空回し」</span>ができるものがあります。</p>
           <p>例えばベラジョンカジノで遊べる「French Roulette」というルーレットは、ベットせずにルーレットを回し結果を見ることができます。</p>
-    
-    <p>この機能を利用すると、例えば、「黒」が3回連続で出た次のゲームだけ「赤」にベットするという立ち回りが可能になるのです。</p>
-    
-    <p>この方法でマーチンゲール法を進めていけば、連敗する確率を下げた状態で勝負することができるので、必然的にマーチンゲール法の成功率が上がるというわけです。</p>
-    
-    <p>【→<a href="../ranking/verajohn.html">ルーレット「French Roulette」が遊べるベラジョンカジノについて詳しくはコチラ</a>】</p>
-    
-    
           <h4 class="underLineB step5">2つの攻略法を組み合わせれば弱点を相殺できる</h4>
             
-          <p>マーチンゲール法は負けた時にベット額を倍にする攻略法ですが、それとは逆に買った時にベット額を倍にしていく<span class="bold">「パーレー法」</span>という攻略法があります。</p>
-          <p>この二つの攻略法は、ベット方法や結果が真逆になっています。</p>
-          <p>つまり攻略法の性質が真逆のものを組み合わせることで、それぞれの弱点を相殺してしまおうという考え方になります。</p>
           <p>では、実際にマーチンゲール法とパーレー法を組み合わせた攻略法の進め方を解説しましょう。</p>
     
-    
-          <h4 class="underLineB step5">マーチンゲール法×パーレー法の進め方</h4>
-            
-          <p class="txtCenter"><img src="assets/images/martin_8.jpg" alt="マーチンゲール法×パーレー法の組み合わせを活用しよう"></p>
-          
-          <p>2つの攻略法の弱点を相殺する<span class="bold markG">「マーチンゲール法× パーレー法」</span>を組み合わせた方法を解説していきます。</p>
-          <p>実際に試しながらチャレンジすると分かりやすいので、無料プレイで下記のルーレットをプレイしながら試されることをお勧めします。</p>
-            
-          <div class="detail_about step3 mb20">
-            <h3><i class="far fa-lightbulb fa-2x"></i>攻略法に慣れるなら無料プレイが最適！</h3>
-          <div class="flexbox fxin-jusbetw">
-          
-          <div class="flex40"><a class="testiframe startPlay pc cboxElement" href="https://d2drhksbtcqozo.cloudfront.net/casino/apex/layer/?channel=mobile&amp;gameid=roulettenouveau&amp;moneymode=fun&amp;jurisdiction=MT&amp;lang=ja_JP&amp;&amp;apex=1&amp;gameurl=https%3A%2F%2Fd2drhksbtcqozo.cloudfront.net%2Fcasino%2Flauncher.html" target="new" style="display: block;">
-              <img src="assets/images/relaxroulette.png"></a>
-               <a class="startPlay sp" href="https://d2drhksbtcqozo.cloudfront.net/casino/apex/layer/?channel=mobile&amp;gameid=roulettenouveau&amp;moneymode=fun&amp;jurisdiction=MT&amp;lang=ja_JP&amp;&amp;apex=1&amp;gameurl=https%3A%2F%2Fd2drhksbtcqozo.cloudfront.net%2Fcasino%2Flauncher.html" target="new">
-             <img src="assets/images/relaxroulette.png" width="100%"></a>
-          </div>
-    
+          <dl class="detail_about step3 mb20">
+            <dt><i class="far fa-lightbulb fa-2x"></i>ダブルストリートベット法とは？</dt>
+          <dd class="flexbox fxin-jusbetw">
           
           <div class="flex60">
-            <p>攻略法を試すといっても、実際に成功するか分からないものにお金を賭けるのは少し不安ですよね。</p>
-          <p>そんな時は、オンラインカジノに登録せずにゲームが試せる<span class="bold">「無料プレイ」</span>を活用しましょう！</p>
-          <a href="https://d2drhksbtcqozo.cloudfront.net/casino/apex/layer/?channel=mobile&amp;gameid=roulettenouveau&amp;moneymode=fun&amp;jurisdiction=MT&amp;lang=ja_JP&amp;&amp;apex=1&amp;gameurl=https%3A%2F%2Fd2drhksbtcqozo.cloudfront.net%2Fcasino%2Flauncher.html" class="btn-squareOre pc small80 w100" target="new">無料プレイで試してみる！</a>
+            <p>ルーレットには「ダブルストリート」と呼ばれる賭け方があります。<br>
+          「ダブルストリート」1ヶ所にベットすることで6つの数字に賭けることができます。<br>
+          その賭け方で5ヶ所にベットすれば、<span class="bold">「6つの数字」×「5ヶ所」＝30ヶの数字にベット</span>することになります。</p>
           </div>
+            
+          <div class="flex40">
+              <img src="assets/images/parlay_6.jpg" alt="ダブルストリートベット法とは？">
           </div>
-        </div>
-            
-            
-        <p>基本的にはパーレー法を軸として進めていきますので、パーレー法を知らない方は下記のページをまずご覧ください。</p>
-    
-    <p>【→<a href="parlay.html">連勝した時にベット額を倍にするパーレー法について詳しくはこちら</a>】</p>
-    
-    <p>実際にゲームをプレイするまでにいくつかルールを設定します。</p>
-            
-    <div class="bordBox">
-    <ul class="li_point">
-    <li>ルーレットの「赤」にベットする</li>
-    <li>パーレー法の連勝回数を3回とする</li>
-    </ul>
-    </div>
-    
-    <p>上記の点を守りながら、実際にプレイしてみましょう！</p>
           
-          
-    <div class="bordBox">
-           <ol class="li_numb">
-            <li>まずは基本となるベット額を決めます。ここでは「$1」を基準とします。</li>
-            <li>ルーレットの「赤」に「$1」をベットします</li>
-            <li>最初の勝負で勝った場合はパーレー法を発動し、次の勝負ではベット額を倍にします。</li>
-            <li>設定した連勝回数に達するまではパーレー法を続けます。<br>
-              ※連勝が続く場合はベット額を倍にしていき、3連勝できればリセット。</li>
-            <li>パーレー法の途中で失敗した場合は、一度リセットしマーチンゲール法に切り替える。</li>
-            </ol>
-    </div>
-    
-    <p>あとは上記のルールと手順を繰り返すだけです。</p>
-    <p>基本的な考え方としては、<span class="bold markY">パーレー法を失敗した時の損失である「最初のベット額」をマーチンゲール法で取り返す</span>という形になります。</p>
-    
-    <p>攻略法の弱点を補う方法は考え方次第で他にもあるので、いろいろ試してみるのも楽しいですね。<br>
-    ぜひ一度挑戦してみてくださいね。</p>
-    
-          </div>
-        <div class="cont2 txtLeft">
-          <h2 class="h3-lineLB LB-step5" id="5"><i class="sp"></i>マーチンゲール法を使うときは慎重に！</h2>
-    
-        <p>マーチンゲール法は、確かに「理論上は勝てる」かもしれません。<br>
-    ですが、ゲームの流れと手持ちの資産の額、各カジノゲームのベット額の上限などの制約がある以上「必ず勝てる」というわけではないので、十分に注意しましょう。</p>
-    
-    <p>いろんな攻略法がある中で、シンプルで有名なマーチンゲール法。<br>
-    特徴やリスクをしっかりと理解してから挑戦してみて下さい。</p>
-    
-    <p>攻略法はまだたくさんありますが、マーチンゲール法やパーレー法のように1回の結果で大きく勝敗が左右されるものもあれば、勝負回数を増やしてリスクを分散し、長期的にコツコツ利益を積み上げていく攻略法もあります。</p>
-    
-    <p>	【→<a href="../blog/">攻略法で勝てない人が読みたい！勝つための攻略法分析ブログはこちら</a>】</p>
-    
-        </div>
-        <div class="cont2 txtLeft">
-          <h2 class="h3-lineLB LB-step5" id="5"><i class="sp"></i>マーチンゲール法を使うときは慎重に！</h2>
-    
-        <p>マーチンゲール法は、確かに「理論上は勝てる」かもしれません。<br>
-    ですが、ゲームの流れと手持ちの資産の額、各カジノゲームのベット額の上限などの制約がある以上「必ず勝てる」というわけではないので、十分に注意しましょう。</p>
-    
-    <p>いろんな攻略法がある中で、シンプルで有名なマーチンゲール法。<br>
-    特徴やリスクをしっかりと理解してから挑戦してみて下さい。</p>
-    
-    <p>攻略法はまだたくさんありますが、マーチンゲール法やパーレー法のように1回の結果で大きく勝敗が左右されるものもあれば、勝負回数を増やしてリスクを分散し、長期的にコツコツ利益を積み上げていく攻略法もあります。</p>
-    
-    <p>	【→<a href="../blog/">攻略法で勝てない人が読みたい！勝つための攻略法分析ブログはこちら</a>】</p>
-    
-          </div>
-        <div class="cont2">  
-          <dl class="dl-bmenu step5">
-          <dt><p><img src="assets/images/icon-step5nav.png"><img src="../images/icon/icon-method.png"><span class="pc">オンラインカジノ</span>攻略講座 MENU</p><p class="pc">Online Casino Method</p></dt>
-          <dd>
-          <ol class="numb1 odd">
-            <li><a href="martingale.html">理論的に必ず勝つマーチンゲール法</a></li>
-            <li><a href="parlay.html">連勝狙い！パーレー法</a></li>
-            <li><a href="montecarlo.html">長期戦向けモンテカルロ法</a></li>
-          </ol>
           </dd>
-        </dl>
-        </div>
-       
+          </dl>
+          
+          <p>1回の勝負の勝率はなんと81%という驚異的なものですが、1回勝利したときの配当は20%です。<br>
+            つまり、ダブルストリート5ベット法だけを使った場合、5回に1回の割合で負けてしまうと収支がマイナスになってしまうわけです。</p>
+
+          </div>
+          <div class="cont2 txtLeft">
+            <h2 class="h3-lineLB LB-step5" id="5">パーレー法を使うときは慎重に！</h2>
+              
+            <p>パーレー法は「連勝できるか」という点に賭けて、大金を狙う攻略法です。<br>
+            元金が少なくても、うまくいけば運次第では稼ぐことができる夢のある攻略法。<br>
+            ただ、ひたすら勝つたびにベット額を増やしていくのではなく、「●連勝したらパーレー法を止める」という戦略も大事です。<br>
+            バカラ、ブラックジャック、ルーレットなどゲームによって戦略を変えて活用すれば、勝ちパターンを見つけることができるかも？</p>
+              
+            <p>以上がパーレー法の解説でした。</p>
+            
+            <p>今回解説したパーレー法に関しては、やり方が簡単なのですぐに試すことができますね。<br>
+            攻略法の中には数列をメモしていきながらベット額を決める複雑なやり方もあります。<br>
+            「カジノを破産させた攻略法」と呼び声の高い「モンテカルロ法」などがそれにあたります。</p>  
+      
+            <p>	【→<a href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/method/montecarlo.html">モンテカルロ法とは？攻略法の使い方を徹底解説</a>】</p>
+              
+            </div>
+            <div class="cont2">  
+              <dl class="dl-bmenu step5">
+              <dt><p><img src="../images/icon/icon-step5nav.png"><img src="../images/icon/icon-method.png"><span class="pc">オンラインカジノ</span>攻略講座 MENU</p><p class="pc">Online Casino Method</p></dt>
+              <dd>
+              <ol class="numb1 odd">
+                <li><a href="martingale.html">理論的に必ず勝つマーチンゲール法</a></li>
+                <li><a href="parlay.html">連勝狙い！パーレー法</a></li>
+                <li><a href="montecarlo.html">長期戦向けモンテカルロ法</a></li>
+              </ol>
+              </dd>
+            </dl>
+            </div>
       
         
     </div>
+            
+            
+
+            
+            
+       
+    
+    
+    
       
            
               <!--  -->
