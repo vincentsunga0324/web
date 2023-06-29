@@ -1,0 +1,4629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+
+  <title>web</title>
+  <style>
+    .header {
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      z-index: 4;
+    }
+
+    .header img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .navbar {
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navbar .nav-item {
+      /* margin-right: 10px; */
+    }
+
+    .navbar .dropdown-menu {
+      display: none;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+      display: block;
+    }
+
+    .nav-link {
+      width: 200px; /* Replace with your desired width */
+      padding: 15px;
+    }
+
+    .navbar .nav-link::after {
+      display: none;
+    }
+
+    .navbar .dropdown-menu.dropdown1 {
+      background-color: #29a3da; /* Red */
+    }
+
+    .navbar .dropdown-menu.dropdown2 {
+      background-color: #84be3f; /* Green */
+    }
+
+    .navbar .dropdown-menu.dropdown3 {
+      background-color: #f3a83b; /* Blue */
+    }
+
+    .navbar .dropdown-menu.dropdown4 {
+      background-color: #ff7ba4; /* Yellow */
+    }
+
+    .navbar .dropdown-menu.dropdown5 {
+      background-color: gray; /* Magenta */
+    }
+
+    .dropdown1-bg {
+      background-color: #29a3da; /* Replace with your desired background color */
+    }
+
+    .dropdown2-bg {
+      background-color: #84be3f; /* Replace with your desired background color */
+    }
+
+    .dropdown3-bg {
+      background-color: #f3a83b; /* Replace with your desired background color */
+    }
+
+    .dropdown4-bg {
+      background-color: #ff7ba4; /* Replace with your desired background color */
+    }
+
+    .dropdown5-bg {
+      background-color: gray; /* Replace with your desired background color */
+    }
+    
+    @media (max-width: 768px) {
+      .navbar .nav-link {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    @media (min-width: 992px) {
+        .navbar {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: fit-content;
+        }
+    }
+    .section {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px; /* Add a top margin to prevent overlap */
+    background-image: url('assets/images/rank_main.jpg'); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: rgb(43, 42, 42); /* Set the text color to white for better visibility */
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .section .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(223, 220, 220, 0.6); /* Set the background color for the box */
+    padding: 20px;
+    z-index: 1;
+  }
+
+  .section-line {
+    border: none;
+    height: 1px;
+    background-color: black;
+    left: 50%;
+    transform: translateX(0%);
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+   
+    h3.iconTitle-r {
+        font-size: 0.4rem;
+        padding: 5px;
+    }
+    h2.iconTitle-r, h3.iconTitle-r {
+      border-bottom: solid 3px #fbb03b;
+      padding: 10px;
+      font-size: 1.2rem;
+      text-align: left;
+      margin-bottom: 15px;
+    }
+    .fontOrange {
+      color: #f7931e;
+    }
+    ul.li_check {
+      margin: 10px;
+      list-style: none;
+    }
+    .li_check li {
+      padding-left: 30px;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+    }
+    .li_check li:before {
+      content: "\f14a";
+      position: relative;
+      font-family: FontAwesome;
+      font-size: 1.5rem;
+      margin-right: 10px;
+      color: #8dc73f;
+    }
+    h2.tb-bdr {
+    border-bottom: 3px solid #cccccc;
+    border-top: 3px solid #cccccc;
+    width: 100%;
+    padding: 18px 0 15px;
+    margin: 0 auto;
+  }
+
+  ul.curripcindex {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul.curripcindex li {
+    flex: 1;
+    text-align: center;
+  }
+
+  ul.curripcindex li a img {
+    max-width: 100%;
+    height: auto;
+  }
+  a.btn-squareOre {
+    padding: 15px 30px;
+    text-align: center;
+    background-color: #f7931e;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+  }
+
+  footer>.dispFlex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.center {
+    text-align: center;
+    margin: auto;
+}
+footer nav ul li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.7rem;
+}
+footer ul.iconMenu {
+    width: 1100px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+}
+ul.iconMenu {
+    border-top: 8px solid #FFF;
+    border-image: linear-gradient(90deg,rgba(41,163,218,1) 0%,rgba(41,163,218,1) 20%,rgba(132,190,63,1) 20%,rgba(132,190,63,1) 40%,rgba(243,168,59,1) 40%,rgba(243,168,59,1) 60%,rgba(255,123,164,1) 60%,rgba(255,123,164,1) 80%,rgba(128,128,128,1) 80%,rgba(128,128,128,1) 100%);
+    border-image-slice: 1;
+    padding-top: 15px;
+}
+p.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 20px 0;
+    background-color: #f7931e;
+    color: #fff;
+    font-size: 1.2rem;
+}
+footer nav ul li:before {
+    content: "\025b6";
+    font-size: .9rem;
+    color: #f7931e;
+}
+
+
+footer nav ul {
+    column-count: 3;
+    padding: 40px 0 20px 0;
+}
+nav ul {
+    list-style: none;
+}
+footer nav {
+    border-top: 1px solid #BBB;
+}
+footer nav {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+  footer>.dispFlex {
+    align-items: center; /* Center the content vertically */
+  }
+
+  footer nav ul {
+    column-count: 1;
+    padding: 20px 0;
+    text-align: left; /* Align the content to the left */
+    padding-left: 20px; /* Add padding on the left */
+    margin: 0 auto; /* Center the content horizontally */
+    max-width: 600px; /* Set a maximum width for centering effect */
+  }
+
+  footer ul.iconMenu {
+    justify-content: center; /* Center the items horizontally */
+  }
+
+  footer ul.iconMenu li {
+    margin-right: 10px;
+  }
+}
+
+h3.h3_sideban {
+  background: #FF484B;
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+  width: 100%;
+  color: #FFF;
+  position: relative;
+  margin-bottom: 10px;
+}
+.sideban dl dt {
+    margin-bottom: 10px;
+}
+.aic {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.writer_chara_col {
+  margin: 20px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.writer_chara_col img {
+    width: 130px;
+    height: 130px;
+    background: #fff2d0;
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: 50%;
+}
+.writer_chara_col .speech {
+    width: 78%;
+    padding: 15px 20px;
+    position: relative;
+    background: #fff2d0;
+    border-radius: 10px;
+}
+.writer_chara_col .speech::after {
+    height: 0;
+    content: "";
+    position: absolute;
+    top: 70px;
+    right: 100%;
+    border: solid transparent;
+    border-color: rgba(255,255,255,0);
+    border-right-color: #fff2d0;
+    border-width: 10px 20px;
+}
+.writer_chara_col span {
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    font-size: .9rem;
+    line-height: 1.6em;
+    font-weight: 700;
+}
+.related-article {
+    border: 1px solid #666;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.related-article dl {
+    width: 60%;
+    padding: 15px 20px;
+}
+.related-article dl dt a {
+    color: #111;
+}
+.related-article dl p {
+    padding: 0;
+}
+.markY {
+    background: #FEE87E;
+    display: inline;
+}
+.related-article>a img {
+    vertical-align: bottom;
+    width: 100%;
+    height: auto;
+}
+.txtLeft {
+    text-align: left;
+}
+.cont2 {
+    margin: 0 auto 15px 0;
+    text-align: center;
+    padding: 0 15px;
+}
+#mokuji.m-step1 {
+    border: 1px solid #8cc63f;
+    background-color: #e4f9cf;
+}
+dl#mokuji {
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+dl#mokuji.m-step1 dd {
+    border-left: 1px solid #8cc63f;
+}
+dl#mokuji dd ol {
+    list-style: decimal inside;
+    font-size: .9rem;
+    text-align: left;
+    padding-left: 20px;
+}
+dl#mokuji dd ol li a {
+    padding: 1px 0;
+    color: #4d4d4d;
+}
+
+.h3-lineLB.LB-step1 {
+    background: #8cc63f;
+    border-bottom: solid 3px #8cc63f;
+    border-left: none;
+}
+.txtCenter {
+    text-align: center;
+}
+.bold {
+    font-weight: 700;
+}
+.staff_comment_col {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.staff_comment_col .speech {
+    width: 82%;
+    background: #fff2d0;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    margin-left: 3%;
+}
+
+.staff_comment_col .speech::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    height: 0;
+    border: solid transparent;
+    border-color: rgba(255,255,255,0);
+    border-right-color: #fff2d0;
+    right: 100%;
+    border-width: 10px 20px;
+   
+}
+.boderstep1 {
+    border: 2px solid #8cc63f;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+ul.li_point, ol.li_point {
+    list-style: circle inside;
+    text-align: left;
+}
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+.fontRed {
+    color: #EA0000;
+}
+.font-cl-step1 {
+    /* color: #0071bc; */
+    border-bottom: 1px solid #8cc63f;
+    border-left: 8px solid #8cc63f;
+    padding: 5px 0 8px 15px;
+}
+.markY {
+    background: #FEE87E;
+    display: inline;
+}
+ol.li_numb {
+    list-style: decimal inside;
+    text-align: left;
+}
+
+.underLineB {
+    text-align: left;
+    background: #D5EFFF;
+    margin: 15px 0;
+    padding: 10px 10px 10px 15px;
+}
+.underLineB.step1 {
+    text-align: left;
+    color: #2c3d66;
+}
+h4 {
+    font-size: 1.15rem;
+    font-family: 'M PLUS 1p',sans-serif;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.boderstep1 {
+    border: 2px solid #29abe2;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.mb30 {
+    margin-bottom: 30px!important;
+}
+.dispFlex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.underL-s.icon-t {
+    margin-bottom: 15px;
+}
+.underL-s.icon-t>h4 {
+    border-bottom: 1px solid #0e6eb8;
+    padding: 5px 0 7px 15px;
+    color: #0e6eb8;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    width: 95%;
+}
+.sp {
+    display: none!important;
+}
+.flex65 {
+    width: 65%;
+}
+.flex35 {
+    width: 35%;
+}
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.fxin-jusbetw {
+    justify-content: space-between;
+}
+.mt15 {
+    margin-top: 15px;
+}
+.about_check .flex65 ul.li_check {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+ul.li_check {
+    margin: 10px;
+    list-style: none;
+}
+.font-cl-step1 {
+    /* color: #0071bc; */
+    border-bottom: 1px solid #8cc63f;
+    border-left: 8px solid #8cc63f;
+    padding: 5px 0 8px 15px;
+}
+.font-cl-step1 {
+    color: #0071bc;
+    margin: 20px 0 10px 0;
+}
+h3 {
+    font-size: 1.3rem;
+    font-family: 'M PLUS 1p',sans-serif;
+    text-align: left;
+    line-height: 150%;
+    margin-bottom: 15px;
+}
+p {
+    font-size: 1rem;
+    text-align: left;
+    padding-bottom: 15px;
+}
+.cont2 a.link_btn.step1, .cont2 a.link_btn2.step1 {
+    border-color: #84be3f;
+    color: #84be3f;
+}
+.cont2 a.link_btn, .cont2 a.link_btn2, .casinocont a.link_btn {
+    display: block;
+    border: 1px solid #84be3f;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 10px 8px;
+    background: #fff;
+}
+ol.a-stepboxOdr {
+    width: 100%;
+    list-style: none;
+    margin: 20px 0;
+}
+ol.a-stepboxOdr dl dt {
+    background-color: #e6f6f7;
+    color: #3aa8ad;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    position: relative;
+    border-radius: 15px;
+}
+ol.a-stepboxOdr dl dt>p:first-child {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+ol.a-stepboxOdr dl dt span.a-stepOdr {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #47bacd;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 180%;
+    line-height: 110%;
+    margin-right: 25px;
+    font-weight: 400;
+    position: relative;
+    top: -10px;
+    left: 5px;
+}
+.dispFlex2 {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flex30 {
+    width: 29%;
+}
+.flex70 {
+    width: 69%;
+}
+dl.dl-bmenu.step2 {
+    border: 2px solid #83be3e;
+}
+dl.dl-bmenu.step1 dt {
+    background-color: #29a3da;
+}
+dl.dl-bmenu dd ol.numb1 {
+    list-style-type: none;
+    counter-reset: dl-m-numb;
+    padding: 5px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+dl.dl-bmenu.step1 dd ol.numb1>li:before {
+    color: #29a3da;
+}
+dl.dl-bmenu dt {
+    background-color: #83be3e;
+    border-radius: 7px 7px 0 0 / 7px 7px 0 0;
+    padding: 10px 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+dl.dl-bmenu dd ol.numb1>li {
+    list-style-type: none;
+    counter-increment: dl-m-numb;
+    border-bottom: 1px solid #666;
+    padding: 12px 0;
+    width: 49%;
+    text-align: left;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+dl.dl-bmenu dd ol.numb1>li:before {
+    content: counter(dl-m-numb)'.';
+    font-weight: 700;
+    margin-right: 3px;
+}
+dl.dl-bmenu.step2 dd>ol.numb1 li {
+    border-bottom: 1px solid #c7ea8e;
+}
+ul.pay-logSlide.noslide, ul.pay-logSlide.spnoslide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul.pay-logSlide.noslide, ul.a-logSlide.noslide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul.pay-logSlide.step1 {
+    background: #e0ffff;
+}
+ul.pay-logSlide, ul.a-logSlide {
+    list-style: none;
+    min-height: 100px;
+    margin: 10px 20px;
+    padding: 10px 5px;
+}
+
+.dl_point.step1 {
+    border: 2px solid #8cc63f;
+}
+.dl_point.step1 dt {
+    color: #8cc63f;
+}
+.dl_point {
+    background: #FFF;
+    padding: 20px;
+    margin: 0 0 15px 0;
+    border: 2px solid #111;
+}
+.dl_point dt {
+    background-repeat: no-repeat;
+    padding: 0 0 0 5px;
+    height: 23px;
+    line-height: 23px;
+    font-weight: 700;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #111;
+}
+.linkbox-article {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background: #edf9ff;
+    padding: 15px;
+    font-size: 16px;
+}
+.linkbox-article a > span {
+    position: relative;
+    top: 5px;
+    left: 0;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    color: #29a3da;
+    font-weight: 700;
+}
+.linkbox-article a:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.linkbox-article a {
+    display: block;
+    text-align: left;
+}
+.fa-book-open:before {
+    content: "\f518";
+}
+.cont2 a.link_btn.step2 {
+    border-color: #84be3f;
+    color: #84be3f;
+}
+.font-cl-step2 {
+    /* color: #0eb700; */
+    border-bottom: 1px solid #8cc63f;
+    border-left: 8px solid #8cc63f;
+    padding: 5px 0 8px 15px;
+}
+.boderstep2 {
+    border: 2px solid #8cc63f;
+    padding: 15px;
+}
+.underLineB.step2 {
+    text-align: left;
+    background: #D8EFB3;
+    color: #31662b;
+}
+.flex25 img {
+    width: 70%;
+    height: 100px;
+    height: auto;
+}
+.tipArrow {
+    position: relative;
+    padding: 0 25px;
+    display: inline-block;
+}
+h3 {
+    font-size: 1.3rem;
+    font-family: 'M PLUS 1p',sans-serif;
+    text-align: left;
+    line-height: 150%;
+    margin-bottom: 15px;
+}
+img {
+    line-height: 0;
+    font-size: 0;
+    vertical-align: bottom;
+}
+table.table2 tr:nth-of-type(2n) {
+    background: #e4f9cf;
+}
+dl.dl-bmenu.step2 dd ol.numb1 > li:before {
+    color: #83be3e;
+}
+dl.dl-bmenu dd ol.numb1 > li:before {
+    content: counter(dl-m-numb)'.';
+    font-weight: 700;
+    margin-right: 3px;
+}
+.h3-lineLB.LB-step2 {
+    background: #84be3f;
+    border-bottom: solid 3px #75ab3d;
+    border-left: none;
+}
+.dl-QA dt {
+    margin: 0 3em 1em 3em;
+    background: #6DB551;
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 5px 0 5px 20px;
+    color: #fff;
+}
+.dl-QA dt, .dl-QA dd {
+    position: relative;
+    padding: 0.5em;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    border-radius: 0.3em;
+}
+.dl-QA *, .dl-QA *:after, .dl-QA *:before {
+    font-family: 'FontAwesome',sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dl-QA dd {
+    margin: 0 3em 3em 3em;
+    background: #e7ffe0;
+    color: #263824;
+}
+
+.dl-QA dt, .dl-QA dd {
+    position: relative;
+    padding: 0.5em;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    border-radius: 0.3em;
+}
+.dl-QA *, .dl-QA *:after, .dl-QA *:before {
+    font-family: 'FontAwesome',sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dl-QA dt::after {
+    left: -2.5em;
+    margin: 0 0.5em 0 0;
+    padding: 0.2em 0.4em;
+    content: '\f128';
+    background: #259959;
+}
+
+.dl-QA dt::after, .dl-QA dd::after {
+    font-size: 1.2em;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.2em;
+}
+.dl-QA *, .dl-QA *:after, .dl-QA *:before {
+    font-family: 'FontAwesome',sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dl-QA dt {
+    margin: 0 3em 1em 3em;
+    background: #6DB551;
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 5px 0 5px 20px;
+    color: #fff;
+}
+.dl-QA dd::after {
+    right: -2.5em;
+    margin: 0 0 0 0.5em;
+    padding: 0.2em 0.55em;
+    content: '\f12a';
+    background: #259959;
+}
+.marg-tb10 {
+    margin: 10px 0;
+}
+.flex25 {
+    width: 25%;
+}
+
+div.casinobtn a.btn-squareOreRadi {
+    width: 100%;
+    font-size: 100%;
+    margin-top: 10px;
+}
+
+a.btn-squareOreRadi {
+    padding: 10px;
+    font-size: 1.4rem;
+    display: inline-block;
+}
+a.btn-squareOreRadi {
+    border-radius: 5px;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #ef8b1e;
+    box-shadow: 3px 3px 0 0 #825a20;
+    color: #fff;
+    display: block;
+}
+.flex75 {
+    width: 74%;
+}
+.tipArrow {
+    position: relative;
+    padding: 0 25px;
+    display: inline-block;
+}
+.tipArrow.step2:before {
+    border-bottom: solid 15px #8cc63f;
+}
+
+.tipArrow:before {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: none;
+    border-left: solid 15px transparent;
+    border-bottom: solid 15px rgb(119,195,223);
+}
+.tipArrow.step2:after {
+    border-bottom: solid 3px #8cc63f;
+}
+
+.tipArrow:after {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 10px;
+    width: 100%;
+    border-bottom: solid 3px rgb(119,195,223);
+}
+#imginner>h1#indexh1 {
+    width: 100%;
+    height: 170px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 1.7rem;
+    font-family: 'M PLUS 1p',sans-serif;
+    position: absolute;
+    top: 80px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 0 #fff;
+    color: #000;
+}
+h1#indexh1 span.topstep.step3 {
+    background-color: #fbb03b;
+}
+
+h1#indexh1 span.topstep {
+    display: inline-block;
+    padding: 5px 20px;
+    color: #fff;
+    margin-right: 20px;
+    text-shadow: none;
+}
+.contBoder2 {
+    padding: 15px;
+    margin: 0 auto 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px -1px #8e8e8e;
+    display: flex;
+}
+.flex30 {
+    width: 29%;
+}
+
+.contBoder2 .flex30 {
+    margin-bottom: 0;
+    img {
+    line-height: 0;
+    font-size: 0;
+    vertical-align: bottom;
+}
+}
+.contBoder2 .flex30 img {
+    width: 100%;
+}
+.flex71 {
+    width: 70%;
+}
+.contBoder2 .flex71 {
+    margin-left: 20px;
+}
+.contBoder2 dl.stepindex {
+    margin-bottom: 15px;
+}
+.step3 dl.stepindex dt {
+    color: #fbb03b;
+}
+.contBoder2 dl.stepindex dd h2 {
+    font-size: 120%;
+    margin: 10px 0;
+}
+
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+
+.h2_border {
+    background: url(../images/bg_h.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding: 10px 0;
+    color: #110945;
+    border: none;
+    text-align: center;
+}
+ul.menu_pay {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 5px 0 10px 0;
+}
+ul.menu_pay li {
+    display: table;
+    margin-top: 10px;
+    width: 49%;
+    text-align: left;
+}
+ul.menu_pay li:nth-child(odd) {
+    margin-right: 8px;
+}
+
+ul.menu_eco li {
+    border: 1px solid #011d4c;
+}
+
+ul.menu_iwallet li a {
+    color: #011d4c;
+}
+
+ul.menu_pay li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+ul.menu_pay li a img, ul.menu_pay li a p {
+    display: inline;
+    vertical-align: middle;
+}
+ul.menu_pay li a img {
+    width: 45px;
+    height: auto;
+}
+ul.menu_pay li a p {
+    padding: 0 0 0 5px;
+    font-weight: 700;
+    width: 80%;
+}
+
+ul.menu_pay li a img, ul.menu_pay li a p {
+    display: inline;
+    vertical-align: middle;
+}
+#mokuji.m-step3 {
+    border: 1px solid #fbb03b;
+    background-color: #f8f7d3;
+}
+
+dl#mokuji {
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+dl#mokuji.m-step3 dd {
+    border-left: 1px solid #fbb03b;
+}
+dl#mokuji dd ol {
+    list-style: decimal inside;
+    font-size: .9rem;
+    text-align: left;
+    padding-left: 20px;
+}
+.h3-lineLB.LB-step3 {
+    background: #f3a83b;
+    border-bottom: solid 3px #db9939;
+    border-left: none;
+}
+
+.h3-lineLB.LB-step3 {
+    border-bottom: 1px solid #fbb03b;
+    border-left: 8px solid #fbb03b;
+}
+.h3-lineLB {
+    padding: 10px 0 8px 15px;
+    margin: 10px 0 20px 0;
+    color: #fff;
+}
+.h3-lineLB {
+    padding: 5px 0 10px 15px;
+    margin: 20px 0;
+}
+
+.font-cl-step3 {
+    /* color: #fbb03b; */
+    border-bottom: 1px solid #fbb03b;
+    border-left: 8px solid #fbb03b;
+    padding: 5px 0 8px 15px;
+}
+
+.font-cl-step3 {
+    color: #fbb03b;
+    margin: 10px 0;
+}
+.font-cl-step3 {
+    /* color: #fbb03b; */
+    border-bottom: 1px solid #fbb03b;
+    border-left: 8px solid #fbb03b;
+    padding: 5px 0 8px 15px;
+}
+
+.font-cl-step3 {
+    color: #fbb03b;
+    margin: 10px 0;
+}table.table.step3 tr th {
+    background: #f9e5cf;
+}
+
+table.table.step3 tr td, table.table.step3 tr th {
+    border: 1px solid #fbb03b;
+}
+.dl_point.step3 {
+    border: 2px solid #fbb03b;
+}
+
+.dl_point {
+    background: #FFF;
+    padding: 20px;
+    margin: 0 0 15px 0;
+    border: 2px solid #111;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.boderstep3 {
+    border: 2px solid #fbb03b;
+    padding: 15px;
+}
+.hl-line.step3 {
+    border-left: solid 4px #f3a83b;
+    color: #db9939;
+}
+
+.hl-line {
+    border-left: solid 4px #ccc;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+dl.dl-bmenu.step3 {
+    border: 2px solid #f3a83b;
+}
+
+dl.dl-bmenu {
+    border: 2px solid #666;
+    border-radius: 10px;
+}
+dl.dl-bmenu.step3 dt {
+    background-color: #f3a83b;
+}
+
+dl.dl-bmenu dt {
+    background-color: #666;
+    border-radius: 7px 7px 0 0 / 7px 7px 0 0;
+    padding: 10px 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+dl.dl-bmenu.step3 dd ol.numb1>li:before {
+    color: #f3a83b;
+}
+
+dl.dl-bmenu dd ol.numb1>li:before {
+    content: counter(dl-m-numb)'.';
+    font-weight: 700;
+    margin-right: 3px;
+}
+dl.dl-bmenu dd>ol.numb1 li a {
+    font-size: 1rem;
+    color: #000;
+    padding-left: 5px;
+}
+.dl_point.step3 {
+    border: 2px solid #fbb03b;
+}
+
+.dl_point {
+    background: #FFF;
+    padding: 20px;
+    margin: 0 0 15px 0;
+    border: 2px solid #111;
+}
+.dl_point.step3 dt {
+    color: #fbb03b;
+}
+.dl_point dt>i {
+    padding-right: 10px;
+}
+.dl_point a.btn-squareOreRadi {
+    font-size: 120%;
+    margin-bottom: 0;
+}
+
+a.btn-squareOreRadi {
+    padding: 10px;
+    font-size: 1.4rem;
+    display: inline-block;
+}
+a.btn-squareOreRadi {
+    border-radius: 5px;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #ef8b1e;
+    box-shadow: 3px 3px 0 0 #825a20;
+    color: #fff;
+    display: block;
+}
+.cont2 a.link_btn, .cont2 a.link_btn2, .casinocont a.link_btn {
+    display: block;
+    border: 1px solid #d8d8d8;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 10px 8px;
+    background: #fff;
+}
+
+.cont2 a.link_btn.step3 {
+    border-color: #fbb03b;
+    color: #db9939;
+}
+.border {
+    padding: 15px;
+    margin: 20px;
+    border: #fbb03b;
+
+}
+.border.step3 {
+    border: 1px solid #fbb03b;
+}
+dl#mokuji dt {
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c',sans-serif;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+table.casi-kessai.payment-feature tr:nth-of-type(1) th {
+    background-color: #ffc1c1;
+}
+
+table.casi-kessai.payment-feature tr:nth-of-type(2) th {
+    background-color: #ffeaa9;
+}
+table.casi-kessai tr td, table.casi-kessai tr th {
+    vertical-align: middle;
+}
+table.casi-kessai.payment-feature tr:nth-of-type(3) th {
+    background-color: #acd4ef;
+}
+table.casi-kessai th, table.casi-kessai td {
+    text-align: center;
+    border: solid 4px #fff;
+    padding: 15px;
+}
+table.casi-kessai.payment-feature td {
+    padding: 10px;
+    background: #fff;
+}
+table.casi-kessai.payment-feature tr:nth-of-type(1) td ul li {
+    border-color: #f33b9a;
+    color: #f33b9a;
+}
+table.casi-kessai.payment-feature tr:nth-of-type(2) td ul li {
+    border-color: #da7009;
+    color: #da7009;
+}
+table.casi-kessai.payment-feature tr:nth-of-type(3) td ul li {
+    border-color: #336ec7;
+    color: #336ec7;
+}
+table.payment-feature td ul li {
+    display: flex;
+    align-items: center;
+    padding: 5px 13px;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    color: #000;
+    line-height: 110%;
+    border: 1px solid #000;
+}
+
+img {
+    line-height: 0;
+    font-size: 0;
+    vertical-align: bottom;
+}
+.txtRight {
+    text-align: right;
+}
+.writer_chara_col {
+    margin: 20px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.right {
+    width: 75%;
+    margin-top: 20px;
+}
+.cont3 {
+    margin: 10px auto;
+    text-align: center;
+    padding: 0 15px;
+}
+dl#casi-mokuji_rank {
+    border: 2px solid #5b5b5b;
+    border-radius: 30px;
+    margin: 10px auto 40px;
+    width: calc(100% - 40px);
+}
+dl#casi-mokuji_rank dt {
+    background-color: #5b5b5b;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 25px 25px 0 0;
+    font-size: 1.3rem;
+}
+.fa-list:before {
+    content: "\f03a";
+}
+dl#casi-mokuji_rank dd {
+    padding: 20px 40px;
+}
+dl#casi-mokuji_rank dd ol, dl#casi-mokuji_rank dd ul {
+    list-style: none;
+}
+dl#casi-mokuji_rank dd ol li {
+    padding: 3px 0;
+    font-size: 1.3rem;
+    line-height: 180%;
+}
+dl#casi-mokuji_rank dd ol > li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f152";
+    margin-right: 10px;
+    color: #bd9e46;
+}
+dl#casi-mokuji_rank dd ol > li > a {
+    padding-bottom: 40px;
+    font-size: 19px;
+}
+
+dl#casi-mokuji_rank dd ol > li a {
+    font-weight: bold;
+    color: #000;
+}
+dl#casi-mokuji_rank dd ol > li ul > li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0da";
+    margin-right: 10px;
+    font-weight: 900;
+    color: #bd9e46;
+}
+.h_gold_grd {
+    background: -moz-linear-gradient(0deg, #b49344 0%, #ddc64b 70%, #feee51 100%);
+    background: -webkit-linear-gradient(0deg, #b49344 0%, #ddc64b 70%, #feee51 100%);
+    background: -ms-linear-gradient(0deg, #b49344 0%, #ddc64b 70%, #feee51 100%);
+    margin: 20px 0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    font-family: inherit;
+    font-size: 110%;
+}
+.ptlr0_20 {
+    padding: 0 20px;
+}
+section.rank1, section.rank2, section.rank3 {
+    background: none;
+    border: 2px solid #f5e34f;
+    border-radius: 5px;
+    margin: 0 0 30px;
+}
+
+section.rank1, section.rank2, section.rank3 {
+    padding: 0px;
+    margin: 0 18px;
+}
+
+section.rank1, section.rank2, section.rank3 {
+    padding: 20px;
+}
+section.rank1 h3, section.rank2 h3, section.rank3 h3 {
+    height: 70px;
+    background: #f5e34f;
+    border-radius: 5px 5px 0 0;
+    font-family: inherit;
+    padding: 10px 28px;
+}
+
+.flex50 {
+    width: 45%;
+}
+dl.casinopt1 {
+    border: 3px solid #e9b027;
+    border-radius: 10px;
+}
+dl.casinopt1, dl.casinopt2, dl.casinopt3, dl.slotpt_gld {
+    background: #FFF;
+}
+dl.casinopt1 dt {
+    background: #e9b027;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+dl.casinopt1 dd, dl.casinopt2 dd, dl.casinopt3 dd {
+    padding: 0 20px;
+    text-align: left;
+}
+.casinopt1 i, .casinopt2 i, .casinopt3 i {
+    margin: 0 10px 0 0;
+}
+
+.casinopt1 dd ul li, .casinopt2 dd ul li, .casinopt3 dd ul li {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #b5b5b5;
+    padding: 18px 0;
+}
+.icon-pick {
+    background: #ff205a;
+    color: #FFF;
+    text-align: center;
+    margin: 0 20px 0 0;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.casinopt1 dd ul li p, .casinopt2 dd ul li p, .casinopt3 dd ul li p {
+    margin: 0;
+    padding: 0;
+    flex: 225px;
+    line-height: 1.5em;
+}
+.casinopt1 dd ul li, .casinopt2 dd ul li, .casinopt3 dd ul li {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #b5b5b5;
+    padding: 18px 0;
+}
+.casinopt1 dd ul li:last-child, .casinopt2 dd ul li:last-child, .casinopt3 dd ul li:last-child {
+    border: none;
+}
+.mt30 {
+    margin-top: 30px!important;
+}
+.mt60b30 {
+    margin: 60px 0 30px 0!important;
+}
+section.rank1 ul.btn_rank, section.rank2 ul.btn_rank, section.rank3 ul.btn_rank {
+    margin: 20px auto;
+}
+.btn_rank li:first-child {
+    margin-right: 0;
+}
+
+.btn_rank li:first-child {
+    margin-right: 20px;
+}
+.btn_rank li {
+    width: 47%;
+    display: block;
+}
+.btn_rank li a.btn_signup {
+    background: -moz-linear-gradient(90deg, #ff2c63 0%, #ff4d7c 50%, #ff2c63 100%);
+    background: -webkit-linear-gradient(90deg, #ff2c63 0%, #ff4d7c 50%, #ff2c63 100%);
+    background: -ms-linear-gradient(90deg, #ff2c63 0%, #ff4d7c 50%, #ff2c63 100%);
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    color: #FFF;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    line-height: 130%;
+    box-shadow: 3px 3px 0px #e51e5f;
+    font-size: 90%;
+}
+.speech_balloon {
+    position: absolute;
+    top: -27px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    height: 32px;
+    background: #fff0f4;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ff215b;
+    line-height: 1.2em;
+    color: #ff215b;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 50px;
+    box-shadow: 3px 3px 0px #e51e5f;
+}
+.btn_rank li a.btn_detail {
+    background: -moz-linear-gradient(90deg, #28b216 0%, #45bd35 50%, #28b216 100%);
+    background: -webkit-linear-gradient(90deg, #28b216 0%, #45bd35 50%, #28b216 100%);
+    background: -ms-linear-gradient(90deg, #28b216 0%, #45bd35 50%, #28b216 100%);
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    color: #FFF;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    line-height: 130%;
+    box-shadow: 3px 3px 0px #049604;
+    font-size: 90%;
+}
+
+ul.btn_rank {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.mt60b30 {
+    margin: 60px 0 30px 0!important;
+}
+ul {
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+.btn_rank li:first-child {
+    margin-right: 20px;
+}
+ul.btn_rank li {
+    width: 49%;
+    display: block;
+}
+.btn_rank li {
+    width: 47%;
+    display: block;
+}
+.btn_rank li a.btn_signup {
+    background: -moz-linear-gradient(90deg, #ff2c63 0%, #ff4d7c 50%, #ff2c63 100%);
+    background: -webkit-linear-gradient(90deg, #ff2c63 0%, #ff4d7c 50%, #ff2c63 100%);
+    background: -ms-linear-gradient(90deg, #ff2c63 0%, #ff4d7c 50%, #ff2c63 100%);
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    color: #FFF;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    line-height: 130%;
+    box-shadow: 3px 3px 0px #e51e5f;
+    font-size: 90%;
+}
+
+.btn_rank li a.btn_signup {
+    background: #ff215b;
+}
+.btn_rank a.btn_signup, .btn_rank a.btn_detail, a.btn_detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    line-height: 130%;
+    box-shadow: 1px 2px 3px #666;
+    font-size: 90%;
+}
+.speech_balloon {
+    position: absolute;
+    top: -27px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    height: 32px;
+    background: #fff0f4;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ff215b;
+    line-height: 1.2em;
+    color: #ff215b;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 50px;
+    box-shadow: 3px 3px 0px #e51e5f;
+}
+.btn_rank li a.btn_detail {
+    background: -moz-linear-gradient(90deg, #28b216 0%, #45bd35 50%, #28b216 100%);
+    background: -webkit-linear-gradient(90deg, #28b216 0%, #45bd35 50%, #28b216 100%);
+    background: -ms-linear-gradient(90deg, #28b216 0%, #45bd35 50%, #28b216 100%);
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    color: #FFF;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    line-height: 130%;
+    box-shadow: 3px 3px 0px #049604;
+    font-size: 90%;
+}
+
+.btn_rank a.btn_signup, .btn_rank a.btn_detail, a.btn_detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    line-height: 130%;
+    box-shadow: 1px 2px 3px #666;
+    font-size: 90%;
+}
+
+
+.spb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.h_double_line {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    color: #b49344;
+    font-size: 22px;
+    width: 100%;
+    z-index: 0;
+}
+
+.mb25 {
+    margin: 0 0 25px 0;
+}
+.h_double_line span {
+    display: inline-block;
+    padding: 0 15px;
+    z-index: 2;
+    background: white;
+}
+
+.h_double_line span::before {
+    position: absolute;
+    top: calc(50% - 3px);
+    width: 100%;
+    height: 5px;
+    content: '';
+    border-top: solid 1px #b49344;
+    border-bottom: solid 1px #b49344;
+    z-index: -1;
+    left: 0;
+}
+.judge_point_col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 30px 0;
+}
+.judge_point_col li {
+    width: 49%;
+}
+.judge_point_col dl.good dt {
+    background-size: auto auto;
+    background-color: rgba(255, 107, 152, 1);
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(255, 90, 140, 1) 2px, rgba(255, 90, 140, 1) 6px );
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin: 0 0 15px 0;
+    padding: 4px 0px;
+    width: 100%;
+    justify-content: space-around;
+}
+.judge_point_col li ul li {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    line-height: 1.6em;
+    margin: 0 0 8px 0;
+}
+.judge_point_col dl.good ul li::before {
+    content: "〇";
+    margin-right: 10px;
+    font-size: 140%;
+    font-weight: bold;
+    color: rgb(255, 129, 167);
+}
+.judge_point_col dl.bad dt {
+    background-size: auto auto;
+    background-color: rgba(88, 169, 211, 1);
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(69, 159, 206, 1) 2px, rgba(69, 159, 206, 1) 6px );
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin: 0 0 15px 0;
+    padding: 4px 0px;
+    width: 100%;
+    justify-content: space-around;
+}
+.judge_point_col li ul {
+    width: 98%;
+}
+.judge_point_col dl.bad ul li::before {
+    content: "\02715";
+    margin-right: 10px;
+    font-size: 140%;
+    font-weight: bold;
+    color: #55a7d2;
+}
+.staff_col {
+    margin-bottom: 30px;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.staff_col .speech::after {
+    content: "";
+    position: absolute;
+    top: 70px;
+    height: 0;
+    border: solid transparent;
+    border-color: rgba(255,255,255,0);
+    border-right-color: #fff2d0;
+    right: 100%;
+    border-width: 10px 20px;
+}
+.staff_col div:first-of-type span {
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.6em;
+    font-weight: bold;
+}
+.staff_col .speech {
+    width: 74%;
+    background: #fff2d0;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+}
+a.btn_official {
+    background: -moz-linear-gradient(90deg, #ff6536 0%, #ff7d55 50%, #ff6536 100%);
+    background: -webkit-linear-gradient(90deg, #ff6536 0%, #ff7d55 50%, #ff6536 100%);
+    background: -ms-linear-gradient(90deg, #ff6536 0%, #ff7d55 50%, #ff6536 100%);
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    color: #FFF;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 20px 0;
+    padding: 20px;
+    line-height: 130%;
+    box-shadow: 3px 3px 0px #db4815;
+    font-size: 90%;
+}
+.h_bdrGold {
+    display: flex;
+    align-items: center;
+    color: #b99945;
+    border-bottom: 3px solid #b99945;
+    padding: 10px;
+    border-image: linear-gradient(to right, #b49344 0%, #ddc64b 70%, #feee51 100%);
+    border-image-slice: 1;
+}
+.ranking_summary {
+    margin-bottom: 50px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+.rank_summary_detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 40px;
+}
+.rank_summary_detail section {
+    width: 31%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px 0px rgb(200 200 200 / 0.6);
+    position: relative;
+    padding: 15px 0;
+}
+.rank_summary_detail section:first-of-type > p {
+    background: #fff2d0;
+}
+.rank_summary_detail section > p {
+    padding: 10px 15px;
+}
+
+.rank_summary_detail section > p {
+    padding: 15px;
+    font-weight: bold;
+    line-height: 180%;
+}
+.rank_summary_detail section * {
+    margin: 0 auto 15px;
+}
+.rank_summary_detail section > img {
+    display: block;
+}
+
+.rank_summary_detail section * {
+    margin: 0 auto 15px;
+}
+.rank_summary_detail section > h4 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.rank_summary_detail section * {
+    margin: 0 auto 15px;
+}
+.rank_summary_detail section:nth-of-type(2) > p {
+    background: #e9e9e9;
+}
+.rank_summary_detail section:nth-of-type(3) > p {
+    background: #ffe3d0;
+}
+.rank_summary_detail section > ul {
+    font-size: 1.0rem;
+    padding: 0 15px;
+}
+.rank_summary_detail section:first-of-type > ul li::before {
+    color: #e9b027;
+}
+.rank_summary_detail section > ul li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f058";
+    font-weight: 900;
+    margin-right: 10px;
+    margin-top: 1px;
+    font-size: 110%;
+}
+.rank_summary_detail section:nth-of-type(2) > ul li::before {
+    color: #a5a5a5;
+}
+.rank_summary_detail section:nth-of-type(3) > ul li::before {
+    color: #94663d;
+}
+.dl_checkpoint01 {
+    border: 2px solid #f74770;
+    border-radius: 5px;
+    margin: 0 0 30px 0;
+}
+.dl_checkpoint01 dt {
+    background: #f74770;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+.dl_checkpoint01 ul.li_check li:before {
+    content: "\f058";
+    position: relative;
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #f74770;
+}
+.dl_checkpoint01 dd, .dl_checkpoint02 dd, .dl_checkpoint03 dd, .dl_checkpoint04 dd, .dl_checkpoint05 dd {
+    padding: 18px;
+}
+.casinocont a.link_btn.step4 {
+    border-color: #ff7bac;
+    color: #ff7bac;
+}
+
+.cont2 a.link_btn, .cont2 a.link_btn2, .casinocont a.link_btn {
+    display: block;
+    border: 1px solid #d8d8d8;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 10px 8px;
+    background: #fff;
+}
+.dl_checkpoint02 {
+    border: 2px solid #8e44cd;
+    border-radius: 5px;
+    margin: 0 0 30px 0;
+}
+.dl_checkpoint02 dt {
+    background: #8e44cd;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+.dl_checkpoint02 ul.li_check li:before {
+    content: "\f058";
+    position: relative;
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #8e44cd;
+}
+.dl_checkpoint03 {
+    border: 2px solid #f77047;
+    border-radius: 5px;
+    margin: 0 0 30px 0;
+}
+.dl_checkpoint03 dt {
+    background: #f77047;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+.dl_checkpoint03 ul.li_check li {
+    color: #f77047;
+    font-weight: bold;
+    padding-left: 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+.dl_checkpoint03 ul.li_check li:before {
+    content: "\f058";
+    position: relative;
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #f77047;
+}
+.dl_checkpoint04 {
+    border: 2px solid #1dae49;
+    border-radius: 5px;
+    margin: 0 0 30px 0;
+}
+.dl_checkpoint04 dt {
+    background: #1dae49;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+.dl_checkpoint04 ul.li_check li {
+    color: #1dae49;
+    font-weight: bold;
+    padding-left: 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+.dl_checkpoint04 ul.li_check li:before {
+    content: "\f058";
+    position: relative;
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #1dae49;
+}
+.dl_checkpoint05 {
+    border: 2px solid #1697e9;
+    border-radius: 5px;
+    margin: 0 0 30px 0;
+}
+.dl_checkpoint05 dt {
+    background: #1697e9;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+.dl_checkpoint05 ul.li_check li {
+    color: #1697e9;
+    font-weight: bold;
+    padding-left: 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+.dl_checkpoint05 ul.li_check li:before {
+    content: "\f058";
+    position: relative;
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #1697e9;
+}
+ul.typebox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 20px;
+}
+ul.typebox li {
+    width: 31.5%;
+    margin-bottom: 15px;
+}
+ul.typebox li a {
+    display: block;
+    text-align: center;
+    padding: 20px 20px 10px 20px;
+    box-shadow: 1px 2px 3px #666;
+    border-radius: 10px;
+}
+
+a.type_jyouken {
+    border: 3px solid #f77047;
+    background: #fef5f2;
+    color: #f77047;
+}
+a.type_tbonus {
+    border: 3px solid #f74770;
+    background: #fef2f5;
+    color: #f74770;
+}
+a.type_nbonus {
+    border: 3px solid #8e44cd;
+    background: #f7f2fb;
+    color: #8e44cd;
+}
+a.type_bigwin {
+    border: 3px solid #1dae49;
+    background: #eff9f2;
+    color: #1dae49;
+}
+a.type_limit {
+    border: 3px solid #1697e9;
+    background: #eff8fd;
+    color: #1697e9;
+}
+a.type_game {
+    border: 3px solid #e7a300;
+    background: #fdf9ed;
+    color: #e7a300;
+}
+h3.h_bdrOrg {
+    color: #f77047;
+    border-bottom: 3px solid #f77047;
+    padding: 10px;
+}
+
+.typecont h3 {
+    font-size: 100%;
+}
+.typecont h3, .typecont h4, ul.casinolist h3, dt.slottitle {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#type_jyouken section:first-of-type {
+    background: #fef5f2;
+}
+
+.typecont section.section-solo {
+    margin-bottom: 30px;
+}
+.typecont section {
+    margin: 10px 0;
+}
+.typecont section {
+    padding: 20px;
+    margin: 10px 0 30px 0;
+}
+h3.h_bdrPk {
+    color: #f74770;
+    border-bottom: 3px solid #f74770;
+    padding: 10px;
+}
+
+h3.h_bdrPk {
+    color: #f74770;
+    border-bottom: 3px solid #f74770;
+    padding: 10px;
+}
+#type_tbonus section:first-of-type {
+    background: #fef2f5;
+}
+.list-icon .ico_b_coral, .badge-circle.ico_b_coral {
+    border: none;
+    background: #f74770;
+    color: #ffffff;
+}
+.badge-circle {
+    margin-left: 13px;
+    padding: 2px 15px 1px;
+    border-radius: 5px;
+    font-size: 1.0rem;
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
+h3.h_bdrPpl {
+    color: #8e44cd;
+    border-bottom: 3px solid #8e44cd;
+    padding: 10px;
+}
+h3.h_bdrGrn {
+    color: #1dae49;
+    border-bottom: 3px solid #1dae49;
+    padding: 10px;
+}
+#type_bigwin section:first-of-type {
+    background: #eff9f2;
+}
+table.casi-kessai {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+table.casi-kessai tr:not(.syurui) th {
+    background-color: #ffeaa9;
+}
+
+table.casi-kessai tr td, table.casi-kessai tr th {
+    vertical-align: middle;
+}
+table.casi-kessai tr td, table.casi-kessai tr th {
+    vertical-align: middle;
+}
+
+table.casi-kessai tr td {
+    background-color: #fffaea;
+}
+table.casi-kessai th, table.casi-kessai td {
+    text-align: center;
+    border: solid 4px #fff;
+    padding: 15px;
+}
+.recommend_game_headline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.recommend_game_headline p {
+    margin: 0;
+    background: #e7a300;
+    padding: 2px 14px;
+    border-radius: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 61%;
+}
+.recommend_game_headline p:before {
+    content: "\f058";
+    font-family: FontAwesome;
+    font-size: 156%;
+}
+.recommend_game_element a {
+    border: 1px solid #e7a300;
+    color: #e7a300;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 10px 8px;
+    background: #fff;
+}
+table.table_pay td img {
+    display: inline-block;
+    width: 68px;
+    height: auto;
+    margin: 3px 5px 5px 0;
+}
+dl.casi-merdem, section.casi-merdem, .casinolink-bottom {
+    background-color: #ffe5ee;
+    padding: 15px 20px 20px;
+    margin-bottom: 20px;
+}
+h2.casiname, dt.casiname, .casiname, h1.casiname {
+    display: flex;
+    align-items: center;
+    border-bottom: solid #ff7aac 4px;
+    padding: 5px 0 15px 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+dl.casi-merdem dl.dl-merdem.new, section.casi-merdem dl.dl-merdem.new {
+    width: 49%;
+    height: 330px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 15px;
+}
+dl.casi-merdem dl.dl-merdem.new dt, section.casi-merdem dl.dl-merdem.new dt {
+    background-color: #fff;
+    padding: 5px 0 8px;
+    border-bottom: 1px solid #666;
+    color: #666;
+    font-size: 1.1rem;
+}
+.casino-nodeposit {
+    border: 1px solid #bfbfbf;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+h2 {
+    font-size: 1.5rem;
+    font-family: 'M PLUS 1p',sans-serif;
+    width: 100%;
+    line-height: 150%;
+    margin: 20px 0;
+}
+.casino-nodeposit>h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 13px;
+    color: #fff;
+    margin: 0;
+    position: relative;
+    background-size: auto auto;
+    background-color: rgba(238,27,140,1),rgb(233,0,117);
+    background-image: linear-gradient(90deg,rgba(233,0,117,.6) 0%,rgba(255,39,147,.6) 15%,rgba(255,156,215,.3) 50%,rgba(255,39,147,.6) 85%,rgba(233,0,117,.6) 100%),repeating-linear-gradient(41deg,rgba(238,4,129,1),rgba(238,4,129,1) 2.5px,rgba(244,53,159,1) 0,rgba(244,53,159,1) 4px);
+    font-size: 1.35rem;
+    text-shadow: 1px 2px 1px rgba(0,0,0,.8);
+}
+.casino-nodeposit>h2>span:not(class) {
+    display: inline;
+    width: auto;
+}
+
+.ribbon-badge {
+    position: absolute;
+    left: 40px;
+    top: -5px;
+    width: 100px;
+    height: auto;
+}
+.casino-nodeposit .casino-nodeposit-in {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.casino-nodeposit-in p.txtCenter img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}.casino-nodeposit-in div {
+    margin-left: 15px;
+    width: 53%;
+}
+a.btn-pinkcoin {
+    border-radius: 5px;
+    background: rgb(235,0,122);
+    background: linear-gradient(90deg,rgba(235,0,122,1) 0%,rgba(247,78,177,1) 50%,rgba(235,0,122,1) 100%);
+    color: #fff;
+    font-size: 1.05rem;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    padding: 10px 0;
+    box-shadow: 7px 8px 7px -8px rgba(0,0,0,.6);
+    z-index: 0;
+    position: relative;
+}
+.recommend_box {
+    border: 5px solid #ffe5ee;
+    border-radius: 10px;
+    margin: 0 0 20px 0;
+}
+.recommend_box dt {
+    position: relative;
+    background: #ffe5ee;
+    text-align: center;
+    padding: 10px;
+    font-size: 85%;
+    font-weight: 700;
+}
+recommend_box dt:after {
+    position: absolute;
+    bottom: -18px;
+    left: calc(50% - 40px);
+    width: 0;
+    height: 0;
+    content: '';
+    border-width: 25px 40px 0 40px;
+    border-style: solid;
+    border-color: #ffe5ee transparent transparent transparent;
+}
+.recommend_box dd {
+    padding: 25px 20px;
+}
+.recommend_box dd ul li:before {
+    font-family: FontAwesome;
+    content: "\f14a";
+    margin-right: 10px;
+    font-size: 1.3rem;
+    color: #ff7bac;
+}
+.recommend_box dt {
+    position: relative;
+    background: #ffe5ee;
+    text-align: center;
+    padding: 10px;
+    font-size: 85%;
+    font-weight: 700;
+}
+.recommend_box dt:after {
+    position: absolute;
+    bottom: -18px;
+    left: calc(50% - 40px);
+    width: 0;
+    height: 0;
+    content: '';
+    border-width: 25px 40px 0 40px;
+    border-style: solid;
+    border-color: #ffe5ee transparent transparent transparent;
+}
+.ranking_bnr_col dt i {
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    background: #ff7bac;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+}
+.ranking_bnr_col dt {
+    font-size: 1.15rem;
+    height: inherit;
+    background: #ffe5ee;
+    display: flex;
+    align-items: center;
+    font-family: Verdana,Geneva,"sans-serif";
+    font-weight: 700;
+}
+.ranking_bnr_col dd {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.ranking_bnr_col dd div {
+    width: 53%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.ranking_bnr_col dd a.btn-squareOre {
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    margin: 5px auto 0;
+    font-size: 1pc;
+    box-shadow: 1px 2px 3px #b8b8b8;
+}
+.ranking_bnr_col dd a {
+    font-size: 1rem;
+    width: 100%;
+}
+a.btn-squareOre {
+    padding: 15px 30px;
+    text-align: center;
+    background-color: #f7931e;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+}
+.ranking_bnr_col {
+    border: solid 1px #ffe5ee;
+    margin-bottom: 30px;
+}
+
+.ranking_bnr_col dd>a img {
+    height: 230px;
+    object-fit: none;
+    transition: 0.4s;
+}
+
+.ranking_bnr_col dd a img {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    zoom: .6;
+}
+dl#casi-mokuji {
+    border: 2px solid silver;
+    border-radius: 30px;
+    margin: 0 auto 40px;
+    width: 82%;
+}
+dl#casi-mokuji dt {
+    background-color: #5b5b5b;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 28px 28px 0 0;
+    font-size: 1.3rem;
+}
+dl#casi-mokuji dt>i {
+    margin-right: 10px;
+}
+dl#casi-mokuji dd {
+    padding: 20px 40px;
+}
+dl#casi-mokuji dd ol, dl#casi-mokuji dd ul {
+    list-style: none;
+}
+dl#casi-mokuji dd ol li {
+    padding: 5px 0;
+    font-size: 1.3rem;
+    line-height: 180%;
+}
+dl#casi-mokuji dd ol>li>a {
+    padding-bottom: 40px;
+}
+
+dl#casi-mokuji dd ol>li a {
+    font-weight: 700;
+    color: #000;
+} 
+dl#casi-mokuji dd ol>li ul {
+    margin-left: 20px;
+}
+dl#casi-mokuji dd ol>li ul>li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0da";
+    margin-right: 10px;
+    font-weight: 900;
+    color: #fe7aab;
+}
+
+dl#casi-mokuji dd ol>li ul>li {
+    display: block;
+    margin-left: 1em;
+    text-indent: -0.9em;
+}
+dl#casi-mokuji dd ol li {
+    padding: 5px 0;
+    font-size: 1.3rem;
+    line-height: 180%;
+}
+
+dl#config2>dt {
+    margin-bottom: 35px;
+    border-bottom: 3px solid #ffe5ee;
+    border-top: 3px solid #ffe5ee;
+    text-align: center;
+    padding: 18px 0 15px;
+    color: #ff7bac;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+h2>span {
+    width: 100%;
+    display: block;
+}
+h2.casi_h2detail i, .casi_h2detail i {
+    background: #ff7bac;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+}
+h2.casi_h2detail, .casi_h2detail {
+    background: #ffe5ee;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-family: Verdana,Geneva,"sans-serif";
+    font-weight: 700;
+}
+h3.casi_h3detail, dt.casi_h3detail {
+    background: #f2f2f2;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-family: Verdana,Geneva,"sans-serif";
+    border-left: 5px solid #ff7bac;
+    padding-left: 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.says-bal.yell, .says-bal.yell-r {
+    border: 2px solid #fcda74;
+}
+
+.says-bal {
+    position: relative;
+    padding: 15px 10px 15px 20px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+div.casi-det.repu .dispFlex4 {
+    padding: 10px 20px;
+}
+
+.dispFlex4 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.says-bal.yell::after, .says-bal.och-l::after {
+    left: -17px;
+    border-right: 20px solid #fff;
+}
+.says-bal.yell::after, .says-bal.och::after, .says-bal.yell-r::after, .says-bal.och-l::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+}
+.says-bal.yell::before {
+    left: -20px;
+    border-right: 20px solid #fcda74;
+}
+
+.says-bal.yell::before, .says-bal.och::before, .says-bal.yell-r::before, .says-bal.och-l::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+}
+.says-bal.yell-r::before {
+    right: -20px;
+    border-left: 20px solid #fcda74;
+}
+div.casi-det.repu .dispFlex4 .icn {
+    width: 125px;
+}
+div.casi-det.repu .dispFlex4 .bal {
+    width: 570px;
+}
+h4.arrow-bef.step1 {
+    color: #000;
+    border-bottom: 3px solid #29abe2;
+}
+.says-bal.och, .says-bal.och-l {
+    border: 2px solid #c5bda6;
+}
+
+.says-bal {
+    position: relative;
+    padding: 15px 10px 15px 20px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.says-bal.yell::after, .says-bal.och-l::after {
+    left: -17px;
+    border-right: 20px solid #fff;
+}
+
+.says-bal.yell::after, .says-bal.och::after, .says-bal.yell-r::after, .says-bal.och-l::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+}
+.says-bal.och-l::before {
+    left: -20px;
+    border-right: 20px solid #c5bda6;
+}
+.says-bal.yell::before, .says-bal.och::before, .says-bal.yell-r::before, .says-bal.och-l::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+}
+
+.says-bal.och::after, .says-bal.yell-r::after {
+    right: -17px;
+    border-left: 20px solid #fff;
+}
+
+.says-bal.yell::after, .says-bal.och::after, .says-bal.yell-r::after, .says-bal.och-l::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+}
+.says-bal.och::before {
+    right: -20px;
+    border-left: 20px solid #c5bda6;
+}
+
+.says-bal.yell::before, .says-bal.och::before, .says-bal.yell-r::before, .says-bal.och-l::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+}
+
+table.data_top {
+    width: 100%;
+    height: 290px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table.data_top caption {
+    font-size: 80%;
+    padding: 5px 0;
+    color: #FFF;
+    background: #666;
+    font-weight: 700;
+}
+table.data_top tr {
+    border-bottom: 1px dotted #999;
+}
+table.data_top th {
+    text-align: center;
+    width: 35%;
+    font-size: 65%;
+    padding: 10px;
+}
+
+table.data_top th, table.data_top td {
+    line-height: 140%;
+    vertical-align: middle;
+    padding: 10px 0 10px 10px;
+}
+table.data_top td {
+    font-size: 60%;
+}
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .txtCenter {
+    text-align: center;
+
+  }
+  .img-container {
+    text-align: center;
+  }
+  .img-container img {
+    display: inline-block;
+    width: 100%;
+  }
+  .headerlog img {
+    max-width: 100%;
+    height: auto;
+  }
+  .iconMenu {
+    text-align: center;
+  }
+  .iconMenu li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  footer ul.iconMenu {
+    width: 100%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+}
+footer nav {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+  
+}
+
+</style>
+  
+</head>
+
+<body>
+    
+  <header class="header">
+    <img src="assets/images/headlog.png" alt="Header Image">
+
+<!-- start of nav  -->
+
+  <nav class="navbar navbar-expand-md navbar-light">
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown1-bg" href="#" id="dropdown1" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="assets/images/icon-step1nav.png" alt="">
+            <img src="assets/images/icon-book.png" alt="">
+            <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown1-bg text-center" aria-labelledby="dropdown1">
+            <a class="dropdown-item" href="about.html">オンラインカジノとは？基礎講座</a>
+            <a class="dropdown-item" href="law.html">オンラインカジノは違法？！</a>
+            <a class="dropdown-item" href="management.html">悪質なオンラインカジノの詐欺事例</a>
+            <a class="dropdown-item" href="software.html">ゲームのソフトウェアも信頼の目安</a>
+            <a class="dropdown-item" href="ninki.html">オンラインカジノの還元率が高い理由</a>
+            <a class="dropdown-item" href="tax.html">ゲームのソフトウェアも信頼の目安</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown2-bg" href="#" id="dropdown2" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step2nav.png" alt="">
+                <img src="assets/images/icon-play.png" alt="">
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown2-bg text-center" aria-labelledby="dropdown2">
+            <a class="dropdown-item" href="step.html">オンラインカジノの登録方法</a>
+            <a class="dropdown-item" href="payment.html">オンラインカジノの入出金について</a>
+            <a class="dropdown-item" href="bonus.html">知っておきたいボーナスの知識</a>
+            <a class="dropdown-item" href="kakejyouken.html">オンラインカジノの賭け条件とは？</a>
+            <a class="dropdown-item" href="nodepositbonus.html">入金不要ボーナスが貰えるオンラインカジノ</a>
+            <a class="dropdown-item" href="pc_sp.html">スマホで遊べるオンラインカジノ一覧</a>
+            <a class="dropdown-item" href="jackpot.html">一攫千金が狙えるジャックポットスロット</a>
+            <a class="dropdown-item" href="livegame.html">ライブカジノを楽しもう</a>
+            <a class="dropdown-item" href="slot.html">オンラインカジノ人気スロットランキング</a>
+
+
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown3-bg" href="#" id="dropdown3" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step3nav.png" alt="">
+                <img src="assets/images/icon-card.png" alt="">
+
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown3-bg text-center" aria-labelledby="dropdown3">
+            <a class="dropdown-item" href="nyushukkin.html">決済方法一覧</a>
+            <a class="dropdown-item" href="ecopayzabout.html">ecoPayzとは？</a>
+            <a class="dropdown-item" href="iwallet.html">iWalletとは？</a>
+            <a class="dropdown-item" href="venuspoint.html">VenusPointとは？</a>
+            <a class="dropdown-item" href="bitcoin.html">仮想通貨（Bitcoin）とは？</a>
+
+
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown4-bg" href="#" id="dropdown4" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step4nav.png" alt="">
+                <img src="assets/images/icon-casino.png" alt="">
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown4-bg text-center" aria-labelledby="dropdown4">
+            <a class="dropdown-item" href="ranking.html">オンラインカジノおすすめランキング</a>
+
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown5-bg" href="#" id="dropdown5" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/icon-step5nav.png" alt="">
+                <img src="assets/images/icon-method.png" alt="">
+                <span>基礎講座</span>
+            </a>
+          <div class="dropdown-menu dropdown5-bg text-center" aria-labelledby="dropdown5">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- end of nav  -->
+
+<!-- start of section 1  -->
+<section>
+  <div class="txtCenter"><img src="assets/images/slider_1.jpg" class="pc" width="1100" height="330"><img src="../images/rank/rank_main_sp.jpg" class="sp" width="750" height="330"></div>
+</section>
+
+<!-- end of section 1  -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 hide-on-mobile">
+        <!-- Content for the first column -->
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <img src="assets/images/ban_twitter.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <h3 class="h3_sideban mt-3"><span>＼高額賞金続出！/</span>今人気のスロットランキング</h3>
+        <dl class="mt-3">
+          <dt class="aic">
+            <img src="assets/images/icon_crown.png" loading="lazy" width="40" height="40" class="mr-2">
+            <span>LOVEの美少女パワーで大勝利！<br><span>Moon Princess</span></span>
+          </dt>
+          <dd>
+            <img src="assets/images/tmb_moonprincess.jpg" alt="人気スロットランキング" loading="lazy" class="img-fluid">
+            <a href="../slot/" class="btn_side">オンラインカジノ<br>人気スロットランキング</a>
+          </dd>
+        </dl>
+      </div>
+      <div class="col-md-9">
+        <!-- Content for the second column -->
+        <section class="casi-merdem">
+          <h1 class="casiname">ベラジョンカジノ完全データ【2023年6月】評判や限定ボーナスの独占情報</h1>
+            <div class="spb">
+            <dl class="dl-merdem new">
+              <dt>メリットとデメリット</dt>
+              <dd>
+                <ul>
+                  <li>毎日誰かにジャックポットが当たる</li>
+                  <li>無料で有料ゲームが遊べるボーナス</li>
+                  <li>出金しやすい仕組みのボーナス</li>
+                  <li>国内銀行振込で素早く出金が可能</li>
+                  <li class="deme">規約違反・本人確認の対応が厳しい</li>
+                  <li class="deme">ゲームの入れ替わりが激しい</li>
+                </ul>
+              </dd>
+            </dl>  
+            <div class="flex50">
+              <table class="data_top">
+                <caption>カジ旅　基本データ</caption>
+                <tbody><tr>
+                  <th>入金方法</th>
+                  <td><img src="assets/images/icon_visa.png" alt="VISA" loading="lazy" width="26" height="17"><img src="assets/images/icon_master.png" alt="Master" loading="lazy" width="28" height="17"><img src="assets/images/icon_bank.png" alt="銀行振込" loading="lazy" width="60" height="17"><img src="assets/images/icon_eco.png" alt="ecoPayz" class="mt7" loading="lazy" width="69" height="17"><img src="assets/images/icon_btc.png" alt="bitcoin" loading="lazy" width="77" height="17"></td>
+                </tr>
+                <tr>
+                  <th>出金方法</th>
+                  <td><img src="assets/images/icon_bank.png" alt="銀行振込" loading="lazy" width="60" height="17"><img src="assets/images/icon_eco.png" alt="ecoPayz" class="mt7" loading="lazy" width="69" height="17"></td>
+                </tr>
+                <tr>
+                  <th>ボーナス</th>
+                  <td>
+                  <dl class="data_inner">
+                  <dt>登録</dt><dd>なし</dd>
+                  <dt>入金</dt><dd>最大$500＋250スピン</dd>
+                  </dl>
+                  </td>
+                </tr>
+                <tr>
+                  <th>チャット<br>サポート</th>
+                  <td>14：00～1：00</td>
+                </tr>
+                <tr>
+                  <th>ゲーム数</th>
+                  <td>3,000種類</td>
+                </tr>
+              
+              </tbody></table>
+              </div>
+            </div>
+            
+            <ul class="btn_rank w100">
+            <li><a href="../casino/verajohncasino_signup.html" target="new" rel="nofollow" class="btn_signup"><span>ベラジョンカジノに<br>登録する</span><i class="fas fa-chevron-circle-right"></i></a></li>
+            <li><a href="../casino/verajohncasino.html" target="new" rel="nofollow" class="btn_detail c-blue"><span>ベラジョンカジノの<br>公式サイトを見る</span><i class="fas fa-chevron-circle-right"></i></a></li>
+            </ul>
+        </section>
+        <section class="casino-nodeposit mb15">
+          <h2><span class="ribbon-badge"><img src="assets/images/ribbon-badge.png" alt="当サイト限定" loading="lazy" width="104" height="90" class="pc"><img src="img/ribbon-badgesp.png" alt="当サイト限定" loading="lazy" width="80" height="79" class="sp"></span>
+            <span>登録だけで貰える！</span><br class="sp">入金不要ボーナス550スピン</h2>
+          <div class="casino-nodeposit-in">
+            <p class="txtCenter">
+            <img src="assets/images/ban_vera_bonus2.jpg" class="pc" alt="当サイト限定！登録だけで「Golden Ticket」フリースピン550回が貰える！" loading="lazy" width="356" height="227">
+            <img src="assets/images/ban_vera_bonus2_sp.jpg" class="sp" alt="当サイト限定！「Golden Ticket」フリースピン550回が貰える！" loading="lazy" width="652" height="252">
+            </p>
+            <div>
+              <p>初心者ナビからベラジョンカジノに登録した方限定で、入金不要ボーナスとして「Golden Ticket」フリースピン550回を受け取れます！（通常50回）</p>
+            <p>ボーナスを受け取るのに申請は必要ありません。登録後フリースピンがアカウントに自動進呈されます。</p>
+            <a href="../casino/verajohncasino.html" target="new" rel="nofollow" class="btn-pinkcoin">今すぐボーナスを受け取る！</a>
+            </div>
+          </div>
+          </section>
+          <dl class="recommend_box">
+            <dt><i class="far fa-hand-point-up"></i>ベラジョンカジノはこんな人におすすめ！</dt>
+            <dd>
+                <ul>
+                    <li>高額当選をゲットできる可能性の高いカジノで遊びたい</li>
+					<li>ボーナスやコインを利用して少ない軍資金で遊びたい</li>
+					<li>勝ったら勝利金を一気に素早く出金したい</li>
+                </ul>    
+            </dd>
+        </dl>
+        <div class="writer_chara_col cont2">
+          <div>
+              <img src="assets/images/masaru.png" width="150" height="150" loading="lazy" alt="MASARU"><span>著者：<a rel="author" href="../writer-masaru.html">MASARU</a><br>カジノ歴：2年</span>
+          </div>
+          <div class="speech">
+              <dl>
+                  <dt>カジノ紹介担当者からのコメント</dt>
+                  <dd><p>ベラジョンカジノは「オンラインカジノといえばベラジョン」といえるほど人気で、日本でも多くのプレイヤーが利用しています。</p>
+            <p>オンラインカジノは海外企業が運営しているので、はじめは「操作や決済がややこしそう」と不安だったんですが、ビギナーズガイドや決済方法ガイドが用意されていて初心者にも親切なサイトになっています。<br>
+            動画での解説もあるので、初めてオンラインカジノを使う僕でも迷わずに登録や入金ができました！</p>
+            <p>途中でわからないこともあったのですが、チャットから日本語で質問をしたらすぐに答えてもらえたので、安心してプレイしています。</p>
+          </dd>
+              </dl>
+          </div>
+        </div>
+        <dl class="ranking_bnr_col">
+          <dt><i class="fas fa-crown"></i>【2023年最新】オンラインカジノおすすめランキングトップ3</dt>
+          <dd>
+          <a href="../ranking/"><img src="assets/images/ban_rank_link_resp.jpg" loading="lazy" width="843" height="370" alt="オンラインカジノランキング　おすすめトップ３　自分に合ったカジノが見つかる！"></a>
+           <div> 
+          <p>オンラインカジノランキングでは、ベラジョンカジノ以外にも「ボーナスが豊富」「人気がある」など5つの基準からおすすめの優良カジノを紹介しています。登録ボーナスが高額なオンラインカジノなど、タイプ別のおすすめカジノサイトも掲載！</p>
+          <a href="../ranking/" class="btn-squareOre right_arrow">オンラインカジノおすすめランキング</a>
+          </div>	 
+          </dd>
+        </dl>
+        <dl id="casi-mokuji">
+		      <dt><i class="fas fa-list"></i>ベラジョンカジノ目次</dt>
+			  <dd>
+			    <ol>
+		  		  <li><a href="#riyu">ベラジョンカジノが選ばれる理由</a>
+					<ul>
+		  		  	  <li><a href="#goodpoint">ベラジョンカジノはボーナスや入金・出金方法が豊富！</a>
+						<ul>
+							<li><a href="#goodpoint01">毎日誰かに必ずジャックポットが当たる！</a></li>
+							<li><a href="#goodpoint02">ボーナスやコインで軍資金を増やせる！</a></li>
+							<li><a href="#goodpoint03">現金で勝利したら破棄できる！出金しやすいボーナス</a></li>
+							<li><a href="#goodpoint04">銀行振込で迅速&amp;簡単に出金できる！</a></li>
+						</ul>
+						</li>
+				 	  <li><a href="#repute">ベラジョンカジノの口コミや評判</a>
+						<ul>
+							<li><a href="#repute01">入金・出金のしやすさに関する口コミ</a></li>
+							<li><a href="#repute02">ボーナスの使いやすさに関する口コミ</a></li>
+							<li><a href="#repute03">稼ぎやすさに関する口コミ</a></li>
+						</ul>
+					  </li>
+					</ul>
+				  </li>
+        		  <li><a href="#guide">ベラジョンカジノ完全ガイド</a>
+					<ul>
+				 	  <li><a href="#bonus">ベラジョンカジノのボーナス徹底解説</a>
+						<ul>
+							<li><a href="#bonus01">登録するだけで貰える！初心者ナビ限定550スピンボーナス</a></li>
+							<li><a href="#bonus02">入金で最大$1,000が受け取れるウェルカムボーナス</a></li>
+							<li><a href="#bonus03">ベラジョンカジノのボーナスの出金条件は20倍</a></li>
+						</ul>
+					</li>
+				   <li><a href="#gamepick">ベラジョンカジノのおすすめゲーム</a></li>
+				   <li><a href="#data">ベラジョンカジノの大勝ちデータを公開</a>
+					 <ul>
+						<li><a href="#data01">歴代最高の勝利金額は4億円超！</a></li>
+						<li><a href="#data02">【2022年～2023年】高額勝利ランキングTOP10</a></li>
+					  </ul>
+				   </li>	
+				   <li><a href="#event">日本人プレイヤー向けの季節イベントやキャンペーンが多数</a>
+					 <ul>
+						<li><a href="#event01">お正月やバレンタインなど季節に合わせてイベントを開催</a></li>
+						<li><a href="#event02">毎日必ず誰かに当たる！デイリージャックポット</a></li>
+						<li><a href="#event03">フリースピンやキャッシュと交換できるご褒美プログラム</a></li>
+						<li><a href="#event04">毎日軍資金ゲットのチャンス！『デイリーキャッシュ』</a></li>
+					  </ul>
+					</li>
+				 	<li><a href="#payment">ベラジョンカジノの入金方法・出金方法</a>
+					  <ul>
+						<li><a href="#payment01">入金方法一覧</a></li>
+						<li><a href="#payment02">出金方法一覧</a></li>
+					  </ul>
+					</li>
+					<li><a href="#support">ベラジョンカジノのお客様サポートをチェック</a></li>
+					<li><a href="#risk">ベラジョンカジノの危険性を検証</a>
+					  <ul>
+						<li><a href="#risk01">キュラソーライセンスと乱数プログラムを採用した公平な運営</a></li>
+						<li><a href="#risk02">ベラジョンカジノでプレイしても違法にはならない？</a></li>
+						 <li><a href="#risk03">『自己規制設定』で大負けを防げる</a></li>
+						 <li><a href="#risk04">ギャンブル依存症対策の『PLAY WISE（プレイワイズ）』を採用</a></li> 
+					  </ul>
+					</li>
+					<li><a href="#app">ベラジョンカジノはアプリ非対応</a></li>
+				 	<li><a href="#manual">ベラジョンカジノ【登録マニュアル】</a></li>
+					<li><a href="#faq">ベラジョンカジノに関するよくある質問</a></li>
+				 	<li><a href="#info">ベラジョンカジノの詳細情報</a></li>
+					</ul>
+				  </li>
+				</ol>
+			  </dd>
+		    </dl>
+        <dl id="config2">
+          <dt id="riyu">ベラジョンカジノが選ばれる理由</dt>
+          <dd>
+          
+            <h2 class="casi_h2detail" id="goodpoint"><i class="far fa-star"></i><span>ベラジョンカジノはボーナスや入金・出金方法が豊富！</span></h2>		
+          <div class="detailcont casi-det">
+          <p>ベラジョンカジノは「初めてオンラインカジノを遊ぶならベラジョンカジノ」との声も多い、初心者人気ナンバーワンのオンラインカジノです。<br>
+          バラエティ豊かな日本人向けプロモーションや、ストレスなく楽しんでプレイできる要素がたくさん用意されています。</p>
+          
+          <h3 class="casi_h3detail" id="goodpoint01"><i class="far fa-star"></i>毎日誰かに必ずジャックポットが当たる！</h3>  
+          <p class="txtCenter"><img src="assets/images/vera1.jpg" alt="毎日誰かに必ずジャックポットが当たる！" loading="lazy" width="786" height="275"></p>
+            
+          <p>オンラインカジノで遊ぶからには勝って稼ぎたい！と思いますよね。<br>
+          ベラジョンカジノでは、<span class="markY bold">対象スロットで毎日1回誰かに必ずジャックポット</span>が当たる<span class="fontRed bold">デイリージャックポットキャンペーン</span>を開催しています。<br>
+          毎日高額当選を保証しているオンラインカジノはベラジョンカジノとその姉妹サイトだけ！運次第ではありますが、賞金を得るチャンスは他のカジノより高くなります。</p>
+            
+            
+          <h3 class="casi_h3detail" id="goodpoint02"><i class="far fa-star"></i>ボーナスやコインで軍資金を増やせる！</h3>   
+          <p class="txtCenter"><img src="assets/images/vera2.jpg" alt="ボーナスやコインで軍資金を増やせる！" loading="lazy" width="786" height="275"></p>
+            
+          <p>ベットするためのキャッシュを無料で貰えるサービスが複数用意されているところもベラジョンカジノの魅力の一つです。</p>
+            
+          <h4 class="arrow-bef step4">アカウント登録でもらえる『登録ボーナス』</h4>
+          <p>一つ目のサービスは、ベラジョンカジノにアカウントを登録することで貰える<span class="bold">入金不要の『登録ボーナス』</span>です。
+          <span class="bold">通常はフリースピン50回</span>のところ、<span class="markY bold">初心者ナビから登録すると<span class="fontRed">550回</span></span>を登録後に無料で貰えます！</p>
+          <p>本格的に始める前にベラジョンカジノの雰囲気を味わってみたい方には見逃せないボーナスです。</p>
+          
+            
+          <h4 class="arrow-bef step4">ベットして貯まったコインをキャッシュと交換『ご褒美プログラム』</h4>
+          <p>ベラジョンカジノでは、リアルマネーでゲームをプレイすると<span class="bold">ご褒美にコインが貰えます</span>。<br>
+          このコインはショップで<span class="markY">フリースピンやキャッシュ、入金ボーナスと交換</span>できます。</p>
+          <p>ショップに売られている<span class="fontRed bold">キャッシュの出金条件は1倍</span>となっており、ベットして勝てばそのまま出金することも可能です。</p>
+            
+            
+            
+          <h3 class="casi_h3detail" id="goodpoint03"><i class="far fa-star"></i>現金で勝利したら破棄できる！出金しやすいボーナス</h3>  
+          <p class="txtCenter"><img src="assets/images/vera3.jpg" alt="現金で勝利したら破棄できる！出金しやすいボーナス" loading="lazy" width="786" height="275"></p>
+          
+          <p>ベラジョンカジノではプレイヤーが勝利した時に邪魔にならないボーナスシステムを採用しています。<br>
+          他のオンラインカジノは自動的にボーナスが先に使われるため、<span class="bold">出金条件が掛かっていると勝っても出金できません</span>。</p>
+          <p>しかし、ベラジョンカジノは現金（キャッシュ）枠とボーナス枠が分かれており、現金（キャッシュ）が先に使われるため<span class="bold markY">現金のみでプレイして勝った時はボーナスを破棄してすぐに出金</span>できます。<br>
+          また、ベラジョンカジノは<span class="bold fontRed">出金条件も20倍</span>と低めで優しいのも嬉しいポイントです。</p>
+            
+            
+            
+          <h3 class="casi_h3detail" id="goodpoint04"><i class="far fa-star"></i>銀行振込で迅速&amp;簡単に出金できる！</h3>  
+          <p class="txtCenter"><img src="assets/images/vera4.jpg" alt="銀行振込で迅速&amp;簡単に出金できる" loading="lazy" width="786" height="275"></p>
+            
+          <p>ベラジョンカジノで出金方法として選択できる銀行出金は、<span class="bold markY">自分の国内の銀行口座に直接素早く出金</span>することが可能です。ベラジョンカジノが提携している日本国内の銀行から振込が行われるため、手間なく審査完了から１～２営業日以内に出金が完了します。<br>
+          それに加えて、銀行振込を採用しているカジノの中で<span class="bold fontRed">出金上限額が非常に高く一気に自分の銀行口座に送金</span>できて便利！</p>
+            
+            
+          </div>
+            
+          <p class="txtCenter nextarrow"><span>実際のプレイヤーはどう思ってるの？</span></p>  
+            
+            <h2 class="casi_h2detail" id="repute"><i class="far fa-comment-dots"></i><span>ベラジョンカジノの口コミや評判</span></h2>		
+          <div class="detailcont casi-det repu">
+          <p class="txtCenter"><img src="assets/images/vera5.jpg" alt="実際のプレイヤーはどう思ってるの？" loading="lazy" width="786" height="275"></p>
+          <table class="casi-kessai tab-four">
+            <tbody><tr class="syurui">
+            <th style="width: 8%;">項目</th>
+            <th>良い口コミ</th>
+            <th>悪い口コミ</th>
+            </tr>
+            <tr>
+            <th>入金・出金</th>
+            <td>
+                    <ul class="li_point">
+                      <li>決済方法が多くて便利</li>
+                <li>銀行振込が使いやすい</li>  
+                    </ul>
+            </td>
+            <td>
+                    <ul class="li_point">
+                      <li>入金手数料が高い</li>
+                <li>少額出金でも手数料を取られる</li>  
+                    </ul>
+            </td>				  
+            </tr>
+            <tr>
+            <th>ボーナス</th>
+            <td>
+                    <ul class="li_point">
+                      <li>出金条件が20倍と易しめ</li>
+                <li>禁止ゲームがない</li>  
+                    </ul>
+            </td>
+            <td>
+                    <ul class="li_point">
+                      <li>誕生日ボーナスが少ない</li>
+                <li>少額のボーナスしかもらえなかった</li>  
+                    </ul>
+            </td>				  
+            </tr>
+            <tr>
+            <th>稼ぎやすさ</th>
+            <td>
+                    <ul class="li_point">
+                      <li>ボーナスを活用して稼げた</li>
+                <li>高額勝利金を出金できた</li>  
+                    </ul>
+            </td>
+            <td>
+                    <ul class="li_point">
+                      <li>全然勝てない</li>
+                <li>稼いだお金がすぐに溶けた</li>  
+                    </ul>
+            </td>				  
+            </tr>
+            </tbody></table>   
+            
+            <p>ベラジョンカジノの評判について調査したところ、上記のように良い口コミ・悪い口コミの両方がありました。<br>
+              口コミ内容をもとに、実際の「遊びやすさ」や「稼ぎやすさ」などを検証してみましょう。</p>
+    
+          <h3 class="casi_h3detail" id="repute01"><i class="far fa-comment-dots"></i>入金・出金のしやすさに関する口コミ</h3>
+            
+           <p>入出金のしやすさに関する評判としては、「<span class="bold">決済方法が多くて便利</span>」「<span class="bold">入金が速い</span>」という良い口コミが多く見られました。<br>
+             一方で、「<span class="bold fontRed">手数料が高い</span>」という不満の声も一部あるようです。</p>
+    
+           <h4 class="arrow-bef step4 mb20">良い口コミ：入出金手段が多くて便利</h4>  
+            
+           <div class="dispFlex4">
+            <div class="icn"><img src="assets/images/ktkm-good.png" alt="ベラジョンカジノの良い口コミ" loading="lazy" width="120" height="120"></div>
+            <div class="bal">
+            <div class="says-bal yell">
+              <p>ベラジョンカジノの入金は銀行振込が安定ですね。<br>
+                楽天銀行からなら、体感30分くらいで反映される印象。</p>
+            </div>
+            </div>
+          </div>		
+           
+           <div class="dispFlex4">
+            <div class="bal">
+            <div class="says-bal yell-r">
+              <p>ベラジョンカジノも仮想通貨には力を入れていますよね。ビットコインだけじゃなくて、5種類くらい対応しています。やっぱり便利です。</p>
+            </div>
+            </div>
+            <div class="icn"><img src="assets/images/ktkm-good02.png" alt="ベラジョンカジノの良い口コミ" loading="lazy" width="120" height="120"></div>
+          </div>			   
+            
+          <div class="dispFlex4 mb20">
+            <div class="icn"><img src="assets/images/ktkm-good03.png" alt="ベラジョンカジノの良い口コミ" loading="lazy" width="120" height="120"></div>
+            <div class="bal">
+            <div class="says-bal yell">
+              <p>ベラジョンカジノでビットコイン出金申請したら4時間くらいで無事入金されてたわ。早くて便利だわ。</p>
+            </div>
+            </div>
+          </div>
+            
+          <p>ベラジョンカジノでは、<span class="bold">クレジットカード・銀行振込・電子決済サービス・仮想通貨</span>が決済方法として利用できます。<br>
+          特に手軽に入出金ができる銀行振込は、ベラジョンカジノの決済方法の中でも一番人気があります。<br>
+          新しくオンラインカジノ用の口座を開設する手間もかからないため、どの決済方法を選ぶか迷っている方には、銀行振込がおすすめといえるでしょう。</p>
+            
+           <p>また、<span class="markY bold">仮想通貨もビットコインを含め5種類対応</span>しており、入出金スピードが速いと評判です。</p>
+    
+          <h4 class="arrow-bef step1 mb20">悪い口コミ：手数料が高い</h4>
+            
+           <div class="dispFlex4">
+          <div class="icn"><img src="assets/images/ktkm-bad.png" alt="ベラジョンカジノの悪い口コミ" loading="lazy" width="120" height="120"></div>						 
+            <div class="bal">		  
+            <div class="says-bal och-l">
+              <p>ベラジョンカジノに登録してみたんだけど、500ドルをクレジットカードから入金したら5ドル手数料取られて、残高500ドルに増やせたからもう出金しちゃえ～と思ったら1.5％（9.25ドル）手数料取られますって説明受けて、今戦慄してる……</p>
+            </div>
+            </div>
+          </div> 
+            
+          <div class="dispFlex4 mb20">
+            <div class="bal">
+            <div class="says-bal och">
+              <p>出金手数料5ドル取られる仕様なのか。少額出金がさらに厳しくなったね。</p>
+            </div>
+            </div>
+            <div class="icn"><img src="assets/images/ktkm-bad02.png" alt="ベラジョンカジノの悪い口コミ" loading="lazy" width="120" height="120"></div>
+          </div> 
+            
+            <p>ベラジョンカジノでは、<span class="bold fontRed">クレジットカードでの入金時に2.25％（最大＄5）の手数料</span>がかかります。<br>
+              銀行振込や電子決済サービスであれば入金手数料無料ですので、クレジットカード以外の入金方法も検討してみるとよいでしょう。</p>
+    
+            <p>ただし出金時には、<span class="bold">銀行振込・電子決済サービスでも手数料がかかってしまいます</span>。<br>
+              手数料無料のオンラインカジノも増えてきているため、比較すると不便さを感じるかもしれません。</p>
+    
+          <h3 class="casi_h3detail" id="repute02"><i class="far fa-comment-dots"></i>ボーナスの使いやすさに関する口コミ</h3>  
+            <p>ベラジョンカジノのボーナスについては、「<span class="bold">出金条件が緩くて助かる</span>」といった好意的な口コミが多く見られましたが、「<span class="bold fontRed">ボーナス金額が少ない</span>」という不満の声もありました。<br>ボーナスの種類は他のオンラインカジノと比べても充実しているため、頻繁にボーナスがもらえるカジノを選びたい方には、ベラジョンカジノが向いているでしょう。</p>
+    
+           <h4 class="arrow-bef step4 mb20">良い口コミ：出金条件をクリアしやすい</h4>  		  
+            <div class="dispFlex4">
+            <div class="icn"><img src="assets/images/ktkm-good.png" alt="ベラジョンカジノの良い口コミ" loading="lazy" width="120" height="120"></div>
+            <div class="bal">
+            <div class="says-bal yell">
+              <p>ベラジョンカジノのボーナスは条件も20倍で緩いし禁止ゲームもなくて好き</p>
+            </div>
+            </div>
+          </div>		
+           
+           <div class="dispFlex4 mb20">
+            <div class="bal">
+            <div class="says-bal yell-r">
+              <p>ボーナスをもらっても禁止ゲームが多いと消化できないけど、その点ベラジョンは優秀</p>
+            </div>
+            </div>				 
+            <div class="icn"><img src="assets/images/ktkm-good02.png" alt="ベラジョンカジノの良い口コミ" loading="lazy" width="120" height="120"></div>
+          </div>		
+            
+            <p>ベラジョンカジノのボーナスは、<span class="markY bold">出金条件が20倍</span>です。<br>
+              30～40倍など、出金条件が厳しめに設定されているオンラインカジノも多いため、比較的出金しやすいといえるでしょう。</p>
+    
+            <p>また、ボーナスを利用できない<span class="bold">「禁止ゲーム」もない</span>ため、好きなゲームで出金条件を消化できる点も魅力です。</p>
+            
+            <h4 class="arrow-bef step1 mb20">悪い口コミ：ボーナス金額が少ない</h4>
+            
+           <div class="dispFlex4">
+              <div class="icn"><img src="assets/images/ktkm-bad.png" alt="ベラジョンカジノの悪い口コミ" loading="lazy" width="120" height="120"></div>
+              <div class="bal">		  
+            <div class="says-bal och-l">
+              <p>誕生日ボーナス何かある？って聞いたらフリースピン50回しかくれなかった</p>
+            </div>
+            </div>
+          </div> 
+            
+          <div class="dispFlex4">
+            <div class="bal">
+            <div class="says-bal och">
+              <p>ベラジョンの誕生日ボーナス結構楽しみにしてたけど、結果フリスピ20回のみ……かなりガッカリした</p>
+            </div>
+            </div>
+            <div class="icn"><img src="assets/images/ktkm-bad02.png" alt="ベラジョンカジノの悪い口コミ" loading="lazy" width="120" height="120"></div>
+          </div> 
+            
+            <div class="dispFlex4 mb20">
+            <div class="icn"><img src="assets/images/ktkm-bad03.png" alt="ベラジョンカジノの悪い口コミ" loading="lazy" width="120" height="120"></div>
+            <div class="bal">
+            <div class="says-bal och-l">
+              <p>ベラジョンのログインボーナスはなくて、50ドル100％っていうしょぼいやつだけ来てた</p>
+            </div>
+            </div>				  
+          </div> 
+            <p>ベラジョンカジノでは、基本的には<span class="bold fontRed">誕生日ボーナスがありません</span>。<br>
+              サポートに連絡するともらえるケースもありますが、少額しかもらえない場合が多いようです。</p>
+            <p>また、もらえるボーナス金額が少ないという口コミもありました。<br>
+              ただし少額であっても、<span class="bold">不定期にボーナスオファーが送られてくる</span>ため、軍資金を増やしながら遊ぶことも可能です。</p>
+    
+          <h3 class="casi_h3detail" id="repute03"><i class="far fa-comment-dots"></i>稼ぎやすさに関する口コミ</h3>  
+            <p>ベラジョンカジノの稼ぎやすさに関しては、「稼げた」という口コミと、「勝てない」という口コミの両方がありました。<br>ベラジョンカジノに限らず、ギャンブルには<span class="bold">確率の偏り</span>がありますので、連勝できることもあれば連敗が続くこともあります。<br>必勝法はありませんが、<span class="markY bold">ボーナスを上手く活用する</span>、<span class="markY bold">ペイアウト率の高いゲームを選ぶ</span>などの工夫をするとよいでしょう。</p>
+            <h4 class="arrow-bef step4 mb20">良い口コミ：高額勝利金を獲得できた</h4>  
+           <div class="dispFlex4">
+            <div class="icn"><img src="assets/images/ktkm-good.png" alt="ベラジョンカジノの良い口コミ" loading="lazy" width="120" height="120"></div>
+            <div class="bal">
+            <div class="says-bal yell">
+              <p>ベラジョン$300ボーナスは少し減ったけど、＄3290出金できました！</p>
+            </div>
+            </div>
+          </div>		
+           
+           <div class="dispFlex4">
+            <div class="bal">
+            <div class="says-bal yell-r">
+              <p>ベラジョンに＄20入れて、＄60くらい出金できた。フリークエストで貯めたボーナスが意外と助かる。</p>
+            </div>
+            </div>				 
+            <div class="icn"><img src="assets/images/ktkm-good02.png" alt="ベラジョンカジノの良い口コミ" loading="lazy" width="120" height="120"></div>
+          </div>
+            
+           <div class="dispFlex4 mb20">
+            <div class="icn"><img src="assets/images/ktkm-good03.png" alt="ベラジョンカジノの良い口コミ" loading="lazy" width="120" height="120"></div>
+            <div class="bal">
+            <div class="says-bal yell">
+              <p>残高1000残して合計14000$出金できた！ベラジョンありがとうございます</p>
+            </div>
+            </div>
+          </div>	 
+            <p>良い口コミとしては、「<span class="markY bold">ボーナスを活用して稼げた</span>」「<span class="markY bold">高額出金できた</span>」などの内容が見られました。<br>ベラジョンカジノには、毎日参加できるフリークエストというミニゲームがあり、高頻度でボーナスを獲得できます。<br>ボーナスを使って勝利金を獲得できた際に、お得さを感じるユーザーが多いようです。</p>
+          <h4 class="arrow-bef step1 mb20">悪い口コミ：全然勝てない</h4>
+           <div class="dispFlex4">
+             <div class="icn"><img src="assets/images/ktkm-bad.png" alt="ベラジョンカジノの悪い口コミ" loading="lazy" width="120" height="120"></div>			 
+            <div class="bal">		  
+            <div class="says-bal och-l">
+              <p>ベラジョンでだいぶ遊んでるけど全然勝てない。お年玉欲しいなあ</p>
+            </div>
+            </div>
+          </div> 
+            
+          <div class="dispFlex4">
+            <div class="bal">
+            <div class="says-bal och">
+              <p>ベラジョンで50＄入金して750＄まで行って全部溶かした</p>
+            </div>
+            </div>
+            <div class="icn"><img src="assets/images/ktkm-bad02.png" alt="ベラジョンカジノの悪い口コミ" loading="lazy" width="120" height="120"></div>
+          </div> 
+            
+            <div class="dispFlex4 mb20">
+            <div class="icn"><img src="assets/images/ktkm-bad03.png" alt="ベラジョンカジノの悪い口コミ" loading="lazy" width="120" height="120"></div>
+                  <div class="bal">
+            <div class="says-bal och-l">
+              <p>週末に$1200稼いだけど今日$1000溶かした</p>
+            </div>
+            </div>	  
+          </div> 
+            <p>悪い口コミとしては、「<span class="bold fontRed">勝てない</span>」「<span class="bold fontRed">稼いだお金をすぐ溶かしてしまった</span>」などの内容がありました。<br>
+              長時間プレイし続けると、どうしても損失が出る可能性が高くなりますので、軍資金額やプレイ時間を決めて利用することが重要です。</p>
+            
+            <p>どうしてもベラジョンカジノで勝てないと感じる時は、遊ぶゲームや賭け方を変えてみましょう。<br>詳しくは以下の記事でご紹介しています。</p>
+            
+            <p class="txtCenter"><a class="link_btn step4" href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/solution/verajohn-katenai/">ベラジョンカジノで勝てない時のゲームの選び方や資金管理のコツ</a></p>
+          </div>
+           
+            
+            <div class="detailcont casi-det">
+            <div class="cont-gray casi-det mb30">
+            <p class="txtCenter rank-comP">初心者ナビからアカウント登録するだけで550スピンプレゼント</p>
+            <p class="txtCenter"><img src="assets/images/vera_banner.jpg" alt="初心者ナビからアカウント登録するだけで550スピンプレゼント" loading="lazy" width="744" height="261"></p>
+            
+            <ul class="btn_rank w100">
+            <li><a href="../casino/verajohncasino_signup.html" target="new" rel="nofollow" class="btn_signup"><span>ベラジョンカジノに<br>登録する</span><i class="fas fa-chevron-circle-right"></i></a></li>
+            <li><a href="../casino/verajohncasino.html" target="new" rel="nofollow" class="btn_detail c-blue"><span>ベラジョンカジノの<br>公式サイトを見る</span><i class="fas fa-chevron-circle-right"></i></a></li>
+            </ul>  
+          </div>	
+          </div>
+    
+            
+          <p class="txtCenter nextarrow"><span>ベラジョンカジノ完全ガイド</span></p>  			  
+          </dd>
+          
+          
+          
+          <dt id="guide">ベラジョンカジノ完全ガイド</dt>
+          <dd>
+          <h2 class="casi_h2detail" id="bonus"><i class="fas fa-coins"></i><span>ベラジョンカジノのボーナス徹底解説</span></h2>		
+          <div class="detailcont casi-det">
+            
+          <h3 class="casi_h3detail" id="bonus01"><i class="fas fa-coins"></i>登録するだけで貰える！初心者ナビ限定550スピンボーナス</h3>  
+          <p class="txtCenter"><img src="assets/images/vera_bonus.jpg" alt="登録するだけで貰える！初心者ナビ限定550スピンボーナス" loading="lazy" width="786" height="275"></p>
+              <p>ベラジョンカジノにアカウントを登録するだけで、入金不要の登録ボーナスとして人気スロット「Golden Ticket」のフリースピンが貰えます。<br>
+          初心者ナビからベラジョンカジノに登録すると、<span class="bold markY">通常50回のところ550回</span>プレゼントされます！</p>
+          
+          <p>フリースピンで得た勝利金はボーナスマネーとして加算されますので、勝利金でさらにゲームを遊ぶことも可能です。</p>
+            
+          <p>登録ボーナスには、利用規約が設定されています。出金条件や、出金を考えている方はベット上限などの規約に注意しましょう。<br>
+            詳しくは下記の記事で解説しています。</p>
+            
+          <p class="txtCenter mb20"><a class="link_btn step4" href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/oncasi-bonus/verajohn-tourokubonus-syukkin/">ベラジョンカジノの登録ボーナスの出金条件や出金時の注意点</a></p>			  
+     
+        <div class="staff_comment_col">
+            <img src="assets/images/icon-staff_akira.jpg" width="150" height="150" loading="lazy" alt="ライターAKIRA">   
+            <div class="speech">
+                <p>通常50回のところ550回貰えるのはかなりお得なので要チェックです～。フリースピン1回あたりのベット額は0.2ドルなので、550回＝100ドル分も貰えちゃいますよ～。</p>
+            </div>
+        </div>		  
+            
+            
+          <h3 class="casi_h3detail" id="bonus02"><i class="fas fa-coins"></i>入金で最大$1,000が受け取れるウェルカムボーナス</h3>
+    
+              <p>登録ボーナスを使い切った後も、ベラジョンカジノでは新たにプレイを始める人を対象としたお得なボーナスが用意されています。
+          <span class="bold">初回から3回目までの入金</span>に対して、<span class="fontRed bold">最大$1,000が貰えるベラジョンビギナー向けのウェルカムボーナス（入金ボーナス）</span>です。<br>
+          ベラジョンカジノのウェルカムボーナスの内訳は以下となります。</p>
+            
+          <div class="detail_about step3 f90 mt0">
+           <ul class="li_nost pt3">
+                  <li><span class="bold markY">初回入金ボーナス</span><br>
+              初めての入金で最高$500までの100%初回入金ボーナス</li>
+                  <li><span class="bold markY">セカンド入金ボーナス</span><br>
+              2回目の入金で最高$250までの50%セカンド入金ボーナス</li>
+                  <li><span class="bold markY">サード入金ボーナス</span><br>
+              3回目の入金で最高$200までの100％サード入金ボーナス<br>
+            さらに、毎日10日間連続日替わりで人気ゲームを無料で楽しめるボーナス</li>
+                  </ul>
+          </div>  
+            
+          <p>入金するだけで元の軍資金が増えるボーナスは嬉しいですね。<br>
+          ビギナーズボーナスの詳しい受け取り方や、利用時の注意点などは下記の記事で詳しく解説しています。</p>  
+            
+          <p class="txtCenter mb20"><a class="link_btn step4" href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/oncasi-bonus/verajohn-beginnersbonus/">ベラジョンカジノのビギナーズボーナスの貰い方や利用時のルール・注意点を解説</a></p>	
+            
+          <h3 class="casi_h3detail" id="bonus03"><i class="fas fa-coins"></i>ベラジョンカジノのボーナスの出金条件は20倍</h3>
+            
+              <p>オンラインカジノのボーナスにはほとんど出金条件が設定されています。</p>  
+            
+              <p>ベラジョンカジノの<span class="bold markY">出金条件は20倍</span>と、他のオンラインカジノに比べると低めに設定されています。<br>
+          通常ボーナスは出金条件を満たさないと出金できません。賭け条件が30～50倍に設定されているカジノが多いので、20倍はかなり易しいですね。</p>
+            
+          <p>加えてベラジョンカジノのボーナスは不要なら破棄できる出金の邪魔にならない仕様になっています。<br>
+          一般的なオンラインカジノのボーナスとどう違うのか、比較してみましょう。</p>
+            
+          <p>ボーナスを破棄する方法については以下の記事でご紹介しています。</p>
+           
+          <p class="txtCenter mb20"><a class="link_btn step4" href="https://オンラインカジノ初心者ナビ.com/blog/oncasi-bonus/verajohn-bonushaki/">ベラジョンカジノでボーナスを破棄する3つの方法と受け取らない方法</a></p>	
+            
+          <h4 class="arrow-bef step4 mb10">一般的なオンラインカジノの場合</h4>  
+          <div class="dispFlex bgcol-step4 mb15">
+            <div class="flex50">
+              <img src="assets/images/vera_bonus2p.jpg" alt="キャッシュとボーナス枠が別々に！一般のオンラインカジノの場合" loading="lazy" width="346" height="275" class="w100">
+            </div>
+            <div class="flex50">
+              <p>まず一般的なカジノのボーナスは、入金した現金（キャッシュ）とボーナスが<span class="bold">合算されてアカウントに保存・管理</span>されます。</p>
+              <p>この場合自動的にボーナスから消費されていくため、ボーナスを使って勝ったとしても<span class="fontRed bold">出金条件がかかってしまい、満たすまで出金は行えません</span>。出金を行うには、キャッシュを使って出金条件に達するまでゲームにベットする必要があります。</p>
+            </div>
+          </div>
+            
+          <p>また、キャッシュとボーナスが合算されて一緒に管理されていることから<span class="bold">ボーナスを破棄できないオンラインカジノが大半</span>です。<br>
+          このタイプのボーナスは出金条件も40倍程度のオンラインカジノが多く、出金条件を満たすのが難しいという方もいると思います。</p>
+            
+          <p>そんな方でも気軽に楽しめるのがベラジョンカジノの魅力です。</p>
+          
+            
+          <h4 class="arrow-bef step1 mb10">ベラジョンカジノの場合</h4>
+          <div class="dispFlex bgcol-step1 mb15">
+            <div class="flex50"><img src="assets/images/vera_bonus2v.jpg" alt="キャッシュとボーナス枠が別々に！ベラジョンカジノの出金条件" loading="lazy" width="346" height="275" class="w100"></div>
+            <div class="flex50">
+              <p>ベラジョンカジノは<span class="bold fontRed">自動的にキャッシュが先に消費</span>され、勝てなかった時の再挑戦のチャンスとしてボーナスを消費していく保証型の仕組みです。</p>
+              <p>入金した現金（キャッシュ）とボーナスは<span class="bold">アカウント内で別々に管理され、勝利金も別々に保存</span>されています。ボーナスを利用せずキャッシュで勝利した場合は<span class="markY bold">ボーナスを破棄してすぐに出金することが可能</span>です。</p> 
+            </div>
+          </div>  
+            
+           <p>ボーナス破棄を希望する場合は、カスタマーサポートに連絡をしてボーナスを破棄する旨を伝えればその手続きを行ってもらえます。</p> 
+    
+            
+          <dl class="dl_point b-rad10 step4 mb30">
+              <dt><i class="fas fa-check-circle"></i>ボーナスの利用規約には目を通しておこう</dt>
+              <dd class="sp-mb10">
+                 <p>初心者に豊富なボーナス制度が用意されているベラジョンカジノですが、ボーナスを利用するにあたって<span class="bold fontRed">利用規約には注意</span>しておきましょう。</p>
+            <p class="mb20">利用規約に反してボーナスを受け取ってしまうと、<span class="bold">ボーナスが全て没収</span>されたり条件を満たしても<span class="bold">出金が行えなくなってしまうかも</span>しれません。<br>
+           ボーナス、アカウント規約違反になってしまう禁止事項については下記の記事で詳しく解説しています。</p>
+            
+            
+          <p class="txtCenter spmt10"><a class="link_btn step4" href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/solution/verajohn-kinshijikou/">ベラジョンカジノのボーナス利用時の禁止事項について</a></p>
+            
+              </dd>
+              </dl>
+            
+          </div>
+          <p class="txtCenter nextarrow"><span>ベラジョンカジノで遊ぶならコレ！</span></p>  
+            
+            
+          <h2 class="casi_h2detail" id="gamepick"><i class="fas fa-gamepad"></i><span>ベラジョンカジノのおすすめゲーム</span></h2>		
+          <div class="detailcont casi-det">
+          <p>人気ゲームが勢揃いのベラジョンカジノ。その中でも日本人に馴染みのある3×3リールスロットが人気を博したり、近頃は高額ベットに対応してハイローラープレイヤーも遊びやすいとして注目を集めています。<br>
+          ここではベラジョンカジノで話題の人気のゲームをそれぞれ紹介します。</p>
+            
+          <h3 class="casi_h3detail"><i class="fas fa-gamepad"></i>Hawaiian Dream（ハワイアンドリーム）</h3>
+          <div class="dispFlex4">
+            <div class="flex50"><img src="assets/images/vera_game5.jpg" alt="Hawaiian Dream（ハワイアンドリーム）" loading="lazy" width="346" height="173"></div>
+            <div class="flex50">
+            <dl class="casi-Recogame">
+              <dt>ベラジョンカジノで最も人気のスロット</dt>
+                <dd>
+              <p>Golden Hero Games社から提供されている日本の沖スロをモチーフにした3×3リール。<br>
+              ベラジョンカジノではハワイアンドリームから1,100万を超える高額勝利金が出たことも！日本のパチスロ好きに根強く支持されているスロットです。</p>
+              </dd>
+            </dl>
+            </div>
+          </div>
+            
+          <p class="txtCenter"><a class="link_btn step4" href="../slot/hawaiiandream.html">【スロット攻略】ハワイアンドリームの解説を見る</a></p>
+      
+            
+          <h3 class="casi_h3detail"><i class="fas fa-gamepad"></i>Baccarat Lobby (Paris)</h3>
+          <div class="dispFlex4">
+            <div class="flex50"><img src="assets/images/vera_game1.jpg" alt="Baccarat Lobby (Paris)" loading="lazy" width="346" height="173"></div>
+            <div class="flex50">
+            <dl class="casi-Recogame">
+              <dt>高額ベットが可能！稼ぎたいならライブバカラ</dt>
+                <dd>
+              <p>ベラジョンカジノの中で最もベットされている額が高いゲームがEvolution Gaming社のライブバカラです。<br>
+              最大$15,000の高額ベットに対応。単純なルールと勝敗が決するスピードが早いため沢山賭けて一気に勝利金を獲得したいハイローラーに最も人気のゲームです。</p>
+              </dd>
+            </dl>
+            </div>
+          </div>
+            
+            
+          <h3 class="casi_h3detail"><i class="fas fa-gamepad"></i>Pirates Plenty Battle for Gold（パイレーツ・プレンティ・バトル・フォー・ゴールド）</h3>
+          <div class="dispFlex4">
+            <div class="flex50"><img src="assets/images/vera_game6.jpg" alt="Pirates Plenty Battle for Gold（パイレーツ・プレンティ：バトル・フォー・ゴールド）" loading="lazy" width="346" height="173"></div>
+            <div class="flex50">
+            <dl class="casi-Recogame">
+              <dt>デイリージャックポットの対象機種！</dt>
+                <dd>
+              <p>毎日1回誰かに当たるデイリージャックポット対象のRed Tiger社のスロット。<br>
+              通常のプログレッシブジャックポットも搭載！ベラジョンでプレイすれば2つのジャックポットのチャンスが得られます。冒険が進むにつれて大当たりの期待が高まります。</p>
+              </dd>
+            </dl>
+            </div>
+          </div>
+            
+          <p class="txtCenter"><a class="link_btn step4" href="../slot/piratesplentybfg.html">【スロット攻略】パイレーツ・プレンティ・バトル・フォー・ゴールドの解説を見る</a></p>
+          
+            
+          <div class="staff_comment_col">
+                  <img src="assets/images/icon-staff_kenji.jpg" width="150" height="150" loading="lazy" alt="ライターKENJI">   
+                <div class="speech">
+                  <p>僕はテーブルゲームの方が好みではあるんですが…ずっと安定した人気を保っているハワイアンドリームはやっぱり強いですね。比較的当たりやすいという話もよく聞きます…！</p>
+                </div>
+          </div>
+            
+          </div>
+            
+          <p class="txtCenter nextarrow spmt0"><span>実際に勝った人はいるの？</span></p>
+            
+          <h2 class="casi_h2detail" id="data"><i class="fas fa-trophy"></i><span>ベラジョンカジノの大勝ちデータを公開</span></h2>		
+          <div class="detailcont casi-det">
+            <p>ベラジョンカジノのゲームで遊ぶにあたり、実際にどれくらいの高額勝利が可能なのか、気になる方も多いのではないでしょうか。<br>ここでは、<span class="bold">ベラジョンカジノの歴代最高勝利金額と、過去1年間（2022年～2023年）の高額勝利データ</span>を公開します。</p>
+          <h3 class="casi_h3detail" id="data01"><i class="fas fa-trophy"></i>歴代最高の勝利金額は4億円超！</h3>
+            <p>2017年10月、歴代最高額の高額ジャックポットに当選したプレイヤーが誕生しました。<br>当選金額は3,482,819ユーロ。<span class="markY bold">日本円にして4億円を超える金額</span>です。</p>
+        <table class="casi-kessai">
+            <tbody><tr>
+            <th>勝利金獲得の年月</th>
+            <td>2017年10月</td>
+            </tr>
+            <tr>
+            <th>当選金額</th>
+            <td>3,482,819ユーロ</td>
+            </tr>
+            <tr>
+            <th>勝利金を獲得したゲーム</th>
+            <td>Joker Millions（Yggdrasil Gaming）</td>
+            </tr>
+            <tr>
+            <th>プレイヤーの居住エリア</th>
+            <td>ヨーロッパ</td>
+            </tr>
+            </tbody></table>  
+            
+    <p>プレイヤーが当時ベットしていた金額は、<span class="bold">たったの77セント</span>だったとのこと。<br>高額ベットの方がジャックポット当選の確率が高まるといわれていますが、少額の賭けでも高額当選を手にした夢のある事例となりました。</p>
+            
+          <h3 class="casi_h3detail" id="data02"><i class="fas fa-trophy"></i>【2022年～2023年】高額勝利ランキングTOP10</h3>
+    <p>他にも、ベラジョンカジノで高額勝利が出た事例は数多くあります。<br>ここでは、2022年3月～2023年2月の高額勝利データTOP10を公開します！</p>
+            <table class="casi-kessai tab-four">
+            <tbody>
+            <tr class="syurui">
+            <th style="width: 8%;">順位</th>
+            <th>勝利金獲得の年月</th>
+            <th>ゲーム名</th>
+             <th>勝利金額</th> 
+            </tr>
+      <tr>
+        <td>1</td>
+        <td>2022年6月</td>
+        <td>Wheel of Wishes</td>
+        <td>$446,126</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>2022年7月</td>
+        <td>Jammin Jars</td>
+        <td>$393,043</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>2022年10月</td>
+        <td>Starlight Princess</td>
+        <td>$350,000</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>2022年3月</td>
+        <td>Money Train 2</td>
+        <td>$338,410</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>2022年7月</td>
+        <td>Monopoly Live</td>
+        <td>$273,075</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>2022年3月</td>
+        <td>100 Bit Dice</td>
+        <td>$250,000</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>2022年5月</td>
+        <td>Gates of Olympus</td>
+        <td>$250,000</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>2022年12月</td>
+        <td>Money Train 3</td>
+        <td>$250,000</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>2022年7月</td>
+        <td>Moon Princess 100</td>
+        <td>$242,229</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>2022年8月</td>
+        <td>Mental</td>
+        <td>$240,000</td>
+      </tr>
+            </tbody>
+            </table>
+            
+    <p>1位はジャックポット当選による高額勝利です。<a href="https://www.verajohn.com/ja/promotion/2" target="_new" class="bold">【ベラジョンカジノの勝利者インタビュー】</a>によると、プレイヤーは当時＄2をベットしてプレイしていました。<br>歴代最高勝利と同様、<span class="markY bold">少額ベットでもジャックポットの当選チャンスがある</span>ことがわかります。</p>
+    
+    <p>2位～10位はジャックポット以外での事例ですが、いずれも<span class="bold">日本円換算で3,000万円以上の高額勝利</span>となっています。</p>
+    
+    <div class="staff_comment_col">
+                  <img src="assets/images/icon-staff_kenji.jpg" width="150" height="150" loading="lazy" alt="ライターKENJI">   
+                <div class="speech">
+                  <p>高額勝利が出たゲームを見ると、<span class="bold">ジャミン・ジャーズ、マネートレイン、ムーンプリンセス</span>など、爆発力が高いと言われている人気スロットが揃っていますね。気になる方は、一度無料プレイで遊んでみるといいかもしれません……！</p>
+                </div>
+          </div>
+    
+          </div>			  
+    <p class="txtCenter nextarrow spmt0"><span>もっとベラジョンカジノを楽しむなら</span></p>
+            
+            
+          <h2 class="casi_h2detail" id="event"><i class="fas fa-gift"></i><span>日本人プレイヤー向けの季節イベントやキャンペーンが多数</span></h2>		
+          <div class="detailcont casi-det">
+          <p>年間通してイベントが多いことでも知られているベラジョンカジノ。
+          定期的に開催しているトーナメントとは別に、普段からプレイヤーが喜ぶ独自のキャンペーンを複数開催しています。</p>
+          <p>ここでは、ベラジョンカジノで行われているイベントについて解説していきます。</p>
+            
+            
+          <h3 class="casi_h3detail" id="event01"><i class="fas fa-gift"></i>お正月やバレンタインなど季節に合わせてイベントを開催</h3>
+           
+           <p class="txtCenter"><img src="assets/images/vera_event1.jpg" alt="お正月やバレンタインなど季節に合わせてイベントを開催" loading="lazy" width="786" height="275"></p> 
+            
+           <p>海外で運営されているベラジョンカジノですが、<span class="bold fontRed">日本の季節イベントに合わせたキャンペーンやトーナメントをその都度開催</span>しています。<br>
+           開催時間も日本時間に合わせて行われ、日本限定のイベントも多く開催されています。日本人に馴染みのあるイベントをベラジョンカジノでも楽しむことができるのは嬉しいですね。</p>
+            
+            
+        <div class="detail_about step3 f90 mt0">
+            <h4><i class="fas fa-crown"></i>トーナメントだけではなくキャッシュの山分け、抽選などのイベントも開催</h4>
+            <p>ベラジョンカジノの嬉しいところは、<span class="bold">トーナメント以外のイベントも開催</span>している点です。</p>
+          <p>季節イベントに参加したいけど毎回トーナメントはちょっと……という人でも参加できる<span class="bold">抽選会やキャッシュの山分けキャンペーン</span>、ログインなどで貰える<span class="bold">コインを貯めた数を競う</span>など様々な工夫を凝らしたイベントが盛りだくさん！<br>
+          自分のスタイルに合ったイベントに無理なく楽しみながら参加できます。</p>
+        </div>
+            
+            
+        <div class="contin-news mt30">
+          <h3><i class="fas fa-bullhorn"></i><span>ベラジョンカジノで開催中の注目イベント</span></h3>
+          
+          <div class="casino-eventsin">
+            <a href="../repo/repo253.html">
+              <img class="pc" src="assests/images/230419.jpg"><img class="sp" src="assets/images/230419.jpg">
+            </a>
+            <dl>
+              <dt>
+                <span>2023.4.19</span><br>
+                ベラジョンカジノ「ベラジョン杯」まだまだ間に合う！総額＄116,000のトーナメント
+              </dt>
+              <dd>
+                <p>「ライブカジノ」「スロット」二種類のトーナメントが開催中。「賭けポイント戦」と「ラウンドポイント戦」の好きなルールでチャレンジ！</p>
+                <p class="txtCenter spmb28"><a href="../repo/repo253.html" class="link_btn step4">イベントを詳しく見る</a></p> 
+              </dd>
+            </dl>
+          </div>
+        </div>
+            
+            
+          <h3 class="casi_h3detail" id="event02"><i class="fas fa-gift"></i>毎日必ず誰かに当たる！デイリージャックポット</h3>
+          <p class="txtCenter"><img src="assets/images/vera_event3.jpg" alt="毎日必ず誰かに当たる！デイリージャックポット" loading="lazy" width="786" height="275"></p>  
+            
+          <p><span class="bold fontRed">デイリージャックポット</span>は<span class="bold">Red Tiger社の対象スロット</span>をプレイするだけで<span class="bold markY">毎日1回、必ず誰かにジャックポットが当たります！</span></p>
+            
+          <p>対象スロットは全てプログレッシブジャックポットの対象機種となっており、デイリージャックポットに加えて<span class="fontRed bold">プログレッシブジャックポット獲得のチャンス</span>もあります！<br>
+          スロットによっては1時間に1回ジャックポットが当たる<span class="bold fontRed">「アワリージャックポット」</span>が搭載されている場合もあるので要チェックです。</p>
+            
+          <p>参加方法は、キャッシュで対象スロットをプレイするだけ。<br>
+          デイリージャックポットを獲得できるのは、ベラジョンカジノとその姉妹サイトのプレイヤーだけなので、獲得できる可能性も大きくなります。</p>
+                    
+          <h3 class="casi_h3detail" id="event03"><i class="fas fa-gift"></i>フリースピンやキャッシュと交換できるご褒美プログラム</h3>
+          <p class="txtCenter"><img src="assets/images/vera_event4.jpg" alt="フリースピンやキャッシュと交換できるご褒美プログラム" loading="lazy" width="786" height="295"></p> 
+            
+           <p>ベラジョンカジノでは、キャッシュでゲームをプレイすると<span class="bold">ベット額に応じて「コイン」が貯まる</span>ようになっています。<br>
+          このコインを<span class="bold">一定まで貯めるとショップでフリースピンやキャッシュと交換する</span>ことができ、<span class="bold markY">無料でカジノゲームをプレイすることも可能</span>です！</p>
+          
+          <p>ショップで交換できるアイテムは、コインを貯めてアカウントレベルを上げるにつれて開放されていきます。<br>
+          また、季節イベントで特設ショップが出店される場合も！
+          過去のイベントではアイテムが大幅に値下げされたりイベント限定の抽選チケットが販売されたこともりますので、いざという時のために貯めておくのもいいかもしれません。</p>
+            
+          <p>180日間ログインしなかった場合は失効となりますがコイン自体に有効期限はありませんのでベラジョンカジノで楽しく遊んでご褒美のコインもゲットしちゃいましょう。</p>
+          <p>ご褒美プログラムについては以下の記事が参考になります。</p>
+            
+          <p class="txtCenter mb30"><a class="link_btn step4" href="https://オンラインカジノ初心者ナビ.com/blog/oncasi-bonus/verajohn-gohoubiprogram/">ベラジョンカジノのご褒美プログラム活用ガイド</a></p> 
+            
+            
+          <h3 class="casi_h3detail" id="event04"><i class="fas fa-gift"></i>毎日軍資金ゲットのチャンス！『デイリーキャッシュ』</h3>
+            
+          <p class="txtCenter"><img src="assets/images/vera_event6.jpg" alt="毎日チャレンジでお小遣いキャッシュをゲット！『デイリーキャッシュ』" loading="lazy" width="786" height="275"></p>
+            
+          <p>ベラジョンカジノ独自のボーナスとして、<span class="bold">毎日少額のキャッシュが当たる「デイリーキャッシュ」</span>が開催されています。<br>
+          「マイカジノ」から1日1回プレイできる「カード・オブ・フロンティア」で5枚のカードのうち1枚を選ぶと、<span class="bold markY">書かれている金額と同額のキャッシュを受け取る</span>ことができます！</p>
+                    
+          <p>デイリーキャッシュで貰える金額は1～10ドルと小さい額ですが、毎日プレイしていると1か月間で合計数10ドルは貰えることになります。少しでも軍資金を増やしたいプレイヤーにとってありがたいイベントです。キャッシュで貰えるので出金条件や使用期限などがないのも嬉しいですね。</p>
+            
+          <p>さらに、ランダムで「ジャックポットチャレンジ」が発生すると、最高20,000ドルの高額賞金をゲットするチャンス！<br>
+          「カード・オブ・フロンティア」挑戦権は毎日20時にリセットされますので忘れずにチェックしましょう。</p>
+            
+          <p>なお、デイリーキャッシュ（カードオブフロンティア）をプレイするには、過去15日以内に10ドル以上入金している必要があります。<br>
+          詳しくは以下の記事で解説しています。</p>
+            
+          <p class="txtCenter"><a class="link_btn step4" href="https://オンラインカジノ初心者ナビ.com/blog/oncasi-bonus/verajohn-dailycash/">ベラジョンカジノのデイリーキャッシュ徹底解説！参加条件・当選確率を上げる方法</a></p>
+            
+          </div>
+          <p class="txtCenter nextarrow"><span>決済手段も豊富！</span></p>
+            
+          <h2 class="casi_h2detail" id="payment"><i class="fas fa-hand-holding-usd"></i><span>ベラジョンカジノの入金方法・出金方法</span></h2>		
+          <div class="detailcont casi-det">
+          <p class="txtCenter"><img src="assets/images/vera7.jpg" alt="ベラジョンカジノの入金方法・出金方法" loading="lazy" width="786" height="275"></p> 
+          <p>オンラインカジノで本格的に遊ぶためには入出金の手段も気になりますよね。<br>ベラジョンカジノでは、主要な電子決済はもちろん、クレジットカードや銀行振込(銀行送金)にも対応しています。</p>
+            
+            
+          <h3 class="casi_h3detail" id="payment01"><i class="fas fa-hand-holding-usd"></i>入金方法一覧</h3>
+    
+          <p>ベラジョンカジノへの<span class="bold">入金には、国内発行のクレジットカードや銀行振込(銀行送金)、電子決済、仮想通貨などを利用</span>することができます。</p>
+    
+          <p>クレジットカードでの入金は手数料がかかってしまうため、ベラジョンカジノへの<span class="markY bold">入金は銀行振込(銀行送金)や電子決済がおすすめ</span>です。</p>
+    
+          <p>また、エコペイズなどの電子決済を利用すると、<span class="bold">コンビニATMからベラジョンカジノに間接的に入金することも可能</span>です。</p>
+    
+          <p>コンビニからベラジョンカジノへの入金方法の詳しい手順や限度額などは下記の記事で解説しています。</p>			  
+            
+          <p class="txtCenter"><a class="link_btn step4" href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/oncasi-payment/verajohn-konbininyukin/">コンビニATMからベラジョンカジノに入金する方法を解説</a></p>			  
+            
+            
+          <h4 class="arrow-bef step4">銀行振込(銀行送金)</h4>			  
+          <table class="casi-kessai tab-four">
+            <tbody><tr>
+            <th>入金限度</th>
+            <td>$10～<br class="sp">$2,000</td>
+            </tr>
+            <tr>
+            <th>手数料</th>
+            <td>無料</td>
+            </tr>	
+            <tr>
+            <th>反映速度</th>
+            <td>2～3営業日程度</td>
+            </tr>						
+           
+            </tbody></table>  
+            
+           <p> ※反映スピードはあくまで目安となっています。銀行の休業日を挟む場合などは反映が遅れることがあります。</p>
+            
+           <p>銀行振込については以下の記事で詳しく解説しています。</p>
+            
+           <p class="txtCenter"><a class="link_btn step4" href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/oncasi-payment/verajohn-banktransfer/">ベラジョンカジノの銀行振込を徹底解説！使える銀行や入金・出金方法</a></p>		
+            
+          <h4 class="arrow-bef step4">クレジットカード</h4>
+          <table class="casi-kessai tab-four">
+            <tbody><tr class="syurui">
+            <td>　</td>
+            <th><img src="assets/images/ico_visa.png" alt="VISA" loading="lazy" width="25" height="25"><br class="sp">VISA</th>
+            <th><img src="assets/images/ico_jcb.png" alt="JCB" loading="lazy" width="25" height="25"><br class="sp">JCB</th>				  
+            <th><img src="assets/images/ico_mast.png" alt="MastarCard" loading="lazy" width="25" height="25"><br class="sp">Master</th>
+            <th><img src="assets/images/ico_amex.png" alt="AMEX" loading="lazy" width="25" height="25"><br class="sp">AMEX</th>
+            </tr>
+            <tr>
+            <th>入金限度</th>
+            <td>$10～<br class="sp">$2,500</td>
+            <td>$10～<br class="sp">$2,500</td>
+            <td>$10～<br class="sp">$2,500</td>
+            <td>$10～<br class="sp">$2,500</td>
+            </tr>
+            <tr>
+            <th>手数料</th>
+            <td>2.25%,<br class="sp">最大$5</td>
+            <td>2.25%,<br class="sp">最大$5</td>
+            <td>2.25%,<br class="sp">最大$5</td>
+            <td>2.25%,<br class="sp">最大$5</td>
+            </tr>
+            <tr>
+            <th>反映速度</th>
+            <td>即時</td>
+            <td>即時</td>
+            <td>即時</td>
+            <td>即時</td>
+            </tr>
+            </tbody></table>
+            
+          <p>クレジットカードでの入金について詳しくは以下の記事をご覧ください。</p>
+             
+          <p class="txtCenter"><a class="link_btn step4" href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/oncasi-payment/verajohn-creditcard/">ベラジョンカジノのクレジットカード入金を徹底解説！入金できないときの原因も紹介</a></p>			  
+    
+          <h4 class="arrow-bef step4">電子決済サービス</h4>
+          <table class="casi-kessai tab-four">
+            <tbody><tr class="syurui">
+            <td>　</td>
+            <th><img src="assets/images/ico_ecop.png" alt="ecoPayz" loading="lazy" width="25" height="25"><br class="sp">ecoPayz</th>
+            <th><img src="assets/images/ico_much.png" alt="MuchBetter" loading="lazy" width="25" height="25"><br class="sp">Much<br class="sp">Better</th>
+            <th><img src="assets/images/ico_vega.png" alt="VegaWallet" loading="lazy" width="25" height="25"><br class="sp">Vega<br class="sp">Wallet</th>
+             <th><img src="assets/images/ico_jeton.png" alt="Jeton" loading="lazy" width="25" height="25"><br class="sp">Jeton</th> 
+    
+            </tr>
+            <tr>
+            <th>入金限度</th>
+            <td>$10～<br class="sp">$2,500</td>
+            <td>$10～<br class="sp">$2,500</td>
+            <td>$10～<br class="sp">$2,500</td>
+            <td>$10～<br class="sp">$2,500</td>				  
+            </tr>
+            <tr>
+            <th>手数料</th>
+            <td>無料</td>
+            <td>無料</td>
+            <td>無料</td>
+             <td>無料</td> 
+            </tr>
+            <tr>
+            <th>反映速度</th>
+            <td>即時</td>
+            <td>即時</td>
+            <td>10-20分</td>
+             <td>即時</td> 
+            </tr>
+            </tbody></table> 
+            <p>※反映スピードはあくまで目安となっています。連休や繁忙期等の場合は反映が遅れる場合があります。</p>
+            
+            
+          <h4 class="arrow-bef step4">仮想通貨</h4>
+          <table class="casi-kessai sel2">
+            <tbody><tr class="syurui">
+            <td>　</td>
+             <th><img src="assets/images/ico_btc.png" alt="仮想通貨" class="mr10" loading="lazy" width="25" height="25">仮想通貨<br>(ビットコイン・イーサリアム・ライトコイン・リップル・ビットコインキャッシュ)</th>
+            </tr>
+            <tr>
+            <th>入金限度</th>
+            <td>＄0.01～＄10,000</td>
+            </tr>
+            <tr>
+            <th>手数料</th>
+            <td>無料</td>
+            </tr>
+            <tr>
+            <th>反映速度</th>
+            <td>即時</td>
+            </tr>
+            </tbody></table>
+            
+          <p>※手数料として、仮想通貨のシステム利用料が別途必要となります。<br>
+          ※反映スピードはあくまで目安となっています。連休や繁忙期等の場合は反映が遅れる場合があります。</p>
+    
+    
+        <div class="staff_comment_col">
+                 <img src="assets/images/icon-staff_masaru.jpg" width="150" height="150" loading="lazy" alt="ライターMASARU">   
+            <div class="speech">
+                <p>入金方法の種類がたくさんありますが、最近は銀行振込が一番人気みたいです！以前は出金でしか使えなかったんですが、今は入金でも使えてかなり便利になりましたね！！</p>
+            </div>
+        </div>			  
+            
+            
+          <h3 class="casi_h3detail" id="payment02"><i class="fas fa-hand-holding-usd"></i>出金方法一覧</h3>
+    
+          <p>ベラジョンカジノの<span class="markY bold">出金方法の中でも、特にオススメなのが「銀行振込(銀行送金)」</span>です。</p>
+    
+          <p>メガバンクはもちろん、ゆうちょ銀行や一部の地方銀行、ネット銀行など、国内での振込に対応している<span class="bold">銀行の口座を持っていればすぐに勝利金を自分の口座に送金することができる</span>ため、もっとも手軽で利用者も多い出金方法です。</p>
+    
+          <p>できるだけ手数料を安く抑えたという方は、<span class="markY bold">50ドル以上の出金で手数料が無料</span>となる、<span class="bold">エコペイズなどの電子決済サービス</span>で出金するのが良いでしょう。</p>
+    
+          <p>ただし、ベラジョンカジノでは初回出金時や高額出金を行なう際は、アカウント認証(本人確認)を行なう決まりとなっています。</p>
+    
+          <p>アカウント認証後は各決済方法で出金できる上限額もアップするため、スムーズに出金を行ないたい方は事前にアカウント認証を済ませておきましょう。<br>
+          アカウント認証の手順などは以下の記事が参考になります。</p>
+    
+          <p class="txtCenter"><a class="link_btn step4" href="https://オンラインカジノ初心者ナビ.com/blog/solution/verajohn-accountninsyou/">【ベラジョンカジノのアカウント認証】必要書類や提出手順、審査時間を解説</a></p>
+            
+          <p>(※以下の表に記載している出金限度額はアカウント認証完了の金額になります。)</p>
+            
+          <h4 class="arrow-bef step4">銀行振込</h4>
+            
+          <table class="casi-kessai sel2">
+            <tbody><tr class="syurui">
+            <td>　</td>
+             <th><img src="assets/images/ico_bank.png" alt="銀行振込" class="mr10" loading="lazy" width="25" height="25">銀行振込</th>
+            </tr>
+            <tr>
+            <th>出金限度</th>
+            <td>$10～$45,000</td>
+            </tr>
+            <tr>
+            <th>手数料</th>
+            <td>約1.5%</td>
+            </tr>
+            <tr>
+            <th>反映速度</th>
+            <td>約2～3営業日程度</td>
+            </tr>
+            </tbody></table>  
+          
+            
+          <dl class="dl_point b-rad10 step4 mb30">
+              <dt><i class="fas fa-check-circle"></i>国内銀行振込と国際銀行振込の違い</dt>
+              <dd class="sp-mb10">
+                 <p>一口に銀行振込と言っても、日本国内の銀行から振込を行う『国内銀行振込』と海外の銀行を経由して振り込みを行う『国際銀行振込』の2通りがあります。<br>
+            オンラインカジノ、または決済システムで送金を行う場合はどちらの送金システムなのかを一度確認してみましょう。</p>
+            
+            <p>国内銀行振込のメリットは<span class="bold markY">『振込までの日数が短縮できる』『海外銀行を中継する必要がないため手数料が抑えられる』『銀行からの内容確認の手間を省ける』</span>などがあります。<br>
+            それぞれの銀行振込の日数や手数料などを比較してみました。</p>
+            
+            <table width="100%" class="casi-kessai">
+            <tbody><tr class="syurui"><td>　</td><th>国内銀行振込</th><th>国際銀行振込</th></tr>
+            <tr><th>日数</th><td>1～3営業日</td><td>5～10営業日</td></tr>
+            <tr><th>手数料</th><td>委託業者+<br class="sp">受取銀行で発生</td><td>中継銀行（1~3）<br class="sp">+受取銀行で発生</td></tr>
+            <tr><th>内容確認</th><td>なし</td><td>場合によっては<br class="sp">あり</td></tr>				  
+            </tbody></table>
+              
+            <p>国際銀行振込は外国の銀行をいくつも経由してから自分の銀行に振り込まれるため日数がかかったり、その都度手数料がかかってしまう場合があります。<br>
+             また、海外からの送金となる為受け取り銀行によっては電話での内容確認が入るなどの手間が発生してしまうことも。</p>
+             <p>国内銀行振込と国際銀行振込があった場合、よほどの理由がない限り国内銀行振込がオススメです。</p>
+              </dd>
+              </dl>
+            
+            
+          <h4 class="arrow-bef step4">電子決済サービス</h4>
+          <table class="casi-kessai">
+            <tbody><tr class="syurui">
+            <td>　</td>
+            <th><img class="mr5" src="assets/images/ico_ecop.png" alt="ecoPayz" loading="lazy" width="25" height="25">ecoPayz <br class="sp"><img class="mr5" src="img/ico_iwa.png" alt="iWallet" loading="lazy" width="25" height="25">iWallet<br>
+              <img class="mr5" src="assets/images/ico_much.png" alt="MuchBetter" loading="lazy" width="25" height="25">MuchBetter <br class="sp"><img class="mr5" src="img/ico_jeton.png" alt="Jeton" loading="lazy" width="25" height="25">Jeton</th> 				  
+            <th><img class="mr5" src="assets/images/ico_vega.png" alt="VegaWallet" loading="lazy" width="25" height="25"><br>Vega Wallet</th>
+            </tr>
+            <tr>
+            <th>出金限度</th>
+            <td>$10～<br class="sp">$50,000</td>
+            <td>$10～<br class="sp">$20,000</td>	
+            </tr>
+            <tr>
+            <th>手数料</th>
+            <td colspan="2">$50以上で<br class="sp">手数料無料<br class="sp">(以下は$5)</td>
+            </tr>
+            <tr>
+            <th>反映速度</th>
+            <td colspan="2">24時間以内</td>
+            </tr>
+            </tbody></table>
+          <p class="mb10">※受け取る側の銀行によっては手数料が発生したり手続きに時間がかかって反映が遅れる場合があります。</p>
+            
+            
+        <h4 class="arrow-bef step4">仮想通貨</h4>
+          <table class="casi-kessai sel2">
+            <tbody><tr class="syurui">
+            <td>　</td>
+             <th><img src="assets/images/ico_btc.png" alt="仮想通貨" class="mr10" loading="lazy" width="25" height="25">仮想通貨<br>(ビットコイン・イーサリアム・ライトコイン・リップル・ビットコインキャッシュ)</th>
+            </tr>
+            <tr>
+            <th>出金限度</th>
+            <td>＄50～＄100,000</td>
+            </tr>
+            <tr>
+            <th>手数料</th>
+            <td>無料</td>
+            </tr>
+            <tr>
+            <th>反映速度</th>
+            <td>24時間以内</td>
+            </tr>
+            </tbody></table>
+            
+          <p>※手数料として、仮想通貨のシステム利用料が別途必要となります。<br>※反映スピードはあくまで目安となっています。連休や繁忙期などの場合は24時間以内に出金できない可能性もあります。</p>
+          <p>より詳しい出金の手順や、ベラジョンカジノからの出金時間、出金できない場合の原因と対処法などが知りたい方は【<a href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/oncasi-payment/verajohn-syukkin/">ベラジョンカジノ出金まとめ</a>】も要チェックです。</p>
+     
+          </div>
+            
+          <p class="txtCenter nextarrow spmt20"><span>困ったことがあっても頼れる</span></p>  
+    
+            
+        <h2 class="casi_h2detail" id="support"><i class="fas fa-comments"></i><span>ベラジョンカジノのお客様サポートをチェック</span></h2>
+        <div class="detailcont casi-det">
+            <p class="txtCenter"><img src="assets/images/vera_support.jpg" alt="ベラジョンカジノのサポート体制をチェック！" loading="lazy" width="637" height="606"></p>
+          
+        <p>ベラジョンカジノで受けられる日本語サポートは「ライブチャット」と「メール」の二通り。<br>
+        チャットの対応時間は<span class="bold">毎日日本時間の11：00～5:00</span>まで、メールは<span class="bold">24時間受付で返信までの目安は72時間</span>となっています。</p>
+          
+        <p>オンラインカジノの日本語サポートは夕方からが大半ですが、ベラジョンカジノはお昼の隙間時間に問い合わせが可能です。サポートまでの接続時間が短く、ほぼ確実に日本人スタッフが対応してくれます。</p>
+        
+    
+         <dl class="dl_point b-rad10 step4 mb30">
+              <dt><i class="fas fa-check-circle"></i>POINT</dt>
+              <dd class="sp-mb10">
+            <p>当サイトが実際に問い合わせを行ったところ、<span class="bold">機械翻訳などではないきちんとした日本語で対応して貰えるので安心感</span>がありました。メールもその日のうちに返事を貰えたので、トラブルに見舞われたときも迅速な対応が期待できるのではないでしょうか。</p>
+                 <p>「しっかりと堅実な返答が貰える」という印象です。わからないことがあったとき、トラブル時にも安心できそう。逆におすすめのゲームは？などの気軽な質問はしにくいかもしれません。</p>
+              </dd>
+              </dl> 
+         </div>
+            
+        <p class="txtCenter nextarrow spmt20"><span>安心して遊べるのか信頼性もチェック！</span></p>  
+           
+            
+        <h2 class="casi_h2detail" id="risk"><i class="fas fa-user-shield"></i><span>ベラジョンカジノの危険性を検証</span></h2>
+        <div class="detailcont casi-det">
+        <p>入出金について確認しましたが、オンラインカジノをよく知らないうちは実際に決済をしても大丈夫なのか、ゲームなどにイカサマはないのかなど不安になってしまうと思います。<br>
+        ここでは、ベラジョンカジノの安全性を見てみましょう。</p>
+     
+         <h3 class="casi_h3detail" id="risk01"><i class="fas fa-user-shield"></i>キュラソーライセンスと乱数プログラムを採用した公平な運営</h3>
+          
+         <h4 class="arrow-bef step4">ベラジョンカジノのライセンスは？</h4>
+          
+         <p>ベラジョンカジノは<span class="bold markY">キュラソー政府のライセンス</span>を取得しています。
+          2020年1月にプラットフォームのお引越しが行われ、マルタ⇒キュラソーにライセンスも変更となりました。</p>
+          
+         <p>当サイトが確認したところによると、ライセンスを変更した理由は日本人プレイヤーにより便利で楽しく遊んでもらえるサービスの拡張や通信速度の改善のためとの返答をいただきました。<br>
+         <span class="bold">キュラソーライセンスも信頼性が高いライセンス</span>であり、ベラジョンカジノの<span class="bold">運営メンバーは以前のまま変わっていない</span>とのことなので<span class="bold fontRed">信頼性には問題がない</span>と言えるでしょう。</p> 
+          
+          
+         <h4 class="arrow-bef step4">乱数プログラム『RNG（Random Number Generator)』を採用</h4>
+          
+         <p>ベラジョンカジノは公平なゲームを保証するために無作為に番号を生成する<span class="bold markY">『RNG（Random Number Generator)』</span>を使用しています。<br>
+            この機能は名前の通り公正にランダムに数字を生成する乱数発生機でオンラインカジノや一部のプレイヤーが操作できるものではありません。</p>
+          
+         <p>また、<span class="bold">不正な乱数が発生がしていないかの審査が外部の機関により定期的に行われており</span>長期的に見ると確率上は理想のペイアウト率になるよう設定されています。<br>
+          ベラジョンカジノ側で操作ができない以上、意図的なイカサマはできないことになりますね。
+          このRNGシステムは有料でプレイするゲームにもお試しで遊べるゲームにも採用されていますのでお試しプレイの時だけ勝てるように設定されているといったこともありません。</p>
+          
+            <h3 class="casi_h3detail" id="risk02"><i class="fas fa-user-shield"></i>ベラジョンカジノでプレイしても違法にはならない？</h3> 
+              <p>ベラジョンカジノはキュラソーライセンスを取得しており、海外で合法的に運営されているオンラインカジノです。</p>
+          
+              <p>海外で公平に運営されているオンラインカジノを裁く法律が日本にないため、日本でオンラインカジノをプレイすることは現在はグレーゾーンとなっており、違法とは言えません。</p>
+          
+              <p>ベラジョンカジノの違法性やイカサマの疑惑などの危険性については下記のページで詳しく解説しています。</p>
+          
+              <p class="txtCenter"><a class="link_btn step4" href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/solution/verajohn-kikensei/">ベラジョンカジノの危険性をチェック！ライセンスやイカサマの有無などを調査</a></p>
+          
+          
+          <h3 class="casi_h3detail" id="risk03"><i class="fas fa-user-shield"></i>『自己規制設定』で大負けを防げる</h3>
+          
+        <p class="txtCenter"><img src="assets/images/vera_support2.jpg" alt="『自己規制設定』で制限できるのは入金制限や時間制限などの5種類" loading="lazy" width="786" height="275"></p>  
+          
+        <p>ベラジョンカジノでは、<span class="bold">入金制限やログイン・プレイ時間の制限・負け額の制限</span>などができる、自己規制機能が設けられています。<br>
+        自己規制設定で制限できる項目は以下のとおりです。</p>
+          
+          <div class="detail_about step3 f90 mt0">
+           <ul class="li_nost pt3">
+                  <li><span class="bold markY">入金制限</span><br>
+            入金限度額を設け、一定期間内の入金総額をコントロールすることができる。設定された日数と金額がリセットされるまで入金することができない。</li>
+                  <li><span class="bold markY">時間制限</span><br>
+            一度のログインでプレイできる時間を制限することができる。次にログインするまでプレイができない。</li>
+                  <li><span class="bold markY">ゲームプレイ時間制限</span><br>
+            ゲームプレイ時間に制限を設け、設定した時間を経過すると自動的に通知が行われゲームプレイを継続するか中断するかを選択。</li>
+                  <li><span class="bold markY">ロス制限</span><br>
+            最大負け金額とに数を儲け、設定期間中の負け金額を制限することができる。設けられた制限に達するとメッセージが表示され、翌日までプレイを再開することができない。</li>
+                  <li><span class="bold markY">ログイン制限</span><br>
+            ログイン時間に制限をかけることができる。設定された期間を経過するまでアカウントは凍結され、再開することはできない。</li>
+                  </ul>
+          </div> 
+          
+            <p><span class="bold fontRed">ゲームにのめり込んで長時間プレイし続けると、大負けしてしまうリスク</span>も増えます。<br>自己規制機能を使って利用制限をかけることで、損失を最小限に抑えることができるでしょう。</p>
+    
+            <p><span class="bold">制限の緩和と解除は基本的に24時間後から可能</span>ですが、ログイン制限のみ、設けた期間経過後に解除可能となります。<br>無期限ログイン制限をかけてアカウント凍結をかけた場合は、カスタマーサポートに連絡してアカウントの再開手続きを行えば再開できます。</p>
+    
+    
+         <dl class="dl_point b-rad10 step4 mb30">
+              <dt><i class="fas fa-check-circle"></i>『閉鎖（退会）』と『アカウント凍結』の違い</dt>
+              <dd class="sp-mb10">
+                 <p>自己規制設定の中には、「<span class="bold">閉鎖する（退会）</span>」という項目もあります。</p>
+            
+            <p>『閉鎖（退会）』は、ベラジョンカジノから個人情報を削除せず、<span class="markY bold">アカウントを一時的に休止する状態</span>です。<br>問題のないアカウントであれば、退会後であっても再度ログインすることで、再開が可能です。</p>
+            
+            <p>『<span class="bold">アカウント凍結</span>』は、自ら無期限のログイン制限をかけた場合と、規約違反のペナルティとして運営側から凍結される場合の2種類があります。<br>退会とは異なり、<span class="bold fontRed">自分でログインすることはできません</span>。利用を再開したい場合は、サポートに連絡して運営側の許可を得る必要があると把握しておきましょう。</p>				 
+              </dd>
+              </dl> 
+          
+          <h3 class="casi_h3detail" id="risk04"><i class="fas fa-user-shield"></i>ギャンブル依存症対策の『PLAY WISE（プレイワイズ）』を採用</h3>
+          
+         <p> ベラジョンカジノでは、<span class="bold"><a href="https://www.play-wise.com/verajohn-jp/" target="new">ギャンブル依存症対策の専門サイト『PLAY WISE（プレイワイズ）』</a></span>を開設しています。<br>
+           資金管理に注意したり、自己規制機能を活用したりすることでギャンブル依存症は防げますが、<span class="bold fontRed">実際に依存症に陥り、借金を抱えてしまうプレイヤー</span>もいます。</p>
+          
+          <p>プレイワイズでは、ギャンブル依存症に陥るプレイヤーを少しでも減らすため、<span class="markY bold">依存症の自己評価テスト</span>や、自己規制の設定方法などを掲載していますので、内容を確認してみましょう。</p>
+          
+          <p>プレイワイズで掲げている、ギャンブル依存症を防ぐためのポイントは以下のとおりです。</p>
+          
+          <div class="detail_about step4 f90 mt0 mb30">
+                  <ul class="li_point">
+                <li>生計を立てるためでなく、楽しむためにプレイする</li>
+           <li>支払い可能な予算の範囲内で遊ぶ</li>
+            <li>自己規制設定を活用する</li>
+            <li>ギャンブルを少し休んでみる</li>
+            <li>ギャンブルによる生活の変化を把握する</li>
+            <li>飲酒とギャンブルを同時にしない</li>
+            <li>細かく記録をとる</li>
+            <li>人生におけるギャンブルの優先順位を考える</li>
+                  </ul>
+                  </div>
+    
+    <div class="staff_comment_col">
+            <img src="assets/images/icon-staff_masaru.jpg" width="150" height="150" loading="lazy" alt="ライターMASARU">   
+            <div class="speech">
+                <p>ベラジョンや他のオンカジを利用していて、<span class="bold">「最近損失が増えてきた」「プレイ時間が増えてきた」</span>と感じている人は、一度プレイワイズで自己評価テストを受けて見ましょう。<span class="bold">借金を抱えてしまうレベルになる前に対策</span>することが重要です！</p>
+            </div>
+        </div>
+         </div>
+        
+      <p class="txtCenter nextarrow spmt20"><span>ベラジョンにアプリはある？</span></p>  
+    
+            
+        <h2 class="casi_h2detail" id="app"><i class="fas fa-mobile-alt"></i><span>ベラジョンカジノはアプリ非対応</span></h2>
+        <div class="detailcont casi-det">
+        <p>ベラジョンカジノはパソコン(PC)・スマホ・タブレットなどでプレイすることができますが、パソコン版(PC版)・スマホ版で使える機能やゲームの勝率・演出などに差はありません。</p>
+    
+        <p>ブラウザを利用するため、パソコン版(PC版)ソフトのインストールなども一切不要。<br>インターネットに繋がった端末があれば、すぐに遊ぶことができます。</p>
+    
+        <p>また、「オンラインカジノをアプリで手軽に利用したい」という方もいらっしゃるかもしれませんが、ベラジョンカジノはスマホアプリ非対応となっています。</p>
+    
+        <p>完全スマホ対応なのでアプリがないからといって操作性に不便はありませんが、以下の手順でショートカットアイコンを作成すれば、アプリ風にホーム画面からダイレクトにベラジョンカジノにアクセスすることができます。</p>
+          
+      <dl class="dl_point b-rad10 step4 mb30">
+        <dt><i class="fas fa-check-circle"></i>ベラジョンカジノのショートカットアイコンを作成するには？</dt>
+              <dd class="sp-mb10">
+            
+          <ol class="li_numb">
+            
+          <li><a href="../casino/verajohncasino.html" target="new">ベラジョンカジノ公式サイト</a>にアクセス</li>
+          <li>ブックマークメニューを開く<br>
+            ※使用する端末やブラウザによって少しずつ異なります。
+            <ul class="li_normal">
+            <li>【iOS（Safari）】共有アイコン（上矢印）をタップ</li>
+            <li>【Android（Google Chrome）】メニューアイコン（三本線）をタップ</li>
+            <li>【Android（標準ブラウザ）】「ブックマークに追加」のアイコンをタップ</li>
+            </ul>
+    
+          </li>
+          <li>「ホーム画面に追加」をタップし、保存名をカスタマイズすれば完了！<br>
+            アイコンを作成すれば、次回からすぐにベラジョンカジノを開いてプレイできます。</li>	
+            
+          </ol>
+            
+              </dd>
+              </dl>
+          
+        </div>
+        
+            
+        <p class="txtCenter nextarrow spmt20"><span>準備ができたら登録しよう！</span></p>		  
+        
+        <div class="detailcont casi-det">
+            <div class="cont-gray casi-det mb30">
+            <p class="txtCenter rank-comP">初心者ナビからアカウント登録するだけで550スピンプレゼント！</p>
+            <p class="txtCenter"><img src="assets/images/vera_banner.jpg" alt="初心者ナビからアカウント登録するだけで550スピンプレゼント！" class="pc" loading="lazy" width="744" height="261"><img src="img/vera_bannersp.jpg" alt="初心者ナビからアカウント登録するだけで$40プレゼント" class="sp" loading="lazy" width="660" height="231"></p>
+            
+            <ul class="btn_rank w100">
+            <li><a href="../casino/verajohncasino_signup.html" target="new" rel="nofollow" class="btn_signup"><span>ベラジョンカジノに<br>登録する</span><i class="fas fa-chevron-circle-right"></i></a></li>
+            <li><a href="../casino/verajohncasino.html" target="new" rel="nofollow" class="btn_detail c-blue"><span>ベラジョンカジノの<br>公式サイトを見る</span><i class="fas fa-chevron-circle-right"></i></a></li>
+            </ul>  
+          </div>	
+          </div>
+      
+            
+          <h2 class="casi_h2detail" id="manual"><i class="fas fa-book"></i><span>ベラジョンカジノ【登録マニュアル】</span></h2>		
+          <div class="detailcont casi-det t-manu">
+              <p class="txtCenter"><img src="assets/images/vera8.jpg" alt="ベラジョンカジノ【登録マニュアル】" loading="lazy" width="786" height="275"></p>
+          <p>最後にベラジョンカジノへのアカウント登録を行ってみましょう。ここではアカウントの登録方法を実際の写真付きで説明します。</p>
+            
+          <ol>
+            <li>
+            <dl>
+                <dt class="casi_h3detail"><i class="fas fa-book"></i>公式サイトへアクセス！</dt>
+                <dd>
+                <img src="assets/images/vera-touroku1pc.jpg" class="pc" alt="公式サイトへアクセス" loading="lazy" width="784" height="323">
+                <p>【<a href="../casino/verajohncasino.html" target="new" rel="nofollow">ベラジョンカジノ公式サイト</a>】にアクセスします。<br>
+                 画面右上の黄色い【今すぐ登録しよう！】ボタンをクリック</p>
+                <img src="img/vera-touroku1.jpg" class="sp" alt="公式サイトへアクセス" loading="lazy" width="700" height="1030">
+                </dd>
+            </dl>  
+            </li>
+            
+            <li>
+            <dl>
+                <dt class="casi_h3detail"><i class="fas fa-book"></i>メールアドレス・パスワードを登録する</dt>
+                <dd>
+                <img src="assets/images/vera-touroku2pc.jpg" class="pc" alt="メールアドレス・パスワードを登録する" loading="lazy" width="784" height="426">
+                <p>メールアドレスとパスワードの登録画面が開きます。</p> 
+                <p>有効なメールアドレスとパスワードを設定し、右側の項目にチェックを入れて【アカウントの開設】ボタンをクリックします。</p>
+                <img src="img/vera-touroku2.jpg" class="sp" alt="メールアドレス・パスワードを登録する" loading="lazy" width="700" height="1600">
+                </dd>
+            </dl>  
+            </li>
+            
+            <li>
+            <dl>
+                <dt class="casi_h3detail"><i class="fas fa-book"></i>次に個人情報を入力する</dt>
+                <dd>
+              <img src="assets/images/vera-touroku3pc.jpg" class="pc" alt="次に個人情報を入力する" loading="lazy" width="784" height="514">
+                <p>次に個人情報を入力します。</p>
+                <ul class="li_point">
+                <li>名前：日本語入力</li>
+                <li>苗字：日本語入力</li>
+                <li>名前：ローマ字入力</li>
+                <li>苗字：ローマ字入力</li>
+                <li>電話番号：ハイフンありで入力</li>
+                <li>生年月日：ご自身の誕生日を正確に入力</li>
+                <li>性別：ご自身の性別を正確に入力</li>
+                <li>住所：市町村　番地　アパート名など：英語による住所表記入力（日本語可）</li>
+                <li>郵便番号：半角で入力</li>
+                <li>県：都道府県を入力（日本語可）</li>
+                <li>国：Japanになっていることを確認</li>
+                <li>通貨：USDを選択</li>
+                <li>1日の入金限度額：設定しない場合は【（日ごとの入金制限は設定されていません）】を選択</li>
+                <li>ゲームプレイ時間制限：設定しない場合は【無制限】を選択</li>
+                    </ul>
+                <img src="assets/images/vera-touroku3.jpg" class="sp" alt="次に個人情報を入力する" loading="lazy" width="700" height="1050">
+                    <p>すべて入力したら、「プライバシーポリシーを確認しました」にチェックを入れて、【アカウントを設定する】ボタンをクリック</p>
+                <img src="assets/images/vera-touroku4.jpg" class="sp" alt="次に個人情報を入力する" loading="lazy" width="828" height="1792">
+                    <p>これでベラジョンカジノのアカウント登録は完了です！<br>
+                  登録の最後にお知らせの受け取りなどの設定や、入金情報設定画面が表示されますが、これらは後で設定しても、すぐに設定してもどちらでもOKです。</p>
+                </dd>
+            </dl>  
+            </li>
+            
+          </ol>
+          </div>
+            
+            
+            <h2 class="casi_h2detail" id="faq"><i class="far fa-comments"></i><span>ベラジョンカジノに関するよくある質問</span></h2>
+            <div class="detailcont casi-det faq-cont">
+          <section>
+          <h3>ベラジョンカジノは違法？</h3>
+          <dl>
+            <dt>ベラジョンカジノの運営に違法性はありません。</dt>
+            <dd>
+             <p>ベラジョンカジノはカジノが認められている国のライセンスを取得して、合法的に運営されています。<br>
+              しかし、日本国内からオンラインカジノを利用することは現在、違法とも合法とも判断できない状況となっています。<br>
+              ベラジョンカジノをプレイしたい場合は、その点を踏まえて自己責任で利用するようにしましょう。</p>
+            </dd>
+          </dl>
+          </section>
+            
+          <section>
+          <h3>ベラジョンカジノで楽天銀行は使える？</h3>
+          <dl>
+            <dt>入金・出金どちらでも利用できます。</dt>
+            <dd>
+              <p>ベラジョンカジノではネット銀行に対応しているため、楽天銀行も入出金に利用することができます。</p>
+            </dd>
+          </dl>
+          </section>
+            
+          <section>
+          <h3>ベラジョンカジノで出金できないのはなぜ？</h3>
+          <dl>
+            <dt>出金申請時の入力ミス、出金条件を満たしていない場合などが考えられます。</dt>
+            <dd>
+              <p>出金できない理由に一番多いのが、申請時に入力した口座情報が間違っているパターンです。<br>
+               また、出金条件をクリアしていない、気付かないあいだに違反行為となる賭け方をしているために出金ができないという場合もあります。</p>
+            </dd>
+          </dl>
+          </section>
+            
+          <section>
+          <h3>ベラジョンカジノは何歳から利用できる？</h3>
+          <dl>
+            <dt>20歳以上から利用できます。</dt>
+            <dd>
+             <p>ベラジョンカジノは規約で20歳以上であることを利用条件として定めているため、20歳未満の方は登録ができません。<br>
+              年齢を偽って登録をしても、出金時の本人確認で必ずバレることになります。</p>
+            </dd>
+          </dl>
+          </section>
+            
+          <section>
+          <h3>ベラジョンカジノでアカウントロックされたときはどうしたらいい？</h3>
+          <dl>
+            <dt>サポートに連絡して本人確認を行いましょう。</dt>
+            <dd>
+             <p>故意に不正を行った場合でなければ、サポートに本人確認書類を提出することで2～3日後に解除されます。</p>
+             <p><a class="link_btn step4" href="https://xn--eckle6c0exa0b0modc7054g7h8ajw6f.com/blog/solution/verajohn-accountlock/">ベラジョンカジノでアカウントロックされる8つの原因と解除方法</a></p>
+            </dd>
+          </dl>
+          </section>
+            
+          <section>
+          <h3>ベラジョンカジノのスロットのRTPはどれくらいですか？</h3>
+          <dl>
+            <dt>平均96％程度です。</dt>
+            <dd>
+             <p>ベラジョンカジノで遊べるスロットのRTP（ペイアウト率）は、80％台～99％と幅広いですが、平均的には96％程度のものが多くなっています。</p>
+            </dd>
+          </dl>
+          </section>
+            
+          <section>
+          <h3>ベラジョンカジノのライブカジノは24時間利用可能ですか？</h3>
+          <p class="solo-answer">24時間利用可能です。</p>
+          </section>
+            
+          <section>
+          <h3>ベラジョンカジノでスポーツベッティングは可能ですか？</h3>
+          <dl>
+            <dt>現在、ベラジョンカジノにスポーツベッティングはありません。</dt>
+            <dd>
+             <p>ベラジョンカジノの姉妹サイト<span class="bold">「遊雅堂」ならスポーツベットも利用可能</span>ですので、気になる方はチェックしてみると良いでしょう。</p>
+            </dd>
+          </dl>
+          </section>
+            
+        <section>
+          <h3>ベラジョンカジノは勝ち過ぎると出禁になるって本当？</h3>
+          <dl>
+            <dt>不正行為で勝ち続けた場合、凍結される可能性はあります。</dt>
+            <dd>
+             <p>通常、ベラジョンカジノでは勝ち続け過ぎて出禁（アカウント凍結）になるということはありません。<br>
+            オンラインカジノは公平なゲーム性に基づいてランダムな結果が出る仕組みになっているため、そもそもカジノ側にとって不利益になるほど勝ち続けるということ自体が不可能です。</p>
+             <p>ただし、プレイヤー側が故意に利益が出やすくするような不正行為を行った場合はアカウントが凍結される場合があります。例えばボーナスの不正利用や、2ティアベット（損失が出ないベットの仕方）などは不正とみなされます。<br>
+            事前にベラジョンカジノ側の利用規約で禁止行為を確認しておきましょう。</p>
+            </dd>
+          </dl>
+          </section>
+        
+          <section>
+          <h3>ベラジョンカジノのテーブルリミットはいくらですか？</h3>
+          <dl>
+            <dt>最低0.1ドル～最大50,000ドルまでベットすることが可能です。</dt>
+            <dd>
+             <p>ベラジョンカジノのテーブルリミット（ベット額上限）は、0.1ドル～50,000ドルとなっています。<br>
+            主に最低ベット額の0.1ドルはスロット系ゲームで、最大上限額の50,000ドルはライブカジノのバカラ系ゲームでベットすることができます。</p>
+            </dd>
+          </dl>
+          </section>
+    
+          <section>
+          <h3>ベラジョンカジノの友達紹介ボーナスって何ですか？</h3>
+          <dl>
+            <dt>紹介した側と、紹介された友達それぞれにボーナスが貰えるキャンペーンです。</dt>
+            <dd>
+             <p>ベラジョンカジノでは友達紹介キャンペーンを行っており、紹介したプレイヤーは150ドルのボーナス、紹介された友達はフリースピン200回を受け取ることができます。</p>
+              <p>ボーナス・フリースピンの金額や対象ゲームは、キャンペーン期間によって異なる場合があります。<br>
+            また、キャンペーンが予告なく終了する場合もありますので、登録前にベラジョンカジノ公式サイトでチェックしてみてください。</p>
+            </dd>
+          </dl>
+          </section>
+    
+          <section>
+          <h3>ベラジョンカジノはゆうちょ銀行で入出金できますか？</h3>
+          <dl>
+            <dt>ベラジョンカジノはゆうちょ銀行で入出金可能です。</dt>
+            <dd>
+              <p>ベラジョンカジノへは、ゆうちょ銀行から入出金を行うことができます。ゆうちょ銀行から入出金を行うには、「銀行振込」を利用して直接行う方法と、電子決済サービスを経由して入出金を行う方法の2パターンがあります。</p>
+            </dd>
+          </dl>
+          </section>
+            
+            
+          </div>
+            
+            
+            <h2 class="casi_h2detail" id="info"><i class="fas fa-info"></i><span>ベラジョンカジノの詳細情報</span></h2>
+            <div class="detailcont casi-det">
+          <table class="d_table casi-de">
+            <tbody><tr>
+                  <th>カジノ名</th>
+                  <td>ベラジョンカジノ</td>
+                </tr>
+                <tr>
+                  <th>設立</th>
+                  <td>2012年</td>
+                </tr>
+                <tr>
+                  <th>運営会社</th>
+                  <td>Breckenridge Curacao B.V</td>
+                </tr>
+                <tr>
+                  <th>ライセンス</th>
+                  <td>キュラソー</td>
+                </tr>
+          <tr>
+                  <th>住所</th>
+                  <td class="googlemap">39 Scharlooweg, Willemstad, Curaçao<br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.0933949367354!2d-68.92842438487638!3d12.105758536558609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e84828a11971693%3A0xd89a8f7d0127ba5d!2zMzkgU2NoYXJsb293ZWcsIFdpbGxlbXN0YWQsIOOCreODpeODqeOCveODvOWztg!5e0!3m2!1sja!2sjp!4v1669678420562!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </td>
+                </tr>
+                <tr>
+                  <th>入金方法</th>
+                  <td>クレジットカード(VISA/MasterCard/JCB/AMEX) / 銀行振込 / ecoPayz / MuchBetter / Vega Wallet / Jeton / 仮想通貨(ビットコイン/イーサリアム/リップル/ライトコイン/ビットコインキャッシュ)</td>
+                </tr>
+                <tr>
+                  <th>出金方法</th>
+                  <td>銀行振込 / ecoPayz / iwallet / MuchBetter / Vega Wallet / Jeton / 仮想通貨(ビットコイン/イーサリアム/リップル/ライトコイン/ビットコインキャッシュ)</td>
+                </tr>
+                <tr>
+                  <th>ボーナス</th>
+                  <td>
+             <dl>
+               <dt>登録ボーナス</dt>
+               <dd>「Golden Ticket」フリースピン【初心者ナビ限定】<br class="sp">550回 <span class="mark">※入金不要</span><br>＜出金条件＞20倍</dd>
+             </dl>
+             <dl>
+               <dt>ウェルカム<br class="sp">ボーナス</dt>
+               <dd>初回～3回目の入金<br>最大$1,000入金ボーナス<br class="sp">＜出金条件＞20倍</dd>　 
+             </dl>
+            </td>
+                </tr>
+                <tr>
+                  <th>サポート対応時間</th>
+                  <td>
+             <dl>
+               <dt>ライブチャット</dt>
+               <dd>【月～日】11:00～5：00(日本時間)</dd> 
+             </dl>
+             <dl>
+               <dt>メール</dt>
+              <dd>24時間受付</dd> 
+             </dl>
+            </td>
+                </tr>
+                <tr>
+                  <th>ゲーム数</th>
+                  <td>約2,500種類</td>
+                </tr>
+          <tr>
+                  <th>提携ソフトウェア</th>
+                  <td class="soft-log"><img src="assets/images/ico_2by2-g.jpg" alt="2By2 Gaming" loading="lazy" width="80" height="32"><img src="assets/images/ico_btg.jpg" alt="BigTimeGaming" loading="lazy" width="80" height="32"><img src="assets/images/ico_evo-g.jpg" alt="Evolution Gaming" loading="lazy" width="80" height="32"><img src="assets/images/ico_goldenhero.jpg" alt="Golden Hero Games" loading="lazy" width="80" height="32">
+              <img src="assets/images/ico_kalamba-g.jpg" alt="Kalamba Games" loading="lazy" width="80" height="32"><img src="assets/images/ico_lightningbox.jpg" alt="Lightning Box" loading="lazy" width="80" height="32"><img src="assets/images/ico_mg.jpg" alt="Micro Gaming" loading="lazy" width="80" height="32"><img src="assets/images/ico_netent.jpg" alt="NetEnt" loading="lazy" width="80" height="32"><img src="img/ico_playngo.jpg" alt="Play'n GO" loading="lazy" width="80" height="32"><img src="assets/images/ico_prag-p.jpg" alt="PragmaticPlay" loading="lazy" width="80" height="32"><img src="assets/images/ico_push-g.jpg" alt="PUSH Gaming" loading="lazy" width="80" height="32"><img src="assets/images/ico_redtiger.jpg" alt="Red Tiger" loading="lazy" width="80" height="32"><img src="assets/images/ico_yggd.jpg" alt="Yggdrasil" loading="lazy" width="80" height="32"><img src="assets/images/ico_relax-g.jpg" alt="RelaxGaming" loading="lazy" width="80" height="32"><img src="assets/images/ico_thunderkick.jpg" alt="Thunderkick" loading="lazy" width="80" height="32">　　など</td>
+            
+                </tr>
+                <tr>
+                  <th>VIP制度</th>
+                  <td>
+            <span class="txt_bold">有り</span><br>
+            VIP希望者は【japan@verajohn.com】に問い合わせをしてみましょう
+            </td>
+                </tr>
+                <tr>
+                  <th>対応デバイス</th>
+                  <td>パソコン、スマホ対応</td>
+                </tr>
+          </tbody></table>	
+          </div>
+            
+      </dd>
+          
+      </dl>
+          </section>
+        
+        
+        <!--  -->
+        
+        <!--  -->
+        
+        <!--  -->
+        
+        <!--  -->
+        
+
+         <!--  -->
+         <!--  -->
+      
+          <!--  -->
+      
+        
+    </div>
+      
+           
+              <!--  -->
+              
+    </div>
+          </div>
+          
+  </div>
+  
+
+<footer>
+  <div class="dispFlex center">
+    <nav>
+      <ul>
+        <li><a href="beginner/about.html">オンラインカジノとは？基礎講座</a></li>
+        <li><a href="beginner/law.html">オンラインカジノは違法？！</a></li>
+        <li><a href="beginner/tax.html">オンラインカジノの税金について</a></li>
+        <li><a href="play/nodepositbonus.html">入金不要ボーナスが貰えるオンラインカジノ</a></li>
+        <li><a href="slot/">オンラインカジノ人気スロットランキング</a></li>
+        <li><a href="ecopayz/about.html">【決済方法】ecoPayz（エコペイズ）解説</a></li>
+        <li><a href="ranking/">オンラインカジノおすすめランキング</a></li>
+        <li><a href="blog/">オンラインカジノ初心者ナビ公式ブログ</a></li>
+      </ul>
+    </nav>
+
+    <section class="headerlog"><img src="assets/images/log2.png" loading="lazy" width="375" height="54" alt=""></section>
+  </div>
+
+  <a class="p15 sp" href="https://twitter.com/oncasibegin?ref_src=twsrc%5Etfw" target="new"><img src="images/ban_twitter_sp.jpg" loading="lazy" alt="" width="100%" height="auto"></a>
+     
+  <ul class="iconMenu">
+    <li><a href="faq.html"><i class="fas fa-question-circle"></i>Q&amp;A</a></li>
+    <li><a href="contact.html"><i class="fas fa-envelope"></i>お問い合わせ</a></li>
+    <li><a href="author.html"><i class="fas fa-info-circle"></i>運営者情報</a></li>
+  </ul>
+
+  <p class="copyright">
+    <small>©2023 「オンラインカジノ初心者ナビ®」 All Rights Reserved.</small>
+  </p>
+</footer>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script>
+    window.addEventListener("load", function() {
+    var marqueeContainer = document.getElementById("marqueeContainer");
+    marqueeContainer.classList.add("marqueeAnimation");
+    });
+</script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 15,
+    centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+
+
+</body>
+
+</html>
